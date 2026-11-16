@@ -1,0 +1,456 @@
+{
+  "project": "Maths Wednesdays",
+  "version": "3-offline-handoff",
+  "date": "2026-11-16",
+  "delivery": "Complete static snapshots plus new investigations; not a deployed commercial platform",
+  "canonical_offline_folders": [
+    "Puzzles",
+    "Students-JK"
+  ],
+  "tasks": [
+    {
+      "id": "T01",
+      "title": "Establish the canonical site and test baseline",
+      "workstream": "Foundation",
+      "depends_on": [],
+      "status": "partially_complete",
+      "scope": "Inventory every activity and helper, compare Puzzles/J/K and prior ZIPs, record canonical versions, preserve backups and create an activity manifest. Use this ZIP as a starting snapshot, not an assumed complete history.",
+      "acceptance_criteria": "Every menu target resolves; every activity has an owner/path/status; duplicate versions and exclusions are documented.",
+      "effort_estimate": "1\u20132 days"
+    },
+    {
+      "id": "T02",
+      "title": "Desktop and phone smoke tests for every activity",
+      "workstream": "Stability",
+      "depends_on": [
+        "T01"
+      ],
+      "status": "pending",
+      "scope": "Open every page in current Chrome, Edge, Firefox and Safari where available. Test Android/iOS portrait and landscape, small screens, keyboard, touch, reduced motion, reset and saved state. Record reproducible bugs by URL and action.",
+      "acceptance_criteria": "Evidence matrix with pass/fail; no broken launch, trapped input or missing primary controls.",
+      "effort_estimate": "3\u20136 days"
+    },
+    {
+      "id": "T03",
+      "title": "Mastermind board, timing and statistics audit",
+      "workstream": "Activities",
+      "depends_on": [
+        "T01"
+      ],
+      "status": "pending",
+      "scope": "Audit compact timer on/off with count-up/countdown options, no undo, previous guesses visible on phones, show solution at timeout, remaining-combination option per guess. Keep settings-specific session/overall and timed/untimed records, local profiles, clear controls, hints, unfinished and timeout counts. Define treatment of failures without disguising them as solved means.",
+      "acceptance_criteria": "Synthetic games verify all statistics and persistence. Solved-only averages are labelled; timeout counts and completion rate remain visible; timer settings and scores stay compact at bottom.",
+      "effort_estimate": "2\u20134 days"
+    },
+    {
+      "id": "T04",
+      "title": "Dobble investigation and gameplay stability",
+      "workstream": "Activities",
+      "depends_on": [
+        "T01"
+      ],
+      "status": "partially_complete",
+      "scope": "New builder, pair tests, custom labels, print/export and prime-grid extensions supplied. Audit original solo/play pages, input races, shuffle validity, reset, touch and completion. Add reversible edits and intelligible feedback. Do not expose Fano construction at the start.",
+      "acceptance_criteria": "Every pair in valid decks shares one symbol; invalid and incomplete decks receive correct feedback; no double scoring; mobile printed cards usable.",
+      "effort_estimate": "2\u20133 days"
+    },
+    {
+      "id": "T05",
+      "title": "Creature Studio and complete teaching sessions",
+      "workstream": "Activities",
+      "depends_on": [
+        "T01"
+      ],
+      "status": "partially_complete",
+      "scope": "New page and session sheet supplied. Notebooks worm1.nb/worm2.nb inspected; 3:2 golden-ratio-scaled loop added. Validate drawing, motion, constant-distance spacing, save/load and fixed camera. Offer practical and deeper paths without arithmetic speed becoming the entry barrier.",
+      "acceptance_criteria": "Jamie-style design-first and Kai-style reasoning sessions piloted; malformed files cannot corrupt state; touch route drawing and pause/step work on actual devices.",
+      "effort_estimate": "1\u20133 days"
+    },
+    {
+      "id": "T06",
+      "title": "Escher-inspired spiral and transformation investigation",
+      "workstream": "Activities",
+      "depends_on": [
+        "T01"
+      ],
+      "status": "partially_complete",
+      "scope": "Original nested gallery, logarithmic unwrap and complex-power grid supplied. It is not an exact Print Gallery reconstruction. Improve touch manipulation, mathematical labels and progression. Keep advanced material optional.",
+      "acceptance_criteria": "Identity map and branch handling verified; transformations explained accurately; primary experience understandable without complex numbers.",
+      "effort_estimate": "1\u20133 days"
+    },
+    {
+      "id": "T07",
+      "title": "String Lab, Curve Lab and reflection physics",
+      "workstream": "Activities",
+      "depends_on": [
+        "T01"
+      ],
+      "status": "partially_complete",
+      "scope": "Root String Lab paths corrected. Audit every nails/hyperbola/saddle/tower page, prevent misleading naming of parabolic envelopes as hyperbolas, and retain construction recipes. Test brachistochrone, joined coordinate points and ramp timers; ellipse shots should pot only under valid focus geometry/tolerance; add straight-sided reflection, projectiles and conic sections as separate investigations.",
+      "acceptance_criteria": "Path links and geometry verified; fixed camera; no false potting; phone plotting and drag interactions reliable.",
+      "effort_estimate": "3\u20136 days"
+    },
+    {
+      "id": "T08",
+      "title": "Painted cubes, factors, Euclid and packing stability",
+      "workstream": "Activities",
+      "depends_on": [
+        "T01"
+      ],
+      "status": "pending",
+      "scope": "Preserve 6\u00b3/7\u00b3, blue-only default, movable spread slider default 0, buckets remain at end, single clear autosort control. Check cube classification counts and paced inspection. Audit factor tree colour rules; factor-shape sliders encourage discovery; Euclid take-away grid fits without shaking. Keep rejected cube-challenges off menus.",
+      "acceptance_criteria": "Correct combinatorial counts and sorting; touch controls stable; no answers revealed prematurely; mathematical claims distinguish exact algorithms from conjecture.",
+      "effort_estimate": "3\u20135 days"
+    },
+    {
+      "id": "T09",
+      "title": "Construction, coding and manipulation stability",
+      "workstream": "Activities",
+      "depends_on": [
+        "T01"
+      ],
+      "status": "pending",
+      "scope": "Audit bridge from scratch with examples and clear failure animation; Sprouts legal moves; Robot Trails locking jigsaw commands, compact consistent controls, facing robot, isometric labels/fixed plot. Keep Code Grid tap-to-build Python-style commands with visible loop extent. Improve polyomino touch rotate/flip without losing piece.",
+      "acceptance_criteria": "No stuck drawing or disappearing pieces; keyboard/touch alternatives; every challenge solvable and resettable.",
+      "effort_estimate": "3\u20136 days"
+    },
+    {
+      "id": "T10",
+      "title": "River crossing and remaining activity audit",
+      "workstream": "Activities",
+      "depends_on": [
+        "T01"
+      ],
+      "status": "pending",
+      "scope": "Improve existing boat/animal animation without whole redesign: cargo visible, wave motion, natural child-friendly consequences without munch text. Check goat/wolf/lettuce constraints/extensions, money-plant day phases and repeated clicks, scytale wrapping/text alignment/unwrapping/zoom, Josephus cards A\u2013K in circle and other catalogue games.",
+      "acceptance_criteria": "No duplicated day advancement or invalid crossings; animations reveal state accurately; each activity has a practical investigation prompt.",
+      "effort_estimate": "4\u20138 days"
+    },
+    {
+      "id": "T11",
+      "title": "Shared visual design system and master pages",
+      "workstream": "Design",
+      "depends_on": [
+        "T02"
+      ],
+      "status": "pending",
+      "scope": "Commission or develop 3\u20135 representative master pages: homepage/library, puzzle board, simulation, exercise, parent/admin. Keep Orbital default and all three themes. Large useful play area, concise instructions, accessible controls, undo icon where appropriate. Use polished playful design references as inspiration, not copied artwork.",
+      "acceptance_criteria": "Design tokens, spacing, responsive rules and component states approved on phones/tablets/desktops before site-wide rollout.",
+      "effort_estimate": "1\u20133 weeks"
+    },
+    {
+      "id": "T12",
+      "title": "Apply design system and accessibility checks",
+      "workstream": "Design",
+      "depends_on": [
+        "T11",
+        "T03",
+        "T04",
+        "T07"
+      ],
+      "status": "pending",
+      "scope": "Migrate components systematically with screenshots and regression checks. Check contrast, keyboard focus, touch target size, motion preference, screen-reader names and colour-independent information. Avoid text-heavy instructions and reward clutter.",
+      "acceptance_criteria": "All activity templates pass agreed accessibility and device checklist; visual changes do not change mathematical behaviour.",
+      "effort_estimate": "2\u20134 weeks"
+    },
+    {
+      "id": "T13",
+      "title": "Curriculum and theme catalogue",
+      "workstream": "Curriculum",
+      "depends_on": [
+        "T01"
+      ],
+      "status": "partially_complete",
+      "scope": "Draft Year 4 crosswalk and all-age routes exist in platform pilot. Align original activities to England KS1\u20135 official objectives and current White Rose sequence as a reference. Separate prerequisite, accessible entry, extension depth, topic, age guide and confidence. Review uploaded Y3/Y4 and own questions.",
+      "acceptance_criteria": "Every mapping is sourced, dated and reviewed; theme-first browse can narrow by stage, topic or prerequisite; no copying of proprietary worksheet collections.",
+      "effort_estimate": "2\u20134 weeks initial mapping"
+    },
+    {
+      "id": "T14",
+      "title": "Personalised homeschool pathways and goals",
+      "workstream": "Curriculum",
+      "depends_on": [
+        "T13"
+      ],
+      "status": "pending",
+      "scope": "Create essentials and deeper routes, flexible pace, learner/parent goals and review dates; practical experiments plus optional consolidation. Tutor sessions may assign practice as homework with parent notes; consider a parent session every two months.",
+      "acceptance_criteria": "Users can choose a goal, see prerequisites, adapt route and revisit learning without age-based lockout.",
+      "effort_estimate": "1\u20132 weeks pilot"
+    },
+    {
+      "id": "T15",
+      "title": "Original generated consolidation and auto-marking",
+      "workstream": "Curriculum",
+      "depends_on": [
+        "T13"
+      ],
+      "status": "partially_complete",
+      "scope": "14 practice families in platform pilot. Extend each taught topic with examples, fading support, diagrams and printable versions. Visualise constraints; avoid leaked answers. Mark equivalent numerical forms and record hints/attempts separately.",
+      "acceptance_criteria": "Generator test corpus verifies validity, answer equivalence and level controls; parents can access guidance; learner answers remain hidden until appropriate.",
+      "effort_estimate": "2\u20134 weeks initial expansion"
+    },
+    {
+      "id": "T16",
+      "title": "Tracking and assessment model",
+      "workstream": "Assessment",
+      "depends_on": [
+        "T13"
+      ],
+      "status": "pending",
+      "scope": "Define evidence of strengths/difficulties: independent attempts, hints, strategy explanation, revisions, fluency, transfer and engagement. Log only necessary data with retention decisions. Distinguish exploration from testing and avoid equating speed with ability.",
+      "acceptance_criteria": "Event schema, test data and educator dashboard are reviewed; progress claims trace to observed evidence and context.",
+      "effort_estimate": "1\u20132 weeks"
+    },
+    {
+      "id": "T17",
+      "title": "Draft reports and support recommendations",
+      "workstream": "Assessment",
+      "depends_on": [
+        "T16",
+        "T15"
+      ],
+      "status": "pending",
+      "scope": "Generate educator-reviewed reports with uncertainty, strengths, next steps and examples. SEND recommendations should be educational supports with human review, not automated diagnosis. Record intervention, rationale, review date and observed response.",
+      "acceptance_criteria": "No report sent without authorised review; every statement has supporting evidence; edit/export workflow and correction process work.",
+      "effort_estimate": "1\u20132 weeks"
+    },
+    {
+      "id": "T18",
+      "title": "Choose hosting and authentication architecture",
+      "workstream": "Platform",
+      "depends_on": [
+        "T01"
+      ],
+      "status": "partially_complete",
+      "scope": "Python/SQLite local pilot supplied separately. Choose production stack and deployment ownership deliberately. GitHub Pages cannot execute this server. Decide parent-managed child accounts, password reset, tenant separation, sessions, backups, audit logging and migration.",
+      "acceptance_criteria": "Architecture decision record, staging environment, backup/restore drill and threat model; no security based on hidden menu links.",
+      "effort_estimate": "1 week decision/prototype"
+    },
+    {
+      "id": "T19",
+      "title": "Passwords, accounts and secure recovery",
+      "workstream": "Platform",
+      "depends_on": [
+        "T18"
+      ],
+      "status": "partially_complete",
+      "scope": "Pilot has password hashing, sessions, CSRF and rate limiting. Harden with independent review, password recovery, administrator protection, revocation and account lifecycle. Do not claim the pilot is production secure.",
+      "acceptance_criteria": "Authentication tests cover account enumeration, abuse, expired tokens, session revocation and recovery; deployment settings reviewed.",
+      "effort_estimate": "1\u20132 weeks"
+    },
+    {
+      "id": "T20",
+      "title": "Admin lockability and personalised access",
+      "workstream": "Platform",
+      "depends_on": [
+        "T19"
+      ],
+      "status": "partially_complete",
+      "scope": "Pilot supports per-learner activity/topic permissions and parent linking. Expand to groups, schedules, tutor/parent roles, preview-as-learner and immutable permission audit. Restrict protected content at server/API level.",
+      "acceptance_criteria": "Direct URL/API access denied when locked; unrelated families/tutors isolated; policy changes take effect promptly; admin can see exactly what each learner sees.",
+      "effort_estimate": "1\u20132 weeks"
+    },
+    {
+      "id": "T21",
+      "title": "Move activities into protected platform",
+      "workstream": "Platform",
+      "depends_on": [
+        "T20",
+        "T12"
+      ],
+      "status": "pending",
+      "scope": "One canonical activity source with personalised menus, not separate manually maintained J/K codebases. Keep static export for demos. Migrate saved progress/settings with consent and versioned schemas. Client-delivered code cannot be made impossible to copy.",
+      "acceptance_criteria": "Chosen pilot games available behind real access checks; old content backed up; no broken deep links; migration reversible.",
+      "effort_estimate": "2\u20134 weeks"
+    },
+    {
+      "id": "T22",
+      "title": "Online tuition chat and shared gameplay",
+      "workstream": "Platform",
+      "depends_on": [
+        "T20"
+      ],
+      "status": "partially_complete",
+      "scope": "Private text rooms and server-validated two-player Mastermind exist in pilot. Add reconnect tests, accessible chat, moderation/close controls and clear retention. Consider voice/video via an appropriate established service. Test secret-state handling and simultaneous inputs.",
+      "acceptance_criteria": "Only room members can read/write; guesses cannot leak secrets; reconnect resumes safely; tutor can pause/end; family settings enforced.",
+      "effort_estimate": "1\u20133 weeks"
+    },
+    {
+      "id": "T23",
+      "title": "Subscriptions, entitlement and commercial accounts",
+      "workstream": "Commercial",
+      "depends_on": [
+        "T19",
+        "T20"
+      ],
+      "status": "pending",
+      "scope": "Choose payment provider, tiers, free demonstrations and parent purchasing flow. Server verifies payment notifications and entitlements. Define cancellation, refunds, failed payments and content access. Consider school licences and workshop bookings separately.",
+      "acceptance_criteria": "Sandbox purchase/cancel/refund tested end to end; no card data stored by this app; permissions match verified entitlement.",
+      "effort_estimate": "1\u20133 weeks"
+    },
+    {
+      "id": "T24",
+      "title": "Privacy, rights, safeguarding and legal review",
+      "workstream": "Commercial",
+      "depends_on": [
+        "T18",
+        "T16",
+        "T22",
+        "T23"
+      ],
+      "status": "pending",
+      "scope": "Obtain current professional review for child data, consent/account model, chat safeguarding, retention/deletion, commercial terms and accessibility. Maintain provenance/licensing for ideas, code, images and curriculum references; distinguish inspiration from reproduction.",
+      "acceptance_criteria": "Written review actions closed before public commercial pilot; deletion/export and incident process tested.",
+      "effort_estimate": "1\u20133 weeks plus external review"
+    },
+    {
+      "id": "T25",
+      "title": "Small tutoring and homeschool pilots",
+      "workstream": "Evidence",
+      "depends_on": [
+        "T02",
+        "T14",
+        "T15",
+        "T16",
+        "T20"
+      ],
+      "status": "pending",
+      "scope": "Start with existing tutoring use and parent feedback, then small homeschool workshops. Measure usability, willingness to return, explanation/transfer and practical-screen balance. Separate service evaluation from formal research; obtain relevant approvals before recruitment/data collection.",
+      "acceptance_criteria": "Predefined questions/measures; baseline and follow-up evidence; negative outcomes and disengagement reported; design decisions linked to findings.",
+      "effort_estimate": "6\u201312 weeks"
+    },
+    {
+      "id": "T26",
+      "title": "School pilots and educator training",
+      "workstream": "Evidence",
+      "depends_on": [
+        "T25",
+        "T24"
+      ],
+      "status": "pending",
+      "scope": "Pilot class use and staff training with varied teachers. Test whether materials support learning without depending on exceptional delivery. Develop INSET, lesson guides, cheap resource packs and workshop model; hire skilled educators as capacity grows.",
+      "acceptance_criteria": "Feasibility, workload, accessibility and learning evidence collected across more than one context; training materials revised from observation.",
+      "effort_estimate": "one school term or longer"
+    },
+    {
+      "id": "T27",
+      "title": "Business model, partners and launch plan",
+      "workstream": "Commercial",
+      "depends_on": [
+        "T23",
+        "T24",
+        "T25"
+      ],
+      "status": "pending",
+      "scope": "Compare tutoring aide, homeschool subscription, workshops, school licensing and educator training before government contracts. Cost hosting, support, content and design; test willingness to pay. Explore appropriate YouTuber partnerships and local contacts. Keep ed-psych practice/research boundaries explicit if that career route develops.",
+      "acceptance_criteria": "Costed model with assumptions, achievable capacity, pilot conversion data and go/no-go thresholds; contracts reviewed before sale.",
+      "effort_estimate": "2\u20134 weeks planning, then iterative"
+    },
+    {
+      "id": "T28",
+      "title": "Commercial release and ongoing operations",
+      "workstream": "Commercial",
+      "depends_on": [
+        "T12",
+        "T17",
+        "T21",
+        "T22",
+        "T23",
+        "T24",
+        "T25"
+      ],
+      "status": "pending",
+      "scope": "Release in stages with monitoring, backups, restore drills, incident handling, customer support, accessibility feedback and scheduled maintenance. Maintain staging and production; avoid deploying untested AI-wide changes.",
+      "acceptance_criteria": "Release checklist signed off, rollback tested, support ownership assigned, monitoring and regular access review operational.",
+      "effort_estimate": "1\u20132 weeks initial release"
+    },
+    {
+      "id": "T29",
+      "title": "Future investigations and content backlog",
+      "workstream": "Content",
+      "depends_on": [
+        "T13",
+        "T25"
+      ],
+      "status": "ongoing_backlog",
+      "scope": "Proof-writing interactives; balance-scale algebra; partitioning multiplication/division; KS2 essentials; circle theorems, trig, statistics, mechanics, calculus; GCSE/A-level/Olympiad worked questions; practical numbers, weights, codes/Enigma/RSA/one-time pads; minesweeper including higher-dimensional/probability extensions; world-building/influencer model; finite planes; computational packing and Mathematica algorithms. Build, test, select/reject, deepen the good ones.",
+      "acceptance_criteria": "Each new activity has a mathematical objective, practical counterpart where suitable, prerequisite, exploratory task, verification and educator notes.",
+      "effort_estimate": "continuous"
+    }
+  ],
+  "priority_order": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "T11",
+    "T12",
+    "T13",
+    "T18",
+    "T19",
+    "T20",
+    "T15",
+    "T16",
+    "T14",
+    "T21",
+    "T22",
+    "T17",
+    "T23",
+    "T24",
+    "T25",
+    "T26",
+    "T27",
+    "T28"
+  ],
+  "parallel_work": "Independent tasks may be assigned to separate instances in isolated branches; merge only after reviewing differences.",
+  "protected_preferences": [
+    "Orbital default; all themes available",
+    "one homepage link per main activity; helpers under main page",
+    "supply full-site and shared J/K indexes together",
+    "accessible entry is distinct from full mathematical analysis",
+    "practical inexpensive materials alongside interactive screens",
+    "fixed play viewport; clear touch interactions; no premature automatic answers",
+    "preserve existing good work; build, test, select/reject, deepen"
+  ],
+  "validation": [
+    "Local HTML href/src targets all resolve in both complete snapshots",
+    "New JavaScript syntax checked",
+    "New logic tested in Node with DOM stubs, not a browser",
+    "Finite-plane complete decks checked for q=2,3,5",
+    "Browser/device rendering QA blocked by occupied managed preview"
+  ],
+  "known_limits": [
+    "Existing legacy activity behaviour has not all been tested",
+    "External videos and reference articles require internet",
+    "Static offline files do not provide secure logins or real multi-device chat",
+    "The root package is not a verbatim chat export",
+    "New Escher-inspired page is not an exact Print Gallery reconstruction"
+  ],
+  "notebook_sources": [
+    "worm1.nb",
+    "worm2.nb"
+  ],
+  "next_instance_instruction": "Read DEVELOPMENT-PLAN.html and project-state.json. Select exactly the requested Txx. Inspect current files and acceptance criteria. Preserve unrelated work. Report changed files, tests, remaining issues and produce a small patch or requested complete ZIP. Update task status only with evidence.",
+  "current_delivery_changes": [
+    "Complete Puzzles and shared Students-JK static snapshots",
+    "Both complete homepages link new investigations and root String Lab",
+    "Creature Studio notebook route, width/taper controls, optional total, validated route loading",
+    "Printable creature session and experiment sheet",
+    "Spiral Gallery touch dragging",
+    "Dobble builder, all-pair tests, Fano helper and finite-grid extension",
+    "Original legacy games preserved",
+    "Standalone platform pilot retained separately",
+    "29-task commercial development hierarchy and reconstructed discussion record"
+  ],
+  "transcript_export": {
+    "type": "reconstructed topic record",
+    "verbatim_complete": false,
+    "reason": "Original full message history and all assistant turns not exposed by this interface"
+  }
+}

@@ -1,0 +1,516 @@
+{
+  "jurisdiction": "England",
+  "status": "England all-stage planning framework, with a Year 4 topic-level crosswalk. Not a complete objective-level scheme.",
+  "sources": [
+    {
+      "title": "Uploaded Year 4 pack",
+      "edition": "2017–18",
+      "file": "year 4.zip",
+      "use": "Small-step and term structure; PDFs reviewed"
+    },
+    {
+      "title": "Uploaded worked examples",
+      "file": "white rose style questions.zip",
+      "use": "Column methods, partitioning and exchange scaffolds; examples reviewed"
+    },
+    {
+      "title": "DfE mathematics programmes of study KS1–4",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
+      "use": "Curriculum reference; topic-level crosswalk only"
+    },
+    {
+      "title": "DfE primary mathematics guidance",
+      "url": "https://www.gov.uk/government/publications/teaching-mathematics-in-primary-schools",
+      "use": "Prerequisite and ready-to-progress framework; detailed mapping pending"
+    },
+    {
+      "title": "DfE AS and A level mathematics",
+      "url": "https://www.gov.uk/government/publications/gce-as-and-a-level-mathematics",
+      "use": "Future KS5 planning reference, not mapped yet"
+    },
+    {
+      "title": "White Rose primary",
+      "url": "https://whiteroseeducation.com/resources/maths/primary",
+      "use": "Small-step approach and primary planning reference."
+    },
+    {
+      "title": "White Rose secondary",
+      "url": "https://whiteroseeducation.com/resources/secondary-maths-resources",
+      "use": "KS3 support and GCSE Foundation/Higher pathway structure."
+    },
+    {
+      "title": "White Rose curriculum mapping guidance",
+      "url": "https://help.whiteroseeducation.com/knowledge/progression-documents",
+      "use": "Location of national curriculum and ready-to-progress mapping documents; full documents not yet imported."
+    },
+    {
+      "title": "White Rose Reception",
+      "url": "https://whiteroseeducation.com/reception-maths-scheme",
+      "use": "Early-years scheme overview."
+    },
+    {
+      "title": "DfE EYFS",
+      "url": "https://www.gov.uk/government/publications/early-years-foundation-stage-framework--2",
+      "use": "Early-years framework; use the edition applicable to the cohort."
+    },
+    {
+      "title": "DfE GCSE mathematics",
+      "url": "https://www.gov.uk/government/publications/gcse-mathematics-subject-content-and-assessment-objectives",
+      "use": "GCSE coverage and assessment reference."
+    },
+    {
+      "title": "DfE Further Mathematics",
+      "url": "https://www.gov.uk/government/publications/gce-as-and-a-level-further-mathematics",
+      "use": "Post-16 extension route; board-specific options require separate mapping."
+    },
+    {
+      "title": "DfE Core Maths",
+      "url": "https://www.gov.uk/government/publications/core-maths-qualifications-technical-guidance",
+      "use": "Alternative post-16 applied route."
+    },
+    {
+      "title": "DfE Functional Skills",
+      "url": "https://www.gov.uk/government/publications/functional-skills-subject-content-mathematics",
+      "use": "Entry Levels 1–3 and Levels 1–2; routes not tied to chronological age."
+    },
+    {
+      "title": "White Rose post-16 evaluation",
+      "url": "https://whiteroseeducation.com/latest-news/nfer-evaluation",
+      "use": "Verified post-16 activity concerns GCSE resits and Functional Skills; not evidence of an A-level scheme."
+    }
+  ],
+  "missing_inputs": [
+    "Third intended curriculum ZIP not identified; Year 3 ZIP not found"
+  ],
+  "units": [
+    {
+      "id": "y4-01",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "autumn",
+      "title": "Place value",
+      "summary": "Represent, compare and round four-digit numbers.",
+      "theme": "Number & patterns",
+      "activities": [],
+      "investigation": "Build numbers with place-value cards.",
+      "status": "content to develop",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    },
+    {
+      "id": "y4-02",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "autumn",
+      "title": "Addition and subtraction",
+      "summary": "Calculate with four-digit numbers; estimate and check.",
+      "theme": "Number & patterns",
+      "activities": [],
+      "investigation": "Animate exchanges, then explain each regrouping with counters.",
+      "status": "content to develop",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    },
+    {
+      "id": "y4-03",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "autumn",
+      "title": "Length and perimeter",
+      "summary": "Measure and calculate perimeter; convert lengths.",
+      "theme": "Shape & construction",
+      "activities": [],
+      "investigation": "Make different fences using the same length of string.",
+      "status": "content to develop",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    },
+    {
+      "id": "y4-04",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "autumn",
+      "title": "Multiplication and division A",
+      "summary": "Use times-table facts and place-value scaling.",
+      "theme": "Number & patterns",
+      "activities": [
+        "arrays"
+      ],
+      "investigation": "Build arrays and predict what happens when a dimension changes.",
+      "status": "sample activity; partial coverage",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    },
+    {
+      "id": "y4-05",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "spring",
+      "title": "Multiplication and division B",
+      "summary": "Use factor pairs and written multiplication.",
+      "theme": "Number & patterns",
+      "activities": [
+        "arrays"
+      ],
+      "investigation": "Find all rectangular arrangements of a fixed number of counters.",
+      "status": "sample activity; partial coverage",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    },
+    {
+      "id": "y4-06",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "spring",
+      "title": "Area",
+      "summary": "Count squares to compare areas.",
+      "theme": "Shape & construction",
+      "activities": [
+        "arrays"
+      ],
+      "investigation": "Make several shapes with equal area and compare their perimeters.",
+      "status": "sample activity; partial coverage",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    },
+    {
+      "id": "y4-07",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "spring",
+      "title": "Fractions",
+      "summary": "Represent equivalent fractions and calculate with fractions.",
+      "theme": "Number & patterns",
+      "activities": [],
+      "investigation": "Fold equal strips in different ways and compare the parts.",
+      "status": "content to develop",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    },
+    {
+      "id": "y4-08",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "spring",
+      "title": "Decimals A",
+      "summary": "Represent tenths and hundredths.",
+      "theme": "Number & patterns",
+      "activities": [],
+      "investigation": "Zoom into a number line between adjacent whole numbers.",
+      "status": "content to develop",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    },
+    {
+      "id": "y4-09",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "summer",
+      "title": "Decimals B",
+      "summary": "Compare and round decimals.",
+      "theme": "Number & patterns",
+      "activities": [],
+      "investigation": "Order measurements and explain rounding choices.",
+      "status": "content to develop",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    },
+    {
+      "id": "y4-10",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "summer",
+      "title": "Money",
+      "summary": "Solve money calculations.",
+      "theme": "Number & patterns",
+      "activities": [],
+      "investigation": "Plan a small shop with several possible purchases.",
+      "status": "content to develop",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    },
+    {
+      "id": "y4-11",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "summer",
+      "title": "Time",
+      "summary": "Read and convert time units.",
+      "theme": "Curves & motion",
+      "activities": [],
+      "investigation": "Design a timetable and explain which journeys fit.",
+      "status": "content to develop",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    },
+    {
+      "id": "y4-12",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "summer",
+      "title": "Statistics",
+      "summary": "Interpret charts, tables and line graphs.",
+      "theme": "Number & patterns",
+      "activities": [],
+      "investigation": "Collect measurements from an investigation and choose a representation.",
+      "status": "content to develop",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    },
+    {
+      "id": "y4-13",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "summer",
+      "title": "Properties of shape",
+      "summary": "Classify shapes, angles and symmetry.",
+      "theme": "Shape & construction",
+      "activities": [],
+      "investigation": "Sort shapes using rules chosen by the learner.",
+      "status": "content to develop",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    },
+    {
+      "id": "y4-14",
+      "year": 4,
+      "key_stage": "KS2",
+      "term": "summer",
+      "title": "Position and direction",
+      "summary": "Plot coordinates and describe translations.",
+      "theme": "Curves & motion",
+      "activities": [
+        "curves"
+      ],
+      "investigation": "Plot a route, describe movements and test a partner’s instructions.",
+      "status": "sample activity; partial coverage",
+      "alignment": "draft topic-level crosswalk; objective-level validation pending",
+      "source": "Uploaded 2017–18 Year 4 small-steps summaries; DfE programmes of study"
+    }
+  ],
+  "activity_caveats": {
+    "curves": "The coordinate plotting supports Year 4 position work; quadratic functions are enrichment, not a Year 4 requirement.",
+    "painted": "Painted-cube counting is enrichment; do not count it as complete Year 4 shape or volume coverage.",
+    "arrays": "Supports factor pairs and counting area, but does not cover the full multiplication curriculum."
+  },
+  "pathways": [
+    {
+      "id": "early",
+      "title": "Early exploration",
+      "stage": "Early years",
+      "ages": "Before Reception",
+      "focus": "Matching, sorting, quantities, patterns, shape.",
+      "investigation": "Sort natural objects in several ways; build and compare towers.",
+      "basis": "EYFS; White Rose Reception overview",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "reception",
+      "title": "Reception",
+      "stage": "EYFS",
+      "ages": "4–5",
+      "focus": "Number composition, counting, spatial reasoning.",
+      "investigation": "Make a number in different ways using stones and drawings.",
+      "basis": "EYFS; White Rose Reception overview",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "y1",
+      "title": "Year 1",
+      "stage": "KS1",
+      "ages": "5–6",
+      "focus": "Number bonds, place value, measures, shape.",
+      "investigation": "Make a shop with objects and homemade coins.",
+      "basis": "DfE KS1; White Rose primary overview",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "y2",
+      "title": "Year 2",
+      "stage": "KS1",
+      "ages": "6–7",
+      "focus": "Equal groups, fractions, time, simple data.",
+      "investigation": "Build arrays, share objects and explain leftovers.",
+      "basis": "DfE KS1; White Rose primary overview",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "y3",
+      "title": "Year 3",
+      "stage": "KS2",
+      "ages": "7–8",
+      "focus": "Three-digit numbers, calculation, fractions, measurement.",
+      "investigation": "Design a measured route and compare ways to calculate its length.",
+      "basis": "DfE Year 3; uploaded Year 3 pack missing",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "y4",
+      "title": "Year 4",
+      "stage": "KS2",
+      "ages": "8–9",
+      "focus": "Four-digit numbers, factors, decimals, area, coordinates.",
+      "investigation": "Connect arrays to factor pairs; investigate shapes on a coordinate grid.",
+      "basis": "DfE Year 4; uploaded 2017–18 White Rose pack",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "y5",
+      "title": "Year 5",
+      "stage": "KS2",
+      "ages": "9–10",
+      "focus": "Fractions, decimals, percentages, volume, geometry.",
+      "investigation": "Build cuboids with the same number of blocks and compare dimensions.",
+      "basis": "DfE Year 5; White Rose primary overview",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "y6",
+      "title": "Year 6",
+      "stage": "KS2",
+      "ages": "10–11",
+      "focus": "Ratio, algebra, fractions, measures, statistics.",
+      "investigation": "Investigate recipes at different scales and justify a general rule.",
+      "basis": "DfE Year 6; White Rose primary overview",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "y7",
+      "title": "Year 7 planning",
+      "stage": "KS3",
+      "ages": "11–12",
+      "focus": "Number structure, expressions, graphs, proportion.",
+      "investigation": "Compare puzzle strategies and write rules that predict outcomes.",
+      "basis": "DfE KS3; White Rose secondary overview",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "y8",
+      "title": "Year 8 planning",
+      "stage": "KS3",
+      "ages": "12–13",
+      "focus": "Equations, geometry, data, probability.",
+      "investigation": "Design a fair game and test what makes its outcomes convincing.",
+      "basis": "DfE KS3; White Rose secondary overview",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "y9",
+      "title": "Year 9 planning",
+      "stage": "KS3",
+      "ages": "13–14",
+      "focus": "Functions, similarity, reasoning, modelling.",
+      "investigation": "Compare curve models and explain where each model stops being useful.",
+      "basis": "DfE KS3; White Rose secondary overview",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "y10",
+      "title": "Year 10 planning",
+      "stage": "KS4",
+      "ages": "14–15",
+      "focus": "GCSE Foundation/Higher content and reasoning.",
+      "investigation": "Connect a practical construction to several exam-style representations.",
+      "basis": "DfE GCSE; White Rose secondary overview",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "y11",
+      "title": "Year 11 planning",
+      "stage": "KS4",
+      "ages": "15–16",
+      "focus": "GCSE consolidation, application and problem solving.",
+      "investigation": "Revisit an unfamiliar problem, compare methods and justify the most efficient.",
+      "basis": "DfE GCSE; exam-board mapping pending",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "y12",
+      "title": "Year 12 planning",
+      "stage": "KS5",
+      "ages": "16–17",
+      "focus": "Proof, functions, calculus, statistics, mechanics.",
+      "investigation": "Connect a moving point, its graph and rate of change.",
+      "basis": "DfE AS/A level; proposed sequence, not prescribed yearly allocation",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "y13",
+      "title": "Year 13 planning",
+      "stage": "KS5",
+      "ages": "17–18",
+      "focus": "Advanced modelling, calculus, inference and mechanics.",
+      "investigation": "Build and critique a model using assumptions, calculations and evidence.",
+      "basis": "DfE A level; proposed sequence, not prescribed yearly allocation",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "functional",
+      "title": "Functional Skills",
+      "stage": "Flexible routes",
+      "ages": "Any suitable age",
+      "focus": "Entry Levels 1–3, Levels 1–2.",
+      "investigation": "Plan an event budget, measurements and quantities using real constraints.",
+      "basis": "DfE Functional Skills",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "core",
+      "title": "Core Maths",
+      "stage": "KS5",
+      "ages": "Usually 16+",
+      "focus": "Applied quantitative and statistical reasoning.",
+      "investigation": "Assess a real numerical claim and communicate the uncertainty.",
+      "basis": "DfE Core Maths; specification mapping pending",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "further",
+      "title": "Further Mathematics",
+      "stage": "KS5",
+      "ages": "Usually 16+",
+      "focus": "Additional pure mathematics and optional branches.",
+      "investigation": "Explore transformations and construct a proof of what stays unchanged.",
+      "basis": "DfE Further Maths; awarding-body options pending",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    },
+    {
+      "id": "resit",
+      "title": "GCSE resit / return to maths",
+      "stage": "Flexible routes",
+      "ages": "16+ / adults",
+      "focus": "Rebuild foundations toward GCSE or personal goals.",
+      "investigation": "Use an age-respectful project to identify and practise missing foundations.",
+      "basis": "DfE GCSE; White Rose post-16 evaluation",
+      "status": "framework only — content and objective mapping pending",
+      "sequence": "Proposed Maths Wednesdays pathway; year placement is a guide, not a learner lock"
+    }
+  ],
+  "rules": [
+    "Curriculum reference is England, not a claim of one UK-wide national curriculum.",
+    "Year labels are navigation aids; prerequisites and learner goals guide placement.",
+    "KS3/KS4/KS5 year allocations are proposed planning, not DfE-prescribed annual sequences.",
+    "Year 4 small-step documents are the 2017–18 edition, not assumed to be the latest White Rose scheme.",
+    "Ready-to-progress criteria support prioritisation but are not the whole primary curriculum.",
+    "Essential understanding, optional depth and exam-specific requirements must remain distinct.",
+    "No full White Rose schemes or worksheets are redistributed with this package."
+  ]
+}

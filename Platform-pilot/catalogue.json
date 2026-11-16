@@ -1,0 +1,5 @@
+[
+ {"id":"arrays","title":"Arrays & possibilities","theme":"Number & patterns","stage":"KS2","ages":"7–11","entry":"Count equal groups","depth":"Factor pairs and systematic enumeration","description":"Build rectangles. How many ways can you arrange the same number of counters?","symbol":"▦"},
+ {"id":"painted","title":"Inside the painted cube","theme":"Shape & construction","stage":"KS2","ages":"8–12","entry":"Count corners, edges and faces","depth":"Generalise counts with algebra","description":"Explore a painted 3 × 3 × 3 cube, then explain what is hidden inside.","symbol":"⬡"},
+ {"id":"curves","title":"A curve from points","theme":"Curves & motion","stage":"KS2","ages":"8–12","entry":"Read positive coordinates","depth":"Square-number patterns and functions","description":"Place points on a grid and connect them. What changes as x grows?","symbol":"⌁"}
+]

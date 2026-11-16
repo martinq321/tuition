@@ -1,0 +1,62 @@
+{
+  "project": "Maths Wednesdays platform",
+  "version": "0.3.0",
+  "status": "local pilot; not deployed",
+  "scope": "new platform starter, not a complete export of the existing sites",
+  "default_theme": "orbital",
+  "implemented": [
+    "tutor and learner login",
+    "server-side activity release checks",
+    "hidden and locked previews",
+    "assignments with goals and review dates",
+    "server-marked numeric homework",
+    "attempt and hint recording",
+    "theme and key-stage browsing",
+    "three sample investigations",
+    "protected /admin page",
+    "learner suspension and session revocation",
+    "administrator password reset",
+    "self-service password change using current password",
+    "bulk theme permissions",
+    "read-only learner menu preview",
+    "19 all-age planning routes",
+    "14-unit Year 4 topic crosswalk",
+    "14 constrained practice generators",
+    "printable learner sheets and parent keys",
+    "parent account linking",
+    "topic release permissions",
+    "private room text chat",
+    "server-validated shared Mastermind",
+    "room pause and close controls",
+    "per-learner chat and gameplay switches"
+  ],
+  "not_implemented": [
+    "live hosting",
+    "subscription payments and entitlement",
+    "multi-tutor isolation",
+    "migration of existing activities",
+    "complete curriculum mapping",
+    "age filtering",
+    "assessment reports",
+    "scheduled releases",
+    "email account recovery",
+    "objective-level curriculum mapping",
+    "live internet deployment",
+    "integrated voice/video",
+    "WebSocket transport",
+    "full generated-practice curriculum coverage"
+  ],
+  "principles": [
+    "accessibility and full mathematical depth are separate",
+    "hands-on companions",
+    "single activity source with personalised menus",
+    "evidence not scores alone",
+    "themes plus curriculum pathways"
+  ],
+  "index_delivery_preference": "For existing-site index updates supply both the shared J/K student index and the full Puzzles index.",
+  "source_material_pending": [
+    "Third intended curriculum ZIP / Year 3 pack",
+    "current full-term White Rose schemes and mapping documents",
+    "latest site files for verified import"
+  ]
+}

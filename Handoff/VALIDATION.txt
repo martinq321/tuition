@@ -1,0 +1,15 @@
+Validation — 16 November 2026
+
+PASS: all local HTML href/src file targets resolve in both site snapshots.
+PASS: every main menu includes exactly one Creature Studio, Spiral Gallery, Dobble and String Lab link.
+PASS: 143 JavaScript units pass Node syntax checks across both site folders. Two additional Rupert Cube shader blocks are GLSL, not JavaScript; they are excluded from this JavaScript claim and need WebGL rendering tests.
+PASS: new mathematical/interaction tests run with DOM stubs: route rejection and animation steps; q=2,3,5 finite-plane card counts, sizes and every pair; valid, invalid and incomplete Dobble decks; complex identity, origin exclusion and gallery mode execution.
+PASS: no CDN/font runtime dependency remains in the packaged static pages; optional external sources/videos remain links.
+
+LIMIT: managed browser preview occupied by another preview. No browser rendering, physical phone, screen-reader or full gameplay test was performed. Node DOM stubs are not browser tests. Existing legacy games were preserved; their mathematical/UI issues are listed in the task plan and are not claimed fixed.
+
+GitHub snapshots: puzzles/main, maths-wednesdays-j/main and maths-wednesdays-k/main downloaded during this work. J/K file sets match; Curve Lab differs only in theme fallback. Shared student version uses Orbital.
+
+New source provenance: original browser implementations inspired by the linked Mathematica discussion and the 3Blue1Brown Print Gallery article. worm1.nb and worm2.nb input cells were inspected; not executed in Mathematica. Supplied raw notebooks are not duplicated into this small offline package.
+
+PASS: 11 platform-pilot automated tests (authentication/permissions/generators/rooms and related checks). This does not constitute an independent security review.
