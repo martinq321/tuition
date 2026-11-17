@@ -2,7 +2,7 @@
   "project": "Maths Wednesdays",
   "date": "2026-11-17",
   "change": "Base44 screenshot-inspired front end and guided lessons",
-  "status": "packaged_for_manual_upload_not_deployed",
+  "status": "uploaded_to_github_as_separate_development_site",
   "upload_location": "martinq321/tuition repository root",
   "activity_count": 51,
   "guided_lessons": 12,
@@ -26,5 +26,12 @@
     "Persistence and profile separation checked",
     "Unfinished attempt counted",
     "390px phone layout and menu/search checked"
+  ],
+  "entry_point": "development/index.html",
+  "landing_page": "index.html",
+  "rollback_file": "site-update-rollback.json",
+  "original_sites_preserved": [
+    "puzzles/index.html",
+    "students/index.html"
   ]
 }
