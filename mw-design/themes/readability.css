@@ -1,0 +1,16 @@
+/* Shared readable interface type; diagrams retain their own geometry. */
+html{font-size:18px}
+body{font-size:18px;line-height:1.6}
+p,li,dt,dd{line-height:1.6}
+:where(p,label,summary,small,figcaption,.small,.muted,.hint,.help,.note,.caption,.subtitle,.sub,.box-count,.label,.badge,.eyebrow,.tag,.footnote){font-size:max(1rem,16px)!important;line-height:1.5!important}
+:where(button,select,input:not([type=range]):not([type=checkbox]):not([type=radio]),textarea){font-size:max(1rem,16px)!important}
+:where(a.button,button:not(.swatch),select){min-height:44px}
+:where(nav a,footer a,.geo-secondary,.geo-open,.theme-picker select){font-size:17px!important}
+.geo-featured p{font-size:18px!important}.geo-featured .geo-open{font-size:18px!important}
+:where(h2){line-height:1.25}:where(h3){line-height:1.3}
+:where(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #2268a2;outline-offset:4px}
+@media(max-width:700px){.geo-copy .actions{flex-wrap:wrap}.geo-featured a{grid-template-columns:minmax(0,1fr) 65px}.geo-featured svg{width:65px}.boxes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.geo-copy .geo-subtitle{font-size:24px!important}
+header .theme-picker select{max-width:none!important;width:215px}
+@media(max-width:700px){.geo-copy .geo-subtitle{font-size:21px!important}}

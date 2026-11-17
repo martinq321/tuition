@@ -1,9 +1,9 @@
 /* Apply before first paint; store only this display preference, separately from notebooks. */
 (function(){
   'use strict';
-  var key='maths-wednesdays-theme-v1',allowed=['dark','graph','sketch','quiet','ghost'];
-  function apply(value){document.documentElement.dataset.theme=allowed.indexOf(value)>=0?value:'dark';}
-  try{apply(localStorage.getItem(key));}catch(error){apply('dark');}
+  var key='maths-wednesdays-theme-v1',allowed=['dark','graph','ghost'];
+  function apply(value){if(value==='quiet'||value==='sketch')value='ghost';document.documentElement.dataset.theme=allowed.indexOf(value)>=0?value:'graph';}
+  try{apply(localStorage.getItem(key));}catch(error){apply('graph');}
   document.addEventListener('DOMContentLoaded',function(){
     var picker=document.getElementById('theme-choice');
     if(!picker)return;

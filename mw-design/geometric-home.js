@@ -1,7 +1,7 @@
 /* Optional theme presentation; activity, lesson and notebook logic stays in site.js. */
 (function(){
 'use strict';
-const artwork='<svg class="geo-art" viewBox="0 0 1000 700" aria-hidden="true"><path d="M0 280 850 0 1000 82 150 362Z"/><path d="M0 280 150 362 150 650 0 568Z"/><path d="M150 362 1000 82 1000 370 150 650 150 584 925 329 925 172 150 428Z"/><path d="M150 584 925 329 1000 370 150 650Z"/><path class="accent" d="M150 584 925 329"/></svg>';
+const artwork='<svg xmlns="http://www.w3.org/2000/svg" class="geo-art" viewBox="0 0 1000 800" aria-hidden="true"><g fill="white" stroke="currentColor" stroke-linejoin="round"><path d="M80 240 520 0 790 155 350 405Z M80 240V540L350 700V405 M350 700 790 455V155 M180 247 520 60 687 157 350 345Z M180 247V483L350 582 687 395V157 M350 345V582"/><path d="M460 240 840 450 650 560 270 350Z M460 240V330L687 455 650 476 270 266V350 M650 560V650L840 540V450 M270 350V440L650 650"/><path d="M65 610 330 460 480 545 215 700Z M65 610V700L215 790V700 M215 790 480 635V545 M155 610 330 510 390 545 215 650Z"/><path class="accent" fill="none" d="M350 582 687 395 M650 560V650L840 540"/></g></svg>';
 const icons=[
 '<path d="M40 8 74 28 40 48 6 28Z M6 28V67L40 87 74 67V28 M40 48V87 M23 18 57 38V77 M57 18 23 38V77 M6 47 40 67 74 47"/>',
 '<path d="M8 39 37 22 66 39 37 56Z M8 39V50L37 67 66 50V39 M37 56V67 M22 15 32 9 32 34 61 51 51 57 22 40Z M22 40V15 M51 57V74L61 80V51"/>',

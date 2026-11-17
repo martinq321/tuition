@@ -1,0 +1,18 @@
+/* Shared activity chrome. Puzzle tiles, swatches, SVG and canvas retain their semantics. */
+:root[data-theme="graph"]{color-scheme:light;--bg:#fff;--paper:#fff;--panel:#fff;--card:#fff;--ink:#162e48;--text:#162e48;--fg:#162e48;--muted:#435e76;--line:#b8cee1;--border:#b8cee1;--edge:#b8cee1;--accent:#1c5a96;--brand:#1c5a96;--soft:#edf5fc}
+:root[data-theme="ghost"]{color-scheme:light;--bg:#fff;--paper:#fff;--panel:#fff;--card:#fff;--ink:#171717;--text:#171717;--fg:#171717;--muted:#50545a;--line:#d1d5d9;--border:#d1d5d9;--edge:#d1d5d9;--accent:#c71820;--brand:#c71820;--soft:#f4f5f6}
+html:is([data-theme="graph"],[data-theme="ghost"]) body{background-color:#fff!important;color:var(--ink)!important;font-family:Arial,Helvetica,sans-serif!important}
+[data-theme="graph"] body{background-image:linear-gradient(#81b5df38 1px,transparent 1px),linear-gradient(90deg,#81b5df38 1px,transparent 1px),linear-gradient(#81b5df24 1px,transparent 1px),linear-gradient(90deg,#81b5df24 1px,transparent 1px)!important;background-size:120px 120px,120px 120px,24px 24px,24px 24px!important}
+[data-theme="ghost"] body{background-image:url('geometry.svg')!important;background-position:calc(100% + 230px) 65px!important;background-size:600px 480px!important;background-repeat:no-repeat!important}
+html:is([data-theme="graph"],[data-theme="ghost"]) :where(header,footer,.panel,.card,.box,.controls,.sidebar,.intro-card,.content,.sheet){background:#fffffff5!important;color:var(--ink)!important;border-color:var(--edge)!important;box-shadow:none!important}
+[data-theme="ghost"] :where(.panel,.card,.box,button,input,select,textarea){border-radius:2px!important}
+html:is([data-theme="graph"],[data-theme="ghost"]) :where(h1,h2,h3,h4,p,label,summary,small,.muted,.hint,.help,.note,.small,.intro,.subtitle,.sub,.brand){color:var(--ink)}
+html:is([data-theme="graph"],[data-theme="ghost"]) :where(a){color:var(--accent);text-underline-offset:3px}
+html:is([data-theme="graph"],[data-theme="ghost"]) :where(input:not([type=range]):not([type=checkbox]):not([type=radio]),select,textarea){background:#fff;color:var(--ink);border-color:var(--edge)}
+html:is([data-theme="graph"],[data-theme="ghost"]) :where(button.primary,.button.primary){background:var(--accent)!important;color:white!important}
+.mw-theme-bar{box-sizing:border-box;position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;grid-column:1/-1;flex-basis:100%;width:100%;padding:12px 24px;background:#fff;color:#172e40;border-bottom:1px solid #bacbd9;font:17px/1.4 Arial,Helvetica,sans-serif}
+.mw-theme-bar a{color:#172e40!important;font-weight:700;text-decoration:underline}.mw-theme-bar label{display:flex;align-items:center;gap:10px;color:#172e40!important;font-size:17px!important}.mw-theme-bar select{font:17px Arial,Helvetica,sans-serif!important;background:white!important;color:#172e40!important;border:1px solid #a8b8c6!important;min-height:44px;padding:8px;max-width:210px}
+@media(max-width:600px){.mw-theme-bar{padding:10px 14px}.mw-theme-bar label{margin-left:auto}.mw-theme-bar select{max-width:190px}}
+html:is([data-theme="graph"],[data-theme="ghost"]) :where(nav a,button:not(.swatch):not(.tile):not(.cell):not(.peg):not(.colour):not(.color)){background-color:var(--soft);color:var(--ink);border-color:var(--edge)}
+html:is([data-theme="graph"],[data-theme="ghost"]) :where(nav a[aria-current],button[aria-pressed=true]:not(.swatch)){background-color:var(--accent);color:#fff}
+html:is([data-theme="graph"],[data-theme="ghost"]) output{color:var(--accent);font-size:18px;font-weight:700}
