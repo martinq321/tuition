@@ -93,5 +93,18 @@
       "Division as grouping and sharing",
       "Persistent profile-linked evidence and delayed consolidation"
     ]
+  },
+  "manipulatives": {
+    "path": "block-workshop.html",
+    "status": "Initial interactive implementation; browser and touch QA pending",
+    "features": [
+      "Pointer dragging and tap-to-place",
+      "Ones, tens and hundreds with exchange and undo",
+      "Five equal-group challenges",
+      "Sweets and packs representation",
+      "Original animated Alice and Bob guides with reduced-motion support"
+    ],
+    "persistence": "Page session only",
+    "validation": "Logic tests passed for all five challenges, combining, exchange value conservation and undo"
   }
 }
