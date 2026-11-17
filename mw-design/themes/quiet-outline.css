@@ -1,0 +1,2 @@
+/* Approved direction 1: fine black outline, generous white space, cropped geometry. */
+:root[data-theme="quiet"]{--geo-stroke:#171717;--geo-weight:1.6px;--geo-red-weight:2px;--geo-rule:#292929}
