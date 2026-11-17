@@ -1,0 +1,8 @@
+/* Graph paper: white sheets, pale blue 24px squares and ink-blue controls. */
+:root[data-theme="graph"]{color-scheme:light;--bg:#fff;--panel:#fff;--edge:#b8cee1;--ink:#162e48;--muted:#4c6277;--green:#176046;--yellow:#855e00;--blue:#1c5a96;--purple:#68429b;--radius:16px;--header-bg:#ffffffF5;--soft:#e8f2fa;--action-hover:#104b37}
+[data-theme="graph"] body,[data-theme="graph"] .gridback,[data-theme="graph"] .hero{background-color:#fff;background-image:linear-gradient(#81b5df38 1px,transparent 1px),linear-gradient(90deg,#81b5df38 1px,transparent 1px),linear-gradient(#81b5df24 1px,transparent 1px),linear-gradient(90deg,#81b5df24 1px,transparent 1px);background-size:120px 120px,120px 120px,24px 24px,24px 24px}
+[data-theme="graph"] .card{box-shadow:0 3px 0 #dae8f2}
+[data-theme="graph"] .try{box-shadow:7px 9px 0 #dceaf570}
+[data-theme="graph"] .section{border-color:#cbddeb}
+[data-theme="graph"] footer{background:#fffffff0}
+[data-theme="graph"] .hero h1 em{text-decoration:underline;text-decoration-color:#acd2f1;text-decoration-thickness:5px;text-underline-offset:8px}
