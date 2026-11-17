@@ -6,3 +6,8 @@
 [data-theme="graph"] .section{border-color:#cbddeb}
 [data-theme="graph"] footer{background:#fffffff0}
 [data-theme="graph"] .hero h1 em{text-decoration:underline;text-decoration-color:#acd2f1;text-decoration-thickness:5px;text-underline-offset:8px}
+/* Square corners and blue accents throughout the learning hub. */
+:root[data-theme="graph"]{--radius:0px;--green:#1c5a96;--action-hover:#154672}
+[data-theme="graph"] :is(.card,.try,.button,button:not(.swatch),input,select,textarea,.status,.notice,.tag,.badge,.pill,.prompt,details,summary){border-radius:0!important;box-shadow:none!important}
+[data-theme="graph"] :is(.status,.notice,.prompt){background:#e8f2fb;color:#244d72;border-left:3px solid #74a9d4}
+[data-theme="graph"] :is(.tag,.badge,.pill){background:#e3effa;color:#24577f;border-color:#bdd7ec}
