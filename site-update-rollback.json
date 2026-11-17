@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-17",
+  "repository": "martinq321/tuition",
+  "branch": "main",
+  "purpose": "Undo the third-site landing-page change; preserve all original games and student files.",
+  "previous_index_commit": "0168891c6d5344de7a3c3d99b91459fd9c236a08",
+  "instructions": [
+    "Fetch the latest index.html blob SHA before updating it.",
+    "Replace top-level index.html with the exact content in actions[0].content and commit.",
+    "The development folder and mw-design files may remain; with no landing-page link they do not affect either original site.",
+    "Local learner records remain in browser storage. This rollback does not delete them."
+  ],
+  "actions": [
+    {
+      "action": "replace_file",
+      "path": "index.html",
+      "content": "<!doctype html><html lang=\"en\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Maths Wednesdays · Offline V3</title><style>body{font:18px/1.6 system-ui;background:#121a30;color:#eef5ff;max-width:1000px;margin:50px auto;padding:20px}h1{font-size:clamp(32px,6vw,54px);line-height:1.1}nav{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}a{color:#93efdd}.card{display:block;padding:28px;border:1px solid #637a99;border-radius:18px;background:#1e2d4d;text-decoration:none}small{color:#b8c7df}p{max-width:75ch}</style><small>MATHS WEDNESDAYS · COMPLETE OFFLINE REVIEW</small><h1>Choose your site.</h1><p>Open either version below. All activity files are included; external videos and reference sites still need internet.</p><nav><a class=\"card\" href=\"puzzles/index.html\"><h2>Full Puzzles site →</h2><p>The complete collection, planning pages and new investigations.</p></a><a class=\"card\" href=\"students/index.html\"><h2>Students J / K →</h2><p>One shared student version, including the new investigations.</p></a></nav><p><a href=\"Handoff/DEVELOPMENT-PLAN.html\">Development hierarchy: 29 tasks →</a></p><p><a href=\"START-HERE.txt\">Opening and upload instructions</a> · <a href=\"Handoff/project-state.json\">Project JSON</a> · <a href=\"Handoff/DISCUSSION-RECORD.md\">Discussion record</a></p><p><small>New pages and local links have automated checks. Full browser/device testing remains outstanding. The separate Platform-pilot folder needs Python; it does not run by double-clicking an HTML file.</small></p></html>"
+    }
+  ],
+  "new_site_entry": "development/index.html",
+  "preserve_paths": [
+    "puzzles/",
+    "students/"
+  ],
+  "optional_cleanup_paths": [
+    "development/index.html",
+    "mw-design/"
+  ],
+  "automatic_deletion": false
+}
