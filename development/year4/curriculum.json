@@ -62,5 +62,36 @@
       "Delayed review and teacher assessment"
     ]
   },
-  "progress": "Workshop records are separate, browser-local and not yet connected to learner profiles."
+  "progress": "Workshop records are separate, browser-local and not yet connected to learner profiles.",
+  "multiplication": {
+    "status": "Exploratory workshop available; full block remains in development",
+    "path": "multiplication.html",
+    "representations": [
+      "Array with movable partition",
+      "Equal groups with matching coloured parts",
+      "Number line with split jumps"
+    ],
+    "strategies": [
+      "Partition one factor and multiply both parts",
+      "Multiply by a nearby ten and compensate",
+      "Double one factor and halve an even second factor"
+    ],
+    "range": {
+      "rowSize": [
+        2,
+        40
+      ],
+      "rows": [
+        2,
+        12
+      ]
+    },
+    "assessment": "Session-only completed and unassisted first-correct counts; no mastery claims",
+    "next": [
+      "Animate regrouping between representations",
+      "Expanded and compact written multiplication with exchanges",
+      "Division as grouping and sharing",
+      "Persistent profile-linked evidence and delayed consolidation"
+    ]
+  }
 }
