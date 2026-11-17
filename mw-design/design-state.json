@@ -1,0 +1,30 @@
+{
+  "project": "Maths Wednesdays",
+  "date": "2026-11-17",
+  "change": "Base44 screenshot-inspired front end and guided lessons",
+  "status": "packaged_for_manual_upload_not_deployed",
+  "upload_location": "martinq321/tuition repository root",
+  "activity_count": 51,
+  "guided_lessons": 12,
+  "questions": 48,
+  "design_reference": "User-provided screenshots",
+  "lesson_content": "Original questions in the requested four topic areas, not an exact export of unseen Base44 lessons",
+  "progress_storage": "localStorage per local learner profile; no server or authentication",
+  "existing_game_ui": "unchanged",
+  "existing_game_scores_integrated": false,
+  "next_tasks": [
+    "Teacher review of starter question sequence",
+    "Physical mobile/tablet testing",
+    "Design rollout inside game pages",
+    "Secure accounts and per-learner access controls",
+    "Server-side progress and parent dashboard"
+  ],
+  "validation": [
+    "All catalogue paths exist in current repository tree",
+    "12 lessons / 48 valid multiple-choice items",
+    "Browser first-error retry and completion totals correct",
+    "Persistence and profile separation checked",
+    "Unfinished attempt counted",
+    "390px phone layout and menu/search checked"
+  ]
+}
