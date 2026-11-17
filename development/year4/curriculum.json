@@ -1,0 +1,66 @@
+{
+  "title": "Year 4 · Maths Wednesdays",
+  "status": "Initial development",
+  "basis": "White Rose-informed adaptation with original activities; not an official White Rose product",
+  "sourceEdition": "Uploaded Year 4 guide: 2017–18; term structure cross-checked against published version 3 overview",
+  "sources": [
+    "https://assets.whiteroseeducation.com/new-schemes/Summer%20key%20changes%20document%20-%20FINAL.pdf",
+    "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study"
+  ],
+  "principles": [
+    "Practical exploration, visual representation, explanation, then consolidation",
+    "Flexible pacing; suggested year is a curriculum reference, not a limit",
+    "Record first attempts and support used; completion is not mastery",
+    "Original questions and illustrations; do not redistribute source worksheets"
+  ],
+  "terms": [
+    {
+      "term": "Autumn",
+      "blocks": [
+        "Place value",
+        "Addition and subtraction",
+        "Area",
+        "Multiplication and division A"
+      ]
+    },
+    {
+      "term": "Spring",
+      "blocks": [
+        "Multiplication and division B",
+        "Length and perimeter",
+        "Fractions",
+        "Decimals A"
+      ]
+    },
+    {
+      "term": "Summer",
+      "blocks": [
+        "Decimals B",
+        "Money",
+        "Time",
+        "Shape",
+        "Statistics",
+        "Position and direction"
+      ]
+    }
+  ],
+  "placeValue": {
+    "status": "Starter workshop available; full teaching sequence in development",
+    "available": [
+      "Represent four-digit numbers",
+      "Partition in different ways",
+      "Compare numbers",
+      "Find 1,000 more or less",
+      "Round to 10, 100 or 1,000",
+      "Count through zero",
+      "Read Roman numerals to 100"
+    ],
+    "remaining": [
+      "Touch number-line estimation",
+      "Counting in 25s and 1,000s",
+      "Expanded reasoning tasks",
+      "Delayed review and teacher assessment"
+    ]
+  },
+  "progress": "Workshop records are separate, browser-local and not yet connected to learner profiles."
+}
