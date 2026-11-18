@@ -1,0 +1,537 @@
+{
+  "version": 1,
+  "updated": "2026-11-18",
+  "status": "curated investigation pathways; not full courses",
+  "principle": "Accessible entry is distinct from depth of formal analysis",
+  "stages": {
+    "year4": {
+      "label": "Year 4",
+      "investigations": [
+        {
+          "activity": "patterns",
+          "curriculumConnection": "Multiplication facts and square numbers",
+          "start": "Highlight the 4-times table. What repeats?",
+          "investigate": "Compare multiples of 2, 4 and 8. Which highlighted cells do they share?",
+          "deeper": "Explain why every multiple of 8 is also a multiple of 4. Try another pair.",
+          "practical": "Counters and a printed hundred square."
+        },
+        {
+          "activity": "factors",
+          "curriculumConnection": "Multiplication and rectangular arrays",
+          "start": "Arrange 12 counters into a rectangle. Can you make another?",
+          "investigate": "Find every rectangle for 24. Decide whether turning a rectangle makes a new factor pair.",
+          "deeper": "Which numbers make only one rectangle, apart from turning it?",
+          "practical": "24 counters or small paper squares."
+        },
+        {
+          "activity": "fences",
+          "curriculumConnection": "Perimeter of rectangles",
+          "start": "Make a rectangle with a perimeter of 36 units. Count its sides.",
+          "investigate": "Keep the perimeter fixed and change the rectangle. Is the area always the same?",
+          "deeper": "Find the largest area using whole-number sides. Explain how you checked them all.",
+          "practical": "36 matchsticks or a loop of string on squared paper."
+        },
+        {
+          "activity": "poly",
+          "curriculumConnection": "Area by counting squares",
+          "start": "Make two different shapes using five squares.",
+          "investigate": "Compare shapes with the same area. Do their perimeters match?",
+          "deeper": "Explain which shared edges reduce the outside perimeter.",
+          "practical": "Five paper squares per person."
+        },
+        {
+          "activity": "cubes",
+          "curriculumConnection": "Counting, grouping and spatial reasoning · enrichment",
+          "start": "Paint a 2 × 2 × 2 cube. Inspect one small cube.",
+          "investigate": "Try a 3 × 3 × 3 cube. Sort by the number of painted faces; count each group.",
+          "deeper": "Can you predict which cubes have no paint before looking inside? No formula needed.",
+          "practical": "Small cubes; colour the outside of a paper cube model."
+        },
+        {
+          "activity": "mastermind",
+          "curriculumConnection": "Reasoning · enrichment",
+          "start": "Make a guess and explain what one clue tells you.",
+          "investigate": "Keep a short list of what you know. Make a guess to test one idea.",
+          "deeper": "Can an unsuccessful guess still be useful? Show an example.",
+          "practical": "Coloured counters and a paper recording grid."
+        }
+      ],
+      "gaps": "Existing workshops retained; coverage and assessment require further development."
+    },
+    "year5": {
+      "label": "Year 5",
+      "investigations": [
+        {
+          "activity": "tree",
+          "curriculumConnection": "Multiplication and division A · factors and primes",
+          "start": "Split 24 into two factors, then keep splitting.",
+          "investigate": "Start with a different factor pair. Compare the prime leaves.",
+          "deeper": "Explain why the order changes but the prime factors do not.",
+          "practical": "Number cards and string to connect a tree."
+        },
+        {
+          "activity": "cuboids",
+          "curriculumConnection": "Volume · unit cubes",
+          "start": "Build a cuboid with 30 cubes. Record its three dimensions.",
+          "investigate": "Find all the cuboids with volume 30. How will you avoid counting rotations twice?",
+          "deeper": "Compare with 24 or 48 cubes. Predict which target gives more possibilities.",
+          "practical": "30 cubes and squared paper."
+        },
+        {
+          "activity": "cubes",
+          "curriculumConnection": "Volume and multiplication · enrichment",
+          "start": "Inspect a 3 × 3 × 3 painted cube. Count corners first.",
+          "investigate": "Record groups with 0, 1, 2 and 3 painted faces. Repeat for a 4 × 4 × 4 cube.",
+          "deeper": "Predict one group for a 5 × 5 × 5 cube and justify it with a sketch.",
+          "practical": "Sugar cubes or wooden cubes; paint or coloured paper."
+        },
+        {
+          "activity": "fences",
+          "curriculumConnection": "Perimeter and area",
+          "start": "Make two rectangles with perimeter 36.",
+          "investigate": "Tabulate side lengths and areas. Which rectangle encloses the most space?",
+          "deeper": "Does doubling each side double the area? Test and explain.",
+          "practical": "String and squared paper."
+        },
+        {
+          "activity": "code",
+          "curriculumConnection": "Position and direction · enrichment",
+          "start": "Predict where a short sequence of moves will finish.",
+          "investigate": "Use a repeat to trace a square. Change its size without changing its shape.",
+          "deeper": "Explain how turning differs from moving up or down.",
+          "practical": "Floor squares and arrow cards."
+        },
+        {
+          "activity": "cut",
+          "curriculumConnection": "Area and properties of shapes",
+          "start": "Rearrange a precut shape without gaps or overlaps.",
+          "investigate": "How can you check that the area has stayed the same?",
+          "deeper": "Compare two rearrangements: which lengths changed, and which quantities stayed fixed?",
+          "practical": "Paper shapes, scissors and squared paper."
+        }
+      ],
+      "gaps": "Existing workshops retained; coverage and assessment require further development."
+    },
+    "year6": {
+      "label": "Year 6",
+      "investigations": [
+        {
+          "activity": "patterns",
+          "curriculumConnection": "Factors, multiples and number properties",
+          "start": "Mark squares and multiples on the same grid.",
+          "investigate": "Which remainders can square numbers have when divided by 4? Gather evidence.",
+          "deeper": "Explain your prediction using even and odd numbers.",
+          "practical": "Counters arranged as square arrays."
+        },
+        {
+          "activity": "factors",
+          "curriculumConnection": "Systematic reasoning with factors",
+          "start": "Find every rectangular array for 48.",
+          "investigate": "Organise your factor pairs so you know none are missing.",
+          "deeper": "Compare the number of factors of 36 and 48. What is special about a square?",
+          "practical": "48 counters or squared paper."
+        },
+        {
+          "activity": "cubes",
+          "curriculumConnection": "Volume and sequences · enrichment",
+          "start": "Sort the small cubes in a painted 3 × 3 × 3 cube.",
+          "investigate": "Build a table for side lengths 2, 3, 4 and 5. Describe each group in words.",
+          "deeper": "Predict a larger cube without counting every small cube. Explain your method.",
+          "practical": "Cubes and a table of results."
+        },
+        {
+          "activity": "cut",
+          "curriculumConnection": "Area of triangles and parallelograms",
+          "start": "Rearrange a triangle or parallelogram into a familiar shape.",
+          "investigate": "Use the rearrangement to explain an area rule. Identify base and perpendicular height.",
+          "deeper": "Why is a sloping side not always the height?",
+          "practical": "Two identical paper triangles and a ruler."
+        },
+        {
+          "activity": "plant",
+          "curriculumConnection": "Simple formulae and sequences · enrichment",
+          "start": "Choose one mother plant and no other plants or coins. Play one day at a time.",
+          "investigate": "Record the coins earned each day and the running total. How are these different?",
+          "deeper": "Describe a rule in words; use letters only when the pattern is secure.",
+          "practical": "Counters for coins and beans for seeds."
+        },
+        {
+          "activity": "circle",
+          "curriculumConnection": "Angles and shape reasoning · enrichment",
+          "start": "Move a triangle with one side across the circle’s diameter.",
+          "investigate": "Measure the angle opposite the diameter in several positions. What stays the same?",
+          "deeper": "Can you explain it using triangles from the centre? This is beyond Year 6 core content.",
+          "practical": "Paper circle, ruler and protractor."
+        }
+      ],
+      "gaps": "Further workshops are still needed for fractions, decimals and percentages, ratio, arithmetic, statistics and coordinate transformations."
+    },
+    "year7": {
+      "label": "Year 7",
+      "investigations": [
+        {
+          "activity": "euclid",
+          "curriculumConnection": "Factors and highest common factor",
+          "start": "Tile a rectangle by taking away the largest possible square each time.",
+          "investigate": "Compare the last square’s side with the common factors of the original side lengths.",
+          "deeper": "Explain why replacing a rectangle by the remaining rectangle preserves common factors.",
+          "practical": "Squared paper and scissors."
+        },
+        {
+          "activity": "patterns",
+          "curriculumConnection": "Sequences and divisibility",
+          "start": "Highlight multiples of 3 in grids of different widths.",
+          "investigate": "How does changing the grid width change stripes and diagonals?",
+          "deeper": "Describe the pattern using row number and column number.",
+          "practical": "Printed number grids and coloured pencils."
+        },
+        {
+          "activity": "fences",
+          "curriculumConnection": "Algebra, area and perimeter",
+          "start": "Keep perimeter 36 and list several pairs of side lengths.",
+          "investigate": "Call one side x. Write the other side and then the area in terms of x.",
+          "deeper": "Explain why the areas rise and then fall.",
+          "practical": "String and squared paper."
+        },
+        {
+          "activity": "poly",
+          "curriculumConnection": "Area, perimeter and transformations",
+          "start": "Build a shape and turn or flip it.",
+          "investigate": "Decide when two shapes count as the same. Compare area and perimeter.",
+          "deeper": "Design a systematic way to list shapes made from four squares.",
+          "practical": "Four card squares per person."
+        },
+        {
+          "activity": "plant",
+          "curriculumConnection": "Sequences and tables",
+          "start": "Record daily coins and cumulative coins separately.",
+          "investigate": "Find a rule for the daily increase, then predict the next total.",
+          "deeper": "Explain why a constant increase in daily income gives a non-constant increase in total coins.",
+          "practical": "Beans and counters."
+        },
+        {
+          "activity": "mastermind",
+          "curriculumConnection": "Logical reasoning · enrichment",
+          "start": "Explain exactly what the feedback rules allow you to conclude.",
+          "investigate": "Compare a guess intended to win with a guess intended to learn.",
+          "deeper": "Count possible codes for a small version and eliminate them systematically.",
+          "practical": "Coloured counters and candidate-code cards."
+        }
+      ],
+      "gaps": "Further workshops are still needed for signed-number arithmetic, fractions, decimals, percentages, equations and statistics."
+    },
+    "year8": {
+      "label": "Year 8",
+      "investigations": [
+        {
+          "activity": "cubes",
+          "curriculumConnection": "Expressions and spatial reasoning",
+          "start": "Count edge cubes separately from corner cubes.",
+          "investigate": "Describe the number of cubes with two painted faces for side length n.",
+          "deeper": "Build and justify expressions for the other groups.",
+          "practical": "A cube model and labelled sketches."
+        },
+        {
+          "activity": "string",
+          "curriculumConnection": "Coordinates and linear relationships · enrichment",
+          "start": "Connect numbered points on two straight edges.",
+          "investigate": "Write coordinates for each end of a string. Change the pairing rule.",
+          "deeper": "The visible curve is an envelope: each string remains straight. Describe this distinction.",
+          "practical": "Card, ruler, thread and tape."
+        },
+        {
+          "activity": "cut",
+          "curriculumConnection": "Area and equivalent representations",
+          "start": "Rearrange a shape into a rectangle.",
+          "investigate": "Compare an area calculation before and after rearranging.",
+          "deeper": "Use the equal areas to justify an algebraic identity.",
+          "practical": "Paper shapes and squared paper."
+        },
+        {
+          "activity": "chance",
+          "curriculumConnection": "Probability and repeated trials · enrichment",
+          "start": "Predict what might vary when offspring are chosen at random.",
+          "investigate": "Repeat the same settings several times and record outcomes at the same day.",
+          "deeper": "Compare the mean and range. Explain why one run cannot establish a typical outcome.",
+          "practical": "Coins, beans and a shared results table."
+        },
+        {
+          "activity": "spiral",
+          "curriculumConnection": "Transformations and scale · enrichment",
+          "start": "Track the same feature through two repetitions.",
+          "investigate": "Describe the rotation and enlargement that take one copy to the next.",
+          "deeper": "How do lengths and areas change under the same enlargement?",
+          "practical": "Tracing paper and a ruler."
+        },
+        {
+          "activity": "euclid",
+          "curriculumConnection": "Factors, algorithms and reasoning",
+          "start": "Use the square-removal process on two different rectangles.",
+          "investigate": "Write the steps as repeated subtraction or division with remainders.",
+          "deeper": "Explain why the process terminates for positive whole-number sides.",
+          "practical": "Squared paper."
+        }
+      ],
+      "gaps": "Further workshops are still needed for ratio and proportion, equations, standard form, probability models and statistical displays."
+    },
+    "year9": {
+      "label": "Year 9",
+      "investigations": [
+        {
+          "activity": "cubes",
+          "curriculumConnection": "Quadratic and cubic expressions",
+          "start": "Predict each painted-face group for side length n.",
+          "investigate": "Expand the expressions and check that all four groups add to n cubed.",
+          "deeper": "Explain the identity geometrically, including why small n needs care.",
+          "practical": "Labelled cube sketches."
+        },
+        {
+          "activity": "fences",
+          "curriculumConnection": "Quadratic graphs and optimisation",
+          "start": "For perimeter 36, record area against one side length.",
+          "investigate": "Plot the values and explain the symmetry about the best rectangle.",
+          "deeper": "Write the area as 81 − (x − 9)². What does this show?",
+          "practical": "Squared paper or a graphing tool alongside the activity."
+        },
+        {
+          "activity": "circle",
+          "curriculumConnection": "Angle reasoning · GCSE bridge",
+          "start": "Explore the angle subtended by a diameter.",
+          "investigate": "Use radii and isosceles triangles to explain the angle relationship.",
+          "deeper": "State assumptions and turn your explanation into a proof.",
+          "practical": "Compass, ruler and protractor."
+        },
+        {
+          "activity": "curves",
+          "curriculumConnection": "Graphs and mathematical models · enrichment",
+          "start": "Predict which ramp path is fastest, then test.",
+          "investigate": "Change one thing at a time. Explain why shortest distance need not mean shortest time.",
+          "deeper": "Separate observations from a proof. The fastest-path mathematics goes beyond GCSE.",
+          "practical": "A marble and flexible track, where available."
+        },
+        {
+          "activity": "chance",
+          "curriculumConnection": "Probability, averages and variation · enrichment",
+          "start": "Collect results from repeated runs with identical settings.",
+          "investigate": "Compare mean, median and range; graph the outcomes.",
+          "deeper": "How many runs would make your estimate more convincing? Explain what remains uncertain.",
+          "practical": "A spreadsheet or paper results table."
+        },
+        {
+          "activity": "dobble",
+          "curriculumConnection": "Combinatorics and proof · enrichment",
+          "start": "Build a small set of cards sharing exactly one symbol per pair.",
+          "investigate": "Count symbol appearances and check every pair of cards.",
+          "deeper": "Find a counting constraint before making a bigger set. Finite planes are an optional extension.",
+          "practical": "Blank cards and stickers."
+        }
+      ],
+      "gaps": "Further workshops are still needed for simultaneous equations, inequalities, Pythagoras, trigonometry and probability trees."
+    },
+    "gcse": {
+      "label": "GCSE",
+      "investigations": [
+        {
+          "activity": "euclid",
+          "curriculumConnection": "Foundation / Higher · HCF and problem solving",
+          "start": "Find the largest square tile that covers a rectangle exactly.",
+          "investigate": "Connect the geometric process to prime factors and HCF.",
+          "deeper": "Explain why the same algorithm works for other whole-number dimensions.",
+          "practical": "Squared paper and scissors."
+        },
+        {
+          "activity": "cut",
+          "curriculumConnection": "Foundation / Higher · area and reasoning",
+          "start": "Rearrange a shape to make its area easier to calculate.",
+          "investigate": "Explain an area formula using the rearrangement.",
+          "deeper": "Give a labelled argument that works for general dimensions.",
+          "practical": "Paper, scissors and a ruler."
+        },
+        {
+          "activity": "cubes",
+          "curriculumConnection": "Higher · expressions and identities",
+          "start": "Write expressions for the four painted-face groups.",
+          "investigate": "Expand and simplify; verify that their sum is n³ for n ≥ 2.",
+          "deeper": "Explain the cancellation using the geometry, not just symbolic manipulation.",
+          "practical": "A cube model and labelled diagrams."
+        },
+        {
+          "activity": "fences",
+          "curriculumConnection": "Higher · quadratic graphs and optimisation",
+          "start": "Model the area of a rectangle with perimeter 36.",
+          "investigate": "Use A = x(18 − x). Compare a table, graph and completed-square form.",
+          "deeper": "State the domain and prove the maximum area.",
+          "practical": "Squared paper and a graphing tool."
+        },
+        {
+          "activity": "circle",
+          "curriculumConnection": "Higher · circle theorems",
+          "start": "Make and test a conjecture about an angle in a semicircle.",
+          "investigate": "Build a proof using the centre, radii and triangle angle sums.",
+          "deeper": "Try to explain a second circle relationship without relying on measurement alone.",
+          "practical": "Compass and straightedge."
+        },
+        {
+          "activity": "chance",
+          "curriculumConnection": "Foundation / Higher · experimental probability · enrichment context",
+          "start": "Repeat an experiment under fixed rules.",
+          "investigate": "Estimate probabilities from frequencies and compare independent batches.",
+          "deeper": "Discuss sample size, variation and the limits of an estimate.",
+          "practical": "Spreadsheet or tally chart."
+        }
+      ],
+      "gaps": "This is an investigation collection, not a revision course. Full number, algebra, ratio, geometry, probability and statistics coverage, exam practice and board mapping are still to build."
+    },
+    "a-level": {
+      "label": "A-level",
+      "investigations": [
+        {
+          "activity": "fences",
+          "curriculumConnection": "Pure · differentiation and modelling",
+          "start": "Write an area function for a fixed perimeter.",
+          "investigate": "Differentiate to find a stationary point and justify that it is a maximum.",
+          "deeper": "Compare calculus with completing the square; state the feasible domain.",
+          "practical": "Paper for derivations; the activity supplies visual evidence."
+        },
+        {
+          "activity": "plant",
+          "curriculumConnection": "Pure · sequences and sums",
+          "start": "Define daily income and total coins as separate sequences.",
+          "investigate": "Derive a formula for the cumulative total from an arithmetic series. State your day convention.",
+          "deeper": "Change the reproduction rule and investigate the new recurrence; more advanced recurrences are enrichment.",
+          "practical": "Paper or a spreadsheet for symbolic and numerical checks."
+        },
+        {
+          "activity": "cubes",
+          "curriculumConnection": "Pure · algebraic proof · enrichment context",
+          "start": "Form expressions for the four painted-face groups.",
+          "investigate": "Prove their sum equals n³ and interpret each term geometrically.",
+          "deeper": "Seek another geometric decomposition that gives the same identity.",
+          "practical": "Cube sketches and algebra on paper."
+        },
+        {
+          "activity": "chance",
+          "curriculumConnection": "Statistics · simulation and expectation · enrichment context",
+          "start": "Record the distribution of coin totals on a fixed day across many runs.",
+          "investigate": "Estimate the mean and variance and compare batches. State assumptions about the random rule.",
+          "deeper": "Derive expected growth using conditional expectation if ready; this extension goes beyond the standard course.",
+          "practical": "Spreadsheet or code for repeated trials."
+        },
+        {
+          "activity": "curves",
+          "curriculumConnection": "Mechanics · energy and modelling · enrichment",
+          "start": "Compare ramp times and discuss the model’s assumptions.",
+          "investigate": "For a particle released from rest without friction, use v² = 2gh to relate speed to vertical drop.",
+          "deeper": "Explain why finding the fastest curve is a calculus-of-variations problem beyond A-level. Do not treat the simulation as a proof.",
+          "practical": "Paper for a particle model; real rolling marbles also have rotational energy."
+        },
+        {
+          "activity": "string",
+          "curriculumConnection": "Pure · parametric geometry · enrichment",
+          "start": "Describe a family of straight strings by equations.",
+          "investigate": "Investigate the envelope by comparing neighbouring lines and their intersections.",
+          "deeper": "Use a parameter to derive an envelope when ready; this is beyond core A-level requirements.",
+          "practical": "Thread models, paper and a graphing tool."
+        }
+      ],
+      "gaps": "This is an investigation collection, not a complete course. Functions, trigonometry, exponentials and logarithms, integration, vectors, distributions, hypothesis tests, forces and kinematics need dedicated teaching sequences."
+    }
+  },
+  "activities": {
+    "patterns": {
+      "title": "Number patterns",
+      "path": "development/number-patterns/index.html",
+      "theme": "Number"
+    },
+    "factors": {
+      "title": "Factor shapes",
+      "path": "puzzles/sessions/factor-shapes.html",
+      "theme": "Number"
+    },
+    "cubes": {
+      "title": "Painted cubes",
+      "path": "puzzles/sessions/painted-cube.html",
+      "theme": "Shape and measure"
+    },
+    "cuboids": {
+      "title": "Explore 30 cubes",
+      "path": "puzzles/sessions/30-cubes.html",
+      "theme": "Shape and measure"
+    },
+    "fences": {
+      "title": "36 fences",
+      "path": "puzzles/sessions/36-fences.html",
+      "theme": "Shape and measure"
+    },
+    "poly": {
+      "title": "Polyominoes",
+      "path": "puzzles/sessions/polyominoes.html",
+      "theme": "Shape and measure"
+    },
+    "mastermind": {
+      "title": "Mastermind",
+      "path": "mastermind/Mastermind_Maths_Wednesdays.html",
+      "theme": "Logic"
+    },
+    "hanoi": {
+      "title": "Tower of Hanoi",
+      "path": "hanoi/index.html",
+      "theme": "Patterns and algebra"
+    },
+    "tree": {
+      "title": "Factor trees",
+      "path": "puzzles/sessions/factor-tree.html",
+      "theme": "Number"
+    },
+    "euclid": {
+      "title": "Squares to Euclid",
+      "path": "puzzles/sessions/squares-to-euclid.html",
+      "theme": "Number"
+    },
+    "circle": {
+      "title": "Circle investigations",
+      "path": "puzzles/sessions/circle-investigations.html",
+      "theme": "Shape and measure"
+    },
+    "curves": {
+      "title": "Curve lab",
+      "path": "puzzles/sessions/curve-lab.html",
+      "theme": "Curves and motion"
+    },
+    "string": {
+      "title": "String lab",
+      "path": "puzzles/string-lab/index.html",
+      "theme": "Curves and motion"
+    },
+    "plant": {
+      "title": "Magic money plant",
+      "path": "puzzles/sessions/magic-money-plant.html",
+      "theme": "Patterns and algebra"
+    },
+    "chance": {
+      "title": "Chance garden",
+      "path": "puzzles/sessions/money-plant-random.html",
+      "theme": "Probability and data"
+    },
+    "dobble": {
+      "title": "Dobble investigation",
+      "path": "dobble/index.html",
+      "theme": "Logic"
+    },
+    "cut": {
+      "title": "Cut and rearrange",
+      "path": "puzzles/sessions/cut-and-rearrange.html",
+      "theme": "Shape and measure"
+    },
+    "spiral": {
+      "title": "Spiral gallery",
+      "path": "puzzles/sessions/spiral-gallery.html",
+      "theme": "Shape and measure"
+    },
+    "code": {
+      "title": "Robot trails",
+      "path": "puzzles/sessions/codebot.html",
+      "theme": "Position and direction"
+    }
+  }
+}
