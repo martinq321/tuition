@@ -54,8 +54,8 @@
  --mw-edge:var(--edge);--mw-type:var(--font-ui);--mw-round:var(--radius);--mw-page:var(--panel);--mw-copy:var(--ink);
 }
 
-/* Optional Focus test: quiet surfaces, one clear action, no brand assets. */
-:root[data-theme="focus"]{
+/* Approved Focus palette. Other palettes are retained for future use. */
+:root:not([data-theme]),:root[data-theme="focus"]{
  color-scheme:light;--bg:#f5f5f2;--panel:#fff;--ink:#202722;--muted:#536158;
  --edge:#d5ddd5;--accent:#167c43;--on-accent:#fff;--soft:#edf5ed;
  --action-hover:#105f33;--radius:18px;--header-bg:#fffffff5;
@@ -64,3 +64,4 @@
  --page-image:none;--page-size:auto;--page-position:0 0;--page-repeat:no-repeat;
  --yellow:#856200;--blue:#2869a5;--purple:#7447a0;
 }
+

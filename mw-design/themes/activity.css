@@ -45,25 +45,26 @@ html[data-theme] .button:not(.outline){background:var(--accent)!important;color:
 html[data-theme] .button.outline{background:var(--panel)!important;color:var(--ink)!important;border-color:var(--edge)!important;border-radius:var(--radius)!important}
 html[data-theme] :is(.serif,.intro,.card p){font-family:var(--font-ui)!important}
 
-/* Focus is deliberately opt-in. Game colours and canvas geometry stay independent. */
+/* Focus interface. Game colours and canvas geometry stay independent. */
 html[data-theme=focus] body{font-size:18px!important;line-height:1.5!important}
 html[data-theme=focus] :is(h1,h2,h3){font-family:var(--font-ui)!important;letter-spacing:-.025em}
 html[data-theme=focus] h1{font-size:clamp(28px,4vw,42px)!important;line-height:1.12!important;margin-block:12px!important}
 html[data-theme=focus] :is(.mw-theme-bar,header){box-shadow:none!important}
-html[data-theme=focus] :is(button,.button,select,summary){min-height:46px}
-html[data-theme=focus] button:not(:disabled){transition:transform .12s,box-shadow .12s}
-html[data-theme=focus] button:active:not(:disabled){transform:translateY(1px)}
-html[data-theme=focus] :is(button.primary,.button:not(.outline)){box-shadow:0 3px 0 #105f33!important}
+html[data-theme=focus] :is(.toolbar button,.actions button,.buttons button,.button,select,summary){min-height:44px}
+html[data-theme=focus] :is(.toolbar button,.actions button,.button):not(:disabled){transition:box-shadow .12s}
+
+html[data-theme=focus] :is(button.primary,.button:not(.outline)){box-shadow:0 3px 0 #d5ddd5!important}
 html[data-theme=focus] :is(.stage,.panel,aside){box-shadow:none!important}
 html[data-theme=focus] :is(.tag,.kicker){letter-spacing:.06em!important}
 html[data-theme=focus] .status{background:var(--soft)!important;color:var(--ink)!important}
 html[data-theme=focus] details{border:1px solid var(--edge);padding:12px 16px;border-radius:14px;background:var(--panel)}
 html[data-theme=focus] summary{display:list-item;align-content:center;font-size:1rem;cursor:pointer}
-html[data-theme=focus] nav a[aria-current]{background:var(--ink)!important;color:#fff!important}
+html[data-theme=focus] body.mw-activity nav a[aria-current]{background:var(--ink)!important;color:#fff!important}
 .mw-icon-only{min-width:48px;min-height:48px;font-size:1.4rem!important;line-height:1!important}
 @media(min-width:800px){html[data-theme=focus] .layout{align-items:start}html[data-theme=focus] .layout>aside,html[data-theme=focus] .layout>.controls{position:sticky;top:12px}}
 @media(prefers-reduced-motion:reduce){html[data-theme=focus] button{transition:none!important}}
 
-html[data-theme=focus] :is(output,summary){color:var(--accent)!important}
+html[data-theme=focus] summary{color:var(--ink)!important}
 html[data-theme=focus] .prompt{background:var(--soft)!important;color:var(--ink)!important;border-color:var(--accent)!important}
-html[data-theme=focus] nav a:not([aria-current]){background:var(--panel)!important;color:var(--ink)!important;border:1px solid var(--edge)!important}
+html[data-theme=focus] body.mw-activity nav a:not([aria-current]){background:var(--panel)!important;color:var(--ink)!important;border:1px solid var(--edge)!important}
+
