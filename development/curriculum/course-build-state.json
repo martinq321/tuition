@@ -17,9 +17,18 @@
     {
       "id": 1,
       "title": "Shared themes",
-      "status": "implemented-awaiting-deployment",
-      "evidence": [],
-      "commit": null
+      "status": "implemented-and-checked",
+      "evidence": [
+        "155 public pages each load one shared palette, component sheet and controller",
+        "Dark default and preservation/migration of saved choices checked",
+        "Browser checks: homepage, Year 5, Year 7, painted cube, decimal workshop",
+        "Four themes: Dark, Graph paper, Ghosted backdrop, Orbit Lab"
+      ],
+      "commit": "c15b6cd8b0c882b7614ac6d5c412cf1b72abbd2e",
+      "limitations": [
+        "Representative browser checks; not an exhaustive gameplay regression of all 155 pages",
+        "Platform-pilot and Handoff excluded"
+      ]
     },
     {
       "id": 2,
