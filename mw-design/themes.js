@@ -3,7 +3,7 @@
 'use strict';
 if(window.MWTheme)return;
 var base=new URL('./',document.currentScript.src),key='maths-wednesdays-theme-v1';
-var choices=[['graph','Graph paper'],['ghost','Ghosted backdrop'],['dark','Dark'],['orbit','Orbit Lab']];
+var choices=[['graph','Graph paper'],['ghost','Ghosted backdrop'],['dark','Dark'],['orbit','Orbit Lab'],['focus','Focus (test)']];
 function normalise(value){if(value==='quiet'||value==='sketch')return 'ghost';if(value==='field'||value==='press')return 'graph';return choices.some(function(c){return c[0]===value})?value:'dark';}
 function apply(value,save){value=normalise(value);document.documentElement.dataset.theme=value;
  document.querySelectorAll('[data-mw-theme-picker],#theme-choice').forEach(function(p){p.value=value});
@@ -13,7 +13,7 @@ function apply(value,save){value=normalise(value);document.documentElement.datas
 }
 function read(){try{return localStorage.getItem(key)||localStorage.getItem('mw.theme.v2')||localStorage.getItem('maths-wednesdays.curve-lab.theme')}catch(e){return null}}
 window.MWTheme={set:function(v){apply(v,true)},get:function(){return document.documentElement.dataset.theme},choices:choices};
-apply(read(),false);
+apply(new URLSearchParams(location.search).get('theme')||read(),false);
 function mount(){
  var existing=document.querySelector('#theme-choice');
  // Remove obsolete controls; these are appearance UI, never activity controls.
@@ -27,5 +27,5 @@ function mount(){
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount);else mount();
 window.addEventListener('storage',function(e){if(e.key===key||e.key===null)apply(read(),false)});
-window.addEventListener('pageshow',function(){apply(read(),false)});
+window.addEventListener('pageshow',function(e){if(e.persisted)apply(new URLSearchParams(location.search).get('theme')||read(),false)});
 })();
