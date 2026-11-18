@@ -72,6 +72,129 @@ Command: **Complete the next unfinished Year 4 or Year 5 block, retaining and im
 
 Audit the current five challenges and generated questions against every objective. Make representations manipulable, keep instructions beside the model, distinguish supported practice from independent transfer, add missing units and reasoning. Fix specific model/marking flaws before adding question volume. Trial with tutoring and home-education families, then update coverage evidence. Do not replace existing work with superficial duplicate pages.
 
+
+### Year 5 — 17 bounded work packages
+
+Added 18 November 2026. All tasks below are **planned**, not newly completed lessons. These expand Task 7B without renumbering the wider course/platform plan. The existing Year 5 provision is one seven-mode place-value workshop and fourteen five-challenge workshops. Use the 32 grouped Year 5 objectives in `curriculum-map.json` as the initial coverage ledger, then verify the detailed official requirements; the older workshop manifest's short gap descriptions are not exhaustive.
+
+Use **Do Y5-01**, **Do Y5-02**, etc. to select a package. Preserve the Autumn/Spring/Summer order below for navigation; learners may revisit prerequisites or enter at a suitable point. Start with Y5-01. Platform accounts, subscriptions and multiplayer are separate workstreams.
+
+**Keep each command manageable.** Each teaching package has three recorded passes:
+- **A — scope and model:** inspect the existing workshop and prerequisites; write its objective/small-step checklist; fix or build the manipulable models and one end-to-end example.
+- **B — teaching and practice:** finish the mapped small-step lessons, stepped examples, progressive hints, independent practice, reasoning, practical activities and a fresh review.
+- **C — verify and release:** independently check mathematics/marking and representative interactions; preserve records and links; publish only this block and update coverage/build-state evidence.
+
+A request such as **Do Y5-05A** selects just that pass. **Do Y5-05** selects all three. These are 17 work packages, not a promise that every package fits one short chat. Save the completed pass and exact next step if a package must continue.
+
+**Common completion checks for Y5-01–15:** use the shared light Focus assets and category colours in `mw-design/`, readable type, lozenge controls and short instructions beside the model; support dragging plus tap/button/keyboard alternatives. Pair meaningful manipulation with notation, reduce scaffolding progressively and include an off-screen alternative using inexpensive materials. Check examples, valid equivalent answers, incorrect-answer feedback, numerical boundaries and the model/checker connection. Record first responses, support, retries and unfinished work accurately; open reasoning requires discussion. Verify representative phone layouts and preservation of existing local records. Include parent/tutor notes and an objective-to-lesson/practice/review checklist. Content quantities follow the objectives, not a fixed five-challenge or 102-question quota.
+
+The Year 6 fractions implementation is a useful reference, but still awaits learner validation. Start the Y5-16 pilot after the first upgraded block and feed its findings into the template before broad reuse. Mark software-ready blocks `implemented-tested-awaiting-learner-pilot` when appropriate; do not describe an unobserved learner trial as complete.
+
+#### Y5-01 — Place value (Autumn)
+
+Command: **Do Y5-01: complete and test the Year 5 place-value block, preserving the existing workshop.**
+
+Build a sequence for composing/repartitioning large numbers, reading/writing, comparing/ordering, counting in powers-of-ten steps, rounding and Roman numerals. Cover numbers to at least one million, the required rounding places and Roman numerals to 1,000 with years. Use movable counters/digit cards, number lines and numeral tiles; avoid rendering a million individual blocks. Introduce signed contexts briefly and link their full treatment to Y5-13. Check boundary crossings, internal zeros, rounding midpoints and invalid numeral feedback. Begin the learner-pilot strand on this block.
+
+#### Y5-02 — Addition and subtraction (Autumn)
+
+Command: **Do Y5-02: complete and test the Year 5 addition-and-subtraction block.**
+
+Link counters and exchanges to formal columns, including calculations beyond four digits and subtraction through zeros. Add mental strategies, compensation, estimation, inverse checks, missing numbers and multi-step contexts in which the learner chooses the operation and method. Allow a learner to compare two methods. Check that each visual exchange preserves value and that feedback distinguishes an exchange error from an arithmetic error. Depends on Y5-01 foundations.
+
+#### Y5-03 — Multiplication and division A (Autumn)
+
+Command: **Do Y5-03: complete and test Year 5 multiplication and division A, with number-pattern investigations.**
+
+Develop equal groups, known-fact strategies, arrays, systematic factor pairs, multiples/common factors, prime factors and prime/composite reasoning. Include primes through 100 with recall to 19, the special case of 1, square/cube numbers and power notation, plus whole-number multiplication/division by powers of ten. Link useful number-pattern, factor-shape and factor-tree activities with a specific investigation prompt. Check duplicate/missing factor pairs, square factors and prime classification. Decimal powers-of-ten applications continue in Y5-12.
+
+#### Y5-04 — Fractions A (Autumn)
+
+Command: **Do Y5-04: complete and test Year 5 fractions A, adapting the fractions models to Year 5 scope.**
+
+Build equivalence, comparison/order, mixed/improper conversion and addition/subtraction with same and related denominators, including results beyond one whole and exchanges. Use strips, number lines and area models with a consistent whole. Add explanation and contextual tasks, not just calculations. Check equivalent answer forms, whole-size consistency and denominator reasoning. Do not substitute the harder Year 6 sequence for this progression. Connect to factor knowledge from Y5-03.
+
+#### Y5-05 — Multiplication and division B (Spring)
+
+Command: **Do Y5-05: complete and test Year 5 multiplication and division B, connecting models to written methods.**
+
+Connect movable partitions/partial products to multiplication up to four digits by one or two digits, then sharing/exchange models to short division by one digit. Include mental methods and contextual decisions about remainders, fractional/decimal answers and rounding. Add mixed-operation problems, equality/missing numbers, simple scaling and rates. Within passes A/B, finish multiplication, then division, then mixed applications as separate saved checkpoints. Check zero partial products, exchanged remainders and the reasonableness of answers. Depends on Y5-02/03.
+
+#### Y5-06 — Fractions B (Spring)
+
+Command: **Do Y5-06: complete and test Year 5 fractions B, including fractions of quantities.**
+
+Explore multiplying proper fractions and mixed numbers by whole numbers, repeated groups, fractions of sets/quantities and simple inverse problems that recover a whole. Connect strips to movable counters and contextual scaling. Distinguish accessible core work from optional harder inverse problems. Check answers exceeding one, grouping and units. Keep fraction-by-fraction multiplication and division by whole numbers as clearly labelled later extensions rather than mandatory Year 5 coverage. Depends on Y5-04, with relevant multiplication facts.
+
+#### Y5-07 — Decimals and percentages (Spring)
+
+Command: **Do Y5-07: complete and test the Year 5 decimals-and-percentages block.**
+
+Make this block the owner of decimal place value, tenths/hundredths/thousandths, decimal-as-fraction notation, comparison/order and rounding, together with percentages as hundredths and familiar fraction/decimal/percentage equivalents. Use rescalable place-value models, number lines and hundred grids, retaining a clear definition of one whole. Include equivalents such as 40% and 80% and simple applications; keep general percentage calculation as a later extension. Check 0.5 versus 0.05, trailing zeros and rounding boundaries. Explicitly link arithmetic and powers-of-ten follow-up to Y5-12, avoiding duplicate coverage claims.
+
+#### Y5-08 — Perimeter and area (Spring)
+
+Command: **Do Y5-08: complete and test the Year 5 perimeter-and-area block.**
+
+Use a draggable shape builder, boundary tracing and square tiling to distinguish perimeter from area. Develop composite rectilinear boundaries, missing lengths, rectangle areas, standard square units and irregular-area estimates. Add same-area/different-perimeter investigations and practical measuring. Check shared/internal edges, units, missing-length solutions and transparent tolerances for estimates. Retain relevant existing square/Euclid investigations as optional enrichment with a purpose.
+
+#### Y5-09 — Statistics (Spring)
+
+Command: **Do Y5-09: complete and test the Year 5 statistics block, adding line graphs and tables.**
+
+Keep current bar-chart work as an optional prerequisite. Build draggable plots with meaningful scales, reading/interpreting line graphs, comparison/sum/difference questions, completing tables and interpreting timetables. Include a brief clock/time-arithmetic route before timetable problems; full conversions belong to Y5-14. Let pupils collect a small real dataset and discuss a suitable display. Check scales, plotted coordinates, elapsed times and that joining points is appropriate for the represented data.
+
+#### Y5-10 — Shape (Summer)
+
+Command: **Do Y5-10: complete and test the Year 5 shape block with manipulable geometry.**
+
+Provide angle dragging and an alignable protractor; teach estimating/measuring/drawing acute, obtuse and reflex angles, straight/full turns and missing angles. Develop rectangle properties, regular versus irregular polygons, and recognising 3D objects from 2D views, with rotatable models. Give shorter saved checkpoints for angles, polygons and 3D views. Check scale choice, protractor placement, orientation-independent answers, and that regularity requires both equal sides and equal angles.
+
+#### Y5-11 — Position and direction (Summer)
+
+Command: **Do Y5-11: complete and test the Year 5 position-and-direction block.**
+
+Use touch-plottable points and draggable whole shapes for coordinates, translation, reflection in horizontal/vertical mirror lines, predicting missing vertices and describing transformations. Keep core coordinates in the first quadrant, with later material explicitly labelled. Show equal perpendicular mirror distances and preserve the shape's dimensions. Check every transformed vertex, reversibility, fixed points and grid snapping. Include paper-grid and mirror alternatives.
+
+#### Y5-12 — Decimals (Summer)
+
+Command: **Do Y5-12: complete and test the Year 5 decimal-calculation block.**
+
+Build on Y5-07 with decimal addition/subtraction, complements of one, sequences and multiplication/division by 10, 100 and 1,000. Link exchanges and digit movement to place value; include mixed whole/decimal values, money/measurement and non-money puzzles. Revisit ordering/rounding as prerequisites instead of rebuilding that block. Check unequal decimal lengths, zero placeholders and exact marking without floating-point artefacts. Make it clear that the decimal point stays fixed in the place-value chart.
+
+#### Y5-13 — Negative numbers (Summer)
+
+Command: **Do Y5-13: complete and test the Year 5 negative-numbers block.**
+
+Develop interpreting, ordering and counting through zero with temperature, floors and depth, using movable markers and horizontal/vertical number lines. Add supported distance/difference investigations as a bridge to later work, with clear starting/ending points and units. Check direction, zero crossings, distance versus signed change and transfer to an unfamiliar context. Do not turn this into rules for multiplying negative numbers.
+
+#### Y5-14 — Converting units (Summer)
+
+Command: **Do Y5-14: complete and test the Year 5 unit-conversion block.**
+
+Connect matched scales and movable measures to the required metric pairs for length, mass and capacity. Include common approximate imperial equivalents, time conversions and practical problems using decimal measures and the four operations. Display any approximate conversion supplied and explain its accuracy. Keep time separate from base-ten conversion rules. Check conversion direction, mixed units, 60-based time arithmetic and explicitly bounded numerical tolerances. Depends on Y5-12; reuse Y5-09's timetable links.
+
+#### Y5-15 — Volume (Summer)
+
+Command: **Do Y5-15: complete and test the Year 5 volume-and-capacity block with rotatable 3D models.**
+
+Extend the current cube workshop with adding/removing cubes, inspecting hidden cubes, building layers, comparing arrangements, estimating volume and investigating container capacity. Let the learner rotate without changing the camera scale unexpectedly. Pair the digital model with sugar cubes/blocks and measuring jugs. Connect layers to multiplication, while keeping formal cuboid-volume formula work optional enrichment here. Check hidden counts, rotation-invariant totals, units and meaningful volume/capacity distinctions.
+
+#### Y5-16 — Learner pilot and revisions (runs alongside the build)
+
+Command: **Do Y5-16: prepare or continue the Year 5 learner pilot, use observed feedback and revise the affected blocks.**
+
+Begin after Y5-01; revisit after each term's set and consolidate at the end. Prepare short tutor/parent observation sheets and fresh off-screen transfer tasks. Observe instruction length, reading load, controls, hints, misconceptions, persistence and independence; include later revisits rather than relying on immediate success. Trial with actual learners and physical devices when available. The assistant can prepare materials and act on supplied observations, but cannot invent sessions or validation. If observations are missing, record `awaiting-learner-feedback` and the exact checks still needed. Revise specific evidenced issues and record before/after results. This is a usability/teaching pilot, not proof of learning effectiveness.
+
+#### Y5-17 — Whole-Year-5 audit and release
+
+Command: **Do Y5-17: audit the whole Year 5 course, fix verified gaps and publish an accurate readiness report.**
+
+Check every grouped objective and its detailed small steps against lessons, varied practice, reasoning and fresh review. Check shared objectives across blocks, missing prerequisites, links/navigation, consistent appearance, representative phone/tablet/desktop and keyboard/touch use, exact marking, records/export and practical adult guidance. Summarise learner-pilot findings and unresolved issues separately from software checks. Include a term overview and useful next-step guidance; completion badges must not imply mastery. Fix bounded defects, create explicit follow-up tasks for larger gaps, and mark readiness only at the level the evidence supports. Secure accounts remain separate platform work.
+
+Planning reference: [DfE Year 5 programme of study](https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study#year-5-programme-of-study), checked 18 November 2026; use the existing original small-step map and verify again during each build. White Rose informs progression and multiple representations; do not copy its proprietary lesson text or questions.
+
+
 ## Task 8 — Year 7, one block per command
 
 Command: **Build the next unfinished Year 7 block from the approved KS3 map; finish, check and publish only that block.**
