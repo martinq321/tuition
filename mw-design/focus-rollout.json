@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-18",
+  "design": "Approved Focus illustrated library",
+  "appearance": "single Focus, theme chooser removed",
+  "reference": "development/explore/index.html",
+  "previous_commit": "53b5ed1d68bb81c17920ca8a49a4ee0680b78111",
+  "rollout_commit": "79c75da7742e7b161b93b6cbbb62cf9655b36196",
+  "changed_html_pages": 159,
+  "menu_entries": {
+    "students": 24,
+    "full": 53,
+    "curated": 16
+  },
+  "changes": [
+    "Shared illustrated library renderer and original activity icons",
+    "Search, Saved and Recent use existing browser keys",
+    "Nine curriculum menus with illustrated cards",
+    "Force Focus on themed pages, preserve dormant saved preferences",
+    "Keep approved Mastermind and activity engines",
+    "Existing development hash routes forwarded to learning.html"
+  ],
+  "validation": [
+    "All new menu activity paths exist",
+    "JavaScript syntax: 99 inline scripts plus external scripts",
+    "Compared activity inline scripts: only library entry pages changed",
+    "Browser: search, Saved, desktop library, 390px library and Year 5, compact Mastermind"
+  ],
+  "limitations": [
+    "Full gameplay regression across every activity not performed",
+    "Backend Platform-pilot and Handoff documents are outside this appearance rollout"
+  ],
+  "rollback": "Restore changed files from previous_commit, or revert rollout_commit and this follow-up commit; do not reset unrelated later work."
+}
