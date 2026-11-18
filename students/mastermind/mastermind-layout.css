@@ -1,0 +1,51 @@
+/* Mastermind layout: bounded board, compact editor, shared theme colours. */
+html[data-theme] .mastermind-app{font-family:Arial,Helvetica,sans-serif!important;font-size:16px!important;line-height:1.45}
+html[data-theme] .mastermind-app .wrap{max-width:1080px;padding:16px 22px 36px}
+html[data-theme] .mastermind-app header{padding:0!important;border:0!important;background:transparent!important;margin-bottom:12px}
+html[data-theme] .mastermind-app h1{font:800 clamp(26px,4vw,34px)/1.1 Arial,sans-serif!important;letter-spacing:-1px;margin:0}
+html[data-theme] .mastermind-app h2{font-size:18px!important}
+html[data-theme] .mastermind-app .layout{display:block!important}
+html[data-theme] .mastermind-app .game-workspace{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(330px,1fr);gap:18px;align-items:start}
+html[data-theme] .mastermind-app .card{padding:18px!important;box-shadow:none!important;min-width:0}
+html[data-theme] .mastermind-app .history{margin:0!important;grid-column:1;grid-row:1}
+html[data-theme] .mastermind-app .guess-card{grid-column:2;grid-row:1}
+html[data-theme] .mastermind-app #history{height:340px;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding-right:5px}
+html[data-theme] .mastermind-app .history-head{margin-bottom:6px}
+.compact-legend{display:flex;gap:20px;align-items:center;font-size:14px}.compact-legend span{display:inline-flex;gap:7px;align-items:center}
+html[data-theme] .mastermind-app .fb.black{background:#172e40!important;border-color:#a4b9c5;box-shadow:0 0 0 1px #172e40}
+html[data-theme] .mastermind-app .remaining-option{margin:10px 0;font-size:14px!important;min-height:28px}
+html[data-theme] .mastermind-app .turn{padding:10px 0;gap:8px;flex-wrap:nowrap}
+html[data-theme] .mastermind-app .turn-left{gap:8px}.mastermind-app .turn .pegs{gap:5px;flex-wrap:nowrap}
+html[data-theme] .mastermind-app .turn .peg{width:clamp(20px,3vw,32px)!important;height:auto!important;aspect-ratio:1;font-size:10px!important}
+html[data-theme] .mastermind-app .feedback-label{font-size:12px!important}.mastermind-app .copy{display:none}
+html[data-theme] .mastermind-app .slots{margin:12px 0 8px!important;gap:6px!important}
+html[data-theme] .mastermind-app .slot{height:58px!important;min-height:48px!important;padding:6px!important;background:var(--panel)!important;border:2px solid var(--edge)!important;border-radius:12px!important}
+html[data-theme] .mastermind-app .slot.active{border-color:var(--accent)!important;background:var(--soft)!important;box-shadow:0 0 0 2px var(--accent)!important}
+html[data-theme] .mastermind-app .slot small{display:none}.mastermind-app .slot .peg{max-width:40px!important}
+html[data-theme] .mastermind-app .instruction{font-size:14px!important;min-height:40px;color:var(--ink)!important}
+html[data-theme] .mastermind-app .palette{margin:8px 0 14px!important;gap:6px}
+html[data-theme] .mastermind-app .paint{height:48px;min-width:0;padding:4px!important;background:var(--panel)!important;border:1px solid var(--edge)!important}
+html[data-theme] .mastermind-app .paint .peg{width:32px!important;height:32px!important}
+html[data-theme] .mastermind-app .actions{display:grid;grid-template-columns:1fr 70px;gap:8px}
+html[data-theme] .mastermind-app .actions button{font-size:16px!important;min-height:46px!important;padding:8px!important}
+html[data-theme] .mastermind-app #clear{width:42px;height:42px;padding:0!important;font-size:25px!important}
+html[data-theme] .mastermind-app .secret{gap:6px;margin-top:8px}.mastermind-app .secret .lock{width:24px;height:24px;font-size:14px}
+html[data-theme] .mastermind-app #boardDesc{display:none}.mastermind-app .divider{margin:12px 0}
+html[data-theme] .mastermind-app .step{color:var(--ink)!important;font-size:14px!important;letter-spacing:0;text-transform:none}
+html[data-theme] .mastermind-app .tag{color:var(--ink)!important;background:var(--soft)!important;font-size:12px!important;padding:5px 8px}
+html[data-theme] .mastermind-app .status{font-size:14px!important;margin-top:12px;padding:10px!important;min-height:0;background:var(--soft)!important;color:var(--ink)!important}
+.game-toolbar{display:flex;align-items:start;justify-content:space-between;gap:12px;margin-bottom:14px;position:relative}.game-options{max-width:70%}.game-options[open]{width:100%;max-width:100%}
+html[data-theme] .mastermind-app summary{font-size:16px!important;padding:9px 0!important;min-height:42px!important}
+html[data-theme] .mastermind-app .clock-line{gap:10px;flex-wrap:wrap;justify-content:flex-end;padding-top:5px}
+html[data-theme] .mastermind-app #clock{font-size:20px!important;color:var(--ink)!important;white-space:nowrap}
+html[data-theme] .mastermind-app #clock.urgent{color:#d53f40!important}
+html[data-theme] .mastermind-app .timer-panel{margin:10px 0!important;padding:12px!important}
+html[data-theme] .mastermind-app .settings-row{margin:8px 0;display:block}.mastermind-app .tabs{margin:8px 0}.mastermind-app .tree-link{margin-top:8px}
+html[data-theme] .mastermind-app .help-drawer,html[data-theme] .mastermind-app .more-pages{margin-top:14px;border:1px solid var(--edge);border-radius:var(--radius);padding:4px 16px;background:var(--panel)}
+html[data-theme] .mastermind-app .aside{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+html[data-theme] .mastermind-app .score-panel{margin-top:14px!important}
+html[data-theme] .mastermind-app .score-grid section{background:var(--soft)!important;color:var(--ink)!important}
+html[data-theme] .mastermind-app .score-grid :is(strong,b){color:var(--ink)!important}
+html[data-theme] .mastermind-app .inline-confirm{background:var(--soft)!important;color:var(--ink)!important;border-color:var(--edge)!important}
+@media(max-width:720px){html[data-theme] .mastermind-app .wrap{padding:12px}.mastermind-app .game-toolbar{margin-bottom:8px}html[data-theme] .mastermind-app .game-workspace{display:flex;flex-direction:column;gap:10px}html[data-theme] .mastermind-app .history,html[data-theme] .mastermind-app .guess-card{width:100%}html[data-theme] .mastermind-app #history{height:clamp(100px,22dvh,190px)}html[data-theme] .mastermind-app .card{padding:12px!important}html[data-theme] .mastermind-app .secret,html[data-theme] .mastermind-app .divider{display:none}html[data-theme] .mastermind-app .guess-card>.topline{display:none}html[data-theme] .mastermind-app .slots{margin-top:6px!important}html[data-theme] .mastermind-app .slot{height:48px!important}html[data-theme] .mastermind-app .instruction{min-height:24px;font-size:13px!important}html[data-theme] .mastermind-app .aside{grid-template-columns:1fr}html[data-theme] .mastermind-app .turn .peg{width:26px!important}html[data-theme] .mastermind-app .compact-legend{margin:4px 0}.mastermind-app .history-head{display:none!important}html[data-theme] .mastermind-app .remaining-option{margin:4px 0!important}html[data-theme] .mastermind-app .palette{margin:6px 0 10px!important}.mastermind-app .settings-controls{display:grid;grid-template-columns:1fr}.mastermind-app .settings-controls select{max-width:100%}}
+
