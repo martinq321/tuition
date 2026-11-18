@@ -27,3 +27,5 @@ html[data-theme] .mw-library .card h3{font-size:19px!important;margin:12px 0 0!i
 .mw-library [hidden]{display:none!important}
 @media(max-width:600px){html[data-theme] .mw-library main{padding:16px}html[data-theme] .mw-library .cards{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}.mw-library .card img,.mw-library .card svg{width:96px!important;height:90px!important}html[data-theme] .mw-library .card h3{font-size:17px!important}.mw-theme-bar .mw-journey-nav{margin-left:0}}
 @media(prefers-reduced-motion:reduce){.mw-library .card{transition:none}.mw-library .card:hover{transform:none}}
+
+html[data-theme] .mw-library .card[hidden],html[data-theme] .mw-library section[hidden]{display:none!important}
