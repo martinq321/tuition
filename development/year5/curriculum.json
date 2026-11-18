@@ -1,0 +1,36 @@
+{
+  "title": "Year 5 \u00b7 Maths Wednesdays",
+  "basis": "Independent White Rose-informed adaptation; version 3 block sequence",
+  "terms": {
+    "Autumn": [
+      "Place value \u00b7 workshop available",
+      "Addition and subtraction",
+      "Multiplication and division A \u00b7 shared foundations and patterns",
+      "Fractions A"
+    ],
+    "Spring": [
+      "Multiplication and division B",
+      "Fractions B",
+      "Decimals and percentages",
+      "Perimeter and area",
+      "Statistics"
+    ],
+    "Summer": [
+      "Shape",
+      "Position and direction",
+      "Decimals",
+      "Negative numbers \u00b7 introductory practice available",
+      "Converting units",
+      "Volume"
+    ]
+  },
+  "available": [
+    "Place value to one million with selectable smaller ranges",
+    "Rounding to powers of ten",
+    "Comparison, partitioning, negative numbers and Roman numerals to 1000",
+    "Shared manipulatives and multiplication representations",
+    "Number-pattern explorer"
+  ],
+  "status": "Initial workshops; full curriculum and assessment still in development",
+  "studentPersonalDataIncluded": false
+}
