@@ -151,3 +151,13 @@ body[data-unit=volume] #stage svg{max-height:360px}
  .answer-panel{grid-row:3}
  .guide{grid-column:1;grid-row:4}
 }
+
+#challenge-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:16px 0}
+#challenge-list button{display:flex;align-items:center;gap:10px;text-align:left;padding:12px;font-size:18px;line-height:1.3;background:white}
+#challenge-list button b{display:grid;place-items:center;flex:none;width:34px;height:34px;border-radius:50%;background:#e7eef7}
+#challenge-list button[aria-current=step]{border:3px solid #7356a6;background:#f1eafa}
+#challenge-list button[aria-current=step] b{background:#7356a6;color:white}
+@media(max-width:1000px){#challenge-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){#challenge-list{grid-template-columns:repeat(2,minmax(0,1fr))}#challenge-list button{font-size:17px;min-height:68px}}
+.task-support{font-size:20px;border-top:1px solid #ccbce1;padding-top:12px;margin-bottom:0}
+.task-reason{font-size:20px}.task-reason p{margin:6px 0}
