@@ -3,7 +3,7 @@
   "audit_date": "2026-11-18",
   "method": {
     "type": "source-based inventory and functional review",
-    "scope": "All 53 main cards in puzzles/index.html; all 24 corresponding student-menu entries; Year 4 and Year 5 workshops/units; twelve learning-shell lessons; existing later-stage pathway hubs.",
+    "scope": "All 53 main cards in puzzles/index.html; all 24 corresponding student-menu entries; Year 4 and Year 5 workshops/units; twelve learning-shell lessons; existing later-stage pathway hubs. Task 6 adds the twelve-lesson Year 6 fractions block with exact maths/content/model/record checks.",
     "checks": [
       "Read control markup, event handlers and mathematical model/checking logic in main pages and linked scripts.",
       "Review accessible entry separately from formal extension; curriculum domains are candidate connections, not assertions of complete coverage.",
@@ -4739,6 +4739,145 @@
       ],
       "stage": "a-level",
       "role": "navigation-hub"
+    },
+    {
+      "id": "year6-fractions",
+      "title": "Year 6 fractions block",
+      "path": "development/year6/fractions/index.html",
+      "year": 6,
+      "role": "teaching-block",
+      "status": "implemented-tested-awaiting-learner-pilot",
+      "accessible_entry": "Fold or subdivide equal strips to show the same amount; choose a starting lesson by readiness.",
+      "interaction_summary": "Twelve lessons with manipulable fraction models, stepped examples, 102 varied practice tasks, 20 fresh mixed-review questions, open reasoning and practical alternatives.",
+      "formal_extension": "Justify a common unit, exchange a whole, connect overlap/sharing to calculation, reconstruct a whole and choose an operation in a changed context.",
+      "prerequisites": [
+        "Y5-FR-01",
+        "Y5-FR-02",
+        "Y5-FR-03",
+        "Y5-FR-04",
+        "Y6-OP-04"
+      ],
+      "curriculum_domains": [
+        "fractions",
+        "equivalence",
+        "fraction-operations",
+        "fraction-decimal-percentage-connections"
+      ],
+      "objective_ids": [
+        "Y6-FR-01",
+        "Y6-FR-02",
+        "Y6-FR-03",
+        "Y6-FR-04",
+        "Y6-FR-05"
+      ],
+      "counts": {
+        "lessons": 12,
+        "practice_tasks": 102,
+        "review_tasks": 20
+      },
+      "evidence": {
+        "source_paths": [
+          "development/year6/fractions/index.html",
+          "development/year6/fractions/content.js",
+          "development/year6/fractions/fraction-math.js",
+          "development/year6/fractions/models.js",
+          "development/year6/fractions/progress.js"
+        ],
+        "source_checks": [
+          "Every task has mapped objectives, two hints and an exact expected answer or specified order/choice.",
+          "All 122 answers independently recomputed; twelve worked examples manually reviewed.",
+          "Conversion format and simplest-form requirements are explicit; open reasoning is not automatically marked.",
+          "Local evidence distinguishes first response, support, retries and unfinished work."
+        ],
+        "runtime": "Representative desktop interactions and all lesson/example/question renders passed. 390px/320px CSS iframe viewports had no horizontal page overflow. Physical mobile devices, assistive technology and learner pilot remain untested.",
+        "checks": {
+          "math_engine": {
+            "status": "passed",
+            "checks": 51125,
+            "method": "Node exact-rational, parser, arithmetic, ordering and format tests"
+          },
+          "content": {
+            "status": "passed",
+            "answers": 122,
+            "independent_metadata_checks": 71
+          },
+          "independent_content_audit": {
+            "status": "passed",
+            "answers": 122,
+            "method": "Python Fraction calculations from prompts and independently specified context answers; no site checker imported"
+          },
+          "models": {
+            "status": "passed",
+            "checks": 55,
+            "method": "Node mathematical/state checks; not physical touch validation"
+          },
+          "records": {
+            "status": "passed",
+            "tests": 9,
+            "method": "Node persistence, import/export, evidence integrity and storage-failure checks"
+          },
+          "browser_ui": {
+            "status": "passed-representative-desktop-and-small-viewports",
+            "render_coverage": {
+              "explore_screens": 12,
+              "worked_example_steps": 48,
+              "practice_question_screens": 102,
+              "mixed_review_question_screens": 20
+            },
+            "interaction_checks": [
+              "Fraction-strip slider splitting",
+              "Multiplication-area shading",
+              "Valid and invalid mixed-number answer format",
+              "Ordering by selecting and moving cards",
+              "Wrong answer, hint, then correct answer",
+              "Unfinished task record",
+              "Explanation saving",
+              "Local profile isolation"
+            ],
+            "small_viewports": [
+              {
+                "css_width_px": 390,
+                "horizontal_page_overflow": false,
+                "task_and_controls_readable": true
+              },
+              {
+                "css_width_px": 320,
+                "horizontal_page_overflow": false,
+                "task_and_controls_readable": true
+              }
+            ],
+            "reduced_motion": "Media styles inspected; OS reduced-motion setting was not emulated.",
+            "limitations": [
+              "Representative interaction paths, not exhaustive testing of every gameplay action.",
+              "Small-screen checks used iframe CSS viewports, not physical mobile hardware.",
+              "Physical touch devices and assistive technology have not been tested.",
+              "Actual learner pilot and off-screen transfer observation remain pending."
+            ]
+          },
+          "learner_pilot": {
+            "status": "pending",
+            "note": "Actual learner usability and fresh off-screen transfer remain to be observed."
+          },
+          "question_record_contract": {
+            "status": "passed",
+            "cases": 122,
+            "scope": "Question → exact checker → local record → reload/import API contract tests."
+          }
+        }
+      },
+      "gaps": [
+        "Real learner pilot, physical-device observations and off-screen transfer remain pending.",
+        "FR06 and FR07 decimal calculations, written decimal division and rounding belong to a later block.",
+        "Records are browser-local; secure accounts, server access control and cross-device records are not implemented by this block.",
+        "Reusable template, generation engine and records remain block-scoped foundations, not completed site-wide Tasks 3–5."
+      ],
+      "accessibility": [
+        "Short prompt beside model on wide screens; stacked layout on smaller screens.",
+        "Models provide tap/button and keyboard routes; practical paper/counter alternatives are supplied.",
+        "No timed performance gate; readable labels accompany colour. Reduced-motion media styles inspected; actual OS setting and assistive technology not tested."
+      ],
+      "coverage_file": "development/year6/fractions/coverage.json",
+      "teaching_notes": "development/year6/fractions/TEACHING-NOTES.md"
     }
   ],
   "source_findings": [
@@ -4787,16 +4926,20 @@
     "student_main_copies": 24,
     "student_html_files_in_tree": 43,
     "student_inline_logic_matches": 24,
-    "course_resource_count": 37,
+    "course_resource_count": 38,
     "year4_workshops": 3,
     "year5_place_value_workshops": 1,
     "year5_unit_investigations": 14,
     "year5_unit_challenges": 70,
     "learning_shell_lessons": 12,
     "learning_shell_questions": 48,
-    "runtime_verified_this_audit": 0,
+    "runtime_verified_this_audit": 1,
     "all_main_activity_targets_exist": true,
-    "completion_is_mastery": false
+    "completion_is_mastery": false,
+    "year6_fraction_lessons": 12,
+    "year6_fraction_practice": 102,
+    "year6_fraction_review": 20,
+    "runtime_verification_scope": "One new course block has recorded representative desktop/small-viewport checks; no exhaustive runtime claim for the 53 main activities."
   },
   "release_checks": [
     {
@@ -4816,6 +4959,86 @@
       "date": "2026-11-18",
       "scope": "Browser: cube renderer visible, cut-out slider to End, blue cube Halfway, keyboard rotation; blue/yellow and light scene. WebGL versus CPU fallback not separately forced.",
       "result": "passed"
+    },
+    {
+      "activity_id": "year6-fractions",
+      "date": "2026-11-18",
+      "scope": "51,125 engine checks; 122 expected answers; 71 arithmetic metadata checks; independent 122-answer content audit; 55 model checks; 9 records tests; 122 question/checker/storage/reload/import contract cases. All 12 Explore, 48 example-step and 122 question renders; representative desktop actions and 390px/320px CSS viewports.",
+      "result": "Mathematics, Node/API contract and representative browser checks passed; physical-device, assistive-technology and real learner trials pending.",
+      "checks": {
+        "math_engine": {
+          "status": "passed",
+          "checks": 51125,
+          "method": "Node exact-rational, parser, arithmetic, ordering and format tests"
+        },
+        "content": {
+          "status": "passed",
+          "answers": 122,
+          "independent_metadata_checks": 71
+        },
+        "independent_content_audit": {
+          "status": "passed",
+          "answers": 122,
+          "method": "Python Fraction calculations from prompts and independently specified context answers; no site checker imported"
+        },
+        "models": {
+          "status": "passed",
+          "checks": 55,
+          "method": "Node mathematical/state checks; not physical touch validation"
+        },
+        "records": {
+          "status": "passed",
+          "tests": 9,
+          "method": "Node persistence, import/export, evidence integrity and storage-failure checks"
+        },
+        "browser_ui": {
+          "status": "passed-representative-desktop-and-small-viewports",
+          "render_coverage": {
+            "explore_screens": 12,
+            "worked_example_steps": 48,
+            "practice_question_screens": 102,
+            "mixed_review_question_screens": 20
+          },
+          "interaction_checks": [
+            "Fraction-strip slider splitting",
+            "Multiplication-area shading",
+            "Valid and invalid mixed-number answer format",
+            "Ordering by selecting and moving cards",
+            "Wrong answer, hint, then correct answer",
+            "Unfinished task record",
+            "Explanation saving",
+            "Local profile isolation"
+          ],
+          "small_viewports": [
+            {
+              "css_width_px": 390,
+              "horizontal_page_overflow": false,
+              "task_and_controls_readable": true
+            },
+            {
+              "css_width_px": 320,
+              "horizontal_page_overflow": false,
+              "task_and_controls_readable": true
+            }
+          ],
+          "reduced_motion": "Media styles inspected; OS reduced-motion setting was not emulated.",
+          "limitations": [
+            "Representative interaction paths, not exhaustive testing of every gameplay action.",
+            "Small-screen checks used iframe CSS viewports, not physical mobile hardware.",
+            "Physical touch devices and assistive technology have not been tested.",
+            "Actual learner pilot and off-screen transfer observation remain pending."
+          ]
+        },
+        "learner_pilot": {
+          "status": "pending",
+          "note": "Actual learner usability and fresh off-screen transfer remain to be observed."
+        },
+        "question_record_contract": {
+          "status": "passed",
+          "cases": 122,
+          "scope": "Question → exact checker → local record → reload/import API contract tests."
+        }
+      }
     }
   ],
   "release_link_repairs": {

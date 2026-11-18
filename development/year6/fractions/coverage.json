@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "block_id": "year6-fractions",
+  "updated": "2026-11-18",
+  "title": "Year 6 fractions block",
+  "status": "implemented-tested-awaiting-learner-pilot",
+  "jurisdiction": "England",
+  "counts": {
+    "lessons": 12,
+    "practice_tasks": 102,
+    "review_tasks": 20
+  },
+  "core_objectives": [
+    "Y6-FR-01",
+    "Y6-FR-02",
+    "Y6-FR-03",
+    "Y6-FR-04"
+  ],
+  "connection_objectives": [
+    "Y6-FR-05"
+  ],
+  "deferred_objectives": [
+    "Y6-FR-06",
+    "Y6-FR-07"
+  ],
+  "boundary": "This block teaches fraction equivalence, ordering, operations and quantities, with fraction-as-division and familiar fraction–decimal–percentage connections. General decimal calculation, written decimal division and rounding remain in the separate decimals block. The accessible models are not themselves evidence of formal mastery.",
+  "lessons": [
+    {
+      "id": "equivalence",
+      "title": "Same amount, new pieces",
+      "path": "lesson.html?lesson=equivalence",
+      "objective_ids": [
+        "Y6-FR-01"
+      ],
+      "practice_tasks": 8,
+      "prerequisites": [
+        "Y5-FR-01"
+      ],
+      "goal": "Keep the whole fixed and explain why splitting every part equally gives an equivalent fraction."
+    },
+    {
+      "id": "simplify",
+      "title": "Make the fraction simpler",
+      "path": "lesson.html?lesson=simplify",
+      "objective_ids": [
+        "Y6-FR-01"
+      ],
+      "practice_tasks": 8,
+      "prerequisites": [
+        "equivalence",
+        "Y6-OP-04"
+      ],
+      "goal": "Use a common factor to regroup equal pieces, and recognise when no common factor greater than 1 remains."
+    },
+    {
+      "id": "mixed",
+      "title": "Across one whole",
+      "path": "lesson.html?lesson=mixed",
+      "objective_ids": [
+        "Y6-FR-01"
+      ],
+      "practice_tasks": 10,
+      "prerequisites": [
+        "Y5-FR-02",
+        "equivalence"
+      ],
+      "goal": "Connect mixed numbers, improper fractions and positions on a number line."
+    },
+    {
+      "id": "compare",
+      "title": "Which is greater?",
+      "path": "lesson.html?lesson=compare",
+      "objective_ids": [
+        "Y6-FR-01"
+      ],
+      "practice_tasks": 8,
+      "prerequisites": [
+        "mixed",
+        "simplify"
+      ],
+      "goal": "Compare and order fractions, including amounts greater than one, using equivalence or benchmarks."
+    },
+    {
+      "id": "add",
+      "title": "Combine equal-sized pieces",
+      "path": "lesson.html?lesson=add",
+      "objective_ids": [
+        "Y6-FR-02"
+      ],
+      "practice_tasks": 8,
+      "prerequisites": [
+        "equivalence",
+        "compare"
+      ],
+      "goal": "Add fractions with different denominators by creating equal-sized fractional units."
+    },
+    {
+      "id": "subtract",
+      "title": "Take away and find the gap",
+      "path": "lesson.html?lesson=subtract",
+      "objective_ids": [
+        "Y6-FR-02"
+      ],
+      "practice_tasks": 8,
+      "prerequisites": [
+        "add",
+        "compare"
+      ],
+      "goal": "Subtract unlike fractions using a shared unit, and interpret subtraction as removal or a difference."
+    },
+    {
+      "id": "mixed-operations",
+      "title": "Exchange a whole",
+      "path": "lesson.html?lesson=mixed-operations",
+      "objective_ids": [
+        "Y6-FR-02"
+      ],
+      "practice_tasks": 10,
+      "prerequisites": [
+        "mixed",
+        "add",
+        "subtract"
+      ],
+      "goal": "Add and subtract mixed numbers, including exchanging one whole into fractional pieces."
+    },
+    {
+      "id": "multiply",
+      "title": "A fraction of a fraction",
+      "path": "lesson.html?lesson=multiply",
+      "objective_ids": [
+        "Y6-FR-03"
+      ],
+      "practice_tasks": 8,
+      "prerequisites": [
+        "simplify",
+        "Y5-FR-04"
+      ],
+      "goal": "Use an area model to find a fraction of a fraction, then connect the overlap to multiplication."
+    },
+    {
+      "id": "divide",
+      "title": "Share a fractional amount",
+      "path": "lesson.html?lesson=divide",
+      "objective_ids": [
+        "Y6-FR-04"
+      ],
+      "practice_tasks": 8,
+      "prerequisites": [
+        "equivalence",
+        "simplify"
+      ],
+      "goal": "Share a proper fraction into equal groups while keeping the original whole as the reference."
+    },
+    {
+      "id": "quantity",
+      "title": "Parts and the whole",
+      "path": "lesson.html?lesson=quantity",
+      "objective_ids": [
+        "Y6-FR-01",
+        "Y6-FR-03"
+      ],
+      "practice_tasks": 8,
+      "prerequisites": [
+        "divide",
+        "multiply"
+      ],
+      "goal": "Find a fractional amount and reason backwards from a known fractional part to the whole."
+    },
+    {
+      "id": "connections",
+      "title": "One amount, three names",
+      "path": "lesson.html?lesson=connections",
+      "objective_ids": [
+        "Y6-FR-05"
+      ],
+      "practice_tasks": 10,
+      "prerequisites": [
+        "equivalence",
+        "divide",
+        "Y5-FR-07"
+      ],
+      "goal": "Connect a fraction to a division, and recognise familiar fraction, decimal and percentage names for the same amount."
+    },
+    {
+      "id": "problems",
+      "title": "Choose a route",
+      "path": "lesson.html?lesson=problems",
+      "objective_ids": [
+        "Y6-FR-01",
+        "Y6-FR-02",
+        "Y6-FR-03",
+        "Y6-FR-04",
+        "Y6-FR-05"
+      ],
+      "practice_tasks": 8,
+      "prerequisites": [
+        "compare",
+        "mixed-operations",
+        "multiply",
+        "divide",
+        "quantity",
+        "connections"
+      ],
+      "goal": "Choose operations from the meaning of a problem, estimate the answer, and explain a connected solution."
+    }
+  ],
+  "objective_evidence": [
+    {
+      "id": "Y6-FR-01",
+      "status": "partial",
+      "lesson_ids": [
+        "equivalence",
+        "simplify",
+        "mixed",
+        "compare",
+        "quantity",
+        "problems"
+      ],
+      "review_task_ids": [
+        "review-1",
+        "review-2",
+        "review-3",
+        "review-4",
+        "review-13",
+        "review-14"
+      ],
+      "pending": [
+        "real learner pilot",
+        "physical-device and assistive-technology observations",
+        "off-screen transfer observation"
+      ]
+    },
+    {
+      "id": "Y6-FR-02",
+      "status": "partial",
+      "lesson_ids": [
+        "add",
+        "subtract",
+        "mixed-operations",
+        "problems"
+      ],
+      "review_task_ids": [
+        "review-5",
+        "review-6",
+        "review-7",
+        "review-8",
+        "review-18"
+      ],
+      "pending": [
+        "real learner pilot",
+        "physical-device and assistive-technology observations",
+        "off-screen transfer observation"
+      ]
+    },
+    {
+      "id": "Y6-FR-03",
+      "status": "partial",
+      "lesson_ids": [
+        "multiply",
+        "quantity",
+        "problems"
+      ],
+      "review_task_ids": [
+        "review-9",
+        "review-10",
+        "review-13",
+        "review-14",
+        "review-19"
+      ],
+      "pending": [
+        "real learner pilot",
+        "physical-device and assistive-technology observations",
+        "off-screen transfer observation"
+      ]
+    },
+    {
+      "id": "Y6-FR-04",
+      "status": "partial",
+      "lesson_ids": [
+        "divide",
+        "problems"
+      ],
+      "review_task_ids": [
+        "review-11",
+        "review-12",
+        "review-20"
+      ],
+      "pending": [
+        "real learner pilot",
+        "physical-device and assistive-technology observations",
+        "off-screen transfer observation"
+      ]
+    },
+    {
+      "id": "Y6-FR-05",
+      "status": "partial",
+      "lesson_ids": [
+        "connections",
+        "problems"
+      ],
+      "review_task_ids": [
+        "review-15",
+        "review-16",
+        "review-17"
+      ],
+      "pending": [
+        "real learner pilot",
+        "physical-device and assistive-technology observations",
+        "off-screen transfer observation"
+      ]
+    }
+  ],
+  "checks": {
+    "math_engine": {
+      "status": "passed",
+      "checks": 51125,
+      "method": "Node exact-rational, parser, arithmetic, ordering and format tests"
+    },
+    "content": {
+      "status": "passed",
+      "answers": 122,
+      "independent_metadata_checks": 71
+    },
+    "independent_content_audit": {
+      "status": "passed",
+      "answers": 122,
+      "method": "Python Fraction calculations from prompts and independently specified context answers; no site checker imported"
+    },
+    "models": {
+      "status": "passed",
+      "checks": 55,
+      "method": "Node mathematical/state checks; not physical touch validation"
+    },
+    "records": {
+      "status": "passed",
+      "tests": 9,
+      "method": "Node persistence, import/export, evidence integrity and storage-failure checks"
+    },
+    "browser_ui": {
+      "status": "passed-representative-desktop-and-small-viewports",
+      "render_coverage": {
+        "explore_screens": 12,
+        "worked_example_steps": 48,
+        "practice_question_screens": 102,
+        "mixed_review_question_screens": 20
+      },
+      "interaction_checks": [
+        "Fraction-strip slider splitting",
+        "Multiplication-area shading",
+        "Valid and invalid mixed-number answer format",
+        "Ordering by selecting and moving cards",
+        "Wrong answer, hint, then correct answer",
+        "Unfinished task record",
+        "Explanation saving",
+        "Local profile isolation"
+      ],
+      "small_viewports": [
+        {
+          "css_width_px": 390,
+          "horizontal_page_overflow": false,
+          "task_and_controls_readable": true
+        },
+        {
+          "css_width_px": 320,
+          "horizontal_page_overflow": false,
+          "task_and_controls_readable": true
+        }
+      ],
+      "reduced_motion": "Media styles inspected; OS reduced-motion setting was not emulated.",
+      "limitations": [
+        "Representative interaction paths, not exhaustive testing of every gameplay action.",
+        "Small-screen checks used iframe CSS viewports, not physical mobile hardware.",
+        "Physical touch devices and assistive technology have not been tested.",
+        "Actual learner pilot and off-screen transfer observation remain pending."
+      ]
+    },
+    "learner_pilot": {
+      "status": "pending",
+      "note": "Actual learner usability and fresh off-screen transfer remain to be observed."
+    },
+    "question_record_contract": {
+      "status": "passed",
+      "cases": 122,
+      "scope": "Question → exact checker → local record → reload/import API contract tests."
+    }
+  },
+  "assessment_note": "Completed practice is recorded evidence, not mastery. Open explanations and physical demonstrations need adult review.",
+  "teaching_notes": "TEACHING-NOTES.md",
+  "educator_page": "educator.html",
+  "sources": [
+    {
+      "title": "DfE: Mathematics programmes of study, Year 6 fractions including decimals and percentages",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
+      "retrieved": "2026-11-18"
+    }
+  ]
+}

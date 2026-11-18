@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "date": "2026-11-18",
+  "method": "Independent Python Fraction recomputation from prompts; explicit contextual cases; no site checker or builder imported.",
+  "lessons": 12,
+  "practice_tasks": 102,
+  "review_tasks": 20,
+  "checks": {
+    "context_or_representation": 78,
+    "direct_calculation": 34,
+    "comparison": 6,
+    "ordering": 4
+  },
+  "fresh_review_numbers_or_contexts": 20,
+  "manual_review": "All task prompts/answers/solutions and twelve worked examples reviewed; no arithmetic error found.",
+  "learner_pilot": "pending"
+}

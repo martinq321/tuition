@@ -1,22 +1,26 @@
 {
   "meta": {
     "schema_version": 2,
-    "version": 2,
+    "version": 3,
     "updated": "2026-11-18",
     "jurisdiction": "England",
     "baseline_commit": "a64bc8bf8dcd227aa8a7ebf52588d3406dce8740",
-    "note": "Build map and source-based audit. Partial support is not a complete lesson or evidence of mastery. Years 7–9 allocation is proposed.",
+    "note": "Build map and source-based audit, with a mathematically tested Year 6 fraction block and representative browser checks. Real learner and physical-device pilots remain pending. Partial coverage is not a mastery claim. Years 7–9 allocation is proposed.",
     "counts": {
       "stages": 11,
       "objectives": 316,
       "activities": 53,
-      "course_resources": 37,
+      "course_resources": 38,
       "status": {
-        "planned": 178,
-        "partial": 138
+        "planned": 173,
+        "partial": 143
       }
     },
-    "scope": "Year 1–9, GCSE Foundation/Higher, standard A-level pure/statistics/mechanics; Further Mathematics excluded."
+    "scope": "Year 1–9, GCSE Foundation/Higher, standard A-level pure/statistics/mechanics; Further Mathematics excluded.",
+    "graph_counts": {
+      "nodes": 405,
+      "edges": 999
+    }
   },
   "edge_direction": "Prerequisite -> dependent objective; activity/resource -> supported objective. Links are curriculum design, not mastery claims.",
   "nodes": [
@@ -1066,7 +1070,7 @@
       "title": "Use common factors to simplify fractions and common multiples for common denominators; compare and order fractions including those greater than one.",
       "stage": "year6",
       "domain": "year6-fr",
-      "status": "planned"
+      "status": "partial"
     },
     {
       "id": "Y6-FR-02",
@@ -1074,7 +1078,7 @@
       "title": "Add and subtract fractions with different denominators and mixed numbers using equivalence.",
       "stage": "year6",
       "domain": "year6-fr",
-      "status": "planned"
+      "status": "partial"
     },
     {
       "id": "Y6-FR-03",
@@ -1082,7 +1086,7 @@
       "title": "Multiply simple pairs of proper fractions and simplify the answer.",
       "stage": "year6",
       "domain": "year6-fr",
-      "status": "planned"
+      "status": "partial"
     },
     {
       "id": "Y6-FR-04",
@@ -1090,7 +1094,7 @@
       "title": "Divide proper fractions by whole numbers.",
       "stage": "year6",
       "domain": "year6-fr",
-      "status": "planned"
+      "status": "partial"
     },
     {
       "id": "Y6-FR-05",
@@ -1098,7 +1102,7 @@
       "title": "Connect a fraction with division and calculate decimal equivalents; recall and use common fraction, decimal and percentage equivalents in varied contexts.",
       "stage": "year6",
       "domain": "year6-fr",
-      "status": "planned"
+      "status": "partial"
     },
     {
       "id": "Y6-FR-06",
@@ -3040,6 +3044,13 @@
       "type": "activity",
       "title": "Five-letter words",
       "path": "games/wordle.html"
+    },
+    {
+      "id": "resource:year6-fractions",
+      "type": "resource",
+      "title": "Year 6 fractions block",
+      "path": "development/year6/fractions/index.html",
+      "status": "implemented-tested-awaiting-learner-pilot"
     }
   ],
   "edges": [
@@ -9006,6 +9017,36 @@
       "to": "AL-MECH-07",
       "type": "exploration-support",
       "status": "partial or candidate; not full coverage"
+    },
+    {
+      "from": "resource:year6-fractions",
+      "to": "Y6-FR-01",
+      "type": "teaching-support",
+      "status": "implemented and exact-tested; learner pilot pending"
+    },
+    {
+      "from": "resource:year6-fractions",
+      "to": "Y6-FR-02",
+      "type": "teaching-support",
+      "status": "implemented and exact-tested; learner pilot pending"
+    },
+    {
+      "from": "resource:year6-fractions",
+      "to": "Y6-FR-03",
+      "type": "teaching-support",
+      "status": "implemented and exact-tested; learner pilot pending"
+    },
+    {
+      "from": "resource:year6-fractions",
+      "to": "Y6-FR-04",
+      "type": "teaching-support",
+      "status": "implemented and exact-tested; learner pilot pending"
+    },
+    {
+      "from": "resource:year6-fractions",
+      "to": "Y6-FR-05",
+      "type": "teaching-support",
+      "status": "implemented and exact-tested; learner pilot pending"
     }
   ]
 }

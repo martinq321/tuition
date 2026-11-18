@@ -48,6 +48,12 @@ Command: **Do course task 6: build and test the complete Year 6 fractions block 
 
 Work from the small-step map. Include equivalent fractions, simplifying, comparison, operations and relevant problem solving with appropriate Year 6 scope; multiple representations and practical models. Link relevant earlier learning. Provide sufficient varied independent practice and reasoning for every mapped objective. Trial with a learner, record friction and misconceptions, revise before reusing the design.
 
+**Implementation update — 18 November 2026:** [Year 6 fractions](../year6/fractions/index.html) now contains 12 original lessons, 102 varied practice tasks and a 20-question fresh mixed review. It supplies manipulable models, stepped examples, two-stage hints, open reasoning, practical alternatives and local evidence/export. FR01–04 are the core block; FR05 is the fraction/division and familiar-equivalents bridge. General decimal calculations FR06–07 remain a future block. See [coverage](../year6/fractions/coverage.json) and [teaching/pilot notes](../year6/fractions/TEACHING-NOTES.md).
+
+Status: `implemented-tested-awaiting-learner-pilot`. Exact-engine tests, independent mathematical/content review, model-state tests and local-record tests have passed. Representative browser checks passed: all 12 Explore screens, 48 worked-example steps, 102 practice and 20 mixed-review question renders; selected model/answer/record interactions; readable 390px and 320px CSS iframe viewports with no horizontal page overflow. The 122 question/checker/storage/reload/import API contract cases also passed. This is not exhaustive action testing or physical-device/assistive-technology validation. Reduced-motion media styles were inspected, but the OS setting was not emulated. A real learner trial has not happened and must not be marked complete from software checks. Tasks 3–5 now have foundations within this block; they remain globally planned until the template is learner-reviewed and the wider generation/records requirements are delivered.
+
+Next command: **Run the Year 6 fractions learner pilot, record control/reading friction and transfer to a fresh off-screen problem, then revise only the issues observed.**
+
 ## Task 7 — complete Year 6, one block per command
 
 Command: **Build the next unfinished Year 6 block from the approved map; finish, check and publish only that block.**

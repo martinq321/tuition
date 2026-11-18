@@ -1,19 +1,19 @@
 {
   "meta": {
     "schema_version": 2,
-    "version": 2,
+    "version": 3,
     "updated": "2026-11-18",
     "jurisdiction": "England",
     "baseline_commit": "a64bc8bf8dcd227aa8a7ebf52588d3406dce8740",
-    "note": "Build map and source-based audit. Partial support is not a complete lesson or evidence of mastery. Years 7–9 allocation is proposed.",
+    "note": "Build map and source-based audit, with a mathematically tested Year 6 fraction block and representative browser checks. Real learner and physical-device pilots remain pending. Partial coverage is not a mastery claim. Years 7–9 allocation is proposed.",
     "counts": {
       "stages": 11,
       "objectives": 316,
       "activities": 53,
-      "course_resources": 37,
+      "course_resources": 38,
       "status": {
-        "planned": 178,
-        "partial": 138
+        "planned": 173,
+        "partial": 143
       }
     },
     "scope": "Year 1–9, GCSE Foundation/Higher, standard A-level pure/statistics/mechanics; Further Mathematics excluded."
@@ -4839,10 +4839,41 @@
               ],
               "accessible_entry": "Show the same quantity with equivalent fraction strips.",
               "formal_goal": "Use common factors to simplify fractions and common multiples for common denominators; compare and order fractions including those greater than one.",
-              "gap": "Build the complete teaching sequence, varied independent practice, reasoning prompts and delayed review; verify touch and keyboard access with learners.",
-              "status": "planned",
-              "resource_paths": [],
-              "resource_evidence": "No complete matched lesson sequence verified."
+              "gap": "Observe a real learner, review control/reading friction and off-screen transfer, and revise before claiming the block is fully validated.",
+              "status": "partial",
+              "resource_paths": [
+                "development/year6/fractions/index.html",
+                "development/year6/fractions/lesson.html?lesson=equivalence",
+                "development/year6/fractions/lesson.html?lesson=simplify",
+                "development/year6/fractions/lesson.html?lesson=mixed",
+                "development/year6/fractions/lesson.html?lesson=compare",
+                "development/year6/fractions/lesson.html?lesson=quantity",
+                "development/year6/fractions/lesson.html?lesson=problems"
+              ],
+              "resource_evidence": "Implemented fraction teaching sequence with exact answer/content tests and representative desktop/small-viewport browser checks. Actual learner and physical-device pilots remain pending. Coverage is not a mastery claim.",
+              "resource_ids": [
+                "year6-fractions"
+              ],
+              "resource_status": "implemented-tested-awaiting-learner-pilot",
+              "block_evidence": {
+                "lesson_ids": [
+                  "equivalence",
+                  "simplify",
+                  "mixed",
+                  "compare",
+                  "quantity",
+                  "problems"
+                ],
+                "review_task_ids": [
+                  "review-1",
+                  "review-2",
+                  "review-3",
+                  "review-4",
+                  "review-13",
+                  "review-14"
+                ],
+                "learner_pilot": "pending"
+              }
             },
             {
               "id": "Y6-FR-02",
@@ -4872,10 +4903,36 @@
               ],
               "accessible_entry": "Create equal-sized fractional units.",
               "formal_goal": "Add and subtract fractions with different denominators and mixed numbers using equivalence.",
-              "gap": "Build the complete teaching sequence, varied independent practice, reasoning prompts and delayed review; verify touch and keyboard access with learners.",
-              "status": "planned",
-              "resource_paths": [],
-              "resource_evidence": "No complete matched lesson sequence verified."
+              "gap": "Observe a real learner, review control/reading friction and off-screen transfer, and revise before claiming the block is fully validated.",
+              "status": "partial",
+              "resource_paths": [
+                "development/year6/fractions/index.html",
+                "development/year6/fractions/lesson.html?lesson=add",
+                "development/year6/fractions/lesson.html?lesson=subtract",
+                "development/year6/fractions/lesson.html?lesson=mixed-operations",
+                "development/year6/fractions/lesson.html?lesson=problems"
+              ],
+              "resource_evidence": "Implemented fraction teaching sequence with exact answer/content tests and representative desktop/small-viewport browser checks. Actual learner and physical-device pilots remain pending. Coverage is not a mastery claim.",
+              "resource_ids": [
+                "year6-fractions"
+              ],
+              "resource_status": "implemented-tested-awaiting-learner-pilot",
+              "block_evidence": {
+                "lesson_ids": [
+                  "add",
+                  "subtract",
+                  "mixed-operations",
+                  "problems"
+                ],
+                "review_task_ids": [
+                  "review-5",
+                  "review-6",
+                  "review-7",
+                  "review-8",
+                  "review-18"
+                ],
+                "learner_pilot": "pending"
+              }
             },
             {
               "id": "Y6-FR-03",
@@ -4905,10 +4962,34 @@
               ],
               "accessible_entry": "Shade a fraction of a fraction in a rectangle.",
               "formal_goal": "Multiply simple pairs of proper fractions and simplify the answer.",
-              "gap": "Build the complete teaching sequence, varied independent practice, reasoning prompts and delayed review; verify touch and keyboard access with learners.",
-              "status": "planned",
-              "resource_paths": [],
-              "resource_evidence": "No complete matched lesson sequence verified."
+              "gap": "Observe a real learner, review control/reading friction and off-screen transfer, and revise before claiming the block is fully validated.",
+              "status": "partial",
+              "resource_paths": [
+                "development/year6/fractions/index.html",
+                "development/year6/fractions/lesson.html?lesson=multiply",
+                "development/year6/fractions/lesson.html?lesson=quantity",
+                "development/year6/fractions/lesson.html?lesson=problems"
+              ],
+              "resource_evidence": "Implemented fraction teaching sequence with exact answer/content tests and representative desktop/small-viewport browser checks. Actual learner and physical-device pilots remain pending. Coverage is not a mastery claim.",
+              "resource_ids": [
+                "year6-fractions"
+              ],
+              "resource_status": "implemented-tested-awaiting-learner-pilot",
+              "block_evidence": {
+                "lesson_ids": [
+                  "multiply",
+                  "quantity",
+                  "problems"
+                ],
+                "review_task_ids": [
+                  "review-9",
+                  "review-10",
+                  "review-13",
+                  "review-14",
+                  "review-19"
+                ],
+                "learner_pilot": "pending"
+              }
             },
             {
               "id": "Y6-FR-04",
@@ -4920,7 +5001,7 @@
               "small_steps": [
                 "Share a fractional length among equal recipients.",
                 "Relabel smaller equal pieces of the original whole.",
-                "Write the division and explain why the answer becomes smaller."
+                "Write the division and explain why a positive amount becomes smaller when the whole-number divisor is greater than one."
               ],
               "prerequisites": [
                 "Y5-FR-01",
@@ -4938,10 +5019,30 @@
               ],
               "accessible_entry": "Share a fractional length among equal recipients.",
               "formal_goal": "Divide proper fractions by whole numbers.",
-              "gap": "Build the complete teaching sequence, varied independent practice, reasoning prompts and delayed review; verify touch and keyboard access with learners.",
-              "status": "planned",
-              "resource_paths": [],
-              "resource_evidence": "No complete matched lesson sequence verified."
+              "gap": "Observe a real learner, review control/reading friction and off-screen transfer, and revise before claiming the block is fully validated.",
+              "status": "partial",
+              "resource_paths": [
+                "development/year6/fractions/index.html",
+                "development/year6/fractions/lesson.html?lesson=divide",
+                "development/year6/fractions/lesson.html?lesson=problems"
+              ],
+              "resource_evidence": "Implemented fraction teaching sequence with exact answer/content tests and representative desktop/small-viewport browser checks. Actual learner and physical-device pilots remain pending. Coverage is not a mastery claim.",
+              "resource_ids": [
+                "year6-fractions"
+              ],
+              "resource_status": "implemented-tested-awaiting-learner-pilot",
+              "block_evidence": {
+                "lesson_ids": [
+                  "divide",
+                  "problems"
+                ],
+                "review_task_ids": [
+                  "review-11",
+                  "review-12",
+                  "review-20"
+                ],
+                "learner_pilot": "pending"
+              }
             },
             {
               "id": "Y6-FR-05",
@@ -4972,10 +5073,30 @@
               ],
               "accessible_entry": "Share a quantity and record the quotient as a fraction.",
               "formal_goal": "Connect a fraction with division and calculate decimal equivalents; recall and use common fraction, decimal and percentage equivalents in varied contexts.",
-              "gap": "Build the complete teaching sequence, varied independent practice, reasoning prompts and delayed review; verify touch and keyboard access with learners.",
-              "status": "planned",
-              "resource_paths": [],
-              "resource_evidence": "No complete matched lesson sequence verified."
+              "gap": "Observe a real learner, review control/reading friction and off-screen transfer, and revise before claiming the block is fully validated. This is the fraction/division and familiar-equivalents bridge; general decimal calculations FR06–07 remain separate.",
+              "status": "partial",
+              "resource_paths": [
+                "development/year6/fractions/index.html",
+                "development/year6/fractions/lesson.html?lesson=connections",
+                "development/year6/fractions/lesson.html?lesson=problems"
+              ],
+              "resource_evidence": "Implemented fraction teaching sequence with exact answer/content tests and representative desktop/small-viewport browser checks. Actual learner and physical-device pilots remain pending. Coverage is not a mastery claim.",
+              "resource_ids": [
+                "year6-fractions"
+              ],
+              "resource_status": "implemented-tested-awaiting-learner-pilot",
+              "block_evidence": {
+                "lesson_ids": [
+                  "connections",
+                  "problems"
+                ],
+                "review_task_ids": [
+                  "review-15",
+                  "review-16",
+                  "review-17"
+                ],
+                "learner_pilot": "pending"
+              }
             },
             {
               "id": "Y6-FR-06",
@@ -17333,6 +17454,145 @@
       ],
       "stage": "a-level",
       "role": "navigation-hub"
+    },
+    {
+      "id": "year6-fractions",
+      "title": "Year 6 fractions block",
+      "path": "development/year6/fractions/index.html",
+      "year": 6,
+      "role": "teaching-block",
+      "status": "implemented-tested-awaiting-learner-pilot",
+      "accessible_entry": "Fold or subdivide equal strips to show the same amount; choose a starting lesson by readiness.",
+      "interaction_summary": "Twelve lessons with manipulable fraction models, stepped examples, 102 varied practice tasks, 20 fresh mixed-review questions, open reasoning and practical alternatives.",
+      "formal_extension": "Justify a common unit, exchange a whole, connect overlap/sharing to calculation, reconstruct a whole and choose an operation in a changed context.",
+      "prerequisites": [
+        "Y5-FR-01",
+        "Y5-FR-02",
+        "Y5-FR-03",
+        "Y5-FR-04",
+        "Y6-OP-04"
+      ],
+      "curriculum_domains": [
+        "fractions",
+        "equivalence",
+        "fraction-operations",
+        "fraction-decimal-percentage-connections"
+      ],
+      "objective_ids": [
+        "Y6-FR-01",
+        "Y6-FR-02",
+        "Y6-FR-03",
+        "Y6-FR-04",
+        "Y6-FR-05"
+      ],
+      "counts": {
+        "lessons": 12,
+        "practice_tasks": 102,
+        "review_tasks": 20
+      },
+      "evidence": {
+        "source_paths": [
+          "development/year6/fractions/index.html",
+          "development/year6/fractions/content.js",
+          "development/year6/fractions/fraction-math.js",
+          "development/year6/fractions/models.js",
+          "development/year6/fractions/progress.js"
+        ],
+        "source_checks": [
+          "Every task has mapped objectives, two hints and an exact expected answer or specified order/choice.",
+          "All 122 answers independently recomputed; twelve worked examples manually reviewed.",
+          "Conversion format and simplest-form requirements are explicit; open reasoning is not automatically marked.",
+          "Local evidence distinguishes first response, support, retries and unfinished work."
+        ],
+        "runtime": "Representative desktop interactions and all lesson/example/question renders passed. 390px/320px CSS iframe viewports had no horizontal page overflow. Physical mobile devices, assistive technology and learner pilot remain untested.",
+        "checks": {
+          "math_engine": {
+            "status": "passed",
+            "checks": 51125,
+            "method": "Node exact-rational, parser, arithmetic, ordering and format tests"
+          },
+          "content": {
+            "status": "passed",
+            "answers": 122,
+            "independent_metadata_checks": 71
+          },
+          "independent_content_audit": {
+            "status": "passed",
+            "answers": 122,
+            "method": "Python Fraction calculations from prompts and independently specified context answers; no site checker imported"
+          },
+          "models": {
+            "status": "passed",
+            "checks": 55,
+            "method": "Node mathematical/state checks; not physical touch validation"
+          },
+          "records": {
+            "status": "passed",
+            "tests": 9,
+            "method": "Node persistence, import/export, evidence integrity and storage-failure checks"
+          },
+          "browser_ui": {
+            "status": "passed-representative-desktop-and-small-viewports",
+            "render_coverage": {
+              "explore_screens": 12,
+              "worked_example_steps": 48,
+              "practice_question_screens": 102,
+              "mixed_review_question_screens": 20
+            },
+            "interaction_checks": [
+              "Fraction-strip slider splitting",
+              "Multiplication-area shading",
+              "Valid and invalid mixed-number answer format",
+              "Ordering by selecting and moving cards",
+              "Wrong answer, hint, then correct answer",
+              "Unfinished task record",
+              "Explanation saving",
+              "Local profile isolation"
+            ],
+            "small_viewports": [
+              {
+                "css_width_px": 390,
+                "horizontal_page_overflow": false,
+                "task_and_controls_readable": true
+              },
+              {
+                "css_width_px": 320,
+                "horizontal_page_overflow": false,
+                "task_and_controls_readable": true
+              }
+            ],
+            "reduced_motion": "Media styles inspected; OS reduced-motion setting was not emulated.",
+            "limitations": [
+              "Representative interaction paths, not exhaustive testing of every gameplay action.",
+              "Small-screen checks used iframe CSS viewports, not physical mobile hardware.",
+              "Physical touch devices and assistive technology have not been tested.",
+              "Actual learner pilot and off-screen transfer observation remain pending."
+            ]
+          },
+          "learner_pilot": {
+            "status": "pending",
+            "note": "Actual learner usability and fresh off-screen transfer remain to be observed."
+          },
+          "question_record_contract": {
+            "status": "passed",
+            "cases": 122,
+            "scope": "Question → exact checker → local record → reload/import API contract tests."
+          }
+        }
+      },
+      "gaps": [
+        "Real learner pilot, physical-device observations and off-screen transfer remain pending.",
+        "FR06 and FR07 decimal calculations, written decimal division and rounding belong to a later block.",
+        "Records are browser-local; secure accounts, server access control and cross-device records are not implemented by this block.",
+        "Reusable template, generation engine and records remain block-scoped foundations, not completed site-wide Tasks 3–5."
+      ],
+      "accessibility": [
+        "Short prompt beside model on wide screens; stacked layout on smaller screens.",
+        "Models provide tap/button and keyboard routes; practical paper/counter alternatives are supplied.",
+        "No timed performance gate; readable labels accompany colour. Reduced-motion media styles inspected; actual OS setting and assistive technology not tested."
+      ],
+      "coverage_file": "development/year6/fractions/coverage.json",
+      "teaching_notes": "development/year6/fractions/TEACHING-NOTES.md"
     }
   ],
   "coverage_ledger": {
@@ -17618,8 +17878,8 @@
     "scope": "All statutory Years 1–6 content grouped into original objectives, including practical problem solving. The recurring aims of fluency, reasoning and problem solving apply across every domain.",
     "progression": "Prerequisites are suggested links for planning and diagnosis of task readiness, not rigid admission gates. Entry skills are explicitly prefixed entry:.",
     "learner_age": "Year labels indicate curriculum reference, not a fixed ability level or minimum age. An investigation may be accessible long before its full analysis.",
-    "status": "planned means a complete objective-aligned sequence has not been verified; partial means a source-inspected starter workshop directly supports part of the objective. Neither means the objective is mastered or the course complete.",
-    "resource_audit": "Year4/5 manifests, workshop HTML and Year5 unit task definitions were inspected. Existing homepage activities are proposed contextual links; their runtime behaviour, full accessibility and curriculum coverage are not certified by this map.",
+    "status": "planned means no matched teaching sequence is verified. partial means a mapped resource supplies some or all teaching opportunities but curriculum/device/learner validation remains incomplete. Check each objective resource evidence; neither state means mastery or course completion.",
+    "resource_audit": "Year4/5 manifests, workshop HTML and Year5 unit task definitions were inspected. Existing homepage activities are proposed contextual links; their runtime behaviour, full accessibility and curriculum coverage are not certified by this map. Year 6 fractions adds twelve original lessons and independently checked answers; learner pilot remains pending.",
     "assessment": "Record independent first attempts, hints, models, retries and explanation. Check transfer and later retention. Report observed evidence, not diagnoses or mastery inferred from a visit.",
     "pedagogy": "Original small-step proposals: practical model, linked representation, explanation and independent application. Physical alternatives and manipulable models should accompany concise prompts.",
     "license": "Includes information from the Department for Education licensed under the Open Government Licence v3.0: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"

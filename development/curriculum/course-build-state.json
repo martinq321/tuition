@@ -15,7 +15,7 @@
     "GCSE Foundation and Higher",
     "A-level Mathematics"
   ],
-  "currentCourseStatus": "316 grouped objectives mapped; 53 main activities source-reviewed. 138 objectives partially supported, 178 planned, no stage declared a complete taught course.",
+  "currentCourseStatus": "316 grouped objectives mapped; 53 main activities source-reviewed; 38 course resources. 143 objectives partially supported, 173 planned. Year 6 fractions implemented, exact-tested and representatively browser-checked; real learner and physical-device pilots pending. No stage declared a complete taught course.",
   "workingRule": "One bounded task or teaching block per command. Validate and update state before continuing.",
   "plan": "COURSE-BUILD-PLAN.md",
   "tasks": [
@@ -38,13 +38,13 @@
     },
     {
       "id": 2,
-      "title": "Year 1\u2013A-level activity audit and curriculum maps",
+      "title": "Year 1–A-level activity audit and curriculum maps",
       "status": "mapped-and-source-audited",
       "evidence": [
         "11 stages; 316 grouped objectives; official sources and proposed small steps",
-        "53 main activity records and 37 course-resource records",
-        "404 graph nodes; 994 typed edges; no unresolved IDs or prerequisite cycles",
-        "All 47 primary year/domain sections; KS3 proposed sequence, GCSE tier distinction, standard A-level A\u2013S scope",
+        "53 main activity records and 38 course-resource records (including the Task 6 fraction block)",
+        "405 graph nodes; 999 typed edges; no unresolved IDs or prerequisite cycles",
+        "All 47 primary year/domain sections; KS3 proposed sequence, GCSE tier distinction, standard A-level A–S scope",
         "Accessible entry is distinct from formal goal; no lesson or mastery claims from a link"
       ],
       "commit": null,
@@ -58,29 +58,139 @@
       "id": 3,
       "title": "Reusable lesson template",
       "status": "planned",
-      "evidence": [],
-      "commit": null
+      "evidence": [
+        "Task 6 supplies a block-scoped foundation; no global completion claimed."
+      ],
+      "commit": null,
+      "blockScopedFoundation": {
+        "block": "development/year6/fractions/index.html",
+        "status": "implemented-for-year6-fractions-only",
+        "note": "Global task remains planned. Generalisation and a learner-reviewed reusable template are not yet complete."
+      }
     },
     {
       "id": 4,
       "title": "Question and feedback engine",
       "status": "planned",
-      "evidence": [],
-      "commit": null
+      "evidence": [
+        "Task 6 supplies a block-scoped foundation; no global completion claimed."
+      ],
+      "commit": null,
+      "blockScopedFoundation": {
+        "block": "development/year6/fractions/index.html",
+        "status": "implemented-for-year6-fractions-only",
+        "note": "Global task remains planned. Generalisation and a learner-reviewed reusable template are not yet complete."
+      }
     },
     {
       "id": 5,
       "title": "Learning records",
       "status": "planned",
-      "evidence": [],
-      "commit": null
+      "evidence": [
+        "Task 6 supplies a block-scoped foundation; no global completion claimed."
+      ],
+      "commit": null,
+      "blockScopedFoundation": {
+        "block": "development/year6/fractions/index.html",
+        "status": "implemented-for-year6-fractions-only",
+        "note": "Global task remains planned. Generalisation and a learner-reviewed reusable template are not yet complete."
+      }
     },
     {
       "id": 6,
       "title": "Year 6 fractions pilot",
-      "status": "planned",
-      "evidence": [],
-      "commit": null
+      "status": "implemented-tested-awaiting-learner-pilot",
+      "evidence": [
+        "12 original lessons; 102 varied practice tasks; 20 fresh mixed-review tasks.",
+        "Mapped FR01–04 core and FR05 connections; FR06–07 explicitly deferred.",
+        "51,125 exact engine checks; 122 answers checked; 71 arithmetic metadata checks.",
+        "Independent Python audit recomputed all 122 answers; all twelve worked examples reviewed.",
+        "55 model checks and 9 meaningful records tests passed.",
+        "122 question → checker → storage → reload/import API contract cases passed.",
+        "All 12 Explore screens, 48 worked-example steps, 102 practice and 20 review question renders checked; representative desktop actions and 390px/320px CSS iframe viewports passed."
+      ],
+      "commit": null,
+      "limitations": [
+        "Real learner pilot and physical-device observations pending; no mastery or learning-effectiveness claim.",
+        "Local records only; no secure login, subscription or cross-device service added.",
+        "Tasks 3–5 have foundations scoped to this block and remain globally planned.",
+        "Browser actions were representative, not exhaustive. Physical mobile hardware and assistive technology were not tested.",
+        "Reduced-motion media styles were inspected; OS reduced-motion settings were not emulated."
+      ],
+      "checks": {
+        "math_engine": {
+          "status": "passed",
+          "checks": 51125,
+          "method": "Node exact-rational, parser, arithmetic, ordering and format tests"
+        },
+        "content": {
+          "status": "passed",
+          "answers": 122,
+          "independent_metadata_checks": 71
+        },
+        "independent_content_audit": {
+          "status": "passed",
+          "answers": 122,
+          "method": "Python Fraction calculations from prompts and independently specified context answers; no site checker imported"
+        },
+        "models": {
+          "status": "passed",
+          "checks": 55,
+          "method": "Node mathematical/state checks; not physical touch validation"
+        },
+        "records": {
+          "status": "passed",
+          "tests": 9,
+          "method": "Node persistence, import/export, evidence integrity and storage-failure checks"
+        },
+        "browser_ui": {
+          "status": "passed-representative-desktop-and-small-viewports",
+          "render_coverage": {
+            "explore_screens": 12,
+            "worked_example_steps": 48,
+            "practice_question_screens": 102,
+            "mixed_review_question_screens": 20
+          },
+          "interaction_checks": [
+            "Fraction-strip slider splitting",
+            "Multiplication-area shading",
+            "Valid and invalid mixed-number answer format",
+            "Ordering by selecting and moving cards",
+            "Wrong answer, hint, then correct answer",
+            "Unfinished task record",
+            "Explanation saving",
+            "Local profile isolation"
+          ],
+          "small_viewports": [
+            {
+              "css_width_px": 390,
+              "horizontal_page_overflow": false,
+              "task_and_controls_readable": true
+            },
+            {
+              "css_width_px": 320,
+              "horizontal_page_overflow": false,
+              "task_and_controls_readable": true
+            }
+          ],
+          "reduced_motion": "Media styles inspected; OS reduced-motion setting was not emulated.",
+          "limitations": [
+            "Representative interaction paths, not exhaustive testing of every gameplay action.",
+            "Small-screen checks used iframe CSS viewports, not physical mobile hardware.",
+            "Physical touch devices and assistive technology have not been tested.",
+            "Actual learner pilot and off-screen transfer observation remain pending."
+          ]
+        },
+        "learner_pilot": {
+          "status": "pending",
+          "note": "Actual learner usability and fresh off-screen transfer remain to be observed."
+        },
+        "question_record_contract": {
+          "status": "passed",
+          "cases": 122,
+          "scope": "Question → exact checker → local record → reload/import API contract tests."
+        }
+      }
     },
     {
       "id": 7,
@@ -91,14 +201,14 @@
     },
     {
       "id": "7A",
-      "title": "Years 1\u20133 blocks",
+      "title": "Years 1–3 blocks",
       "status": "planned",
       "evidence": [],
       "commit": null
     },
     {
       "id": "7B",
-      "title": "Years 4\u20135 completion and repair",
+      "title": "Years 4–5 completion and repair",
       "status": "planned",
       "evidence": [],
       "commit": null
@@ -160,12 +270,12 @@
       "commit": null
     }
   ],
-  "nextTask": 3,
+  "nextTask": 6,
   "curriculumMap": "curriculum-map.json",
   "readableMap": "map.html",
   "activityAudit": "activity-audit.json",
   "prerequisiteGraph": "curriculum-graph.json",
-  "release": "focus-palette-curriculum-v2",
+  "release": "year6-fractions-block-v1",
   "platformTasks": [
     {
       "id": "P1",
@@ -213,5 +323,7 @@
       "status": "planned"
     }
   ],
-  "publicationNote": "This release is identified by the Git commit containing these files; commit fields remain null rather than inventing a self-referential SHA."
+  "publicationNote": "This release is identified by the Git commit containing these files; commit fields remain null rather than inventing a self-referential SHA.",
+  "nextAction": "Run the documented Year 6 fractions learner pilot with physical-device observations and a fresh off-screen transfer task; revise observed friction before reusing the template for another block.",
+  "year6FractionsCoverage": "../year6/fractions/coverage.json"
 }
