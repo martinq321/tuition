@@ -1,0 +1,105 @@
+/* MATHS WEDNESDAYS — MAIN COLOUR FILE
+   Edit this file to change the whole site. No edits to individual HTML pages needed.
+   Section 1: shared light surfaces. Section 2: category palettes.
+   Section 3: compatibility names used by existing activities.
+   Peg colours, painted faces and other mathematical meanings are intentionally separate. */
+:root {
+  color-scheme: light;
+  --mw-page-bg: #f5f5f2;
+  --mw-surface: #ffffff;
+  --mw-soft: #edf5ed;
+  --mw-text: #202722;
+  --mw-muted: #536158;
+  --mw-border: #d5ddd5;
+  --mw-accent: #167c43;
+  --mw-on-accent: #ffffff;
+  --mw-hover: #105f33;
+  --mw-canvas-bg: #fafbf8;
+  --mw-plot-grid: #dce3dd;
+  --mw-plot-line: #167c43;
+  --mw-plot-secondary: #98630c;
+  --mw-plot-highlight: #c18a14;
+  --mw-plot-fill: #e9f2ea;
+  --mw-radius: 18px;
+  --mw-font: Arial, Helvetica, sans-serif;
+  /* Think it through — gold */
+  --mw-logic-primary: #e7a523;
+  --mw-logic-light: #ffe194;
+  --mw-logic-dark: #98630c;
+  --mw-logic-soft: #fff7e3;
+  /* Shapes that surprise — blue and yellow */
+  --mw-shape-primary: #435be8;
+  --mw-shape-light: #a8b8ff;
+  --mw-shape-dark: #26339a;
+  --mw-shape-yellow: #e7a523;
+  --mw-shape-soft: #eef1ff;
+  /* Spot a pattern — purple */
+  --mw-number-primary: #9253dd;
+  --mw-number-light: #d2b3fa;
+  --mw-number-dark: #542891;
+  --mw-number-soft: #f3ecfb;
+  /* Make something yours — teal */
+  --mw-create-primary: #159e99;
+  --mw-create-light: #88ded2;
+  --mw-create-dark: #10605e;
+  --mw-create-soft: #e7f5f2;
+}
+:root[data-mw-topic="shape"] {
+  --mw-accent:var(--mw-shape-primary);--mw-hover:var(--mw-shape-dark);
+  --mw-soft:var(--mw-shape-soft);--mw-plot-line:var(--mw-shape-primary);
+  --mw-plot-secondary:var(--mw-shape-yellow);--mw-plot-highlight:var(--mw-shape-yellow);
+  --mw-plot-fill:var(--mw-shape-soft);
+}
+:root[data-mw-topic="logic"],:root[data-mw-topic="words"] {
+  --mw-accent:var(--mw-logic-dark);--mw-hover:var(--mw-logic-dark);
+  --mw-soft:var(--mw-logic-soft);--mw-plot-line:var(--mw-logic-dark);
+  --mw-plot-secondary:var(--mw-logic-primary);--mw-plot-highlight:var(--mw-logic-primary);
+  --mw-plot-fill:var(--mw-logic-soft);
+}
+:root[data-mw-topic="number"] {
+  --mw-accent:var(--mw-number-dark);--mw-hover:var(--mw-number-dark);
+  --mw-soft:var(--mw-number-soft);--mw-plot-line:var(--mw-number-primary);
+  --mw-plot-secondary:var(--mw-number-dark);--mw-plot-highlight:var(--mw-number-primary);
+  --mw-plot-fill:var(--mw-number-soft);
+}
+:root[data-mw-topic="create"] {
+  --mw-accent:var(--mw-create-dark);--mw-hover:var(--mw-create-dark);
+  --mw-soft:var(--mw-create-soft);--mw-plot-line:var(--mw-create-primary);
+  --mw-plot-secondary:var(--mw-create-dark);--mw-plot-highlight:var(--mw-logic-primary);
+  --mw-plot-fill:var(--mw-create-soft);
+}
+/* Legacy page styles read these aliases. Strong priority prevents old dark palettes leaking in. */
+:root,:root[data-theme],html[data-theme] body {
+  --bg:var(--mw-page-bg)!important;--panel:var(--mw-surface)!important;
+  --ink:var(--mw-text)!important;--muted:var(--mw-muted)!important;
+  --edge:var(--mw-border)!important;--accent:var(--mw-accent)!important;
+  --on-accent:var(--mw-on-accent)!important;--soft:var(--mw-soft)!important;
+  --action-hover:var(--mw-hover)!important;--radius:var(--mw-radius)!important;
+  --header-bg:var(--mw-surface)!important;--font-ui:var(--mw-font)!important;--focus:var(--mw-accent)!important;
+  --stage-bg:var(--mw-canvas-bg)!important;--stage-ink:var(--mw-text)!important;
+  --page-image:none!important;--page-size:auto!important;--page-position:0 0!important;--page-repeat:no-repeat!important;
+  --accent-alt:var(--mw-shape-primary)!important;--accent-third:var(--mw-number-primary)!important;
+  --green:var(--mw-accent)!important;--yellow:var(--mw-logic-dark)!important;--blue:var(--mw-shape-dark)!important;--purple:var(--mw-number-dark)!important;
+  --board:var(--mw-canvas-bg)!important;--plot:var(--mw-text)!important;--grid:var(--mw-plot-grid)!important;
+  --one:var(--mw-plot-line)!important;--two:var(--mw-plot-secondary)!important;--three:var(--mw-shape-dark)!important;
+  --text:var(--mw-text)!important;--fg:var(--mw-text)!important;--paper:var(--mw-surface)!important;--card:var(--mw-surface)!important;
+  --line:var(--mw-border)!important;--border:var(--mw-border)!important;--brand:var(--mw-accent)!important;--act:var(--mw-accent)!important;--on:var(--mw-on-accent)!important;
+  --mw-bg:var(--mw-page-bg);--mw-panel:var(--mw-surface);--mw-ink:var(--mw-text);--mw-edge:var(--mw-border);--mw-type:var(--mw-font);--mw-round:var(--mw-radius);--mw-page:var(--mw-surface);--mw-copy:var(--mw-text);
+}
+/* Interface surfaces only. Canvas drawing colours are read from the variables above by the renderer. */
+html[data-theme] body{background:var(--mw-page-bg)!important;color:var(--mw-text)!important}
+html[data-theme] body.mw-activity :is(.controls,.control-panel,.sidebar,.side,.box,.inspector,.lesson,.note,.saved,.insight,.instructions){background-color:var(--mw-surface)!important;color:var(--mw-text)!important;border-color:var(--mw-border)!important}
+html[data-theme] body.mw-activity :is(.viewport,#treeViewport,.canvas-wrap,.canvasWrap,.canvasbox,.canvas-box,.stage-wrap,svg.board,.scene-scroll,.scene){background:var(--mw-canvas-bg)!important;border-color:var(--mw-border)!important}
+html[data-theme] body.mw-activity :is(.hint,.rule,.strip,.callout,.challenge,.constraint-visual,.extension,.legend,.chip,#hint){background-color:var(--mw-soft)!important;color:var(--mw-text)!important;border-color:var(--mw-border)!important}
+html[data-theme] body.mw-activity :is(.tools,.toolbar,.actions,.row,.buttons,.control-panel,.controls) button:not(.primary):not([aria-pressed=true]):not(.swatch):not(.tile):not(.cell):not(.peg):not(.colour):not(.color):not([style*="background"]){background-color:var(--mw-surface)!important;color:var(--mw-text)!important;border-color:var(--mw-border)!important}
+html[data-theme] body.mw-activity :is(button.primary,.button.primary,.tools button[aria-pressed=true],.toolbar button[aria-pressed=true],.controls button[aria-pressed=true],.row button[aria-pressed=true]){background:var(--mw-accent)!important;color:var(--mw-on-accent)!important;border-color:var(--mw-accent)!important}
+html[data-theme] body.mw-activity :is(output,.value,.readout,code){color:var(--mw-accent)!important}
+html[data-theme] body.mw-activity :is(.controls,.sidebar,.side,.inspector,.instructions) :is(p,label,small){color:var(--mw-text)}
+html[data-theme] input[type=range],html[data-theme] input[type=checkbox]{accent-color:var(--mw-accent)!important}
+
+html[data-theme] body.mw-activity #stop-auto{background:var(--mw-surface)!important;color:var(--mw-text)!important;border-color:var(--mw-border)!important}
+
+/* Curve Lab keeps three race tracks distinct, using blue, yellow and deep blue. */
+:root[data-mw-topic=shape]{--felt:var(--mw-shape-soft)!important;--rail:var(--mw-shape-dark)!important}
+html[data-theme] svg[aria-label="Ellipse pool diagram"] text{fill:var(--mw-text)!important}
+html[data-theme] body.mw-activity .steps button[aria-pressed=true]{background:var(--mw-accent)!important;color:var(--mw-on-accent)!important;border-color:var(--mw-accent)!important}

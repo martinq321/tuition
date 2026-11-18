@@ -52,7 +52,7 @@ th{position:sticky;top:0;background:#f8f9fb}
 #chart{border:1px solid var(--border);border-radius:9px;background:#fff}
 @media(max-width:950px){.layout{grid-template-columns:1fr}.control input[type=range]{width:130px}}
 </style>
-<style>.mw-nav{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;margin:0 0 22px;font:600 14px system-ui,sans-serif}.mw-nav a{display:inline-flex;align-items:center;min-height:44px;color:#126b64;text-decoration:none}.mw-nav a:hover{text-decoration:underline}.mw-nav a[aria-current]{color:#52615a;text-decoration:underline}.mw-nav a:focus-visible{outline:3px solid #cc7912;outline-offset:4px}</style><link rel="stylesheet" href="../site-ux.css"><link rel="stylesheet" href="../../mw-design/themes/readability.css?v=3"><link rel="stylesheet" href="../../mw-design/themes/tokens.css?v=focus3"><link rel="stylesheet" href="../../mw-design/themes/activity.css?v=focus3"><script src="../../mw-design/themes.js?v=focus3"></script></head>
+<style>.mw-nav{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;margin:0 0 22px;font:600 14px system-ui,sans-serif}.mw-nav a{display:inline-flex;align-items:center;min-height:44px;color:#126b64;text-decoration:none}.mw-nav a:hover{text-decoration:underline}.mw-nav a[aria-current]{color:#52615a;text-decoration:underline}.mw-nav a:focus-visible{outline:3px solid #cc7912;outline-offset:4px}</style><link rel="stylesheet" href="../site-ux.css"><link rel="stylesheet" href="../../mw-design/themes/readability.css?v=3"><link rel="stylesheet" href="../../mw-design/themes/tokens.css?v=palette1"><link rel="stylesheet" href="../../mw-design/themes/activity.css?v=palette1"><script src="../../mw-design/themes.js?v=palette1"></script></head>
 <body>
 <main>
 <nav class="mw-nav" aria-label="Site navigation"><a href="../index.html">← Maths Wednesdays</a><a href="rigidity-2d.html">2D rigidity</a><a href="rigidity-3d.html">3D rigidity</a><a href="bridge-lab.html" aria-current="page">Bridge lab</a></nav>
@@ -194,6 +194,8 @@ th{position:sticky;top:0;background:#f8f9fb}
 <script>
 (() => {
 'use strict';
+function mwPlotColour(name,fallback){return getComputedStyle(document.documentElement).getPropertyValue(name).trim()||fallback;}
+
 
 const canvas=document.getElementById('bridge'),ctx=canvas.getContext('2d');
 const chart=document.getElementById('chart'),cctx=chart.getContext('2d');
@@ -509,9 +511,9 @@ function drawTruck(){
 
 function render(){
   ctx.clearRect(0,0,canvas.width,canvas.height);
-  ctx.fillStyle='#fff';ctx.fillRect(0,0,canvas.width,canvas.height);
+  ctx.fillStyle=mwPlotColour('--mw-canvas-bg','#fafbf8');ctx.fillRect(0,0,canvas.width,canvas.height);
   const T=transform();
-  ctx.strokeStyle='#edf0f4';ctx.lineWidth=1;
+  ctx.strokeStyle=mwPlotColour('--mw-plot-grid','#dce3dd');ctx.lineWidth=1;
   for(let x=50;x<canvas.width;x+=50){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,canvas.height);ctx.stroke();}
   for(let y=50;y<canvas.height;y+=50){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(canvas.width,y);ctx.stroke();}
   ctx.strokeStyle='#8c96a5';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(35,T.y0);ctx.lineTo(canvas.width-35,T.y0);ctx.stroke();
@@ -549,7 +551,7 @@ function render(){
   });
   drawTruck();
 
-  ctx.fillStyle='#667085';ctx.font='13px system-ui';ctx.textAlign='left';
+  ctx.fillStyle=mwPlotColour('--mw-text','#202722');ctx.font='13px system-ui';ctx.textAlign='left';
   const msg=mode==='node'?'Click empty space to add a joint.':
     mode==='member'?'Click two joints to add/remove a member.':
     'Select a member to inspect it, or drag a node to alter the geometry.';
@@ -668,11 +670,11 @@ function runAnalysis(){
 
 function drawChart(){
   cctx.clearRect(0,0,chart.width,chart.height);
-  cctx.fillStyle='#fff';cctx.fillRect(0,0,chart.width,chart.height);
+  cctx.fillStyle=mwPlotColour('--mw-canvas-bg','#fafbf8');cctx.fillRect(0,0,chart.width,chart.height);
   const pad={l:58,r:18,t:15,b:36};
-  cctx.strokeStyle='#c9cfda';cctx.lineWidth=1;
+  cctx.strokeStyle=mwPlotColour('--mw-plot-grid','#dce3dd');cctx.lineWidth=1;
   cctx.beginPath();cctx.moveTo(pad.l,pad.t);cctx.lineTo(pad.l,chart.height-pad.b);cctx.lineTo(chart.width-pad.r,chart.height-pad.b);cctx.stroke();
-  cctx.fillStyle='#667085';cctx.font='12px system-ui';
+  cctx.fillStyle=mwPlotColour('--mw-text','#202722');cctx.font='12px system-ui';
   cctx.fillText('Load (kN)',8,18);cctx.fillText('Max sag (mm)',chart.width-96,chart.height-10);
   if(testHistory.length<2)return;
   const maxL=Math.max(...testHistory.map(p=>p.load),1),maxD=Math.max(...testHistory.map(p=>p.sag*1000),.001);
@@ -680,7 +682,7 @@ function drawChart(){
   const Y=d=>chart.height-pad.b-d/maxD*(chart.height-pad.t-pad.b);
   cctx.strokeStyle='#315fb8';cctx.lineWidth=2;cctx.beginPath();
   testHistory.forEach((p,i)=>{const x=X(p.load),y=Y(p.sag*1000);if(i)cctx.lineTo(x,y);else cctx.moveTo(x,y);});cctx.stroke();
-  cctx.fillStyle='#667085';cctx.fillText(maxL.toFixed(0),chart.width-pad.r-28,chart.height-16);
+  cctx.fillStyle=mwPlotColour('--mw-text','#202722');cctx.fillText(maxL.toFixed(0),chart.width-pad.r-28,chart.height-16);
   cctx.fillText(maxD.toFixed(1),10,pad.t+5);
   for(const p of testHistory.filter(p=>p.failure)){
     const x=X(p.load),y=Y(p.sag*1000);cctx.fillStyle='#c92a2a';cctx.beginPath();cctx.arc(x,y,5,0,Math.PI*2);cctx.fill();

@@ -3,6 +3,14 @@
 'use strict';
 if(window.MWTheme)return;
 var base=new URL('./',document.currentScript.src);
+// Category identity is shared by the full and student copies of each activity.
+var path=location.pathname.toLowerCase(), topic='';
+if(/\/(string-lab|engineering)\//.test(path)||/\/(painted-cube|curve-lab|circle-investigations|squares-to-euclid|fewest-squares(?:-extension)?|36-fences|polyominoes|packing-lab|cut-and-rearrange|rupert-cube|paper|spiral-gallery)\.html$/.test(path))topic='shape';
+else if(/\/(mastermind|hanoi|dobble|josephus|river-crossing|sprouts)\//.test(path)||/\/(fifteen[^/]*|set|nim|memory|sorting|poker|pursuit|cube)\.html$/.test(path))topic='logic';
+else if(/\/(number-patterns|year[4-9]|gcse|a-level)\//.test(path)||/\/(30-cubes(?:-challenges)?|factor-shapes|factor-tree|magic-money-plant[^/]*|tables|multiply|divisors|neighbours|grid)\.html$/.test(path))topic='number';
+else if(/\/(creature-lab|code-grid|codebot|robot-trails|robot|pixel|cipher|scytale|enigma|turing|shark-family|dragon-world|dinosaur-world)\.html$/.test(path)||/\/workshop\//.test(path))topic='create';
+else if(/\/(bee|wordle)\.html$/.test(path))topic='words';
+if(topic)document.documentElement.dataset.mwTopic=topic;
 var choices=[['graph','Graph paper'],['ghost','Ghosted backdrop'],['dark','Dark'],['orbit','Orbit Lab'],['focus','Focus']];
 function apply(){
  document.documentElement.dataset.theme='focus';
@@ -12,6 +20,8 @@ function apply(){
 }
 window.MWTheme={set:apply,get:function(){return 'focus'},choices:choices};
 apply();
+// Load the single palette directly too, so legacy pages cannot bypass it.
+var palette=document.createElement('link');palette.rel='stylesheet';palette.addEventListener('load',apply);palette.href=new URL('main.css?v=palette1',base);document.head.append(palette);
 // Loaded immediately so the same presentation applies to old and new activity pages.
 var css=document.createElement('link');css.rel='stylesheet';css.href=new URL('themes/clean-ui.css?v=3',base);document.head.append(css);
 function mount(){
@@ -44,3 +54,4 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 new MutationObserver(function(){if(document.documentElement.dataset.theme!=='focus')apply()}).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
 window.addEventListener('pageshow',apply);
 })();
+

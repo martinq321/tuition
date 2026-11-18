@@ -41,7 +41,7 @@ hr{border:0;border-top:1px solid var(--border);margin:12px 0}
 .note{padding:10px 12px;border-radius:10px;background:#f4f6f8;color:var(--muted);font-size:.9rem}
 @media(max-width:900px){.layout{grid-template-columns:1fr}}
 </style>
-<style>.mw-nav{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;margin:0 0 22px;font:600 14px system-ui,sans-serif}.mw-nav a{display:inline-flex;align-items:center;min-height:44px;color:#126b64;text-decoration:none}.mw-nav a:hover{text-decoration:underline}.mw-nav a[aria-current]{color:#52615a;text-decoration:underline}.mw-nav a:focus-visible{outline:3px solid #cc7912;outline-offset:4px}</style><link rel="stylesheet" href="../site-ux.css"><link rel="stylesheet" href="../mw-design/themes/readability.css?v=3"><link rel="stylesheet" href="../mw-design/themes/tokens.css?v=focus3"><link rel="stylesheet" href="../mw-design/themes/activity.css?v=focus3"><script src="../mw-design/themes.js?v=focus3"></script></head>
+<style>.mw-nav{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;margin:0 0 22px;font:600 14px system-ui,sans-serif}.mw-nav a{display:inline-flex;align-items:center;min-height:44px;color:#126b64;text-decoration:none}.mw-nav a:hover{text-decoration:underline}.mw-nav a[aria-current]{color:#52615a;text-decoration:underline}.mw-nav a:focus-visible{outline:3px solid #cc7912;outline-offset:4px}</style><link rel="stylesheet" href="../site-ux.css"><link rel="stylesheet" href="../mw-design/themes/readability.css?v=3"><link rel="stylesheet" href="../mw-design/themes/tokens.css?v=palette1"><link rel="stylesheet" href="../mw-design/themes/activity.css?v=palette1"><script src="../mw-design/themes.js?v=palette1"></script></head>
 <body>
 <main>
 <nav class="mw-nav" aria-label="Site navigation"><a href="../index.html">← Home</a><a href="rigidity-2d.html">2D rigidity</a><a href="rigidity-3d.html" aria-current="page">3D rigidity</a><a href="bridge-lab.html">Bridge lab</a></nav>
@@ -139,6 +139,8 @@ hr{border:0;border-top:1px solid var(--border);margin:12px 0}
 
 <script>
 (() => {
+function mwPlotColour(name,fallback){return getComputedStyle(document.documentElement).getPropertyValue(name).trim()||fallback;}
+
   const canvas = document.getElementById('lab');
   const ctx = canvas.getContext('2d');
   const vEl = document.getElementById('vCount');
@@ -435,9 +437,9 @@ hr{border:0;border-top:1px solid var(--border);margin:12px 0}
 
   function render(){
     ctx.clearRect(0,0,canvas.width,canvas.height);
-    ctx.fillStyle='#ffffff';ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle=mwPlotColour('--mw-canvas-bg','#fafbf8');ctx.fillRect(0,0,canvas.width,canvas.height);
 
-    ctx.strokeStyle='rgba(102,112,133,.12)';ctx.lineWidth=1;
+    ctx.strokeStyle=mwPlotColour('--mw-plot-grid','#dce3dd');ctx.lineWidth=1;
     for(let x=0;x<canvas.width;x+=40){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,canvas.height);ctx.stroke();}
     for(let y=0;y<canvas.height;y+=40){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(canvas.width,y);ctx.stroke();}
 
@@ -470,7 +472,7 @@ hr{border:0;border-top:1px solid var(--border);margin:12px 0}
     }
 
     ctx.textAlign='left';ctx.textBaseline='alphabetic';
-    ctx.fillStyle='#667085';ctx.font='14px system-ui';
+    ctx.fillStyle=mwPlotColour('--mw-text','#202722');ctx.font='14px system-ui';
     const msg=mode==='orbit'?'Drag to rotate the view; wheel to zoom.':
       mode==='joint'?'Click empty space to add a joint in the current view plane.':
       mode==='bar'?'Click two joints to add or remove a bar.':
