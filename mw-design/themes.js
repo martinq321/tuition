@@ -15,8 +15,8 @@ function read(){try{return localStorage.getItem(key)||localStorage.getItem('mw.t
 window.MWTheme={set:function(v){apply(v,true)},get:function(){return document.documentElement.dataset.theme},choices:choices};
 apply(new URLSearchParams(location.search).get('theme')||read(),false);
 function mount(){
- var css=document.createElement('link');css.rel='stylesheet';css.href=new URL('themes/clean-ui.css?v=1',base);document.head.append(css);
- var ux=document.createElement('script');ux.src=new URL('clean-ui.js?v=1',base);document.head.append(ux);
+ var css=document.createElement('link');css.rel='stylesheet';css.href=new URL('themes/clean-ui.css?v=2',base);document.head.append(css);
+ var ux=document.createElement('script');ux.src=new URL('clean-ui.js?v=2',base);document.head.append(ux);
  var existing=document.querySelector('#theme-choice');
  // Remove obsolete controls; these are appearance UI, never activity controls.
  document.querySelectorAll('#mw-sitebar,.mw-theme-bar').forEach(function(b){b.remove()});
