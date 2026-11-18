@@ -1,2 +1,2 @@
-/* Compatibility entry point. All live site/category colours are in ../main.css. */
-@import url('../main.css?v=palette1');
+/* All site and category colours live in ../main.css. */
+@import url('../main.css?v=palette2');

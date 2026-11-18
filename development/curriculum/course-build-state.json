@@ -1,41 +1,58 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "updated": "2026-11-18",
   "repository": "martinq321/tuition",
   "scope": [
+    "Year 1",
+    "Year 2",
+    "Year 3",
+    "Year 4",
+    "Year 5",
     "Year 6",
     "Year 7",
     "Year 8",
     "Year 9",
-    "GCSE",
+    "GCSE Foundation and Higher",
     "A-level Mathematics"
   ],
-  "currentCourseStatus": "Investigation collections available; comprehensive taught courses not yet built",
+  "currentCourseStatus": "316 grouped objectives mapped; 53 main activities source-reviewed. 138 objectives partially supported, 178 planned, no stage declared a complete taught course.",
   "workingRule": "One bounded task or teaching block per command. Validate and update state before continuing.",
   "plan": "COURSE-BUILD-PLAN.md",
   "tasks": [
     {
       "id": 1,
-      "title": "Shared themes",
-      "status": "implemented-and-checked",
+      "title": "Shared Focus appearance",
+      "status": "implemented-and-representatively-checked",
       "evidence": [
-        "155 public pages each load one shared palette, component sheet and controller",
-        "Dark default and preservation/migration of saved choices checked",
-        "Browser checks: homepage, Year 5, Year 7, painted cube, decimal workshop",
-        "Four themes: Dark, Graph paper, Ghosted backdrop, Orbit Lab"
+        "159 public HTML pages load shared CSS/controller",
+        "53 catalogue categories verified against page classification",
+        "One main palette, lozenge controls and geometry exceptions",
+        "Hanoi gold discs/pegs; purple/yellow Number Patterns; blue/yellow Rupert scene",
+        "No theme chooser; no dark default"
       ],
-      "commit": "c15b6cd8b0c882b7614ac6d5c412cf1b72abbd2e",
+      "commit": null,
       "limitations": [
-        "Representative browser checks; not an exhaustive gameplay regression of all 155 pages",
-        "Platform-pilot and Handoff excluded"
+        "Representative browser checks, not exhaustive gameplay regression",
+        "Separate legacy Platform-pilot and Handoff are not student investigations and remain excluded"
       ]
     },
     {
       "id": 2,
-      "title": "Audit and curriculum maps",
-      "status": "planned",
-      "evidence": [],
-      "commit": null
+      "title": "Year 1\u2013A-level activity audit and curriculum maps",
+      "status": "mapped-and-source-audited",
+      "evidence": [
+        "11 stages; 316 grouped objectives; official sources and proposed small steps",
+        "53 main activity records and 37 course-resource records",
+        "404 graph nodes; 994 typed edges; no unresolved IDs or prerequisite cycles",
+        "All 47 primary year/domain sections; KS3 proposed sequence, GCSE tier distinction, standard A-level A\u2013S scope",
+        "Accessible entry is distinct from formal goal; no lesson or mastery claims from a link"
+      ],
+      "commit": null,
+      "limitations": [
+        "Not a complete teaching course or independent curriculum accreditation",
+        "Most activity runtime/device checks remain a release task",
+        "Exam-board selection and current assessment details remain to be configured"
+      ]
     },
     {
       "id": 3,
@@ -68,6 +85,20 @@
     {
       "id": 7,
       "title": "Year 6 blocks",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": "7A",
+      "title": "Years 1\u20133 blocks",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": "7B",
+      "title": "Years 4\u20135 completion and repair",
       "status": "planned",
       "evidence": [],
       "commit": null
@@ -129,5 +160,58 @@
       "commit": null
     }
   ],
-  "nextTask": 2
+  "nextTask": 3,
+  "curriculumMap": "curriculum-map.json",
+  "readableMap": "map.html",
+  "activityAudit": "activity-audit.json",
+  "prerequisiteGraph": "curriculum-graph.json",
+  "release": "focus-palette-curriculum-v2",
+  "platformTasks": [
+    {
+      "id": "P1",
+      "title": "Architecture and realistic protection",
+      "status": "planned"
+    },
+    {
+      "id": "P2",
+      "title": "Usernames and secure accounts",
+      "status": "planned"
+    },
+    {
+      "id": "P3",
+      "title": "Admin desk and individual access",
+      "status": "planned"
+    },
+    {
+      "id": "P4",
+      "title": "Secure learning evidence and reports",
+      "status": "planned"
+    },
+    {
+      "id": "P5",
+      "title": "Live multiplayer",
+      "status": "planned"
+    },
+    {
+      "id": "P6",
+      "title": "Supervised tuition and chat",
+      "status": "planned"
+    },
+    {
+      "id": "P7",
+      "title": "Free tier and subscriptions",
+      "status": "planned"
+    },
+    {
+      "id": "P8",
+      "title": "Domain migration",
+      "status": "planned"
+    },
+    {
+      "id": "P9",
+      "title": "Commercial readiness",
+      "status": "planned"
+    }
+  ],
+  "publicationNote": "This release is identified by the Git commit containing these files; commit fields remain null rather than inventing a self-referential SHA."
 }

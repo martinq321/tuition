@@ -8,8 +8,8 @@
 :root{
   --bg:#f6f7f9; --panel:#ffffff; --text:#1d2430; --muted:#667085;
   --border:#d7dce3; --accent:#315fb8; --accent-bg:#e9effb;
-  --bar:#344054; --joint:#e7961d; --pin:#7c3aed; --select:#2563eb;
-  --x:#b54747; --y:#348352; --z:#3c6eaa;
+  --bar:var(--mw-shape-primary); --joint:var(--mw-shape-yellow); --pin:var(--mw-shape-dark); --select:var(--mw-shape-dark);
+  --x:var(--mw-shape-primary); --y:var(--mw-shape-yellow-dark); --z:var(--mw-shape-dark);
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
@@ -41,7 +41,7 @@ hr{border:0;border-top:1px solid var(--border);margin:12px 0}
 .note{padding:10px 12px;border-radius:10px;background:#f4f6f8;color:var(--muted);font-size:.9rem}
 @media(max-width:900px){.layout{grid-template-columns:1fr}}
 </style>
-<style>.mw-nav{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;margin:0 0 22px;font:600 14px system-ui,sans-serif}.mw-nav a{display:inline-flex;align-items:center;min-height:44px;color:#126b64;text-decoration:none}.mw-nav a:hover{text-decoration:underline}.mw-nav a[aria-current]{color:#52615a;text-decoration:underline}.mw-nav a:focus-visible{outline:3px solid #cc7912;outline-offset:4px}</style><link rel="stylesheet" href="../site-ux.css"><link rel="stylesheet" href="../../mw-design/themes/readability.css?v=3"><link rel="stylesheet" href="../../mw-design/themes/tokens.css?v=palette1"><link rel="stylesheet" href="../../mw-design/themes/activity.css?v=palette1"><script src="../../mw-design/themes.js?v=palette1"></script></head>
+<style>.mw-nav{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;margin:0 0 22px;font:600 14px system-ui,sans-serif}.mw-nav a{display:inline-flex;align-items:center;min-height:44px;color:#126b64;text-decoration:none}.mw-nav a:hover{text-decoration:underline}.mw-nav a[aria-current]{color:#52615a;text-decoration:underline}.mw-nav a:focus-visible{outline:3px solid #cc7912;outline-offset:4px}</style><link rel="stylesheet" href="../site-ux.css"><link rel="stylesheet" href="../../mw-design/themes/readability.css?v=palette2"><link rel="stylesheet" href="../../mw-design/themes/tokens.css?v=palette2"><link rel="stylesheet" href="../../mw-design/themes/activity.css?v=palette2"><script src="../../mw-design/themes.js?v=palette2"></script></head>
 <body>
 <main>
 <nav class="mw-nav" aria-label="Site navigation"><a href="../index.html">← Maths Wednesdays</a><a href="rigidity-2d.html">2D rigidity</a><a href="rigidity-3d.html" aria-current="page">3D rigidity</a><a href="bridge-lab.html">Bridge lab</a></nav>
@@ -454,20 +454,20 @@ function mwPlotColour(name,fallback){return getComputedStyle(document.documentEl
 
     ctx.lineCap='round';
     for(const x of barDraw){
-      ctx.strokeStyle='#344054';ctx.lineWidth=7;
+      ctx.strokeStyle=mwPlotColour('--mw-shape-primary','#435be8');ctx.lineWidth=7;
       ctx.beginPath();ctx.moveTo(x.A.sx,x.A.sy);ctx.lineTo(x.B.sx,x.B.sy);ctx.stroke();
     }
 
     for(const q of renderNodes){
       const n=nodes[q.i];
       if(selected===q.i||barFirst===q.i){
-        ctx.strokeStyle='#2563eb';ctx.lineWidth=4;
+        ctx.strokeStyle=mwPlotColour('--mw-shape-dark','#26339a');ctx.lineWidth=4;
         ctx.beginPath();ctx.arc(q.sx,q.sy,19,0,Math.PI*2);ctx.stroke();
       }
-      ctx.fillStyle=n.pinned?'#7c3aed':'#e7961d';
+      ctx.fillStyle=n.pinned?mwPlotColour('--mw-shape-dark','#26339a'):mwPlotColour('--mw-shape-yellow','#e7a523');
       ctx.strokeStyle='#fff';ctx.lineWidth=3;
       ctx.beginPath();ctx.arc(q.sx,q.sy,13,0,Math.PI*2);ctx.fill();ctx.stroke();
-      ctx.fillStyle='#fff';ctx.font='bold 11px system-ui';ctx.textAlign='center';ctx.textBaseline='middle';
+      ctx.fillStyle=n.pinned?'#ffffff':mwPlotColour('--mw-shape-dark','#26339a');ctx.font='bold 11px system-ui';ctx.textAlign='center';ctx.textBaseline='middle';
       ctx.fillText(String.fromCharCode(65+(q.i%26)),q.sx,q.sy+1);
     }
 

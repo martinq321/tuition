@@ -1,0 +1,4827 @@
+{
+  "audited_commit": "a64bc8bf8dcd227aa8a7ebf52588d3406dce8740",
+  "audit_date": "2026-11-18",
+  "method": {
+    "type": "source-based inventory and functional review",
+    "scope": "All 53 main cards in puzzles/index.html; all 24 corresponding student-menu entries; Year 4 and Year 5 workshops/units; twelve learning-shell lessons; existing later-stage pathway hubs.",
+    "checks": [
+      "Read control markup, event handlers and mathematical model/checking logic in main pages and linked scripts.",
+      "Review accessible entry separately from formal extension; curriculum domains are candidate connections, not assertions of complete coverage.",
+      "Check repository-relative main targets and script/asset paths against the audited tree.",
+      "Compare inline game logic across corresponding student and main pages; inspect external script paths.",
+      "Inspect all fourteen Year 5 unit task sets and shared model/checking code."
+    ],
+    "limits": [
+      "No activity browser session was executed as part of this audit; every runtime field says not tested this audit.",
+      "Repository-authored historical QA claims are not counted as newly verified evidence.",
+      "Source review does not prove mathematical correctness, responsive layout, accessibility conformance or secure access.",
+      "Completion, visits, XP and game wins are never treated as curriculum mastery.",
+      "Some helper pages are reviewed for their model/link context, not exhaustively as standalone courses."
+    ]
+  },
+  "activities": [
+    {
+      "id": "mastermind",
+      "title": "Mastermind",
+      "category": "logic",
+      "path": "mastermind/Mastermind_Maths_Wednesdays.html",
+      "student_path": "students/mastermind/Mastermind_Maths_Wednesdays.html",
+      "accessible_entry": "Match colours and use a single clue to rule out a guess; begin with fewer holes and colours.",
+      "interaction_summary": "Submit colour sequences; exact-position and colour-only feedback filters candidate codes. Includes optional counts, hints, local profiles, separate timed/untimed statistics and count-up/countdown clocks.",
+      "formal_extension": "Count code spaces, compare information gained, and justify minimax or expected-guess strategies. A completed game is not evidence of general reasoning transfer.",
+      "prerequisites": [
+        "matching",
+        "turn-taking",
+        "counting"
+      ],
+      "curriculum_domains": [
+        "logic",
+        "combinatorics",
+        "probability",
+        "algorithms"
+      ],
+      "gaps": [
+        "Secure accounts and cross-device evidence are absent",
+        "strategy/probability lessons remain to be built",
+        "score validity needs regression cases for repeats and time-outs."
+      ],
+      "accessibility": [
+        "Keyboard numbers, arrows and Enter are handled",
+        "colour naming/pattern accessibility and compact phone history need real-device verification."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "mastermind/Mastermind_Maths_Wednesdays.html"
+        ],
+        "source_checks": [
+          "score/filter/partitions implement clue-based elimination",
+          "timer checks and abandonment records exist",
+          "local profile and score summary paths are implemented"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": true,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "river",
+      "title": "Goat & boat",
+      "category": "logic",
+      "path": "river-crossing/index.html",
+      "student_path": "students/river-crossing/index.html",
+      "accessible_entry": "Carry one item, predict what can safely stay together, and explain why an empty return might help.",
+      "interaction_summary": "Boat/load controls run a state-based crossing puzzle with unsafe-pair checks, undo, hints and 3/5/7-item variants; crossing and eating animations are present.",
+      "formal_extension": "Draw the state graph, use breadth-first search to prove a shortest route, then compare altered cargo constraints.",
+      "prerequisites": [
+        "matching",
+        "sequencing",
+        "turn-taking"
+      ],
+      "curriculum_domains": [
+        "logic",
+        "algorithms",
+        "graphs"
+      ],
+      "gaps": [
+        "Animation timing, interrupting/resetting mid-crossing and mobile targets need interaction tests",
+        "winning alone does not show understanding of optimality."
+      ],
+      "accessibility": [
+        "Tap loading/crossing avoids precision drawing",
+        "animation-speed controls are present",
+        "reduced-motion behaviour needs checking."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "river-crossing/index.html"
+        ],
+        "source_checks": [
+          "crossingMoves and unsafe generate legal states",
+          "solveCrossing searches states",
+          "sail/animate run crossings",
+          "undo restores prior state"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": true,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "hanoi",
+      "title": "Tower of Hanoi",
+      "category": "logic",
+      "path": "hanoi/index.html",
+      "student_path": "students/hanoi/index.html",
+      "accessible_entry": "Move two or three discs legally and notice which smaller discs must move first.",
+      "interaction_summary": "Three pegs, 1–8 discs, tap/drag moves, undo, hints and reversible demonstration enforce smaller-on-larger moves.",
+      "formal_extension": "Find T(n)=2T(n−1)+1, explain 2^n−1 and prove minimality by induction.",
+      "prerequisites": [
+        "size-order",
+        "counting",
+        "sequencing"
+      ],
+      "curriculum_domains": [
+        "logic",
+        "sequences",
+        "proof",
+        "algorithms"
+      ],
+      "gaps": [
+        "Only the three-peg game is implemented",
+        "move completion does not assess recurrence explanations",
+        "touch and interruption tests pending."
+      ],
+      "accessibility": [
+        "Tap and button alternatives to dragging exist",
+        "adjustable animation speed",
+        "disc labels and contrast should be inspected after palette changes."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "hanoi/index.html"
+        ],
+        "source_checks": [
+          "move validates source/destination sizes",
+          "solution recursively generates moves",
+          "hint/demo preserve and restore state"
+        ],
+        "runtime": "Representative browser check in this release: Browser: select peg A then C, undo, 3 and 8 discs; golden discs/pegs; 390 px iframe control wrap and peg selection.",
+        "release_checks": [
+          {
+            "activity_id": "hanoi",
+            "date": "2026-11-18",
+            "scope": "Browser: select peg A then C, undo, 3 and 8 discs; golden discs/pegs; 390 px iframe control wrap and peg selection.",
+            "result": "passed"
+          }
+        ]
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": true,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "dobble",
+      "title": "Dobble",
+      "category": "logic",
+      "path": "dobble/index.html",
+      "student_path": "students/dobble/index.html",
+      "accessible_entry": "Make three cards using stickers, then check every pair shares exactly one symbol.",
+      "interaction_summary": "Build/edit small card sets, label symbols, test pairwise intersections, save/load and print; links lead to grid, Fano and play/solo helpers.",
+      "formal_extension": "Construct order-2 projective-plane cards, investigate n²+n+1 cards and prime-power constructions, and distinguish examples from existence proofs.",
+      "prerequisites": [
+        "matching",
+        "counting",
+        "systematic-listing"
+      ],
+      "curriculum_domains": [
+        "combinatorics",
+        "geometry",
+        "logic",
+        "proof"
+      ],
+      "gaps": [
+        "A graded investigation beyond the small builders needs teaching notes and follow-up evidence",
+        "finite-plane generalisations exceed ordinary school requirements."
+      ],
+      "accessibility": [
+        "Tap-to-edit supports touch",
+        "printable cards provide a physical route",
+        "custom-label overflow and screen-reader card descriptions need review."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "dobble/index.html",
+          "dobble/grid-lab.html",
+          "dobble/fano-builder.html"
+        ],
+        "source_checks": [
+          "shared computes intersections",
+          "test examines card pairs",
+          "card and symbol controls modify deck",
+          "helper links exist"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": true,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "set",
+      "title": "Find a SET",
+      "category": "logic",
+      "path": "puzzles/sessions/set.html",
+      "accessible_entry": "Choose three cards whose features are all the same or all different, one feature at a time.",
+      "interaction_summary": "9/27/81-card decks vary the number of attributes; selection/check, one-card hint, no-set check and additional cards use ternary feature vectors.",
+      "formal_extension": "Model attributes in F₃ⁿ, count sets and justify why two cards determine a third.",
+      "prerequisites": [
+        "matching",
+        "classifying",
+        "counting"
+      ],
+      "curriculum_domains": [
+        "logic",
+        "combinatorics",
+        "vectors",
+        "proof"
+      ],
+      "gaps": [
+        "No full course on affine geometry is present",
+        "game success is not evidence of general working-memory or logic improvement."
+      ],
+      "accessibility": [
+        "Labels supplement colour/shape",
+        "tap card selection exists",
+        "visual density at 81-card scope needs device testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/set.html",
+          "puzzles/sessions/common.js",
+          "puzzles/sessions/core.js",
+          "puzzles/sessions/set.js"
+        ],
+        "source_checks": [
+          "Session.setDeck builds 3^d distinct vectors",
+          "isSet checks each coordinate sum modulo 3",
+          "findSet searches triples"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "fifteen",
+      "title": "15 game",
+      "category": "logic",
+      "path": "puzzles/sessions/fifteen.html",
+      "student_path": "students/sessions/fifteen.html",
+      "accessible_entry": "Take numbers 1–9 and find three that total 15 using physical number cards if useful.",
+      "interaction_summary": "Two-player or computer play checks three-number subsets; a magic-square view links the game to noughts and crosses; undo and hint are provided.",
+      "formal_extension": "Prove the magic-square game equivalence, classify winning triples and reason with a finite game tree.",
+      "prerequisites": [
+        "addition-within-20",
+        "three-item-sums"
+      ],
+      "curriculum_domains": [
+        "number",
+        "logic",
+        "combinatorics",
+        "proof"
+      ],
+      "gaps": [
+        "The connection is available but a complete explanation/proof sequence is not assessed",
+        "keyboard and computer-race interactions need testing."
+      ],
+      "accessibility": [
+        "Number buttons provide a non-drag route",
+        "visible number labels",
+        "compare phone layout in both views."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/fifteen.html",
+          "puzzles/sessions/common.js",
+          "puzzles/sessions/core.js",
+          "puzzles/sessions/fifteen.js",
+          "puzzles/sessions/fifteen-grid.html"
+        ],
+        "source_checks": [
+          "Session.winningTriple enumerates triples",
+          "fifteenMove uses memoised negamax",
+          "delayed computer move is cancelled on reset"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": false,
+        "linked_scripts": [
+          "students/sessions/common.js",
+          "students/sessions/core.js",
+          "students/sessions/fifteen.js"
+        ],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "nim",
+      "title": "Take-away strategy",
+      "category": "logic",
+      "path": "puzzles/sessions/nim.html",
+      "accessible_entry": "Take one or two counters and predict who takes the last; change one rule.",
+      "interaction_summary": "Single-pile take-away with adjustable starting count, maximum take, last-wins/loses, computer/local play, hints and pattern display.",
+      "formal_extension": "Derive losing residue classes and prove a winning strategy by induction/backward reasoning.",
+      "prerequisites": [
+        "counting",
+        "subtraction"
+      ],
+      "curriculum_domains": [
+        "number",
+        "logic",
+        "modular-arithmetic",
+        "proof"
+      ],
+      "gaps": [
+        "This is not multi-heap Nim and does not implement the xor strategy",
+        "explanation evidence and varied practice are absent."
+      ],
+      "accessibility": [
+        "Buttons for take choices",
+        "small starting counts reduce visual load",
+        "optional pattern reveal should be tutor-controlled."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/nim.html",
+          "puzzles/sessions/common.js",
+          "puzzles/sessions/core.js",
+          "puzzles/sessions/nim.js"
+        ],
+        "source_checks": [
+          "Session.nimWins computes win/loss positions by dynamic programming",
+          "nimMove selects a losing successor when available"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "memory",
+      "title": "Memory pairs",
+      "category": "logic",
+      "path": "puzzles/sessions/memory.html",
+      "student_path": "students/sessions/memory.html",
+      "accessible_entry": "Match visible representations in a small four-pair deck and describe the relationship.",
+      "interaction_summary": "Picture, number and fraction–decimal modes; 4/6/8/12 pairs; one/two local players; mismatches wait to be covered and matched slots stay fixed.",
+      "formal_extension": "Explore equivalent numerical representations and systematic search strategies rather than claims about improving memory generally.",
+      "prerequisites": [
+        "matching",
+        "turn-taking",
+        "fraction-decimal-equivalence-for-that-mode"
+      ],
+      "curriculum_domains": [
+        "number",
+        "fractions",
+        "decimals",
+        "representation"
+      ],
+      "gaps": [
+        "Not a curriculum sequence or a validated memory intervention",
+        "fraction equivalence teaching must accompany that mode."
+      ],
+      "accessibility": [
+        "Small-deck option and manual pacing",
+        "keyboard focus after redraw needs review."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/memory.html",
+          "puzzles/sessions/common.js",
+          "puzzles/sessions/core.js",
+          "puzzles/sessions/memory-art.js",
+          "puzzles/sessions/memory.js"
+        ],
+        "source_checks": [
+          "choose checks paired identities and preserves matched positions",
+          "manual mismatch-cover control",
+          "no compulsory clock"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": false,
+        "linked_scripts": [
+          "students/sessions/common.js",
+          "students/sessions/core.js",
+          "students/sessions/memory-art.js",
+          "students/sessions/memory.js"
+        ],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "sorting",
+      "title": "Mystery weights",
+      "category": "logic",
+      "path": "puzzles/sessions/sorting.html",
+      "accessible_entry": "Compare two unknown weights, record which is lighter and arrange four objects.",
+      "interaction_summary": "A balance comparison reveals only order; arrows reorder boxes; compare insertion and selection sorting on the same starting order.",
+      "formal_extension": "Count comparisons, explain invariants and reason about worst cases and lower bounds.",
+      "prerequisites": [
+        "heavier-lighter",
+        "ordering",
+        "recording"
+      ],
+      "curriculum_domains": [
+        "measurement",
+        "algorithms",
+        "logic",
+        "proof"
+      ],
+      "gaps": [
+        "No direct physical scale connection",
+        "complexity proof and varied assessment remain to be developed."
+      ],
+      "accessibility": [
+        "Button/arrows support non-drag ordering",
+        "comparison text supplements animation",
+        "long trace readability needs checking."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/sorting.html",
+          "puzzles/sessions/common.js",
+          "puzzles/sessions/core.js",
+          "puzzles/sessions/sorting.js"
+        ],
+        "source_checks": [
+          "Session.sortTrace generates selection/insertion comparisons",
+          "notebook stores comparisons",
+          "algorithms use the same initial weights"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "josephus",
+      "title": "Which card stays?",
+      "category": "logic",
+      "path": "josephus/index.html",
+      "student_path": "students/josephus/index.html",
+      "accessible_entry": "Lay out a few cards in a circle and alternate keeping/removing; predict the survivor.",
+      "interaction_summary": "A–K circular display, 1–13 participants, clockwise keep-one/remove-one steps, undo and session records; binary helper linked.",
+      "formal_extension": "Investigate J(n)=2(n−2^floor(log₂n))+1 for step size 2 and prove its recurrence.",
+      "prerequisites": [
+        "counting",
+        "alternating",
+        "cyclic-order"
+      ],
+      "curriculum_domains": [
+        "number",
+        "sequences",
+        "binary",
+        "proof"
+      ],
+      "gaps": [
+        "General step sizes are not implemented",
+        "records do not capture explanations",
+        "visual cursor and winner contrast need device review."
+      ],
+      "accessibility": [
+        "Cards supply symbols as well as colour",
+        "slow step mode reduces pacing pressure."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "josephus/index.html",
+          "josephus/play.js",
+          "josephus/binary.html",
+          "josephus/binary.js"
+        ],
+        "source_checks": [
+          "Circle player/card state is separate from survivor display",
+          "step/undo and binary helper are wired"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": false,
+        "linked_scripts": [
+          "students/josephus/play.js"
+        ],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "rubik",
+      "title": "Twisty cube",
+      "category": "logic",
+      "path": "games/cube.html",
+      "accessible_entry": "Turn a face, reverse it and compare the coloured net with a physical cube.",
+      "interaction_summary": "An unfolded six-face cube supports face turns, scrambles, undo and reversing a move sequence.",
+      "formal_extension": "Permutation composition, inverses, invariants and group structure are enrichment; full solving methods require additional teaching.",
+      "prerequisites": [
+        "spatial-orientation",
+        "sequencing"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "transformations",
+        "algorithms"
+      ],
+      "gaps": [
+        "The display is a 2D net, not a rotating 3D cube",
+        "no solving course or parity proof is implemented."
+      ],
+      "accessibility": [
+        "Button turns avoid precision gestures",
+        "net interpretation itself can be demanding",
+        "colour-only sticker distinction needs review."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "games/cube.html",
+          "games/core.js",
+          "games/common.js",
+          "games/cube-poker.js"
+        ],
+        "source_checks": [
+          "Core.turn rotates face-layer positions and normals",
+          "cubeSolved checks face colours",
+          "cube-poker.js renders net controls"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "poker",
+      "title": "Which hand wins?",
+      "category": "logic",
+      "path": "games/poker.html",
+      "accessible_entry": "Compare repeated numbers and ordered ranks using example hands.",
+      "interaction_summary": "Deal two players and five community cards; select the stronger five-card hand with explanations from ranked combinations.",
+      "formal_extension": "Count combinations and study probability under stated sampling assumptions; this is not yet a probability course.",
+      "prerequisites": [
+        "ordering",
+        "matching",
+        "rule-following"
+      ],
+      "curriculum_domains": [
+        "combinatorics",
+        "probability",
+        "logic"
+      ],
+      "gaps": [
+        "Age-appropriate choice of context and non-card alternatives are a tutor decision",
+        "exhaustive ranking fixtures still needed."
+      ],
+      "accessibility": [
+        "Text rank explanations accompany cards",
+        "suit/colour contrast and compact card labels need checking."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "games/poker.html",
+          "games/core.js",
+          "games/common.js",
+          "games/cube-poker.js"
+        ],
+        "source_checks": [
+          "Core.rank5 handles straights including low ace and tie breakers",
+          "bestHand enumerates five-card subsets",
+          "no wagering mechanism in reviewed page"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "pursuit",
+      "title": "Chase & escape",
+      "category": "logic",
+      "path": "games/pursuit.html",
+      "student_path": "students/games/pursuit.html",
+      "accessible_entry": "Make points chase one another, change a speed and describe the traces.",
+      "interaction_summary": "Cyclic pursuit and chase/escape modes animate agents steering towards moving targets; run/pause/step and target control are available.",
+      "formal_extension": "Vectors, numerical integration and pursuit differential equations require substantial later teaching.",
+      "prerequisites": [
+        "direction",
+        "distance",
+        "comparing-speed"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "vectors",
+        "mechanics",
+        "modelling"
+      ],
+      "gaps": [
+        "Step-size convergence and target-boundary behaviour have not been verified",
+        "an illustrative numerical model is not an exact trajectory proof."
+      ],
+      "accessibility": [
+        "Canvas is keyboard focusable and arrow keys move the target",
+        "text alternatives to traces need development."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "games/pursuit.html",
+          "games/core.js",
+          "games/common.js",
+          "games/visual.js"
+        ],
+        "source_checks": [
+          "visual.js towards/tick advance positions",
+          "speed and number-of-chasers controls are bound",
+          "escape target accepts pointer/keys"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": false,
+        "linked_scripts": [
+          "students/games/core.js",
+          "students/games/common.js",
+          "students/games/visual.js"
+        ],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "sprouts",
+      "title": "Sprouts",
+      "category": "logic",
+      "path": "puzzles/sprouts/index.html",
+      "student_path": "students/sprouts/index.html",
+      "accessible_entry": "Join two dots without crossing and add a new dot; begin with one or two dots.",
+      "interaction_summary": "Freehand/tap routes check degree limits, crossing/retracing and passing through other dots; undo and player turns are supported.",
+      "formal_extension": "Use planar graph ideas to bound the maximum number of moves and compare topologically distinct positions.",
+      "prerequisites": [
+        "fine-motor-paths",
+        "counting-to-three",
+        "turn-taking"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "graphs",
+        "logic",
+        "proof"
+      ],
+      "gaps": [
+        "Source explicitly describes geometric checks as a prototype",
+        "tight legal routes can be difficult",
+        "no complete no-legal-move solver exists."
+      ],
+      "accessibility": [
+        "Tap-route alternative is present",
+        "precision and crossing feedback require real-device testing",
+        "physical paper play is a useful equivalent."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sprouts/index.html"
+        ],
+        "source_checks": [
+          "Route validation checks intersection and endpoint degree",
+          "each move adds a dot",
+          "end-of-game uses player agreement"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": true,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "cube",
+      "title": "Painted cubes",
+      "category": "shape",
+      "path": "puzzles/sessions/painted-cube.html",
+      "student_path": "students/sessions/painted-cube.html",
+      "accessible_entry": "Paint a large cube, rotate it and sort small cubes by how many painted faces they have.",
+      "interaction_summary": "Sizes 2–7, face painting, one-colour/count-colour modes, manual inspection, spread slider and animated sorting into persistent buckets.",
+      "formal_extension": "For all outer faces painted derive 8 corners, 12(n−2) edges, 6(n−2)² face interiors and (n−2)³ interior cubes; vary painted-face subsets.",
+      "prerequisites": [
+        "counting",
+        "face-edge-corner",
+        "small-products"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "number",
+        "algebra",
+        "sequences"
+      ],
+      "gaps": [
+        "Count formula teaching and written reasoning are not a complete sequence",
+        "all sizes and animation stop/reset cases need browser testing."
+      ],
+      "accessibility": [
+        "Rotation/zoom gestures and large count labels exist",
+        "bucket totals provide numeric information",
+        "keyboard parity and reduced motion need review."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/painted-cube.html"
+        ],
+        "source_checks": [
+          "Small-cube face flags determine classification",
+          "bucket counts and autosort use those flags",
+          "size and painting controls update the model"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": true,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "ramps",
+      "title": "Curve lab",
+      "category": "shape",
+      "path": "puzzles/sessions/curve-lab.html",
+      "student_path": "students/sessions/curve-lab.html",
+      "accessible_entry": "Build a ramp from points, race a ball against a straight slope and predict which wins.",
+      "interaction_summary": "Curve lab includes empirical ramp race, Cartesian plotting, ellipse pool and parabolic reflector views with interactive controls.",
+      "formal_extension": "Distinguish parabola, cycloid/brachistochrone and ellipse; formal reflection proofs, mechanics and calculus of variations are later extensions.",
+      "prerequisites": [
+        "ordering-points",
+        "coordinates",
+        "comparing-time"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "coordinates",
+        "mechanics",
+        "calculus",
+        "modelling"
+      ],
+      "gaps": [
+        "Race integration and degenerate slopes need reference tests",
+        "the previously reported off-focus pot behaviour must be retested rather than assumed fixed",
+        "no universal optimum proof follows from races."
+      ],
+      "accessibility": [
+        "Touch point placement and draggable geometry exist",
+        "phone axes/labels and motion controls need hands-on verification."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/curve-lab.html"
+        ],
+        "source_checks": [
+          "race and numerical path-time functions drive comparisons",
+          "plotting controls join points",
+          "pool reflection and radar rays are separate modules"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": true,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "tower",
+      "title": "String lab",
+      "category": "shape",
+      "path": "puzzles/string-lab/index.html",
+      "student_path": "students/string-lab/index.html",
+      "accessible_entry": "Join straight strings, twist a rod tower and notice the curved surface.",
+      "interaction_summary": "A linked lab provides nails/envelopes, constant-product hyperbolas, saddle slices and a fixed-rod-length twisted tower with 3D rotation.",
+      "formal_extension": "Explain quadratic envelopes, xy=c, ruled quadrics and intersections with planes; 3D algebra/proofs need further instruction.",
+      "prerequisites": [
+        "straight-line",
+        "coordinates",
+        "pattern-noticing"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "coordinates",
+        "algebra",
+        "functions",
+        "modelling"
+      ],
+      "gaps": [
+        "Source models are original illustrations, not claimed reproductions of inaccessible videos",
+        "physical-build tolerances and screen geometry need validation."
+      ],
+      "accessibility": [
+        "Sliders plus direct camera manipulation",
+        "narrow-screen controls and labels need testing",
+        "physical string/rod tasks make an alternative entry."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/string-lab/index.html",
+          "puzzles/string-lab/nails.html",
+          "puzzles/string-lab/hyperbola.html",
+          "puzzles/string-lab/saddle.html",
+          "puzzles/string-lab/tower.html",
+          "puzzles/string-lab/lab.js"
+        ],
+        "source_checks": [
+          "lab.js has separate nail/hyperbola/saddle/tower models",
+          "twist updates waist and height under fixed rod length",
+          "related pages are linked"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": false,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "euclid",
+      "title": "Square it up",
+      "category": "shape",
+      "path": "puzzles/sessions/squares-to-euclid.html",
+      "accessible_entry": "Remove the largest square that fits a rectangle and keep going.",
+      "interaction_summary": "Width/height controls, square grid, take-away steps, back/restart, division records and equal-square overlay connect the remainder to geometry.",
+      "formal_extension": "Prove the Euclidean algorithm preserves common divisors and terminates; relate quotients to continued fractions.",
+      "prerequisites": [
+        "rectangles",
+        "subtraction",
+        "division-remainders"
+      ],
+      "curriculum_domains": [
+        "number",
+        "geometry",
+        "algorithms",
+        "proof"
+      ],
+      "gaps": [
+        "This is not a minimum-number-of-squares solver",
+        "complete division/proof teaching and viewport stability testing remain."
+      ],
+      "accessibility": [
+        "Step/back controls give learner pacing",
+        "grid fit avoids forced horizontal scrolling but must be tested at large dimensions."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/squares-to-euclid.html"
+        ],
+        "source_checks": [
+          "Largest-square subtraction updates remainder and records divisions",
+          "grid scales to viewport",
+          "HCF distinction is stated"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "spiral",
+      "title": "Inside the gallery",
+      "category": "shape",
+      "path": "puzzles/sessions/spiral-gallery.html",
+      "student_path": "students/sessions/spiral-gallery.html",
+      "accessible_entry": "Rotate and shrink repeated picture frames and notice similar copies.",
+      "interaction_summary": "Nested frame, polar unwrapping and complex-power views connect repeated scale/rotation; animation, reset and saving are present.",
+      "formal_extension": "Log-polar coordinates, complex logarithms, branch cuts and conformal maps are enrichment, largely beyond standard A-level.",
+      "prerequisites": [
+        "rotation",
+        "scaling",
+        "similar-shapes"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "transformations",
+        "complex-numbers",
+        "functions"
+      ],
+      "gaps": [
+        "Do not present the picture as an exact Escher reconstruction or a proof of conformality",
+        "formal complex analysis is not taught."
+      ],
+      "accessibility": [
+        "Pauseable animation",
+        "visual transformation has no equivalent nonvisual exploration yet",
+        "contrast and motion preferences require testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/spiral-gallery.html"
+        ],
+        "source_checks": [
+          "Three modes use separate transforms",
+          "polar origin exclusion and branch-cut caveats are stated",
+          "drawings are original"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": true,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "packing",
+      "title": "Packing lab",
+      "category": "shape",
+      "path": "puzzles/sessions/packing-lab.html",
+      "accessible_entry": "Place rectangles or whole squares in a box and compare arrangements.",
+      "interaction_summary": "Searchable fewest-square and fixed-rectangle packing modes, rotation, budgets, pause, JSON import/export and diagrams.",
+      "formal_extension": "Understand branch-and-bound/exhaustive search and distinguish a feasible packing, a best found value and proven optimum.",
+      "prerequisites": [
+        "rectangle-dimensions",
+        "area",
+        "systematic-search"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "optimisation",
+        "algorithms",
+        "proof"
+      ],
+      "gaps": [
+        "Large searches can be slow",
+        "independent certificates/fixtures are needed",
+        "kerf and continuous real-world packing constraints are outside the model."
+      ],
+      "accessibility": [
+        "Numeric controls avoid precision placement",
+        "status announcements and pause responsiveness need runtime checking."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/packing-lab.html"
+        ],
+        "source_checks": [
+          "Search status distinguishes best-found from proven only after completion",
+          "budget/pause paths exist",
+          "placements obey discrete coordinates"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "circles",
+      "title": "Circle lab",
+      "category": "shape",
+      "path": "puzzles/sessions/circle-investigations.html",
+      "accessible_entry": "Drag a point on a semicircle and measure the angle; compare many examples.",
+      "interaction_summary": "Nine investigations cover diameter/right angle, central angles, chords, equal radii, area, circumcentre, Pythagorean squares, polygons and perspective.",
+      "formal_extension": "Develop angle/chord theorem proofs, cyclic geometry and coordinate models; empirical measurements are conjecture evidence only.",
+      "prerequisites": [
+        "angles",
+        "length",
+        "coordinates-optional"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "circle-theorems",
+        "measurement",
+        "proof"
+      ],
+      "gaps": [
+        "Not a full GCSE circle-theorem course",
+        "rounded measurements must not be used as proof",
+        "singular and near-degenerate cases need testing."
+      ],
+      "accessibility": [
+        "Pointer and keyboard adjustments exist",
+        "show/hide guides reduces clutter",
+        "precise labels must remain readable on small screens."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/circle-investigations.html"
+        ],
+        "source_checks": [
+          "Drag models and optional measurement/guides update together",
+          "selected-point keyboard controls and local notes are provided"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "polyomino",
+      "title": "Polyomino studio",
+      "category": "shape",
+      "path": "puzzles/sessions/polyominoes.html",
+      "accessible_entry": "Join squares edge to edge, rotate a piece and decide whether it is new.",
+      "interaction_summary": "Free shapes of size 3/4/5 are canonicalised under rotations/reflections; collections and tiling boards support move/rotate/flip and validity checks.",
+      "formal_extension": "Systematic enumeration, symmetry classes and chessboard-colouring impossibility arguments.",
+      "prerequisites": [
+        "edge-adjacency",
+        "counting",
+        "rotation"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "combinatorics",
+        "invariants",
+        "proof"
+      ],
+      "gaps": [
+        "Completeness proofs and all pentomino tilings are not automated curriculum objectives",
+        "touch rotation still needs physical-device QA."
+      ],
+      "accessibility": [
+        "Tap/row-column and button manipulation supplement drag and two-touch rotation",
+        "selected shape visibility should be verified."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/polyominoes.html"
+        ],
+        "source_checks": [
+          "Canonical key removes rotational/reflected duplicates",
+          "placements reject overlap/outside",
+          "connectedness is checked",
+          "broken-chessboard task exists"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "cut",
+      "title": "Cut & rearrange",
+      "category": "shape",
+      "path": "puzzles/sessions/cut-and-rearrange.html",
+      "accessible_entry": "Cut a shape into pieces, slide/turn them and cover a target.",
+      "interaction_summary": "Straight cuts, draggable pieces, corner rotation, snap/check, hints and pre-cut demonstrations support triangle-to-square and variants.",
+      "formal_extension": "Area conservation, congruence, Dudeney dissection construction and limits on cut counts.",
+      "prerequisites": [
+        "shape-matching",
+        "rotation",
+        "area"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "transformations",
+        "measurement",
+        "proof"
+      ],
+      "gaps": [
+        "Automatic demonstration applies to supported constructions, not arbitrary dissection",
+        "four/five/six-cut variants do not prove minimum cut counts."
+      ],
+      "accessibility": [
+        "Keyboard arrows and Q/E plus fine movement provide alternatives",
+        "collision-free animation and corner handles need device testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/cut-and-rearrange.html"
+        ],
+        "source_checks": [
+          "Cuts split polygons",
+          "transforms preserve piece geometry",
+          "automated paths are planned around other pieces",
+          "pause/speed controls exist"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "fewest",
+      "title": "Fewest squares",
+      "category": "shape",
+      "path": "puzzles/sessions/fewest-squares.html",
+      "accessible_entry": "Cover a small rectangle with whole squares, count them and try to improve.",
+      "interaction_summary": "Grid boards include 3×5, 5×6, 5×8, 7×8 and 11×13; draw/tap placement, remove/undo and collection saving.",
+      "formal_extension": "Study integer square tilings, coprime rectangles and lower-bound/optimality proofs.",
+      "prerequisites": [
+        "area",
+        "integer-lengths",
+        "systematic-recording"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "number",
+        "optimisation",
+        "proof"
+      ],
+      "gaps": [
+        "A completed tiling does not prove fewest squares",
+        "claims of optimality need certified search or proof outside the placement task."
+      ],
+      "accessibility": [
+        "Tap-size placement alternatives exist",
+        "grid fit and large-board precision need testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/fewest-squares.html",
+          "puzzles/sessions/fewest-squares-extension.html"
+        ],
+        "source_checks": [
+          "Placement checks integer-grid fit and overlap",
+          "full coverage is separate from optimality",
+          "harder coprime page is linked"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "fence",
+      "title": "36 fences",
+      "category": "shape",
+      "path": "puzzles/sessions/36-fences.html",
+      "accessible_entry": "Use a fixed number of fence pieces to enclose a garden and count its squares.",
+      "interaction_summary": "Rectangle and free-grid edge modes allow 12/16/24/36 pieces; checks require one connected closed boundary, then report area.",
+      "formal_extension": "Compare fixed-perimeter areas and conjecture/prove rectangular optima; distinguish square-grid from continuous isoperimetric problems.",
+      "prerequisites": [
+        "counting",
+        "length",
+        "inside-outside"
+      ],
+      "curriculum_domains": [
+        "measurement",
+        "geometry",
+        "optimisation",
+        "proof"
+      ],
+      "gaps": [
+        "No proof sequence for all possible nonrectangular gardens",
+        "continuous circles are outside the square-grid model."
+      ],
+      "accessibility": [
+        "Tap edges avoids drawing exact lines",
+        "edge hit targets and interior contrast need checking."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/36-fences.html"
+        ],
+        "source_checks": [
+          "Boundary checks reject branches/open paths",
+          "enclosed grid area is calculated",
+          "examples can be saved"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "rupert",
+      "title": "Cube through a cube",
+      "category": "shape",
+      "path": "puzzles/sessions/rupert-cube.html",
+      "accessible_entry": "Slide a cut-out from a yellow cube, then pass a blue cube through and inspect the hole.",
+      "interaction_summary": "Two aligned movement sliders, cut-out/whole views, rotation and clearance adjustment show an angled tunnel.",
+      "formal_extension": "Study Rupert's property through 3D projection, inequalities and construction; equal cubes passing is distinct from a maximality proof.",
+      "prerequisites": [
+        "3D-orientation",
+        "cross-sections"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "vectors",
+        "measurement",
+        "proof"
+      ],
+      "gaps": [
+        "The demonstration uses a particular construction and clearance, not an interactive proof of optimality",
+        "collision and all-view inspection need validation."
+      ],
+      "accessibility": [
+        "Slider control and CPU fallback broaden access",
+        "nonvisual geometry description and keyboard camera parity need work."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/rupert-cube.html"
+        ],
+        "source_checks": [
+          "Separate cut-out/new-cube sliders preserve camera",
+          "tunnel geometry and CPU fallback are implemented",
+          "clearance ranges are explicit"
+        ],
+        "runtime": "Representative browser check in this release: Browser: cube renderer visible, cut-out slider to End, blue cube Halfway, keyboard rotation; blue/yellow and light scene. WebGL versus CPU fallback not separately forced.",
+        "release_checks": [
+          {
+            "activity_id": "rupert",
+            "date": "2026-11-18",
+            "scope": "Browser: cube renderer visible, cut-out slider to End, blue cube Halfway, keyboard rotation; blue/yellow and light scene. WebGL versus CPU fallback not separately forced.",
+            "result": "passed"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper",
+      "title": "Paper surprises",
+      "category": "shape",
+      "path": "puzzles/sessions/paper.html",
+      "accessible_entry": "Predict what a paper loop will do, cut a real strip and compare the result.",
+      "interaction_summary": "Paperclip, zero/one/two-twist loops and paper-beam activities provide prediction records and explanations.",
+      "formal_extension": "Investigate topology, orientation, connected components and structural shape effects.",
+      "prerequisites": [
+        "cutting-folding-with-support",
+        "counting",
+        "prediction"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "topology",
+        "measurement",
+        "scientific-reasoning"
+      ],
+      "gaps": [
+        "Hands-on facilitation and safe practical setup are required",
+        "recorded prediction is not formal proof or assessed mastery."
+      ],
+      "accessibility": [
+        "Physical materials provide primary access",
+        "text load and diagram alternatives need review."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/paper.html",
+          "puzzles/sessions/common.js",
+          "puzzles/sessions/core.js",
+          "puzzles/sessions/paper.js"
+        ],
+        "source_checks": [
+          "Prediction notebook and comparison explanations exist",
+          "diagrams are schematic rather than a physical simulator"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "bridge",
+      "title": "Bridge lab",
+      "category": "shape",
+      "path": "engineering/bridge-lab.html",
+      "student_path": "students/engineering/bridge-lab.html",
+      "accessible_entry": "Build triangles between supports and observe what changes when a load moves.",
+      "interaction_summary": "Warren/Pratt/Howe starting trusses, node/member/support editing, moving load, force/deformation and failure displays.",
+      "formal_extension": "Equilibrium, stiffness matrices, linear-elastic truss modelling and buckling are advanced extensions; assumptions matter.",
+      "prerequisites": [
+        "triangles",
+        "forces-as-push-pull",
+        "measurement"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "mechanics",
+        "vectors",
+        "modelling"
+      ],
+      "gaps": [
+        "No direct blank-design preset",
+        "singular-support/zero-length/overload cases need numerical fixtures",
+        "this simplified model is not engineering design software."
+      ],
+      "accessibility": [
+        "Tap/edit controls accompany dragging",
+        "force colours need text/legend parity",
+        "touch handles and scaling require testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "engineering/bridge-lab.html",
+          "engineering/rigidity-2d.html",
+          "engineering/rigidity-3d.html"
+        ],
+        "source_checks": [
+          "Analysis assembles a stiffness system",
+          "member forces and Euler-type buckling checks are used",
+          "editing/support controls and rigidity helpers exist"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": true,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "patterns",
+      "title": "Number patterns",
+      "category": "number",
+      "path": "development/number-patterns/index.html",
+      "accessible_entry": "Click squares to mark a pattern, then compare multiples, squares or primes.",
+      "interaction_summary": "Multiplication table and configurable number square support multiples/factors, remainder classes, square/cube/prime filters, manual marks and hunts.",
+      "formal_extension": "Prove observed congruence/quadratic patterns, count residues and connect table symmetries to arithmetic laws.",
+      "prerequisites": [
+        "counting",
+        "grid-position",
+        "multiplication-for-table"
+      ],
+      "curriculum_domains": [
+        "number",
+        "algebra",
+        "modular-arithmetic",
+        "proof"
+      ],
+      "gaps": [
+        "Visual regularity is not proof",
+        "wider arithmetic progression/number-theory teaching is not yet sequenced",
+        "storage records visits not understanding."
+      ],
+      "accessibility": [
+        "Number/remainder labels supplement colour",
+        "fit/scroll options handle large grids",
+        "smallest cell targets need phone QA."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/number-patterns/index.html"
+        ],
+        "source_checks": [
+          "prime and matches test numerical predicates",
+          "values rebuild tables",
+          "manual marks and reveal/check are separate",
+          "remainder labels are optional"
+        ],
+        "runtime": "Representative browser check in this release: Browser: switch to remainder colours and numbers + remainders; purple/yellow visible; 390 px iframe responsive controls.",
+        "release_checks": [
+          {
+            "activity_id": "patterns",
+            "date": "2026-11-18",
+            "scope": "Browser: switch to remainder colours and numbers + remainders; purple/yellow visible; 390 px iframe responsive controls.",
+            "result": "passed"
+          }
+        ]
+      }
+    },
+    {
+      "id": "factors",
+      "title": "Factor shapes",
+      "category": "number",
+      "path": "puzzles/sessions/factor-shapes.html",
+      "accessible_entry": "Adjust two or three whole-number sides until the area/volume reaches a chosen target.",
+      "interaction_summary": "2D rectangles and rotatable cuboids use sliders plus number fields; only exact-target shapes enter a rotation-normalised collection.",
+      "formal_extension": "Enumerate factor pairs/triples without duplicates, relate prime exponents to divisor counts and prove completeness.",
+      "prerequisites": [
+        "multiplication",
+        "area",
+        "volume-introduction"
+      ],
+      "curriculum_domains": [
+        "number",
+        "geometry",
+        "combinatorics",
+        "proof"
+      ],
+      "gaps": [
+        "Collections are evidence of found examples, not automated completeness proof",
+        "large-target scaling and model labels need verification."
+      ],
+      "accessibility": [
+        "Exact number fields supplement sliders",
+        "physical cubes or squared paper are equivalent entry routes",
+        "keyboard 3D inspection needs checking."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/factor-shapes.html"
+        ],
+        "source_checks": [
+          "Save requires exact product",
+          "sorted dimensions canonicalise rotations",
+          "12/30/48/60 and custom targets are present"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "tree",
+      "title": "Factor trees",
+      "category": "number",
+      "path": "puzzles/sessions/factor-tree.html",
+      "accessible_entry": "Split a composite number into two factors and continue until every leaf is prime.",
+      "interaction_summary": "Both factors are entered by the learner; selected branches split, undo/reset, prime leaves share a colour, completed trees can be saved and compared.",
+      "formal_extension": "Prime decomposition, uniqueness, exponent notation, HCF/LCM and divisor-count reasoning.",
+      "prerequisites": [
+        "multiplication",
+        "division",
+        "prime-composite"
+      ],
+      "curriculum_domains": [
+        "number",
+        "algebra",
+        "proof"
+      ],
+      "gaps": [
+        "No automatic factor-answer reveal",
+        "uniqueness is not proved by matching fingerprints",
+        "HCF/LCM follow-up sequence absent."
+      ],
+      "accessibility": [
+        "Consistent prime-leaf colour and direct inputs",
+        "dense/deep tree layout and keyboard selection need testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/factor-tree.html"
+        ],
+        "source_checks": [
+          "Split requires both factors greater than one and correct product",
+          "unfinished composite leaves stay visible",
+          "prime fingerprint groups leaves"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "cuboids",
+      "title": "Explore 30 cubes",
+      "category": "number",
+      "path": "puzzles/sessions/30-cubes.html",
+      "accessible_entry": "Use 30 small cubes to make boxes and record their side lengths.",
+      "interaction_summary": "Whole-number dimensions, 3D rotation, layer inspection and auto-fit support saving distinct cuboids of volume 30.",
+      "formal_extension": "Explain factor triples and enumerate all five unordered positive triples for 30.",
+      "prerequisites": [
+        "counting",
+        "equal-groups",
+        "multiplication"
+      ],
+      "curriculum_domains": [
+        "number",
+        "geometry",
+        "measurement",
+        "proof"
+      ],
+      "gaps": [
+        "Fixed target 30",
+        "the factor-shapes page supplies variable targets",
+        "collection completion alone does not assess reasoning."
+      ],
+      "accessibility": [
+        "Buttons/number fields avoid imprecise sliders",
+        "camera arrows exist",
+        "large models require touch/zoom testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/30-cubes.html"
+        ],
+        "source_checks": [
+          "Only exact volume 30 saves",
+          "canonical dimensions merge rotations",
+          "dimension inputs and view controls are present"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "plant",
+      "title": "Money plants",
+      "category": "number",
+      "path": "puzzles/sessions/magic-money-plant.html",
+      "accessible_entry": "Grow a seed, harvest coins and keep a day-by-day table with small starting numbers.",
+      "interaction_summary": "Mother/regular/coin counts 0–9 and separate grow/harvest/seed steps model the daily process; predictions and follow-up plant pages are linked.",
+      "formal_extension": "Derive quadratic totals, solve the Day-10 inverse problem and compare recurrence/stochastic offspring extensions.",
+      "prerequisites": [
+        "counting",
+        "addition",
+        "table-recording"
+      ],
+      "curriculum_domains": [
+        "number",
+        "sequences",
+        "algebra",
+        "probability",
+        "modelling"
+      ],
+      "gaps": [
+        "General formula and random-offspring proofs need guided follow-ups",
+        "interrupted phase/repeated-click behaviour must be regression tested."
+      ],
+      "accessibility": [
+        "Large plant/coin visuals and step control aid pacing",
+        "animation/reduced-motion and stacked-count readability need tests."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/magic-money-plant.html",
+          "puzzles/sessions/money-plant-mothers.html",
+          "puzzles/sessions/money-plant-delay.html",
+          "puzzles/sessions/money-plant-random.html"
+        ],
+        "source_checks": [
+          "advance separates daily phases",
+          "total/plants functions compute expected counts",
+          "local notebook and reset exist",
+          "Follow-ups use a due-day seed queue; mother-offspring mode adds mothers, delay mode adds regular plants, and random mode independently samples each of 2m seeds as mother/regular."
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "tables",
+      "title": "Times tables",
+      "category": "number",
+      "path": "puzzles/sessions/tables.html",
+      "student_path": "students/sessions/tables.html",
+      "accessible_entry": "Choose a small group of facts, use an array when stuck and explain a division fact.",
+      "interaction_summary": "Selected tables, multiplication/division/mixed rounds, optional timed play, retry, array hint and answer reveal; first-try and assisted outcomes are separate.",
+      "formal_extension": "Connect inverse facts, distributivity and efficient fact derivation before generalising arithmetic patterns.",
+      "prerequisites": [
+        "equal-groups",
+        "skip-counting"
+      ],
+      "curriculum_domains": [
+        "number",
+        "multiplication",
+        "division"
+      ],
+      "gaps": [
+        "Records are local/session-level rather than account-linked",
+        "fluent recall is not established by one successful round."
+      ],
+      "accessibility": [
+        "Untimed default and explicit help",
+        "keyboard answer entry",
+        "real-device array legibility needs review."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/tables.html",
+          "puzzles/sessions/common.js",
+          "puzzles/sessions/core.js",
+          "puzzles/sessions/tables.js"
+        ],
+        "source_checks": [
+          "makeQuestions builds requested facts",
+          "check distinguishes attempted/helped before marking first correct",
+          "timers are cancelled on reset"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": false,
+        "linked_scripts": [
+          "students/sessions/common.js",
+          "students/sessions/core.js",
+          "students/sessions/tables.js"
+        ],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "multiply",
+      "title": "Multiply to the target",
+      "category": "number",
+      "path": "games/multiply.html",
+      "student_path": "students/games/multiply.html",
+      "accessible_entry": "Multiply a shared running number by a choice from 2–9 and try to reach a target.",
+      "interaction_summary": "Local two-player/computer game starts at 1, with target, legal multipliers, undo and hint.",
+      "formal_extension": "Work backwards from winning intervals and prove a strategy for arbitrary targets.",
+      "prerequisites": [
+        "multiplication",
+        "ordering"
+      ],
+      "curriculum_domains": [
+        "number",
+        "logic",
+        "algorithms",
+        "proof"
+      ],
+      "gaps": [
+        "No full derivation of strategy or generalisation sequence",
+        "large targets need performance/invalid-input checks."
+      ],
+      "accessibility": [
+        "Large multiplier buttons and visible product",
+        "no drag precision required",
+        "overflow of large numbers needs checking."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "games/multiply.html",
+          "games/core.js",
+          "games/common.js",
+          "games/strategy.js"
+        ],
+        "source_checks": [
+          "Core.winningMultiplier recursively finds winning moves with memoisation",
+          "target-reached condition ends play"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": false,
+        "linked_scripts": [
+          "students/games/core.js",
+          "students/games/common.js",
+          "students/games/strategy.js"
+        ],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "totals",
+      "title": "Different totals",
+      "category": "number",
+      "path": "games/grid.html",
+      "accessible_entry": "Fill cells with −1, 0 or 1 and compare row and column sums.",
+      "interaction_summary": "Editable grid asks for all row and column totals to be different.",
+      "formal_extension": "Use invariants, bounds and pigeonhole arguments to decide feasibility and build systematic examples.",
+      "prerequisites": [
+        "signed-addition",
+        "rows-columns"
+      ],
+      "curriculum_domains": [
+        "number",
+        "algebra",
+        "combinatorics",
+        "proof"
+      ],
+      "gaps": [
+        "No automatic proof of feasibility/impossibility for arbitrary grid sizes",
+        "structured progression not yet built."
+      ],
+      "accessibility": [
+        "Direct cell interaction",
+        "signs must remain distinct without colour",
+        "keyboard cell navigation needs review."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "games/grid.html",
+          "games/core.js",
+          "games/common.js",
+          "games/strategy.js"
+        ],
+        "source_checks": [
+          "strategy.js recomputes row/column totals and checks uniqueness after cell edits"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "divisors",
+      "title": "Divisor game",
+      "category": "number",
+      "path": "games/divisors.html",
+      "student_path": "students/games/divisors.html",
+      "accessible_entry": "Choose a number and identify which remaining proper divisors go to the other player.",
+      "interaction_summary": "A divisor/tax game transfers chosen number and remaining proper divisors to opposing totals, with hints and history.",
+      "formal_extension": "Investigate greedy versus strategic choice, prime/composite structure and optimal play.",
+      "prerequisites": [
+        "factors",
+        "addition",
+        "comparison"
+      ],
+      "curriculum_domains": [
+        "number",
+        "logic",
+        "optimisation"
+      ],
+      "gaps": [
+        "A winning round is not proof of an optimal strategy",
+        "independent scoring and hint fixtures needed."
+      ],
+      "accessibility": [
+        "Numbers remain labelled",
+        "highlighting divisors should not rely on colour alone",
+        "small-grid targets need testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "games/divisors.html",
+          "games/core.js",
+          "games/common.js",
+          "games/strategy.js"
+        ],
+        "source_checks": [
+          "Core.divisors excludes the chosen number itself",
+          "strategy.js updates availability and both scores"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": false,
+        "linked_scripts": [
+          "students/games/core.js",
+          "students/games/common.js",
+          "students/games/strategy.js"
+        ],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "neighbours",
+      "title": "Add to your neighbours",
+      "category": "number",
+      "path": "games/neighbours.html",
+      "accessible_entry": "Remove a middle number and add it to both neighbours; compare final totals.",
+      "interaction_summary": "Selectable interior entries update adjacent values; undo and best-removal hint support experiments.",
+      "formal_extension": "Derive invariants/weights of original entries and prove an optimal removal order.",
+      "prerequisites": [
+        "addition",
+        "sequence-position"
+      ],
+      "curriculum_domains": [
+        "number",
+        "algebra",
+        "optimisation",
+        "proof"
+      ],
+      "gaps": [
+        "Large sequences may be expensive",
+        "symbolic generalisation and negative/large-value handling need explicit scope."
+      ],
+      "accessibility": [
+        "Button selection avoids dragging",
+        "changing row widths and keyboard focus need testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "games/neighbours.html",
+          "games/core.js",
+          "games/common.js",
+          "games/strategy.js"
+        ],
+        "source_checks": [
+          "Core.remove disallows endpoints",
+          "bestRemoval recursively memoises final two-number totals"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "coding",
+      "title": "Code grid",
+      "category": "create",
+      "path": "puzzles/sessions/code-grid.html",
+      "student_path": "students/sessions/code-grid.html",
+      "accessible_entry": "Tap commands to move an emoji to a goal; use a short visible loop.",
+      "interaction_summary": "Seven grid missions, forward/turn commands, repeat/if-clear blocks, helpers, step/run/speed/reset and Python-turtle export.",
+      "formal_extension": "Trace nested loops, use procedures and conditionals, reason about correctness and then transfer to actual Python.",
+      "prerequisites": [
+        "direction",
+        "sequencing",
+        "counting"
+      ],
+      "curriculum_domains": [
+        "computing",
+        "algorithms",
+        "coordinates",
+        "logic"
+      ],
+      "gaps": [
+        "This is a JavaScript simulator, not an embedded Python interpreter",
+        "exported code needs a desktop Python/Tk setup",
+        "full programming course absent."
+      ],
+      "accessibility": [
+        "Tap assembly avoids typing",
+        "visible loop boundaries and step mode",
+        "keyboard/screen-reader program editing needs further work."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/code-grid.html"
+        ],
+        "source_checks": [
+          "Command blocks form nested instruction structures",
+          "step/run interprets them",
+          "export produces Python turtle code"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": true,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "robot",
+      "title": "Build a robot",
+      "category": "create",
+      "path": "games/robot.html",
+      "student_path": "students/games/robot.html",
+      "accessible_entry": "Choose body parts, vary sizes and describe what changed.",
+      "interaction_summary": "Robot creator offers proportions, body/hand/foot/face and colour controls with saving.",
+      "formal_extension": "Use deliberate prompts for symmetry, relative size, scale and counting repeated parts.",
+      "prerequisites": [
+        "matching",
+        "comparison",
+        "counting"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "measurement",
+        "creative-representation"
+      ],
+      "gaps": [
+        "Open design play is not in itself assessed mathematics",
+        "add explicit compare/build-to-constraint prompts when curriculum-linked."
+      ],
+      "accessibility": [
+        "Large choice controls are intended for young users",
+        "phone layout and labels need child testing",
+        "colour schemes must preserve part contrast."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "games/robot.html"
+        ],
+        "source_checks": [
+          "Body/limb proportions and palette controls update drawing",
+          "saved output is supported"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": true,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "pixel",
+      "title": "Pixel art",
+      "category": "create",
+      "path": "games/pixel.html",
+      "student_path": "students/games/pixel.html",
+      "accessible_entry": "Paint squares and make a mirror image or repeating pattern.",
+      "interaction_summary": "Grid paint, colour selection, symmetry/mirror choices, undo and saving.",
+      "formal_extension": "Coordinates, transformations, area counts, tilings and encoded pixel representations.",
+      "prerequisites": [
+        "grid-position",
+        "matching",
+        "counting"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "coordinates",
+        "transformations",
+        "computing"
+      ],
+      "gaps": [
+        "Curriculum prompts and recorded explanations are not built into free drawing",
+        "exported images are not assessment records."
+      ],
+      "accessibility": [
+        "Tap painting and visible grid",
+        "cell size and keyboard painting need testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "games/pixel.html",
+          "games/core.js",
+          "games/common.js",
+          "games/visual.js"
+        ],
+        "source_checks": [
+          "visual.js paint modifies cells and mirror counterparts",
+          "undo snapshots and reset are present"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": false,
+        "linked_scripts": [
+          "students/games/core.js",
+          "students/games/common.js",
+          "students/games/visual.js"
+        ],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "secret",
+      "title": "Secret messages",
+      "category": "create",
+      "path": "games/cipher.html",
+      "student_path": "students/games/cipher.html",
+      "accessible_entry": "Shift letters around a wheel and decode a short message.",
+      "interaction_summary": "Caesar encode/decode, editable shift and all-26-shifts inspection demonstrate a substitution cipher.",
+      "formal_extension": "Modular addition, inverse permutations and frequency analysis; distinguish historical cipher puzzles from secure encryption.",
+      "prerequisites": [
+        "alphabet-order",
+        "sequencing"
+      ],
+      "curriculum_domains": [
+        "modular-arithmetic",
+        "algorithms",
+        "logic"
+      ],
+      "gaps": [
+        "No modern secure messaging or RSA implementation",
+        "history/cryptanalysis teaching needs follow-up pages."
+      ],
+      "accessibility": [
+        "Typed text plus visual alphabet wheel",
+        "labels avoid colour dependence",
+        "wheel legibility on phone needs checking."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "games/cipher.html",
+          "games/core.js",
+          "games/common.js",
+          "games/words.js"
+        ],
+        "source_checks": [
+          "words.js shift normalises letter offsets modulo 26",
+          "wheel and output controls are bound"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": false,
+        "linked_scripts": [
+          "students/games/core.js",
+          "students/games/common.js",
+          "students/games/words.js"
+        ],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "creature",
+      "title": "Creature studio",
+      "category": "create",
+      "path": "puzzles/sessions/creature-lab.html",
+      "student_path": "students/sessions/creature-lab.html",
+      "accessible_entry": "Add body segments and pairs of legs, then draw a route for the creature.",
+      "interaction_summary": "Custom routes/presets, body/leg/width/taper controls, wave/speed, pause/step and saved designs accompany a session guide.",
+      "formal_extension": "Parametric paths, tangent directions, sinusoidal phase and scaling; model versus biological gait should be distinguished.",
+      "prerequisites": [
+        "counting",
+        "pairs",
+        "direction",
+        "pattern"
+      ],
+      "curriculum_domains": [
+        "number",
+        "geometry",
+        "functions",
+        "modelling"
+      ],
+      "gaps": [
+        "Animation is a mathematical toy rather than biomechanics",
+        "accessible entry does not require formal trigonometry",
+        "touch route handling needs verification."
+      ],
+      "accessibility": [
+        "Preset routes and step/pause avoid precision-only interaction",
+        "keyboard route creation and alternative descriptions are incomplete."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/creature-lab.html",
+          "puzzles/sessions/creature-session.html"
+        ],
+        "source_checks": [
+          "Route sampling drives body orientation",
+          "leg phases animate along segments",
+          "creature-session.html is linked"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": true,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "scytale",
+      "title": "Scytale",
+      "category": "create",
+      "path": "puzzles/sessions/scytale.html",
+      "accessible_entry": "Wrap a message strip around a cylinder, then unwrap and compare the letter order.",
+      "interaction_summary": "Animated wrap/unwrap, typed rod/strip text, 3–6 letters per turn, optional colour guides and pan/zoom show transposition.",
+      "formal_extension": "Represent a transposition as a grid/permutation and infer cylinder size from trials.",
+      "prerequisites": [
+        "letter-order",
+        "rows-columns",
+        "counting"
+      ],
+      "curriculum_domains": [
+        "algorithms",
+        "modular-arithmetic",
+        "geometry"
+      ],
+      "gaps": [
+        "Initial-load rendering and exact text placement must be tested",
+        "no complete cryptanalysis sequence or secure communication claim."
+      ],
+      "accessibility": [
+        "Guides can be disabled",
+        "unwrapped pan/zoom supports inspection",
+        "motion preferences and keyboard camera control need review."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/scytale.html"
+        ],
+        "source_checks": [
+          "Wrap parameter maps positions to cylinder/flat strip",
+          "letter ordering is preserved under transposition",
+          "camera/zoom controls exist"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "shark",
+      "title": "Shark family",
+      "category": "create",
+      "path": "games/shark-family.html",
+      "accessible_entry": "Build a family, compare sizes and add underwater objects.",
+      "interaction_summary": "Shark bodies, expressions/accessories, palettes, scaling, scene objects, drag/keyboard movement, copy/delete/deselect and local saving.",
+      "formal_extension": "Introduce explicit sorting, size-order, position, counting or symmetry constraints through a tutor task.",
+      "prerequisites": [
+        "matching",
+        "size-comparison",
+        "counting"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "measurement",
+        "creative-representation"
+      ],
+      "gaps": [
+        "A creative sandbox, not a complete maths lesson or assessed objective sequence."
+      ],
+      "accessibility": [
+        "Deselect-all and keyboard movement are present",
+        "object overlap and tiny controls need young-user/device testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "games/shark-family.html"
+        ],
+        "source_checks": [
+          "Character and scenery controls alter scene objects",
+          "movement/selection and saving handlers exist"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "dragon",
+      "title": "Dragon world",
+      "category": "create",
+      "path": "games/dragon-world.html",
+      "accessible_entry": "Create a dragon scene, compare wings and bodies and describe positions.",
+      "interaction_summary": "Dragon characters, proportions, colours, expressions and scene features can be moved, copied, resized and saved.",
+      "formal_extension": "Use symmetry, relative scale, shape composition or constrained design prompts.",
+      "prerequisites": [
+        "matching",
+        "size-comparison",
+        "counting"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "measurement",
+        "creative-representation"
+      ],
+      "gaps": [
+        "A creative sandbox",
+        "formal mathematical challenge/feedback needs separate task design."
+      ],
+      "accessibility": [
+        "Tap selection and keyboard movement supplement drag",
+        "touch resizing and layer selection need testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "games/dragon-world.html"
+        ],
+        "source_checks": [
+          "Object editing, scene creation and save/export controls are wired"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "dinosaur",
+      "title": "Dinosaur world",
+      "category": "create",
+      "path": "games/dinosaur-world.html",
+      "accessible_entry": "Arrange dinosaurs from small to large or create a repeating landscape.",
+      "interaction_summary": "Dinosaur family/scene creator varies bodies, faces, colours, sizes and background objects with saving.",
+      "formal_extension": "Classify features, count repeated parts and compare scale, position or symmetry under an explicit task.",
+      "prerequisites": [
+        "matching",
+        "size-comparison",
+        "counting"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "measurement",
+        "creative-representation"
+      ],
+      "gaps": [
+        "A creative sandbox",
+        "no automatic evidence of maths understanding is captured."
+      ],
+      "accessibility": [
+        "Deselect and alternative movement controls exist",
+        "overlapping objects and palette distinction need user testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "games/dinosaur-world.html"
+        ],
+        "source_checks": [
+          "Character drawing options and scene-object controls update saved scene state"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "turing",
+      "title": "Turing tape",
+      "category": "create",
+      "path": "puzzles/sessions/turing.html",
+      "accessible_entry": "Act out a simple tape rule, step once and say what changed.",
+      "interaction_summary": "Editable two-state binary/blank rule table, tape setup, step/run/undo and puzzles/hints simulate a tape machine.",
+      "formal_extension": "Trace algorithms, identify invariants and distinguish termination in examples from a general halting decision.",
+      "prerequisites": [
+        "sequencing",
+        "symbols",
+        "left-right"
+      ],
+      "curriculum_domains": [
+        "computing",
+        "algorithms",
+        "logic",
+        "proof"
+      ],
+      "gaps": [
+        "The 500-step limit does not prove nontermination",
+        "a complete theory-of-computation course is not supplied."
+      ],
+      "accessibility": [
+        "Step/undo supports pacing",
+        "table editing and tape focus need keyboard/screen-reader review."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/turing.html",
+          "puzzles/sessions/common.js",
+          "puzzles/sessions/turing-core.js",
+          "puzzles/sessions/turing.js"
+        ],
+        "source_checks": [
+          "TapeMachine.step applies write/move/next transitions",
+          "halt state pauses",
+          "500-step guard stops runaway exploration"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "trails",
+      "title": "Robot trails",
+      "category": "create",
+      "path": "puzzles/sessions/codebot.html",
+      "student_path": "students/sessions/codebot.html",
+      "accessible_entry": "Put forward and turn pieces together to collect stars, then wrap a repeated section in a loop.",
+      "interaction_summary": "Isometric trail challenges use snapped command sequences, repeat wrappers, forward/left/right/up/down, run/step and hints.",
+      "formal_extension": "Algorithm tracing, nested repetition, coordinates and height constraints; UP/DN mean advancing to the next elevated/lower tile.",
+      "prerequisites": [
+        "direction",
+        "sequencing",
+        "counting"
+      ],
+      "curriculum_domains": [
+        "computing",
+        "algorithms",
+        "coordinates",
+        "logic"
+      ],
+      "gaps": [
+        "Jigsaw locking, scroll/drag and all level routes need device regression",
+        "this is not a Python runtime."
+      ],
+      "accessibility": [
+        "Tap/control alternatives and step mode exist",
+        "precise nesting interactions and touch targets require hands-on QA."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/codebot.html"
+        ],
+        "source_checks": [
+          "Program interpreter handles repeat blocks and height changes",
+          "goal requires route targets",
+          "isometric board fits fixed space"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": true,
+        "linked_scripts": [],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "enigma",
+      "title": "Enigma explorer",
+      "category": "create",
+      "path": "puzzles/sessions/enigma.html",
+      "student_path": "students/sessions/enigma.html",
+      "accessible_entry": "Type one letter, trace its path and compare what happens after a rotor steps.",
+      "interaction_summary": "Three rotors I/II/III, rings/windows, reflector B, plugboard and editable messages show reciprocal substitution and double stepping.",
+      "formal_extension": "Permutation composition, state spaces, cryptanalysis and limitations of historical ciphers.",
+      "prerequisites": [
+        "alphabet-order",
+        "sequencing",
+        "permutations-introduction"
+      ],
+      "curriculum_domains": [
+        "algorithms",
+        "combinatorics",
+        "logic"
+      ],
+      "gaps": [
+        "Known historical test vectors and plugboard validation need execution",
+        "full cryptanalysis/RSA are not implemented",
+        "no security claim."
+      ],
+      "accessibility": [
+        "Path labels supplement colours",
+        "text and rotor targets need phone testing",
+        "letter-at-a-time pacing is available."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/sessions/enigma.html",
+          "puzzles/sessions/common.js",
+          "puzzles/sessions/lab-core.js",
+          "puzzles/sessions/enigma.js"
+        ],
+        "source_checks": [
+          "Update reprocesses from starting settings",
+          "punctuation does not step",
+          "ADU→ADV→AEW→BFX example is stated",
+          "trace path is drawn"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "student_copy_review": {
+        "path_exists": true,
+        "inline_logic_matches_main": true,
+        "inline_script_present": false,
+        "linked_scripts": [
+          "students/sessions/common.js",
+          "students/sessions/lab-core.js",
+          "students/sessions/enigma.js"
+        ],
+        "scope": "Source inspection only; empty inline equality does not validate externally loaded modules or runtime behaviour."
+      }
+    },
+    {
+      "id": "village",
+      "title": "Magic village",
+      "category": "create",
+      "path": "puzzles/workshop/index.html",
+      "accessible_entry": "Choose a project, move cargo or plan a short route and earn in-world gold.",
+      "interaction_summary": "Four selectable village projects cover classic and mixed-cargo crossings, delivery routes and power-cost routes. Local gold buys scene decorations; route costs use powers 1/2/3 of distance; linked route and signal workshops extend the theme.",
+      "formal_extension": "State-space search, travelling-salesperson enumeration and the effects of nonlinear cost rules. A shortest route under one rule need not be best under another.",
+      "prerequisites": [
+        "counting",
+        "sequencing",
+        "simple-distance"
+      ],
+      "curriculum_domains": [
+        "logic",
+        "number",
+        "optimisation",
+        "algorithms",
+        "modelling"
+      ],
+      "gaps": [
+        "Gold is game feedback, not mastery evidence",
+        "exponentiated cost is a game model with chosen units",
+        "narrative curriculum/graded proof tasks remain incomplete."
+      ],
+      "accessibility": [
+        "Project choice and short tasks support flexible pacing",
+        "route labels and path manipulation need device testing."
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "puzzles/workshop/index.html",
+          "puzzles/workshop/cargo.html",
+          "puzzles/workshop/roads.html",
+          "puzzles/workshop/signals.html"
+        ],
+        "source_checks": [
+          "Route permutations and cargo shortest-path search are implemented",
+          "project state is local",
+          "all projects are available"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "bee",
+      "title": "Spelling Bee",
+      "category": "words",
+      "path": "games/bee.html",
+      "accessible_entry": "Build words using a fixed set of letters including a required centre letter.",
+      "interaction_summary": "Seven-letter word game validates input against a local dictionary and tracks accepted words.",
+      "formal_extension": "Can support constraints/combinatorial discussion, but its current assessed target is spelling rather than a mapped mathematics objective.",
+      "prerequisites": [
+        "reading",
+        "spelling",
+        "alphabet"
+      ],
+      "curriculum_domains": [
+        "literacy",
+        "logic-enrichment"
+      ],
+      "gaps": [
+        "Available but not mapped as core maths",
+        "word-list suitability/completeness needs editorial review."
+      ],
+      "accessibility": [
+        "Typed and on-screen letters",
+        "dictionary exclusions need understandable feedback",
+        "not a reading assessment."
+      ],
+      "status": "available-unmapped",
+      "evidence": {
+        "source_paths": [
+          "games/bee.html",
+          "games/core.js",
+          "games/common.js",
+          "games/word-data.js",
+          "games/words.js"
+        ],
+        "source_checks": [
+          "words.js validates allowed letters/centre letter and dictionary membership",
+          "duplicate words are handled"
+        ],
+        "runtime": "not tested this audit"
+      }
+    },
+    {
+      "id": "wordle",
+      "title": "Five-letter words",
+      "category": "words",
+      "path": "games/wordle.html",
+      "accessible_entry": "Use a letter clue to rule out a proposed five-letter word.",
+      "interaction_summary": "Six-guess game uses a local dictionary and exact/elsewhere/absent feedback with repeated-letter accounting.",
+      "formal_extension": "Compare constraint filtering with Mastermind; information/probability questions need a stated word distribution.",
+      "prerequisites": [
+        "reading",
+        "spelling",
+        "logical-elimination"
+      ],
+      "curriculum_domains": [
+        "literacy",
+        "logic-enrichment",
+        "probability"
+      ],
+      "gaps": [
+        "Available but not a complete maths sequence",
+        "dictionary probabilities are not uniform language probabilities",
+        "no unsupported strategy optimality claim."
+      ],
+      "accessibility": [
+        "On-screen and typed keyboard",
+        "textual/symbol alternatives to feedback colours should be checked."
+      ],
+      "status": "available-unmapped",
+      "evidence": {
+        "source_paths": [
+          "games/wordle.html",
+          "games/core.js",
+          "games/common.js",
+          "games/word-data.js",
+          "games/words.js"
+        ],
+        "source_checks": [
+          "Core.feedback consumes unmatched letter counts after exact matches",
+          "words.js supplies keyboard, guesses and reveal"
+        ],
+        "runtime": "not tested this audit"
+      }
+    }
+  ],
+  "course_resources": [
+    {
+      "id": "year4-place-value",
+      "title": "Year 4 place-value workshop",
+      "path": "development/year4/index.html",
+      "accessible_entry": "Build a four-digit number with place-value columns.",
+      "interaction_summary": "Seven generated modes: build, repartition, compare, 1,000 more/less, rounding, negative crossings and Roman numerals to 100; practical prompts, hints and local attempt/reflection records.",
+      "formal_extension": "Explain regrouping invariants and rounding boundaries; justify alternate partitions.",
+      "prerequisites": [
+        "place-value-to-1000",
+        "counting",
+        "comparison"
+      ],
+      "curriculum_domains": [
+        "number",
+        "place-value",
+        "negative-numbers"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year4/index.html",
+          "development/curriculum/pathways.js"
+        ],
+        "source_checks": [
+          "generate constrains four-digit values and computes expected results",
+          "build uses four place-value columns",
+          "unfinished questions are recorded when a new question starts",
+          "local records distinguish tries/support; no mastery label"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Number-line estimation, counting in 25s, extended reasoning and delayed review are not implemented as a full block.",
+        "Other Year 4 block links/labels do not constitute full teaching coverage.",
+        "Browser-local records are not secure learner profiles."
+      ],
+      "accessibility": [
+        "Build columns and typed answers provide different input modes.",
+        "Hints/notes can be expanded; text size/layout needs device review."
+      ],
+      "year": 4,
+      "mode_count": 7
+    },
+    {
+      "id": "year4-multiplication",
+      "title": "Year 4 multiplication representations",
+      "path": "development/year4/multiplication.html",
+      "accessible_entry": "Build a small array and split one factor into manageable parts.",
+      "interaction_summary": "Arrays, equal groups and number-line jumps represent a product; adjustable factors and partition compare splitting, compensation, doubling/halving.",
+      "formal_extension": "Explain distributivity and equivalence between strategies before connecting to written multiplication.",
+      "prerequisites": [
+        "equal-groups",
+        "small-products",
+        "addition"
+      ],
+      "curriculum_domains": [
+        "number",
+        "multiplication",
+        "algebra"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year4/multiplication.html"
+        ],
+        "source_checks": [
+          "draw/build render the selected representation",
+          "drawStrategy switches partition/compensate/double-half explanations",
+          "session completed and first-correct counts are separate"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Division, exchanging in written algorithms and delayed consolidation remain to be added.",
+        "Progress is session-only and not profile-linked."
+      ],
+      "accessibility": [
+        "Movable partition and numeric controls support multiple input routes.",
+        "Dense arrays and large factors require device testing."
+      ],
+      "year": 4
+    },
+    {
+      "id": "year4-blocks",
+      "title": "Year 4 blocks and sweets workshop",
+      "path": "development/year4/block-workshop.html",
+      "accessible_entry": "Put ones, tens and hundreds into equal groups, or use sweets and packs.",
+      "interaction_summary": "Five grouping challenges use draggable/tap-place manipulatives, exchange, combine and undo; animated Alice/Bob guides.",
+      "formal_extension": "Connect value-preserving exchange to partitioned multiplication and later written methods.",
+      "prerequisites": [
+        "counting",
+        "equal-groups",
+        "place-value"
+      ],
+      "curriculum_domains": [
+        "number",
+        "multiplication",
+        "division",
+        "representation"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year4/block-workshop.html"
+        ],
+        "source_checks": [
+          "place/exchange validate available pieces and value changes",
+          "snapshot supports undo",
+          "five challenge definitions are present"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "The workshop is not a full multiplication/division block.",
+        "Session state is not persisted to profiles."
+      ],
+      "accessibility": [
+        "Tap-to-place supplements pointer dragging.",
+        "Reduced-motion support is in source; live gesture/focus checks pending."
+      ],
+      "year": 4,
+      "challenge_count": 5
+    },
+    {
+      "id": "year5-place-value",
+      "title": "Year 5 place-value workshop",
+      "path": "development/year5/place-value.html",
+      "accessible_entry": "Build a number within a selected range and explain each column.",
+      "interaction_summary": "Seven generated modes extend to 1,000,000; flexible partition, compare, powers-of-ten changes, rounding, negative crossing and Roman numerals to 1,000.",
+      "formal_extension": "Justify regrouping, decimal place-system structure and rounding bounds.",
+      "prerequisites": [
+        "four-digit-place-value",
+        "addition-subtraction",
+        "comparison"
+      ],
+      "curriculum_domains": [
+        "number",
+        "place-value",
+        "negative-numbers"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/place-value.html"
+        ],
+        "source_checks": [
+          "range controls generated maximum 10,000/100,000/1,000,000",
+          "build uses seven place columns",
+          "compare handles the upper-bound number",
+          "records distinguish attempts, help and unfinished work"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "A generated question bank is not a comprehensive small-step block.",
+        "Reasoning rubrics, delayed assessment and cross-device profiles are absent."
+      ],
+      "accessibility": [
+        "Column controls and typed answers are available.",
+        "Seven-column layout and Roman numeral text need phone/screen-reader review."
+      ],
+      "year": 5,
+      "mode_count": 7
+    },
+    {
+      "id": "year5-addition-subtraction",
+      "title": "Year 5 · Addition & subtraction",
+      "path": "development/year5/units/addition-subtraction.html",
+      "accessible_entry": "Use counters to add without exchange, then exchange ten for one.",
+      "interaction_summary": "Place-value column model combines/adds or removes/subtracts counters; regrouping and a numeric answer must both match.",
+      "formal_extension": "Explain conservation of value and derive written algorithms.",
+      "prerequisites": [
+        "place-value",
+        "addition",
+        "subtraction"
+      ],
+      "curriculum_domains": [
+        "number",
+        "place-value",
+        "arithmetic"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/addition-subtraction.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "modelCorrect requires normalised columns and all subtraction removals; expected returns the arithmetic result",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Multi-step word problems, estimation and choosing mental or written methods.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Autumn",
+      "model": "column",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "Add without exchanging",
+          "phase": "Build with support",
+          "parameters": {
+            "a": 12342,
+            "b": 21526,
+            "op": "+"
+          }
+        },
+        {
+          "name": "Add with exchanges",
+          "phase": "Practise",
+          "parameters": {
+            "a": 24768,
+            "b": 18547,
+            "op": "+"
+          }
+        },
+        {
+          "name": "Subtract without exchanging",
+          "phase": "Make connections",
+          "parameters": {
+            "a": 45678,
+            "b": 12345,
+            "op": "−"
+          }
+        },
+        {
+          "name": "Exchange across zero",
+          "phase": "Explain why",
+          "parameters": {
+            "a": 50302,
+            "b": 17846,
+            "op": "−"
+          }
+        },
+        {
+          "name": "Exchange across several zeros",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "a": 70004,
+            "b": 28679,
+            "op": "−"
+          }
+        }
+      ]
+    },
+    {
+      "id": "year5-multiplication-division-a",
+      "title": "Year 5 · Multiplication & division A",
+      "path": "development/year5/units/multiplication-division-a.html",
+      "accessible_entry": "Make a rectangle of 12 and record its side lengths.",
+      "interaction_summary": "Change row length and save all unordered factor pairs for 12, 24, 36, 48 and prime 29.",
+      "formal_extension": "Prove factor-pair completeness by checking through the square root.",
+      "prerequisites": [
+        "multiplication",
+        "rectangle-area"
+      ],
+      "curriculum_domains": [
+        "number",
+        "factors",
+        "primes"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/multiplication-division-a.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "modelCorrect compares saved pairs to divisor count through floor(sqrt(target))",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Common factors, common multiples, prime factors and multiplying/dividing by powers of ten.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Autumn",
+      "model": "factors",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "Make rectangles for 12",
+          "phase": "Build with support",
+          "parameters": {
+            "target": 12
+          }
+        },
+        {
+          "name": "Find all pairs for 24",
+          "phase": "Practise",
+          "parameters": {
+            "target": 24
+          }
+        },
+        {
+          "name": "Explore square number 36",
+          "phase": "Make connections",
+          "parameters": {
+            "target": 36
+          }
+        },
+        {
+          "name": "Organise the pairs for 48",
+          "phase": "Explain why",
+          "parameters": {
+            "target": 48
+          }
+        },
+        {
+          "name": "Is 29 prime?",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "target": 29
+          }
+        }
+      ]
+    },
+    {
+      "id": "year5-fractions-a",
+      "title": "Year 5 · Fractions A",
+      "path": "development/year5/units/fractions-a.html",
+      "accessible_entry": "Shade equal-sized pieces to represent a sum with matching denominators.",
+      "interaction_summary": "Fraction strips with adjustable denominator/parts model addition/subtraction, crossing one whole and simplification.",
+      "formal_extension": "Explain equivalent denominators and derive general fraction addition.",
+      "prerequisites": [
+        "unit-fractions",
+        "equivalence",
+        "addition"
+      ],
+      "curriculum_domains": [
+        "number",
+        "fractions"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/fractions-a.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "modelCorrect compares parts/denominator to rational expected sum within tolerance",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Ordering mixed numbers, more varied equivalent fractions and contextual problems.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Autumn",
+      "model": "fraction-add",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "Add equal-sized pieces",
+          "phase": "Build with support",
+          "parameters": {
+            "p": 1,
+            "d": 4,
+            "q": 2,
+            "e": 4,
+            "op": "+"
+          }
+        },
+        {
+          "name": "Make matching pieces",
+          "phase": "Practise",
+          "parameters": {
+            "p": 1,
+            "d": 2,
+            "q": 1,
+            "e": 4,
+            "op": "+"
+          }
+        },
+        {
+          "name": "Go beyond one whole",
+          "phase": "Make connections",
+          "parameters": {
+            "p": 3,
+            "d": 4,
+            "q": 3,
+            "e": 8,
+            "op": "+"
+          }
+        },
+        {
+          "name": "Subtract matching pieces",
+          "phase": "Explain why",
+          "parameters": {
+            "p": 7,
+            "d": 8,
+            "q": 1,
+            "e": 4,
+            "op": "−"
+          }
+        },
+        {
+          "name": "Regroup and simplify",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "p": 2,
+            "d": 3,
+            "q": 5,
+            "e": 6,
+            "op": "+"
+          }
+        }
+      ]
+    },
+    {
+      "id": "year5-multiplication-division-b",
+      "title": "Year 5 · Multiplication & division B",
+      "path": "development/year5/units/multiplication-division-b.html",
+      "accessible_entry": "Split 12 × 11 into smaller rectangles.",
+      "interaction_summary": "Fill four partitioned rectangle products, then give the total; factors progress to three-digit by two-digit.",
+      "formal_extension": "Use distributivity to justify expanded and compact multiplication.",
+      "prerequisites": [
+        "times-tables",
+        "place-value",
+        "area"
+      ],
+      "curriculum_domains": [
+        "number",
+        "multiplication",
+        "algebra"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/multiplication-division-b.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "modelCorrect requires all four partial products and check also requires total",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Compact long multiplication, short division and interpreting remainders in context.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Spring",
+      "model": "area-multiply",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "12 × 11",
+          "phase": "Build with support",
+          "parameters": {
+            "a": 12,
+            "b": 11
+          }
+        },
+        {
+          "name": "23 × 14",
+          "phase": "Practise",
+          "parameters": {
+            "a": 23,
+            "b": 14
+          }
+        },
+        {
+          "name": "47 × 12",
+          "phase": "Make connections",
+          "parameters": {
+            "a": 47,
+            "b": 12
+          }
+        },
+        {
+          "name": "125 × 24",
+          "phase": "Explain why",
+          "parameters": {
+            "a": 125,
+            "b": 24
+          }
+        },
+        {
+          "name": "216 × 13",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "a": 216,
+            "b": 13
+          }
+        }
+      ]
+    },
+    {
+      "id": "year5-fractions-b",
+      "title": "Year 5 · Fractions B",
+      "path": "development/year5/units/fractions-b.html",
+      "accessible_entry": "Build two groups of a quarter with strips.",
+      "interaction_summary": "Shade repeated fractions including improper answers and enter a fraction or mixed number.",
+      "formal_extension": "Justify multiplying a numerator by an integer and regroup into mixed numbers.",
+      "prerequisites": [
+        "fractions",
+        "equal-groups",
+        "multiplication"
+      ],
+      "curriculum_domains": [
+        "number",
+        "fractions"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/fractions-b.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "modelCorrect checks shaded fraction equals p/d times k; parseAnswer accepts fractions/mixed numbers",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Fractions of quantities, finding the whole and multi-step fraction problems.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Spring",
+      "model": "fraction-multiply",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "Two lots of one quarter",
+          "phase": "Build with support",
+          "parameters": {
+            "p": 1,
+            "d": 4,
+            "k": 2
+          }
+        },
+        {
+          "name": "Cross one whole",
+          "phase": "Practise",
+          "parameters": {
+            "p": 2,
+            "d": 3,
+            "k": 2
+          }
+        },
+        {
+          "name": "Make a mixed number",
+          "phase": "Make connections",
+          "parameters": {
+            "p": 3,
+            "d": 4,
+            "k": 3
+          }
+        },
+        {
+          "name": "Multiply an improper fraction",
+          "phase": "Explain why",
+          "parameters": {
+            "p": 5,
+            "d": 4,
+            "k": 3
+          }
+        },
+        {
+          "name": "Regroup eighths",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "p": 3,
+            "d": 8,
+            "k": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "year5-decimals-percentages",
+      "title": "Year 5 · Decimals & percentages",
+      "path": "development/year5/units/decimals-percentages.html",
+      "accessible_entry": "Shade half of a 100-square and name its decimal.",
+      "interaction_summary": "Build 50%, 25%, 20%, 75% and 35% on a grid and enter decimal equivalents.",
+      "formal_extension": "Relate hundredths, fractions and percentages; then find percentages of quantities.",
+      "prerequisites": [
+        "hundredths",
+        "fractions",
+        "place-value"
+      ],
+      "curriculum_domains": [
+        "number",
+        "decimals",
+        "percentages"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/decimals-percentages.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "modelCorrect checks selected cell count; expected target/100 checks decimal answer",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Thousandths, comparing decimals and percentages of quantities.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Spring",
+      "model": "percent",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "Half the grid",
+          "phase": "Build with support",
+          "parameters": {
+            "target": 50
+          }
+        },
+        {
+          "name": "A quarter of the grid",
+          "phase": "Practise",
+          "parameters": {
+            "target": 25
+          }
+        },
+        {
+          "name": "A fifth of the grid",
+          "phase": "Make connections",
+          "parameters": {
+            "target": 20
+          }
+        },
+        {
+          "name": "Three quarters",
+          "phase": "Explain why",
+          "parameters": {
+            "target": 75
+          }
+        },
+        {
+          "name": "Build 35% in two ways",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "target": 35
+          }
+        }
+      ]
+    },
+    {
+      "id": "year5-perimeter-area",
+      "title": "Year 5 · Perimeter & area",
+      "path": "development/year5/units/perimeter-area.html",
+      "accessible_entry": "Build a connected 12-square garden and count its boundary.",
+      "interaction_summary": "Build connected grid shapes satisfying both stated area and perimeter; five combinations vary trade-offs.",
+      "formal_extension": "Derive area/perimeter formulas and explain why equal areas can have different perimeters.",
+      "prerequisites": [
+        "counting",
+        "length",
+        "area"
+      ],
+      "curriculum_domains": [
+        "measurement",
+        "geometry"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/perimeter-area.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "modelCorrect requires cell count, exact perimeter and connectedness",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Missing side lengths, real units and estimating irregular areas.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Spring",
+      "model": "tiles",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "Make a rectangle",
+          "phase": "Build with support",
+          "parameters": {
+            "area": 12,
+            "perimeter": 14
+          }
+        },
+        {
+          "name": "Same area, longer edge",
+          "phase": "Practise",
+          "parameters": {
+            "area": 12,
+            "perimeter": 16
+          }
+        },
+        {
+          "name": "Explore a square",
+          "phase": "Make connections",
+          "parameters": {
+            "area": 16,
+            "perimeter": 16
+          }
+        },
+        {
+          "name": "Compare area and boundary",
+          "phase": "Explain why",
+          "parameters": {
+            "area": 10,
+            "perimeter": 14
+          }
+        },
+        {
+          "name": "A smaller area, longer edge",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "area": 8,
+            "perimeter": 18
+          }
+        }
+      ]
+    },
+    {
+      "id": "year5-statistics",
+      "title": "Year 5 · Statistics",
+      "path": "development/year5/units/statistics.html",
+      "accessible_entry": "Build a bar chart to match four simple numbers.",
+      "interaction_summary": "Adjust four bars to a table, first in ones then twos/fives; find the difference between greatest and least.",
+      "formal_extension": "Interpret graphical scales and compare data; extend to line graphs and tables.",
+      "prerequisites": [
+        "counting",
+        "scale-reading",
+        "subtraction"
+      ],
+      "curriculum_domains": [
+        "statistics",
+        "measurement"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/statistics.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "modelCorrect requires exact bars; expected computes max minus min",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Line graphs, timetables and two-way tables.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Spring",
+      "model": "chart",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "Build bars in ones",
+          "phase": "Build with support",
+          "parameters": {
+            "data": [
+              4,
+              7,
+              3,
+              6
+            ],
+            "scale": 1
+          }
+        },
+        {
+          "name": "Compare the values",
+          "phase": "Practise",
+          "parameters": {
+            "data": [
+              6,
+              2,
+              8,
+              5
+            ],
+            "scale": 1
+          }
+        },
+        {
+          "name": "Read a scale of twos",
+          "phase": "Make connections",
+          "parameters": {
+            "data": [
+              10,
+              16,
+              8,
+              14
+            ],
+            "scale": 2
+          }
+        },
+        {
+          "name": "Read a scale of fives",
+          "phase": "Explain why",
+          "parameters": {
+            "data": [
+              15,
+              30,
+              20,
+              35
+            ],
+            "scale": 5
+          }
+        },
+        {
+          "name": "Explain the comparison",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "data": [
+              25,
+              45,
+              15,
+              35
+            ],
+            "scale": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "year5-shape",
+      "title": "Year 5 · Shape",
+      "path": "development/year5/units/shape.html",
+      "accessible_entry": "Turn one arm to a quarter turn, then complete a full turn.",
+      "interaction_summary": "Direct angle dragging, precise numeric input and buttons explore acute/obtuse/reflex examples and missing full-turn angles.",
+      "formal_extension": "Derive angle-sum reasoning and classify polygon angles.",
+      "prerequisites": [
+        "turns",
+        "degrees",
+        "subtraction-to-360"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "angles"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/shape.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "modelCorrect requires target angle; numeric expected is 360 minus target",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Polygon properties, regular and irregular polygons and identifying 3D shapes from 2D representations.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Summer",
+      "model": "angle",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "A quarter turn",
+          "phase": "Build with support",
+          "parameters": {
+            "target": 90
+          }
+        },
+        {
+          "name": "An acute angle",
+          "phase": "Practise",
+          "parameters": {
+            "target": 60
+          }
+        },
+        {
+          "name": "An obtuse angle",
+          "phase": "Make connections",
+          "parameters": {
+            "target": 135
+          }
+        },
+        {
+          "name": "A reflex angle",
+          "phase": "Explain why",
+          "parameters": {
+            "target": 240
+          }
+        },
+        {
+          "name": "Explain the missing turn",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "target": 315
+          }
+        }
+      ]
+    },
+    {
+      "id": "year5-position-direction",
+      "title": "Year 5 · Position & direction",
+      "path": "development/year5/units/position-direction.html",
+      "accessible_entry": "Slide a triangle three spaces right.",
+      "interaction_summary": "Move three labelled vertices by translation or reflection in x/y=constant lines.",
+      "formal_extension": "Describe transformations precisely and reason about invariant lengths/orientation.",
+      "prerequisites": [
+        "first-quadrant-coordinates",
+        "left-right-up-down"
+      ],
+      "curriculum_domains": [
+        "geometry",
+        "coordinates",
+        "transformations"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/position-direction.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "modelCorrect compares every vertex against translation or mirror formula",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Reasoning about several transformations and finding unknown vertices.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Summer",
+      "model": "coordinates",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "Slide in one direction",
+          "phase": "Build with support",
+          "parameters": {
+            "type": "translate",
+            "dx": 3,
+            "dy": 0
+          }
+        },
+        {
+          "name": "Slide in two directions",
+          "phase": "Practise",
+          "parameters": {
+            "type": "translate",
+            "dx": 3,
+            "dy": 2
+          }
+        },
+        {
+          "name": "A vertical mirror",
+          "phase": "Make connections",
+          "parameters": {
+            "type": "reflect",
+            "axis": "x",
+            "line": 5
+          }
+        },
+        {
+          "name": "A horizontal mirror",
+          "phase": "Explain why",
+          "parameters": {
+            "type": "reflect",
+            "axis": "y",
+            "line": 5
+          }
+        },
+        {
+          "name": "A mirror through the shape",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "type": "reflect",
+            "axis": "x",
+            "line": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "year5-decimals",
+      "title": "Year 5 · Decimals",
+      "path": "development/year5/units/decimals.html",
+      "accessible_entry": "Move digits one column to multiply 3.47 by 10.",
+      "interaction_summary": "Digit shifts across place-value columns model powers of ten while retaining zeros; enter the resulting number.",
+      "formal_extension": "Explain why value changes without moving the decimal-point boundary.",
+      "prerequisites": [
+        "decimal-place-value",
+        "powers-of-ten"
+      ],
+      "curriculum_domains": [
+        "number",
+        "decimals",
+        "place-value"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/decimals.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "canShift checks representable range and thousandth precision; modelCorrect requires intended shift; numeric answer separately checked",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Decimal addition/subtraction, rounding, ordering and sequences.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Summer",
+      "model": "decimal",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "Multiply by 10",
+          "phase": "Build with support",
+          "parameters": {
+            "value": 3.47,
+            "shift": 1
+          }
+        },
+        {
+          "name": "Undo it: divide by 10",
+          "phase": "Practise",
+          "parameters": {
+            "value": 34.7,
+            "shift": -1
+          }
+        },
+        {
+          "name": "Multiply by 100",
+          "phase": "Make connections",
+          "parameters": {
+            "value": 0.58,
+            "shift": 2
+          }
+        },
+        {
+          "name": "Divide by 1,000",
+          "phase": "Explain why",
+          "parameters": {
+            "value": 7,
+            "shift": -3
+          }
+        },
+        {
+          "name": "Explain the zero",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "value": 0.306,
+            "shift": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "year5-negative-numbers",
+      "title": "Year 5 · Negative numbers",
+      "path": "development/year5/units/negative-numbers.html",
+      "accessible_entry": "Move a marker for a rise in temperature above zero.",
+      "interaction_summary": "Five changes progress to crossing zero both ways and comparing larger negative differences.",
+      "formal_extension": "Use signed number-line arithmetic and generalise difference of signed values.",
+      "prerequisites": [
+        "number-line",
+        "addition",
+        "subtraction"
+      ],
+      "curriculum_domains": [
+        "number",
+        "negative-numbers"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/negative-numbers.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "modelCorrect requires marker at start plus change; expected uses signed addition",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Comparing negative numbers in other contexts and finding temperature differences.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Summer",
+      "model": "temperature",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "Stay above zero",
+          "phase": "Build with support",
+          "parameters": {
+            "start": 3,
+            "change": 4
+          }
+        },
+        {
+          "name": "Cross below zero",
+          "phase": "Practise",
+          "parameters": {
+            "start": 2,
+            "change": -5
+          }
+        },
+        {
+          "name": "Cross above zero",
+          "phase": "Make connections",
+          "parameters": {
+            "start": -4,
+            "change": 7
+          }
+        },
+        {
+          "name": "Stay below zero",
+          "phase": "Explain why",
+          "parameters": {
+            "start": -3,
+            "change": -6
+          }
+        },
+        {
+          "name": "Compare both sides of zero",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "start": 10,
+            "change": -18
+          }
+        }
+      ]
+    },
+    {
+      "id": "year5-converting-units",
+      "title": "Year 5 · Converting units",
+      "path": "development/year5/units/converting-units.html",
+      "accessible_entry": "Represent two metres on a scale and convert to centimetres.",
+      "interaction_summary": "Scale and exact controls support m↔cm, kg→g and L→mL, including decimal quantities and a reverse conversion.",
+      "formal_extension": "Explain multiplicative unit relationships and dimensional consistency.",
+      "prerequisites": [
+        "decimal-place-value",
+        "powers-of-ten",
+        "measurement-units"
+      ],
+      "curriculum_domains": [
+        "measurement",
+        "decimals",
+        "ratio"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/converting-units.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "modelCorrect checks represented source quantity; expected multiplies by stated conversion factor",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Approximate imperial equivalents, time conversions and contextual problems.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Summer",
+      "model": "units",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "Whole metres",
+          "phase": "Build with support",
+          "parameters": {
+            "value": 2,
+            "from": "m",
+            "to": "cm",
+            "factor": 100
+          }
+        },
+        {
+          "name": "Decimal metres",
+          "phase": "Practise",
+          "parameters": {
+            "value": 1.75,
+            "from": "m",
+            "to": "cm",
+            "factor": 100
+          }
+        },
+        {
+          "name": "Kilograms to grams",
+          "phase": "Make connections",
+          "parameters": {
+            "value": 2.4,
+            "from": "kg",
+            "to": "g",
+            "factor": 1000
+          }
+        },
+        {
+          "name": "Less than one litre",
+          "phase": "Explain why",
+          "parameters": {
+            "value": 0.65,
+            "from": "L",
+            "to": "mL",
+            "factor": 1000
+          }
+        },
+        {
+          "name": "Reverse the conversion",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "value": 85,
+            "from": "cm",
+            "to": "m",
+            "factor": 0.01
+          }
+        }
+      ]
+    },
+    {
+      "id": "year5-volume",
+      "title": "Year 5 · Volume",
+      "path": "development/year5/units/volume.html",
+      "accessible_entry": "Build an eight-cube cuboid and count layers.",
+      "interaction_summary": "Change integer x/y/z dimensions, rotate and inspect layers to meet targets 8, 12, 24, 36 and 60.",
+      "formal_extension": "Enumerate unordered factor triples and explain V=lwh.",
+      "prerequisites": [
+        "multiplication",
+        "equal-groups",
+        "3D-shapes"
+      ],
+      "curriculum_domains": [
+        "measurement",
+        "geometry",
+        "number"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/units/volume.html",
+          "development/year5/units/units.js",
+          "development/year5/units/workshop.js",
+          "development/year5/units/guides.js"
+        ],
+        "source_checks": [
+          "modelCorrect checks product equals target; dimensions constrained to 1–6; camera state is separate",
+          "Five distinct task definitions progress from supported building to reasoning; challenge buttons select each task.",
+          "Check requires model correctness before numeric correctness where appropriate.",
+          "Local records include outcome, tries, helped and date; changing task records unfinished work."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Estimating volume and capacity and reasoning about practical measures.",
+        "Five investigations are starter coverage of this block, not a complete small-step teaching and assessment sequence.",
+        "Generic feedback often asks learners to recheck the model rather than diagnosing a particular misconception.",
+        "The final prompt asks for every cuboid, but automatic checking accepts one valid cuboid; completeness is an oral/written extension, not automatically assessed."
+      ],
+      "accessibility": [
+        "Numeric/buttons/tap controls supplement model gestures where implemented.",
+        "Worked explanations and hints are available; actual touch, focus, screen-reader and reduced-motion behaviour are not verified in this audit."
+      ],
+      "year": 5,
+      "term": "Summer",
+      "model": "volume",
+      "challenge_count": 5,
+      "challenges": [
+        {
+          "name": "Count 8 cubes",
+          "phase": "Build with support",
+          "parameters": {
+            "target": 8
+          }
+        },
+        {
+          "name": "Build 12 cubes in layers",
+          "phase": "Practise",
+          "parameters": {
+            "target": 12
+          }
+        },
+        {
+          "name": "Find another shape for 24",
+          "phase": "Make connections",
+          "parameters": {
+            "target": 24
+          }
+        },
+        {
+          "name": "Investigate 36 cubes",
+          "phase": "Explain why",
+          "parameters": {
+            "target": 36
+          }
+        },
+        {
+          "name": "Find every shape for 60",
+          "phase": "Stretch your thinking",
+          "parameters": {
+            "target": 60
+          }
+        }
+      ]
+    },
+    {
+      "id": "learning-lesson-1",
+      "title": "Equal parts",
+      "path": "development/learning.html",
+      "accessible_entry": "Try a short multiple-choice question and read the explanation before continuing.",
+      "interaction_summary": "Four fixed choice questions with per-question explanations; learner attempts are stored in a browser-local profile and a notebook/progress screen.",
+      "formal_extension": "Use the small quiz as a discussion/checkpoint, then add manipulative exploration, transfer questions and delayed review.",
+      "prerequisites": [
+        "topic-dependent-foundations"
+      ],
+      "curriculum_domains": [
+        "fractions"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/learning.html",
+          "mw-design/lessons.js",
+          "mw-design/site.js"
+        ],
+        "source_checks": [
+          "lessons.js contains four question/choice/answer/explanation objects for this lesson",
+          "site.js stores first answer, firstCorrect and retry sequence",
+          "progress labels lesson completion rather than mastery"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Choice questions are not by themselves an interactive manipulatives course.",
+        "The fixed bank is small; repeated answers can be remembered.",
+        "Local profiles are not authenticated accounts or secure child-specific access controls."
+      ],
+      "accessibility": [
+        "Large choice controls and explanations are present.",
+        "Keyboard focus and announcement after question changes require runtime review."
+      ],
+      "lesson_id": "lesson-1",
+      "topic": "fractions",
+      "question_count": 4,
+      "launch_hash": "#lesson/lesson-1",
+      "question_prompts": [
+        "A cake is cut into 8 equal slices. You take 3. What fraction did you take?",
+        "Which fraction is equal to one half?",
+        "Which is larger: 1/3 or 1/4 of the same cake?",
+        "You have eaten 3/8 of a cake. How much remains?"
+      ]
+    },
+    {
+      "id": "learning-lesson-2",
+      "title": "Combining fractions",
+      "path": "development/learning.html",
+      "accessible_entry": "Try a short multiple-choice question and read the explanation before continuing.",
+      "interaction_summary": "Four fixed choice questions with per-question explanations; learner attempts are stored in a browser-local profile and a notebook/progress screen.",
+      "formal_extension": "Use the small quiz as a discussion/checkpoint, then add manipulative exploration, transfer questions and delayed review.",
+      "prerequisites": [
+        "topic-dependent-foundations"
+      ],
+      "curriculum_domains": [
+        "fractions"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/learning.html",
+          "mw-design/lessons.js",
+          "mw-design/site.js"
+        ],
+        "source_checks": [
+          "lessons.js contains four question/choice/answer/explanation objects for this lesson",
+          "site.js stores first answer, firstCorrect and retry sequence",
+          "progress labels lesson completion rather than mastery"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Choice questions are not by themselves an interactive manipulatives course.",
+        "The fixed bank is small; repeated answers can be remembered.",
+        "Local profiles are not authenticated accounts or secure child-specific access controls."
+      ],
+      "accessibility": [
+        "Large choice controls and explanations are present.",
+        "Keyboard focus and announcement after question changes require runtime review."
+      ],
+      "lesson_id": "lesson-2",
+      "topic": "fractions",
+      "question_count": 4,
+      "launch_hash": "#lesson/lesson-2",
+      "question_prompts": [
+        "What is 2/7 + 3/7?",
+        "What is 1/2 + 1/4?",
+        "What is 5/6 − 1/3?",
+        "A recipe needs 3/4 cup of oats. How much for 1½ batches?"
+      ]
+    },
+    {
+      "id": "learning-lesson-3",
+      "title": "Sharing in a ratio",
+      "path": "development/learning.html",
+      "accessible_entry": "Try a short multiple-choice question and read the explanation before continuing.",
+      "interaction_summary": "Four fixed choice questions with per-question explanations; learner attempts are stored in a browser-local profile and a notebook/progress screen.",
+      "formal_extension": "Use the small quiz as a discussion/checkpoint, then add manipulative exploration, transfer questions and delayed review.",
+      "prerequisites": [
+        "topic-dependent-foundations"
+      ],
+      "curriculum_domains": [
+        "fractions"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/learning.html",
+          "mw-design/lessons.js",
+          "mw-design/site.js"
+        ],
+        "source_checks": [
+          "lessons.js contains four question/choice/answer/explanation objects for this lesson",
+          "site.js stores first answer, firstCorrect and retry sequence",
+          "progress labels lesson completion rather than mastery"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Choice questions are not by themselves an interactive manipulatives course.",
+        "The fixed bank is small; repeated answers can be remembered.",
+        "Local profiles are not authenticated accounts or secure child-specific access controls."
+      ],
+      "accessibility": [
+        "Large choice controls and explanations are present.",
+        "Keyboard focus and announcement after question changes require runtime review."
+      ],
+      "lesson_id": "lesson-3",
+      "topic": "fractions",
+      "question_count": 4,
+      "launch_hash": "#lesson/lesson-3",
+      "question_prompts": [
+        "Red and blue counters are in the ratio 2:3. There are 10 counters. How many are red?",
+        "A drink uses 1 part cordial to 4 parts water. How much water goes with 3 cups cordial?",
+        "Simplify the ratio 6:9.",
+        "Share £20 in the ratio 1:3. What is the larger share?"
+      ]
+    },
+    {
+      "id": "learning-lesson-4",
+      "title": "Place value",
+      "path": "development/learning.html",
+      "accessible_entry": "Try a short multiple-choice question and read the explanation before continuing.",
+      "interaction_summary": "Four fixed choice questions with per-question explanations; learner attempts are stored in a browser-local profile and a notebook/progress screen.",
+      "formal_extension": "Use the small quiz as a discussion/checkpoint, then add manipulative exploration, transfer questions and delayed review.",
+      "prerequisites": [
+        "topic-dependent-foundations"
+      ],
+      "curriculum_domains": [
+        "number"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/learning.html",
+          "mw-design/lessons.js",
+          "mw-design/site.js"
+        ],
+        "source_checks": [
+          "lessons.js contains four question/choice/answer/explanation objects for this lesson",
+          "site.js stores first answer, firstCorrect and retry sequence",
+          "progress labels lesson completion rather than mastery"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Choice questions are not by themselves an interactive manipulatives course.",
+        "The fixed bank is small; repeated answers can be remembered.",
+        "Local profiles are not authenticated accounts or secure child-specific access controls."
+      ],
+      "accessibility": [
+        "Large choice controls and explanations are present.",
+        "Keyboard focus and announcement after question changes require runtime review."
+      ],
+      "lesson_id": "lesson-4",
+      "topic": "number",
+      "question_count": 4,
+      "launch_hash": "#lesson/lesson-4",
+      "question_prompts": [
+        "What is the value of the digit 6 in 3,642?",
+        "What is 4,000 + 70 + 5?",
+        "Which number is largest?",
+        "Round 3,768 to the nearest hundred."
+      ]
+    },
+    {
+      "id": "learning-lesson-5",
+      "title": "Partition & multiply",
+      "path": "development/learning.html",
+      "accessible_entry": "Try a short multiple-choice question and read the explanation before continuing.",
+      "interaction_summary": "Four fixed choice questions with per-question explanations; learner attempts are stored in a browser-local profile and a notebook/progress screen.",
+      "formal_extension": "Use the small quiz as a discussion/checkpoint, then add manipulative exploration, transfer questions and delayed review.",
+      "prerequisites": [
+        "topic-dependent-foundations"
+      ],
+      "curriculum_domains": [
+        "number"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/learning.html",
+          "mw-design/lessons.js",
+          "mw-design/site.js"
+        ],
+        "source_checks": [
+          "lessons.js contains four question/choice/answer/explanation objects for this lesson",
+          "site.js stores first answer, firstCorrect and retry sequence",
+          "progress labels lesson completion rather than mastery"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Choice questions are not by themselves an interactive manipulatives course.",
+        "The fixed bank is small; repeated answers can be remembered.",
+        "Local profiles are not authenticated accounts or secure child-specific access controls."
+      ],
+      "accessibility": [
+        "Large choice controls and explanations are present.",
+        "Keyboard focus and announcement after question changes require runtime review."
+      ],
+      "lesson_id": "lesson-5",
+      "topic": "number",
+      "question_count": 4,
+      "launch_hash": "#lesson/lesson-5",
+      "question_prompts": [
+        "Use 6 × 10 and 6 × 4 to find 6 × 14.",
+        "A rectangle is 8 squares by 7 squares. How many squares?",
+        "What is 23 × 4?",
+        "Which expression is equal to 9 × 18?"
+      ]
+    },
+    {
+      "id": "learning-lesson-6",
+      "title": "Factors & arrays",
+      "path": "development/learning.html",
+      "accessible_entry": "Try a short multiple-choice question and read the explanation before continuing.",
+      "interaction_summary": "Four fixed choice questions with per-question explanations; learner attempts are stored in a browser-local profile and a notebook/progress screen.",
+      "formal_extension": "Use the small quiz as a discussion/checkpoint, then add manipulative exploration, transfer questions and delayed review.",
+      "prerequisites": [
+        "topic-dependent-foundations"
+      ],
+      "curriculum_domains": [
+        "number"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/learning.html",
+          "mw-design/lessons.js",
+          "mw-design/site.js"
+        ],
+        "source_checks": [
+          "lessons.js contains four question/choice/answer/explanation objects for this lesson",
+          "site.js stores first answer, firstCorrect and retry sequence",
+          "progress labels lesson completion rather than mastery"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Choice questions are not by themselves an interactive manipulatives course.",
+        "The fixed bank is small; repeated answers can be remembered.",
+        "Local profiles are not authenticated accounts or secure child-specific access controls."
+      ],
+      "accessibility": [
+        "Large choice controls and explanations are present.",
+        "Keyboard focus and announcement after question changes require runtime review."
+      ],
+      "lesson_id": "lesson-6",
+      "topic": "number",
+      "question_count": 4,
+      "launch_hash": "#lesson/lesson-6",
+      "question_prompts": [
+        "Which pair makes a rectangle with area 30?",
+        "Which number is NOT a factor of 24?",
+        "How many unordered positive factor pairs does 12 have?",
+        "What are the prime factors of 30, including each occurrence?"
+      ]
+    },
+    {
+      "id": "learning-lesson-7",
+      "title": "Angles & turns",
+      "path": "development/learning.html",
+      "accessible_entry": "Try a short multiple-choice question and read the explanation before continuing.",
+      "interaction_summary": "Four fixed choice questions with per-question explanations; learner attempts are stored in a browser-local profile and a notebook/progress screen.",
+      "formal_extension": "Use the small quiz as a discussion/checkpoint, then add manipulative exploration, transfer questions and delayed review.",
+      "prerequisites": [
+        "topic-dependent-foundations"
+      ],
+      "curriculum_domains": [
+        "geometry"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/learning.html",
+          "mw-design/lessons.js",
+          "mw-design/site.js"
+        ],
+        "source_checks": [
+          "lessons.js contains four question/choice/answer/explanation objects for this lesson",
+          "site.js stores first answer, firstCorrect and retry sequence",
+          "progress labels lesson completion rather than mastery"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Choice questions are not by themselves an interactive manipulatives course.",
+        "The fixed bank is small; repeated answers can be remembered.",
+        "Local profiles are not authenticated accounts or secure child-specific access controls."
+      ],
+      "accessibility": [
+        "Large choice controls and explanations are present.",
+        "Keyboard focus and announcement after question changes require runtime review."
+      ],
+      "lesson_id": "lesson-7",
+      "topic": "geometry",
+      "question_count": 4,
+      "launch_hash": "#lesson/lesson-7",
+      "question_prompts": [
+        "How many degrees are in a quarter turn?",
+        "Two angles make a straight line. One is 65°. What is the other?",
+        "A triangle has angles 50° and 60°. What is its third angle?",
+        "You face north and turn clockwise 270°. Which way do you face?"
+      ]
+    },
+    {
+      "id": "learning-lesson-8",
+      "title": "Area & perimeter",
+      "path": "development/learning.html",
+      "accessible_entry": "Try a short multiple-choice question and read the explanation before continuing.",
+      "interaction_summary": "Four fixed choice questions with per-question explanations; learner attempts are stored in a browser-local profile and a notebook/progress screen.",
+      "formal_extension": "Use the small quiz as a discussion/checkpoint, then add manipulative exploration, transfer questions and delayed review.",
+      "prerequisites": [
+        "topic-dependent-foundations"
+      ],
+      "curriculum_domains": [
+        "geometry"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/learning.html",
+          "mw-design/lessons.js",
+          "mw-design/site.js"
+        ],
+        "source_checks": [
+          "lessons.js contains four question/choice/answer/explanation objects for this lesson",
+          "site.js stores first answer, firstCorrect and retry sequence",
+          "progress labels lesson completion rather than mastery"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Choice questions are not by themselves an interactive manipulatives course.",
+        "The fixed bank is small; repeated answers can be remembered.",
+        "Local profiles are not authenticated accounts or secure child-specific access controls."
+      ],
+      "accessibility": [
+        "Large choice controls and explanations are present.",
+        "Keyboard focus and announcement after question changes require runtime review."
+      ],
+      "lesson_id": "lesson-8",
+      "topic": "geometry",
+      "question_count": 4,
+      "launch_hash": "#lesson/lesson-8",
+      "question_prompts": [
+        "A rectangle is 6 cm long and 4 cm wide. What is its area?",
+        "What is the perimeter of that 6 cm by 4 cm rectangle?",
+        "A square has perimeter 28 cm. How long is each side?",
+        "Which rectangle has greater area?"
+      ]
+    },
+    {
+      "id": "learning-lesson-9",
+      "title": "Painted cubes",
+      "path": "development/learning.html",
+      "accessible_entry": "Try a short multiple-choice question and read the explanation before continuing.",
+      "interaction_summary": "Four fixed choice questions with per-question explanations; learner attempts are stored in a browser-local profile and a notebook/progress screen.",
+      "formal_extension": "Use the small quiz as a discussion/checkpoint, then add manipulative exploration, transfer questions and delayed review.",
+      "prerequisites": [
+        "topic-dependent-foundations"
+      ],
+      "curriculum_domains": [
+        "geometry"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/learning.html",
+          "mw-design/lessons.js",
+          "mw-design/site.js"
+        ],
+        "source_checks": [
+          "lessons.js contains four question/choice/answer/explanation objects for this lesson",
+          "site.js stores first answer, firstCorrect and retry sequence",
+          "progress labels lesson completion rather than mastery"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Choice questions are not by themselves an interactive manipulatives course.",
+        "The fixed bank is small; repeated answers can be remembered.",
+        "Local profiles are not authenticated accounts or secure child-specific access controls."
+      ],
+      "accessibility": [
+        "Large choice controls and explanations are present.",
+        "Keyboard focus and announcement after question changes require runtime review."
+      ],
+      "lesson_id": "lesson-9",
+      "topic": "geometry",
+      "question_count": 4,
+      "launch_hash": "#lesson/lesson-9",
+      "question_prompts": [
+        "A 3 × 3 × 3 cube is painted on the outside. How many small cubes are at corners?",
+        "How many small cubes have no paint in a painted 3 × 3 × 3 cube?",
+        "How many small cubes have exactly two painted faces in a painted 3 × 3 × 3 cube?",
+        "How many unpainted cubes are inside a painted 4 × 4 × 4 cube?"
+      ]
+    },
+    {
+      "id": "learning-lesson-10",
+      "title": "Keeping balance",
+      "path": "development/learning.html",
+      "accessible_entry": "Try a short multiple-choice question and read the explanation before continuing.",
+      "interaction_summary": "Four fixed choice questions with per-question explanations; learner attempts are stored in a browser-local profile and a notebook/progress screen.",
+      "formal_extension": "Use the small quiz as a discussion/checkpoint, then add manipulative exploration, transfer questions and delayed review.",
+      "prerequisites": [
+        "topic-dependent-foundations"
+      ],
+      "curriculum_domains": [
+        "algebra"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/learning.html",
+          "mw-design/lessons.js",
+          "mw-design/site.js"
+        ],
+        "source_checks": [
+          "lessons.js contains four question/choice/answer/explanation objects for this lesson",
+          "site.js stores first answer, firstCorrect and retry sequence",
+          "progress labels lesson completion rather than mastery"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Choice questions are not by themselves an interactive manipulatives course.",
+        "The fixed bank is small; repeated answers can be remembered.",
+        "Local profiles are not authenticated accounts or secure child-specific access controls."
+      ],
+      "accessibility": [
+        "Large choice controls and explanations are present.",
+        "Keyboard focus and announcement after question changes require runtime review."
+      ],
+      "lesson_id": "lesson-10",
+      "topic": "algebra",
+      "question_count": 4,
+      "launch_hash": "#lesson/lesson-10",
+      "question_prompts": [
+        "A box plus 3 counters balances 8 counters. How many counters are in the box?",
+        "Solve x + 7 = 12.",
+        "Solve 3x = 18.",
+        "Solve 2x + 4 = 14."
+      ]
+    },
+    {
+      "id": "learning-lesson-11",
+      "title": "Patterns & rules",
+      "path": "development/learning.html",
+      "accessible_entry": "Try a short multiple-choice question and read the explanation before continuing.",
+      "interaction_summary": "Four fixed choice questions with per-question explanations; learner attempts are stored in a browser-local profile and a notebook/progress screen.",
+      "formal_extension": "Use the small quiz as a discussion/checkpoint, then add manipulative exploration, transfer questions and delayed review.",
+      "prerequisites": [
+        "topic-dependent-foundations"
+      ],
+      "curriculum_domains": [
+        "algebra"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/learning.html",
+          "mw-design/lessons.js",
+          "mw-design/site.js"
+        ],
+        "source_checks": [
+          "lessons.js contains four question/choice/answer/explanation objects for this lesson",
+          "site.js stores first answer, firstCorrect and retry sequence",
+          "progress labels lesson completion rather than mastery"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Choice questions are not by themselves an interactive manipulatives course.",
+        "The fixed bank is small; repeated answers can be remembered.",
+        "Local profiles are not authenticated accounts or secure child-specific access controls."
+      ],
+      "accessibility": [
+        "Large choice controls and explanations are present.",
+        "Keyboard focus and announcement after question changes require runtime review."
+      ],
+      "lesson_id": "lesson-11",
+      "topic": "algebra",
+      "question_count": 4,
+      "launch_hash": "#lesson/lesson-11",
+      "question_prompts": [
+        "The pattern is 4, 7, 10, 13. What comes next?",
+        "A machine doubles its input then adds 1. What comes out for input 5?",
+        "The rule is 3n. What is the output when n = 4?",
+        "Which rule gives 5, 7, 9 for inputs 1, 2, 3?"
+      ]
+    },
+    {
+      "id": "learning-lesson-12",
+      "title": "Substitute & solve",
+      "path": "development/learning.html",
+      "accessible_entry": "Try a short multiple-choice question and read the explanation before continuing.",
+      "interaction_summary": "Four fixed choice questions with per-question explanations; learner attempts are stored in a browser-local profile and a notebook/progress screen.",
+      "formal_extension": "Use the small quiz as a discussion/checkpoint, then add manipulative exploration, transfer questions and delayed review.",
+      "prerequisites": [
+        "topic-dependent-foundations"
+      ],
+      "curriculum_domains": [
+        "algebra"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/learning.html",
+          "mw-design/lessons.js",
+          "mw-design/site.js"
+        ],
+        "source_checks": [
+          "lessons.js contains four question/choice/answer/explanation objects for this lesson",
+          "site.js stores first answer, firstCorrect and retry sequence",
+          "progress labels lesson completion rather than mastery"
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "Choice questions are not by themselves an interactive manipulatives course.",
+        "The fixed bank is small; repeated answers can be remembered.",
+        "Local profiles are not authenticated accounts or secure child-specific access controls."
+      ],
+      "accessibility": [
+        "Large choice controls and explanations are present.",
+        "Keyboard focus and announcement after question changes require runtime review."
+      ],
+      "lesson_id": "lesson-12",
+      "topic": "algebra",
+      "question_count": 4,
+      "launch_hash": "#lesson/lesson-12",
+      "question_prompts": [
+        "If a = 3 and b = 5, what is 2a + b?",
+        "If x = 4, what is x²?",
+        "Solve x/3 = 7.",
+        "Solve 5x − 2 = 18."
+      ]
+    },
+    {
+      "id": "year5-hub",
+      "title": "Year 5 pathway",
+      "path": "development/year5/index.html",
+      "accessible_entry": "Choose an investigation with a tutor using prerequisites rather than age alone.",
+      "interaction_summary": "Curriculum hub links relevant investigations and starter resources.",
+      "formal_extension": "A full course needs sequenced objectives, teaching, practice, reasoning, assessment and review.",
+      "prerequisites": [
+        "varies-by-activity"
+      ],
+      "curriculum_domains": [
+        "curriculum-hub"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year5/index.html",
+          "development/curriculum/pathways.js"
+        ],
+        "source_checks": [
+          "Links and pathway metadata identify starter activities; linked investigations are inventoried separately."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "A linked collection is not a complete course.",
+        "Assessment, prerequisite sequencing and comprehensive coverage must be built and verified."
+      ],
+      "accessibility": [
+        "Card navigation provides a simple entry; all linked destinations need device QA."
+      ],
+      "stage": "year5",
+      "role": "navigation-hub"
+    },
+    {
+      "id": "year6-hub",
+      "title": "Year 6 pathway",
+      "path": "development/year6/index.html",
+      "accessible_entry": "Choose an investigation with a tutor using prerequisites rather than age alone.",
+      "interaction_summary": "Curriculum hub links relevant investigations and starter resources.",
+      "formal_extension": "A full course needs sequenced objectives, teaching, practice, reasoning, assessment and review.",
+      "prerequisites": [
+        "varies-by-activity"
+      ],
+      "curriculum_domains": [
+        "curriculum-hub"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year6/index.html",
+          "development/curriculum/pathways.js"
+        ],
+        "source_checks": [
+          "Links and pathway metadata identify starter activities; linked investigations are inventoried separately."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "A linked collection is not a complete course.",
+        "Assessment, prerequisite sequencing and comprehensive coverage must be built and verified."
+      ],
+      "accessibility": [
+        "Card navigation provides a simple entry; all linked destinations need device QA."
+      ],
+      "stage": "year6",
+      "role": "navigation-hub"
+    },
+    {
+      "id": "year7-hub",
+      "title": "Year 7 pathway",
+      "path": "development/year7/index.html",
+      "accessible_entry": "Choose an investigation with a tutor using prerequisites rather than age alone.",
+      "interaction_summary": "Curriculum hub links relevant investigations and starter resources.",
+      "formal_extension": "A full course needs sequenced objectives, teaching, practice, reasoning, assessment and review.",
+      "prerequisites": [
+        "varies-by-activity"
+      ],
+      "curriculum_domains": [
+        "curriculum-hub"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year7/index.html",
+          "development/curriculum/pathways.js"
+        ],
+        "source_checks": [
+          "Links and pathway metadata identify starter activities; linked investigations are inventoried separately."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "A linked collection is not a complete course.",
+        "Assessment, prerequisite sequencing and comprehensive coverage must be built and verified."
+      ],
+      "accessibility": [
+        "Card navigation provides a simple entry; all linked destinations need device QA."
+      ],
+      "stage": "year7",
+      "role": "navigation-hub"
+    },
+    {
+      "id": "year8-hub",
+      "title": "Year 8 pathway",
+      "path": "development/year8/index.html",
+      "accessible_entry": "Choose an investigation with a tutor using prerequisites rather than age alone.",
+      "interaction_summary": "Curriculum hub links relevant investigations and starter resources.",
+      "formal_extension": "A full course needs sequenced objectives, teaching, practice, reasoning, assessment and review.",
+      "prerequisites": [
+        "varies-by-activity"
+      ],
+      "curriculum_domains": [
+        "curriculum-hub"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year8/index.html",
+          "development/curriculum/pathways.js"
+        ],
+        "source_checks": [
+          "Links and pathway metadata identify starter activities; linked investigations are inventoried separately."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "A linked collection is not a complete course.",
+        "Assessment, prerequisite sequencing and comprehensive coverage must be built and verified."
+      ],
+      "accessibility": [
+        "Card navigation provides a simple entry; all linked destinations need device QA."
+      ],
+      "stage": "year8",
+      "role": "navigation-hub"
+    },
+    {
+      "id": "year9-hub",
+      "title": "Year 9 pathway",
+      "path": "development/year9/index.html",
+      "accessible_entry": "Choose an investigation with a tutor using prerequisites rather than age alone.",
+      "interaction_summary": "Curriculum hub links relevant investigations and starter resources.",
+      "formal_extension": "A full course needs sequenced objectives, teaching, practice, reasoning, assessment and review.",
+      "prerequisites": [
+        "varies-by-activity"
+      ],
+      "curriculum_domains": [
+        "curriculum-hub"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/year9/index.html",
+          "development/curriculum/pathways.js"
+        ],
+        "source_checks": [
+          "Links and pathway metadata identify starter activities; linked investigations are inventoried separately."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "A linked collection is not a complete course.",
+        "Assessment, prerequisite sequencing and comprehensive coverage must be built and verified."
+      ],
+      "accessibility": [
+        "Card navigation provides a simple entry; all linked destinations need device QA."
+      ],
+      "stage": "year9",
+      "role": "navigation-hub"
+    },
+    {
+      "id": "gcse-hub",
+      "title": "GCSE pathway",
+      "path": "development/gcse/index.html",
+      "accessible_entry": "Choose an investigation with a tutor using prerequisites rather than age alone.",
+      "interaction_summary": "Curriculum hub links relevant investigations and starter resources.",
+      "formal_extension": "A full course needs sequenced objectives, teaching, practice, reasoning, assessment and review.",
+      "prerequisites": [
+        "varies-by-activity"
+      ],
+      "curriculum_domains": [
+        "curriculum-hub"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/gcse/index.html",
+          "development/curriculum/pathways.js"
+        ],
+        "source_checks": [
+          "Links and pathway metadata identify starter activities; linked investigations are inventoried separately."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "A linked collection is not a complete course.",
+        "Assessment, prerequisite sequencing and comprehensive coverage must be built and verified."
+      ],
+      "accessibility": [
+        "Card navigation provides a simple entry; all linked destinations need device QA."
+      ],
+      "stage": "gcse",
+      "role": "navigation-hub"
+    },
+    {
+      "id": "a-level-hub",
+      "title": "A-level pathway",
+      "path": "development/a-level/index.html",
+      "accessible_entry": "Choose an investigation with a tutor using prerequisites rather than age alone.",
+      "interaction_summary": "Curriculum hub links relevant investigations and starter resources.",
+      "formal_extension": "A full course needs sequenced objectives, teaching, practice, reasoning, assessment and review.",
+      "prerequisites": [
+        "varies-by-activity"
+      ],
+      "curriculum_domains": [
+        "curriculum-hub"
+      ],
+      "status": "source-reviewed",
+      "evidence": {
+        "source_paths": [
+          "development/a-level/index.html",
+          "development/curriculum/pathways.js"
+        ],
+        "source_checks": [
+          "Links and pathway metadata identify starter activities; linked investigations are inventoried separately."
+        ],
+        "runtime": "not tested this audit"
+      },
+      "gaps": [
+        "A linked collection is not a complete course.",
+        "Assessment, prerequisite sequencing and comprehensive coverage must be built and verified."
+      ],
+      "accessibility": [
+        "Card navigation provides a simple entry; all linked destinations need device QA."
+      ],
+      "stage": "a-level",
+      "role": "navigation-hub"
+    }
+  ],
+  "source_findings": [
+    {
+      "id": "missing-root-site-ux-assets",
+      "status": "observed-in-audited-baseline",
+      "affected_references": 52,
+      "affected_pages": 26,
+      "description": "Root activity/helper pages reference ../site-ux.css and ../site-ux.js, which resolve to missing repository-root files. Equivalent assets exist under puzzles/ and students/.",
+      "details_file": "broken-local-links.json",
+      "repair_status": "All 52 references were repaired in the pending output patch by the parent agent; final source-link crawl pending.",
+      "repair_scope": "Not part of the audited baseline commit; retain baseline finding for traceability."
+    },
+    {
+      "id": "volume-completeness",
+      "status": "content-assessment-gap",
+      "description": "Year 5 final volume task asks for every cuboid of volume 60 with dimensions at most 6, but the checker accepts any one matching product. Enumeration must be assessed separately."
+    },
+    {
+      "id": "course-coverage",
+      "status": "content-gap",
+      "description": "Year 5 has one five-challenge investigation per unit plus a place-value workshop. Year 4 has three starter workshops. Neither is a comprehensive small-step curriculum."
+    },
+    {
+      "id": "sprouts-prototype",
+      "status": "known-model-limitation",
+      "description": "Geometric route checks are a prototype and end-of-game depends on player agreement; no complete legal-move existence solver."
+    },
+    {
+      "id": "bridge-starting-design",
+      "status": "feature-gap",
+      "description": "Bridge Lab has editable Warren/Pratt/Howe templates but no direct blank-design preset."
+    }
+  ],
+  "summary": {
+    "main_activity_count": 53,
+    "category_counts": {
+      "logic": 14,
+      "shape": 14,
+      "number": 10,
+      "create": 13,
+      "words": 2
+    },
+    "source_reviewed_main": 51,
+    "available_unmapped_main": 2,
+    "student_main_copies": 24,
+    "student_html_files_in_tree": 43,
+    "student_inline_logic_matches": 24,
+    "course_resource_count": 37,
+    "year4_workshops": 3,
+    "year5_place_value_workshops": 1,
+    "year5_unit_investigations": 14,
+    "year5_unit_challenges": 70,
+    "learning_shell_lessons": 12,
+    "learning_shell_questions": 48,
+    "runtime_verified_this_audit": 0,
+    "all_main_activity_targets_exist": true,
+    "completion_is_mastery": false
+  },
+  "release_checks": [
+    {
+      "activity_id": "hanoi",
+      "date": "2026-11-18",
+      "scope": "Browser: select peg A then C, undo, 3 and 8 discs; golden discs/pegs; 390 px iframe control wrap and peg selection.",
+      "result": "passed"
+    },
+    {
+      "activity_id": "patterns",
+      "date": "2026-11-18",
+      "scope": "Browser: switch to remainder colours and numbers + remainders; purple/yellow visible; 390 px iframe responsive controls.",
+      "result": "passed"
+    },
+    {
+      "activity_id": "rupert",
+      "date": "2026-11-18",
+      "scope": "Browser: cube renderer visible, cut-out slider to End, blue cube Halfway, keyboard rotation; blue/yellow and light scene. WebGL versus CPU fallback not separately forced.",
+      "result": "passed"
+    }
+  ],
+  "release_link_repairs": {
+    "count": 52,
+    "pages": 26,
+    "detail": "Root-level site-ux references now resolve to puzzles/site-ux assets.",
+    "verification": "Final combined-tree link crawl recorded in release-checks.json."
+  }
+}

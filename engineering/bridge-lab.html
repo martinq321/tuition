@@ -52,7 +52,7 @@ th{position:sticky;top:0;background:#f8f9fb}
 #chart{border:1px solid var(--border);border-radius:9px;background:#fff}
 @media(max-width:950px){.layout{grid-template-columns:1fr}.control input[type=range]{width:130px}}
 </style>
-<style>.mw-nav{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;margin:0 0 22px;font:600 14px system-ui,sans-serif}.mw-nav a{display:inline-flex;align-items:center;min-height:44px;color:#126b64;text-decoration:none}.mw-nav a:hover{text-decoration:underline}.mw-nav a[aria-current]{color:#52615a;text-decoration:underline}.mw-nav a:focus-visible{outline:3px solid #cc7912;outline-offset:4px}</style><link rel="stylesheet" href="../site-ux.css"><link rel="stylesheet" href="../mw-design/themes/readability.css?v=3"><link rel="stylesheet" href="../mw-design/themes/tokens.css?v=palette1"><link rel="stylesheet" href="../mw-design/themes/activity.css?v=palette1"><script src="../mw-design/themes.js?v=palette1"></script></head>
+<style>.mw-nav{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;margin:0 0 22px;font:600 14px system-ui,sans-serif}.mw-nav a{display:inline-flex;align-items:center;min-height:44px;color:#126b64;text-decoration:none}.mw-nav a:hover{text-decoration:underline}.mw-nav a[aria-current]{color:#52615a;text-decoration:underline}.mw-nav a:focus-visible{outline:3px solid #cc7912;outline-offset:4px}</style><link rel="stylesheet" href="../puzzles/site-ux.css"><link rel="stylesheet" href="../mw-design/themes/readability.css?v=palette2"><link rel="stylesheet" href="../mw-design/themes/tokens.css?v=palette2"><link rel="stylesheet" href="../mw-design/themes/activity.css?v=palette2"><script src="../mw-design/themes.js?v=palette2"></script></head>
 <body>
 <main>
 <nav class="mw-nav" aria-label="Site navigation"><a href="../index.html">← Home</a><a href="rigidity-2d.html">2D rigidity</a><a href="rigidity-3d.html">3D rigidity</a><a href="bridge-lab.html" aria-current="page">Bridge lab</a></nav>
@@ -482,7 +482,7 @@ function lineWidth(row){
 }
 
 function drawSupport(n,p){
-  ctx.save();ctx.strokeStyle='#4b5563';ctx.fillStyle='#eef1f5';ctx.lineWidth=2;
+  ctx.save();ctx.strokeStyle=mwPlotColour('--mw-shape-dark','#26339a');ctx.fillStyle=mwPlotColour('--mw-shape-yellow-light','#ffe194');ctx.lineWidth=2;
   if(n.support==='pin'){
     ctx.beginPath();ctx.moveTo(p.x,p.y+5);ctx.lineTo(p.x-12,p.y+23);ctx.lineTo(p.x+12,p.y+23);ctx.closePath();ctx.fill();ctx.stroke();
   }else if(n.support==='roller'){
@@ -501,11 +501,11 @@ function drawTruck(){
   const g=truckGeometry();if(!g)return;
   const T=transform(),p={x:T.x0+g.x*T.s,y:T.y0};
   ctx.save();
-  ctx.fillStyle='#333b4a';ctx.fillRect(p.x-26,p.y-38,52,21);
-  ctx.fillStyle='#5a6575';ctx.fillRect(p.x+2,p.y-50,20,13);
-  ctx.fillStyle='#111827';
+  ctx.fillStyle=mwPlotColour('--mw-shape-primary','#435be8');ctx.fillRect(p.x-26,p.y-38,52,21);
+  ctx.fillStyle=mwPlotColour('--mw-shape-yellow','#e7a523');ctx.fillRect(p.x+2,p.y-50,20,13);
+  ctx.fillStyle=mwPlotColour('--mw-shape-dark','#26339a');
   ctx.beginPath();ctx.arc(p.x-16,p.y-13,7,0,Math.PI*2);ctx.arc(p.x+16,p.y-13,7,0,Math.PI*2);ctx.fill();
-  ctx.fillStyle='#344054';ctx.font='12px system-ui';ctx.textAlign='center';ctx.fillText((+ui.truckLoad.value||0)+' kN',p.x,p.y-56);
+  ctx.fillStyle=mwPlotColour('--mw-text','#202722');ctx.font='12px system-ui';ctx.textAlign='center';ctx.fillText((+ui.truckLoad.value||0)+' kN',p.x,p.y-56);
   ctx.restore();
 }
 
@@ -543,10 +543,10 @@ function render(){
   nodes.forEach((n,i)=>{
     const p=screen(n,result&&result.ok?def:0);
     drawSupport(n,p);
-    ctx.fillStyle=n.deck?'#0f766e':'#172033';ctx.strokeStyle='#fff';ctx.lineWidth=3;
+    ctx.fillStyle=n.deck?mwPlotColour('--mw-shape-yellow','#e7a523'):mwPlotColour('--mw-shape-dark','#26339a');ctx.strokeStyle='#fff';ctx.lineWidth=3;
     ctx.beginPath();ctx.arc(p.x,p.y,8,0,Math.PI*2);ctx.fill();ctx.stroke();
     if(selected&&selected.type==='node'&&selected.i===i || memberFirst===i){
-      ctx.strokeStyle='#315fb8';ctx.lineWidth=3;ctx.beginPath();ctx.arc(p.x,p.y,14,0,Math.PI*2);ctx.stroke();
+      ctx.strokeStyle=mwPlotColour('--mw-shape-primary','#435be8');ctx.lineWidth=3;ctx.beginPath();ctx.arc(p.x,p.y,14,0,Math.PI*2);ctx.stroke();
     }
   });
   drawTruck();
@@ -680,7 +680,7 @@ function drawChart(){
   const maxL=Math.max(...testHistory.map(p=>p.load),1),maxD=Math.max(...testHistory.map(p=>p.sag*1000),.001);
   const X=d=>pad.l+d/maxL*(chart.width-pad.l-pad.r);
   const Y=d=>chart.height-pad.b-d/maxD*(chart.height-pad.t-pad.b);
-  cctx.strokeStyle='#315fb8';cctx.lineWidth=2;cctx.beginPath();
+  cctx.strokeStyle=mwPlotColour('--mw-shape-primary','#435be8');cctx.lineWidth=2;cctx.beginPath();
   testHistory.forEach((p,i)=>{const x=X(p.load),y=Y(p.sag*1000);if(i)cctx.lineTo(x,y);else cctx.moveTo(x,y);});cctx.stroke();
   cctx.fillStyle=mwPlotColour('--mw-text','#202722');cctx.fillText(maxL.toFixed(0),chart.width-pad.r-28,chart.height-16);
   cctx.fillText(maxD.toFixed(1),10,pad.t+5);
@@ -847,6 +847,6 @@ document.getElementById('utilBtn').addEventListener('click',()=>{display='util';
 loadTemplate('warren');
 })();
 </script>
-<script src="../site-ux.js" defer></script></body>
+<script src="../puzzles/site-ux.js" defer></script></body>
 </html>
 

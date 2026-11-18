@@ -7,10 +7,16 @@ var base=new URL('./',document.currentScript.src);
 var path=location.pathname.toLowerCase(), topic='';
 if(/\/(string-lab|engineering)\//.test(path)||/\/(painted-cube|curve-lab|circle-investigations|squares-to-euclid|fewest-squares(?:-extension)?|36-fences|polyominoes|packing-lab|cut-and-rearrange|rupert-cube|paper|spiral-gallery)\.html$/.test(path))topic='shape';
 else if(/\/(mastermind|hanoi|dobble|josephus|river-crossing|sprouts)\//.test(path)||/\/(fifteen[^/]*|set|nim|memory|sorting|poker|pursuit|cube)\.html$/.test(path))topic='logic';
-else if(/\/(number-patterns|year[4-9]|gcse|a-level)\//.test(path)||/\/(30-cubes(?:-challenges)?|factor-shapes|factor-tree|magic-money-plant[^/]*|tables|multiply|divisors|neighbours|grid)\.html$/.test(path))topic='number';
-else if(/\/(creature-lab|code-grid|codebot|robot-trails|robot|pixel|cipher|scytale|enigma|turing|shark-family|dragon-world|dinosaur-world)\.html$/.test(path)||/\/workshop\//.test(path))topic='create';
+else if(/\/(number-patterns|year[4-9]|gcse|a-level)\//.test(path)||/\/(30-cubes(?:-challenges)?|factor-shapes|factor-tree|(?:magic-)?money-plant[^/]*|tables|multiply|divisors|neighbours|grid)\.html$/.test(path))topic='number';
+else if(/\/(creature-(?:lab|session)|code-grid|codebot|robot-trails|robot|pixel|cipher|scytale|enigma|turing|shark-family|dragon-world|dinosaur-world)\.html$/.test(path)||/\/workshop\//.test(path))topic='create';
 else if(/\/(bee|wordle)\.html$/.test(path))topic='words';
+// Curriculum models inherit the mathematical topic, not an arbitrary school-year colour.
+if(/\/units\/(shape|position-direction|perimeter-area|volume|perimeter-and-area)\.html$/.test(path))topic='shape';
+if(/\/year[1-3]\//.test(path))topic=topic||'number';
 if(topic)document.documentElement.dataset.mwTopic=topic;
+// Stable page identity permits narrowly scoped compatibility rules without recolouring other games.
+var stem=path.split('/').pop().replace(/\.html$/,'');
+if(stem&&stem!=='index')document.documentElement.dataset.mwActivity=stem;
 var choices=[['graph','Graph paper'],['ghost','Ghosted backdrop'],['dark','Dark'],['orbit','Orbit Lab'],['focus','Focus']];
 function apply(){
  document.documentElement.dataset.theme='focus';
@@ -21,7 +27,7 @@ function apply(){
 window.MWTheme={set:apply,get:function(){return 'focus'},choices:choices};
 apply();
 // Load the single palette directly too, so legacy pages cannot bypass it.
-var palette=document.createElement('link');palette.rel='stylesheet';palette.addEventListener('load',apply);palette.href=new URL('main.css?v=palette1',base);document.head.append(palette);
+var palette=document.createElement('link');palette.rel='stylesheet';palette.addEventListener('load',apply);palette.href=new URL('main.css?v=palette2',base);document.head.append(palette);
 // Loaded immediately so the same presentation applies to old and new activity pages.
 var css=document.createElement('link');css.rel='stylesheet';css.href=new URL('themes/clean-ui.css?v=3',base);document.head.append(css);
 function mount(){

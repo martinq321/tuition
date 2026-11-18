@@ -1,0 +1,54 @@
+{
+  "release": "focus-palette-curriculum-v2",
+  "date": "2026-11-18",
+  "baseline_commit": "a64bc8bf8dcd227aa8a7ebf52588d3406dce8740",
+  "scope": "Shared Focus palette, lozenge controls, content audit and Year1\u2013A-level build map",
+  "static_checks": {
+    "public_html_pages_checked": 160,
+    "missing_relative_links_or_assets": 0,
+    "javascript_syntax_checks": 117,
+    "javascript_errors": 0,
+    "catalogue_categories_matching": 53,
+    "previous_missing_asset_references_repaired": 52,
+    "affected_pages_repaired": 26,
+    "curriculum_counts": {
+      "stages": 11,
+      "objectives": 316,
+      "activities": 53,
+      "course_resources": 37,
+      "status": {
+        "planned": 178,
+        "partial": 138
+      }
+    },
+    "graph_nodes": 404,
+    "graph_edges": 994,
+    "graph_ids_resolved": true,
+    "prerequisite_cycles": 0
+  },
+  "browser_checks": [
+    {
+      "page": "hanoi/index.html",
+      "result": "3/8 disc golden render; select/move/undo; 390px iframe responsive controls and peg selection"
+    },
+    {
+      "page": "development/number-patterns/index.html",
+      "result": "Remainder colours + numeric remainder labels; purple/yellow cells; 390px iframe controls fit"
+    },
+    {
+      "page": "puzzles/sessions/rupert-cube.html",
+      "result": "Light renderer and blue/yellow cubes; cut-out slider, halfway position and keyboard rotation"
+    },
+    {
+      "page": "development/curriculum/map.html",
+      "result": "Year5 query, search, clear filters, audit tab, Hanoi source/runtime details; 390px Year1 filter layout"
+    }
+  ],
+  "limits": [
+    "Not an exhaustive gameplay regression across the site",
+    "Phone-width iframes are layout checks, not physical touch-device tests",
+    "Rupert WebGL and CPU fallback not separately forced",
+    "Curriculum maps are grouped teaching specifications, not finished courses or learner attainment",
+    "Separate legacy Handoff/Platform-pilot pages excluded from student-investigation migration"
+  ]
+}

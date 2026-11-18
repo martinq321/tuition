@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-GB" data-theme="focus">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f5f2">
+<title>Curriculum map & activity audit · Maths Wednesdays</title>
+<link rel="stylesheet" href="../../mw-design/themes/tokens.css?v=palette2">
+<link rel="stylesheet" href="curriculum-map.css?v=palette2">
+<script src="../../mw-design/themes.js?v=palette2"></script>
+<script src="curriculum-map-data.js?v=palette2" defer></script>
+<script src="curriculum-map.js?v=palette2" defer></script>
+</head>
+<body class="map-page mw-focus-library">
+<a class="map-skip" href="#map-main">Skip to curriculum map</a>
+<header class="map-top">
+  <a class="map-brand" href="../index.html"><span class="map-brand-mark" aria-hidden="true">m<span>·</span></span><span>Maths<br>Wednesdays</span></a>
+  <nav aria-label="Site"><a href="index.html">Learning pathways</a><a href="../../puzzles/index.html">Activity library</a></nav>
+</header>
+<main id="map-main">
+  <div class="map-hero"><div><p class="map-kicker">PLAN · CONNECT · REVIEW</p><h1>See how the maths connects.</h1><p class="map-lead">Explore curriculum goals and the activities that support them.</p></div><svg class="map-emblem" viewBox="0 0 160 140" aria-hidden="true"><path d="M30 110V72H78V30H130" fill="none" stroke="#a8b8ff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><g fill="#435be8"><circle cx="30" cy="110" r="16"/><circle cx="30" cy="72" r="16"/><circle cx="78" cy="72" r="16"/><circle cx="78" cy="30" r="16"/></g><circle cx="130" cy="30" r="19" fill="#e7a523"/></svg></div>
+  <div class="map-tabs" role="tablist" aria-label="View">
+    <button id="curriculum-tab" role="tab" aria-selected="true" aria-controls="curriculum-panel" tabindex="0" data-view="curriculum">Curriculum map</button>
+    <button id="audit-tab" role="tab" aria-selected="false" aria-controls="audit-panel" tabindex="-1" data-view="audit">Activity audit</button>
+  </div>
+  <section class="map-filters" aria-label="Filter the map">
+    <label>Stage<select id="stage-filter"><option value="all">All stages</option></select></label>
+    <label class="map-search">Find a topic or activity<input id="map-search" type="search" placeholder="Fractions, curves, reasoning…" autocomplete="off"></label>
+    <label><span id="status-label">Coverage</span><select id="status-filter"><option value="all">All coverage</option><option value="partial">Partly supported</option><option value="planned">Planned</option></select></label>
+    <button id="clear-filters" type="button">Clear filters</button>
+  </section>
+  <p id="filter-summary" class="map-result-count" role="status" aria-live="polite"></p>
+  <section id="curriculum-panel" role="tabpanel" aria-labelledby="curriculum-tab" tabindex="0">
+    <div class="map-measures" id="coverage-counts" aria-label="Coverage counts"></div>
+    <p class="map-explainer">These counts describe the resource collection. They do not assess a learner’s attainment or mastery.</p>
+    <div id="curriculum-content"></div>
+  </section>
+  <section id="audit-panel" role="tabpanel" aria-labelledby="audit-tab" tabindex="0" hidden>
+    <p class="map-explainer">Inspect what each activity offers, what has been checked and what still needs work. A source check is not a full test on every device.</p>
+    <div id="audit-content"></div>
+  </section>
+  <section class="map-empty" id="map-empty" hidden><h2>No matches yet.</h2><p>Try a broader search or choose all stages.</p><button id="empty-clear" type="button">Show everything</button></section>
+  <section class="map-data-error" id="map-data-error" hidden><h2>The map data could not load.</h2><p>Keep <code>curriculum-map-data.js</code> in the same folder as this page, then reopen it.</p></section>
+  <details class="map-sources"><summary>Sources & how to read the map</summary><p>“Planned” means a goal still needs resources. “Partly supported” means linked activities offer an entry point or some coverage; it does not mean a complete teaching sequence is available.</p><p>Accessible entry describes a possible starting point. Formal goal describes the mathematics to work towards. These may be a long way apart.</p><div id="source-list"></div><p class="map-meta" id="map-meta"></p></details>
+</main>
+<footer class="map-footer"><a href="index.html">Learning pathways</a><span>Explore · Notice · Wonder</span><a href="../../puzzles/index.html">Full activity library</a></footer>
+</body></html>

@@ -21,6 +21,10 @@
   --mw-plot-highlight: #c18a14;
   --mw-plot-fill: #e9f2ea;
   --mw-radius: 18px;
+  --mw-control-radius: 999px;
+  --mw-highlight: #e7a523;
+  --mw-highlight-light: #ffe194;
+  --mw-highlight-dark: #98630c;
   --mw-font: Arial, Helvetica, sans-serif;
   /* Think it through — gold */
   --mw-logic-primary: #e7a523;
@@ -31,9 +35,14 @@
   --mw-shape-primary: #435be8;
   --mw-shape-light: #a8b8ff;
   --mw-shape-dark: #26339a;
-  --mw-shape-yellow: #e7a523;
+  --mw-shape-yellow: var(--mw-highlight);
+  --mw-shape-yellow-light:var(--mw-highlight-light);
+  --mw-shape-yellow-dark:var(--mw-highlight-dark);
   --mw-shape-soft: #eef1ff;
-  /* Spot a pattern — purple */
+  /* Spot a pattern — purple and yellow */
+  --mw-number-yellow:var(--mw-highlight);
+  --mw-number-yellow-light:var(--mw-highlight-light);
+  --mw-number-yellow-dark:var(--mw-highlight-dark);
   --mw-number-primary: #9253dd;
   --mw-number-light: #d2b3fa;
   --mw-number-dark: #542891;
@@ -59,7 +68,7 @@
 :root[data-mw-topic="number"] {
   --mw-accent:var(--mw-number-dark);--mw-hover:var(--mw-number-dark);
   --mw-soft:var(--mw-number-soft);--mw-plot-line:var(--mw-number-primary);
-  --mw-plot-secondary:var(--mw-number-dark);--mw-plot-highlight:var(--mw-number-primary);
+  --mw-plot-secondary:var(--mw-number-yellow);--mw-plot-highlight:var(--mw-number-yellow);
   --mw-plot-fill:var(--mw-number-soft);
 }
 :root[data-mw-topic="create"] {
@@ -91,7 +100,7 @@ html[data-theme] body{background:var(--mw-page-bg)!important;color:var(--mw-text
 html[data-theme] body.mw-activity :is(.controls,.control-panel,.sidebar,.side,.box,.inspector,.lesson,.note,.saved,.insight,.instructions){background-color:var(--mw-surface)!important;color:var(--mw-text)!important;border-color:var(--mw-border)!important}
 html[data-theme] body.mw-activity :is(.viewport,#treeViewport,.canvas-wrap,.canvasWrap,.canvasbox,.canvas-box,.stage-wrap,svg.board,.scene-scroll,.scene){background:var(--mw-canvas-bg)!important;border-color:var(--mw-border)!important}
 html[data-theme] body.mw-activity :is(.hint,.rule,.strip,.callout,.challenge,.constraint-visual,.extension,.legend,.chip,#hint){background-color:var(--mw-soft)!important;color:var(--mw-text)!important;border-color:var(--mw-border)!important}
-html[data-theme] body.mw-activity :is(.tools,.toolbar,.actions,.row,.buttons,.control-panel,.controls) button:not(.primary):not([aria-pressed=true]):not(.swatch):not(.tile):not(.cell):not(.peg):not(.colour):not(.color):not([style*="background"]){background-color:var(--mw-surface)!important;color:var(--mw-text)!important;border-color:var(--mw-border)!important}
+html[data-theme] body.mw-activity :is(.tools,.toolbar,.actions,.row,.buttons,.control-panel,.controls) :where(button:not(.primary):not([aria-pressed=true]):not(.swatch):not(.tile):not(.cell):not(.peg):not(.colour):not(.color):not([style*="background"])){background-color:var(--mw-surface)!important;color:var(--mw-text)!important;border-color:var(--mw-border)!important}
 html[data-theme] body.mw-activity :is(button.primary,.button.primary,.tools button[aria-pressed=true],.toolbar button[aria-pressed=true],.controls button[aria-pressed=true],.row button[aria-pressed=true]){background:var(--mw-accent)!important;color:var(--mw-on-accent)!important;border-color:var(--mw-accent)!important}
 html[data-theme] body.mw-activity :is(output,.value,.readout,code){color:var(--mw-accent)!important}
 html[data-theme] body.mw-activity :is(.controls,.sidebar,.side,.inspector,.instructions) :is(p,label,small){color:var(--mw-text)}
@@ -103,3 +112,70 @@ html[data-theme] body.mw-activity #stop-auto{background:var(--mw-surface)!import
 :root[data-mw-topic=shape]{--felt:var(--mw-shape-soft)!important;--rail:var(--mw-shape-dark)!important}
 html[data-theme] svg[aria-label="Ellipse pool diagram"] text{fill:var(--mw-text)!important}
 html[data-theme] body.mw-activity .steps button[aria-pressed=true]{background:var(--mw-accent)!important;color:var(--mw-on-accent)!important;border-color:var(--mw-accent)!important}
+
+/* Lozenge controls throughout the site. Geometry belongs to the activity. */
+html[data-theme] body :where(button:not([data-cell]):not(.cell):not(.tile):not(.peg):not(.swatch):not(.colour):not(.color):not(.unit-cell):not(.sticker):not(.block):not(.disc):not(.disk):not(.slot):not(.key):not(.pixel):not(.card):not(.token),.button,.btn,select,input[type=number],input[type=text],input[type=search],input[type=email],input[type=password],nav a:not(.mw-home):not(.brand):not(.nav-brand)) {border-radius:var(--mw-control-radius)!important}
+html[data-theme] body :where(button:not([data-cell]):not(.cell):not(.tile):not(.peg):not(.swatch):not(.colour):not(.color):not(.unit-cell):not(.sticker):not(.block):not(.disc):not(.disk):not(.slot):not(.key):not(.pixel):not(.card):not(.token),select,input[type=number],input[type=text],input[type=search]){min-height:44px}
+html[data-theme] body.mw-activity :is(#app,.surface,.workspace,.workspace-panel,.help-panel,.info-panel){background-color:var(--mw-surface)!important;color:var(--mw-text)!important;border-color:var(--mw-border)!important;border-radius:var(--mw-radius)!important}
+html[data-theme] body.mw-activity :where(.btn,.button,button):where(:not(.cell):not(.tile):not(.peg):not(.swatch):not(.colour):not(.color):not(.unit-cell):not(.sticker):not(.block):not(.disc):not(.disk):not(.slot):not(.key):not(.pixel):not(.card):not(.token):not(.primary):not([aria-pressed=true]):not([style*="background"])){background-color:var(--mw-surface);color:var(--mw-text);border-color:var(--mw-border)}
+html[data-theme] body.mw-activity :is(.tabs,.tabbar,.mode-buttons,.segmented,.choices,.filters) button[aria-pressed=true]{background:var(--mw-accent)!important;color:var(--mw-on-accent)!important;border-color:var(--mw-accent)!important}
+html[data-theme] body.mw-activity :is(.notice,.instruction,.hint,.readout,.status,.prompt){border-radius:var(--mw-radius)!important}
+html[data-theme] body :is(button,.button,.btn):focus-visible{outline:3px solid var(--mw-accent);outline-offset:3px}
+
+/* Number representations: purple and yellow, with explicit group/player labels. */
+html[data-theme] body.tables-studio .tables button {background:var(--mw-number-light)!important;color:var(--mw-number-dark)!important;border-color:var(--mw-number-primary)!important}
+html[data-theme] body.tables-studio .tables button.selected {background:var(--mw-number-yellow)!important;color:var(--mw-number-dark)!important;border-color:var(--mw-number-dark)!important;outline-color:var(--mw-number-dark)}
+html[data-theme] .array i[data-group="0"]{background:var(--mw-number-primary)}
+html[data-theme] .array i[data-group="1"]{background:var(--mw-number-yellow)}
+html[data-theme] .fact-arena {background:var(--mw-surface);border-color:var(--mw-number-light)}
+html[data-theme] .fact-arena :is(.big,.stats span){color:var(--mw-number-dark);text-shadow:none}
+html[data-theme] .fact-arena .stats span{background:var(--mw-number-soft)}
+html[data-theme] .fact-arena .stats .clock-badge{background:var(--mw-number-yellow-light);color:var(--mw-number-yellow-dark)}
+html[data-theme] .fact-arena .track div{background:var(--mw-number-primary)}
+html[data-theme] .fact-arena .keypad button{background:var(--mw-number-soft);color:var(--mw-number-dark);border-color:var(--mw-number-light);box-shadow:0 3px 0 var(--mw-number-light)}
+html[data-theme] .fact-arena .celebrate{background:var(--mw-number-yellow-light);color:var(--mw-number-dark)}
+html[data-theme] .round-result{background:var(--mw-number-soft);color:var(--mw-number-dark)}
+html[data-theme] .mw-number-model :is(#product,#total){color:var(--mw-number-dark)!important}
+html[data-theme] .mw-number-model :is(#numbers,#moves) button{background:var(--mw-number-yellow-light)!important;color:var(--mw-number-dark)!important;border-color:var(--mw-number-yellow-dark)!important}
+html[data-theme] .mw-number-model button[data-role="endpoint"]{background:var(--mw-number-light)!important;color:var(--mw-number-dark)!important;border-color:var(--mw-number-dark)!important}
+html[data-theme] .mw-number-model button[data-value="-1"]{background:var(--mw-number-dark)!important;color:white!important}
+html[data-theme] .mw-number-model button[data-value="0"]{background:var(--mw-surface)!important;color:var(--mw-number-dark)!important;border-color:var(--mw-number-dark)!important}
+html[data-theme] .mw-number-model button[data-value="1"]{background:var(--mw-number-yellow)!important;color:var(--mw-number-dark)!important}
+html[data-theme] .mw-number-model th{background:var(--mw-number-soft);color:var(--mw-number-dark)}
+html[data-theme] .mw-number-model :is(.history,#scores) [data-player="1"]{color:var(--mw-number-dark)}
+html[data-theme] .mw-number-model :is(.history,#scores) [data-player="2"]{color:var(--mw-number-yellow-dark)}
+
+/* Logic boards: keep the homepage gold identity inside the investigation too. */
+html[data-theme][data-mw-topic="logic"] :is(.numbers .p1,.taken-card.p1){background:var(--mw-logic-light)!important;color:var(--mw-logic-dark)!important;border-color:var(--mw-logic-dark)!important}
+html[data-theme][data-mw-topic="logic"] :is(.numbers .p2,.taken-card.p2){background:var(--mw-logic-dark)!important;color:white!important;border-color:var(--mw-logic-dark)!important}
+html[data-theme][data-mw-topic="logic"] :is(.numbers .winning,.taken-card.winning){outline:4px solid var(--mw-logic-primary)!important;outline-offset:3px}
+html[data-theme][data-mw-topic="logic"] .player-hand.active-turn{border-color:var(--mw-logic-dark)!important}
+html[data-theme][data-mw-topic="logic"] .token{background:var(--mw-logic-primary)!important;color:var(--mw-text)!important}
+html[data-theme][data-mw-topic="logic"] .token.gone{background:var(--mw-border)!important;color:var(--mw-muted)!important}
+html[data-theme][data-mw-topic="logic"] .box>button{background:var(--mw-logic-light)!important;color:var(--mw-logic-dark)!important;border-color:var(--mw-logic-primary)!important}
+html[data-theme][data-mw-topic="logic"] button.selected{outline-color:var(--mw-logic-dark)!important;background:var(--mw-logic-light)!important;color:var(--mw-text)!important}
+html[data-theme][data-mw-topic="logic"] .memory button.back{background-color:var(--mw-logic-dark)!important;color:white!important;border-color:var(--mw-logic-dark)!important}
+html[data-theme][data-mw-topic="logic"] .memory .back span{color:var(--mw-logic-light)!important}
+html[data-theme][data-mw-topic="logic"] .memory button.matched{background:var(--mw-logic-soft)!important;border-color:var(--mw-logic-primary)!important;color:var(--mw-text)!important}
+html[data-theme][data-mw-topic="logic"] .memory .picture-face{background:var(--mw-surface)!important;color:var(--mw-text)!important}
+html[data-theme][data-mw-topic="logic"] .memory-space{background:var(--mw-canvas-bg)!important;border-color:var(--mw-border)!important}
+html[data-theme][data-mw-topic="logic"] .collection{background:var(--mw-logic-soft)!important;color:var(--mw-text)!important;border-color:var(--mw-logic-light)!important}
+html[data-theme][data-mw-topic="logic"] .collection:nth-child(3){background:var(--mw-logic-light)!important;border-color:var(--mw-logic-dark)!important}
+html[data-theme][data-mw-topic="logic"] .collection.active-player{outline-color:var(--mw-logic-dark)!important}
+html[data-theme][data-mw-topic="logic"] :is(.won-card,.playing){background:var(--mw-surface)!important;border-color:var(--mw-border)!important}
+html[data-theme][data-mw-topic="logic"] .chosen{outline-color:var(--mw-logic-dark)!important}
+html[data-theme][data-mw-topic="logic"] .cube-net .face{background:var(--mw-logic-dark)!important}
+/* Red/black card suits, SET attributes, Mastermind peg colours and Wordle outcomes retain their meanings. */
+html[data-theme][data-mw-topic="words"] :is(.keyboard,.board) :is(.green,.yellow,.grey){color:white!important}
+html[data-theme][data-mw-topic="create"] .tape .cell{background:var(--mw-create-soft)!important;color:var(--mw-create-dark)!important;border-color:var(--mw-create-light)!important}
+html[data-theme][data-mw-topic="create"] .tape .cell.active{background:var(--mw-logic-light)!important;border-color:var(--mw-create-dark)!important;box-shadow:0 -6px var(--mw-create-dark)}
+html[data-theme][data-mw-topic="create"] .pixelboard{background:var(--mw-border)!important}
+
+/* A drawing cell or puzzle piece is geometry, not a lozenge control. */
+html[data-theme] body .pixelboard button{border-radius:0!important;min-height:0!important;min-width:0!important;padding:0!important}
+html[data-theme] body :is(.memory button,.number-line button,.taken-card,.numbers button,.playing){border-radius:12px!important}
+html[data-theme][data-mw-topic="create"] body .strip .letter{border-radius:0!important;min-height:0!important}
+html[data-theme][data-mw-topic="create"] body .readline button{border-radius:5px!important;min-height:38px!important}
+html[data-theme][data-mw-topic="create"] body .dropzone>.insert{border-radius:0!important;min-height:40px!important}
+html[data-theme][data-mw-topic="create"] body .block button{border-radius:4px!important;min-height:0!important}
+html[data-theme] body .swatches button{border-radius:50%!important;min-height:36px!important}
