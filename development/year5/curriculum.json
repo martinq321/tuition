@@ -1,36 +1,215 @@
 {
   "title": "Year 5 \u00b7 Maths Wednesdays",
-  "basis": "Independent White Rose-informed adaptation; version 3 block sequence",
-  "terms": {
-    "Autumn": [
-      "Place value \u00b7 workshop available",
-      "Addition and subtraction",
-      "Multiplication and division A \u00b7 shared foundations and patterns",
-      "Fractions A"
-    ],
-    "Spring": [
-      "Multiplication and division B",
-      "Fractions B",
-      "Decimals and percentages",
-      "Perimeter and area",
-      "Statistics"
-    ],
-    "Summer": [
-      "Shape",
-      "Position and direction",
-      "Decimals",
-      "Negative numbers \u00b7 introductory practice available",
-      "Converting units",
-      "Volume"
-    ]
-  },
-  "available": [
-    "Place value to one million with selectable smaller ranges",
-    "Rounding to powers of ten",
-    "Comparison, partitioning, negative numbers and Roman numerals to 1000",
-    "Shared manipulatives and multiplication representations",
-    "Number-pattern explorer"
+  "version": 2,
+  "status": "First interactive investigation for all 15 blocks; full small-step curriculum remains in development",
+  "sources": [
+    "White Rose Year 5 version 3 overview",
+    "England Year 5 mathematics programme of study"
   ],
-  "status": "Initial workshops; full curriculum and assessment still in development",
-  "studentPersonalDataIncluded": false
+  "units": [
+    {
+      "id": "place-value",
+      "path": "place-value.html",
+      "status": "Existing seven-mode workshop"
+    },
+    {
+      "id": "addition-subtraction",
+      "path": "units/addition-subtraction.html",
+      "title": "Addition & subtraction",
+      "term": "Autumn",
+      "goals": [
+        "Add and subtract whole numbers with more than four digits.",
+        "Explain exchanges and check with the inverse operation."
+      ],
+      "challengeCount": 5,
+      "representation": "column",
+      "remaining": "Multi-step word problems, estimation and choosing mental or written methods."
+    },
+    {
+      "id": "multiplication-division-a",
+      "path": "units/multiplication-division-a.html",
+      "title": "Multiplication & division A",
+      "term": "Autumn",
+      "goals": [
+        "Find factor pairs and distinguish primes from composite numbers.",
+        "Connect factors to arrays and square numbers."
+      ],
+      "challengeCount": 5,
+      "representation": "factors",
+      "remaining": "Common factors, common multiples, prime factors and multiplying/dividing by powers of ten."
+    },
+    {
+      "id": "fractions-a",
+      "path": "units/fractions-a.html",
+      "title": "Fractions A",
+      "term": "Autumn",
+      "goals": [
+        "Add and subtract fractions with related denominators.",
+        "Connect equivalent fractions, mixed numbers and improper fractions."
+      ],
+      "challengeCount": 5,
+      "representation": "fraction-add",
+      "remaining": "Ordering mixed numbers, more varied equivalent fractions and contextual problems."
+    },
+    {
+      "id": "multiplication-division-b",
+      "path": "units/multiplication-division-b.html",
+      "title": "Multiplication & division B",
+      "term": "Spring",
+      "goals": [
+        "Use partitioning to explain multiplication by a two-digit number.",
+        "Connect multiplication and division as inverse operations."
+      ],
+      "challengeCount": 5,
+      "representation": "area-multiply",
+      "remaining": "Compact long multiplication, short division and interpreting remainders in context."
+    },
+    {
+      "id": "fractions-b",
+      "path": "units/fractions-b.html",
+      "title": "Fractions B",
+      "term": "Spring",
+      "goals": [
+        "Multiply proper fractions and mixed numbers by whole numbers.",
+        "Explain results greater than one using diagrams."
+      ],
+      "challengeCount": 5,
+      "representation": "fraction-multiply",
+      "remaining": "Fractions of quantities, finding the whole and multi-step fraction problems."
+    },
+    {
+      "id": "decimals-percentages",
+      "path": "units/decimals-percentages.html",
+      "title": "Decimals & percentages",
+      "term": "Spring",
+      "goals": [
+        "Recognise hundredths as decimals and percentages.",
+        "Use familiar fraction\u2013decimal\u2013percentage equivalents."
+      ],
+      "challengeCount": 5,
+      "representation": "percent",
+      "remaining": "Thousandths, comparing decimals and percentages of quantities."
+    },
+    {
+      "id": "perimeter-area",
+      "path": "units/perimeter-area.html",
+      "title": "Perimeter & area",
+      "term": "Spring",
+      "goals": [
+        "Distinguish area from perimeter.",
+        "Find areas of rectangles and composite rectilinear shapes."
+      ],
+      "challengeCount": 5,
+      "representation": "tiles",
+      "remaining": "Missing side lengths, real units and estimating irregular areas."
+    },
+    {
+      "id": "statistics",
+      "path": "units/statistics.html",
+      "title": "Statistics",
+      "term": "Spring",
+      "goals": [
+        "Read, interpret and construct data displays.",
+        "Answer comparison, sum and difference questions."
+      ],
+      "challengeCount": 5,
+      "representation": "chart",
+      "remaining": "Line graphs, timetables and two-way tables."
+    },
+    {
+      "id": "shape",
+      "path": "units/shape.html",
+      "title": "Shape",
+      "term": "Summer",
+      "goals": [
+        "Estimate, measure and draw angles in degrees.",
+        "Reason about angles on a straight line and around a point."
+      ],
+      "challengeCount": 5,
+      "representation": "angle",
+      "remaining": "Polygon properties, regular and irregular polygons and identifying 3D shapes from 2D representations."
+    },
+    {
+      "id": "position-direction",
+      "path": "units/position-direction.html",
+      "title": "Position & direction",
+      "term": "Summer",
+      "goals": [
+        "Describe translations using coordinates.",
+        "Reflect shapes in horizontal and vertical lines."
+      ],
+      "challengeCount": 5,
+      "representation": "coordinates",
+      "remaining": "Reasoning about several transformations and finding unknown vertices."
+    },
+    {
+      "id": "decimals",
+      "path": "units/decimals.html",
+      "title": "Decimals",
+      "term": "Summer",
+      "goals": [
+        "Multiply and divide whole numbers and decimals by 10, 100 and 1,000.",
+        "Track each digit\u2019s changing value."
+      ],
+      "challengeCount": 5,
+      "representation": "decimal",
+      "remaining": "Decimal addition/subtraction, rounding, ordering and sequences."
+    },
+    {
+      "id": "negative-numbers",
+      "path": "units/negative-numbers.html",
+      "title": "Negative numbers",
+      "term": "Summer",
+      "goals": [
+        "Interpret negative numbers in context.",
+        "Count forwards and backwards through zero."
+      ],
+      "challengeCount": 5,
+      "representation": "temperature",
+      "remaining": "Comparing negative numbers in other contexts and finding temperature differences."
+    },
+    {
+      "id": "converting-units",
+      "path": "units/converting-units.html",
+      "title": "Converting units",
+      "term": "Summer",
+      "goals": [
+        "Convert between common metric units.",
+        "Connect conversions to multiplying and dividing by powers of ten."
+      ],
+      "challengeCount": 5,
+      "representation": "units",
+      "remaining": "Approximate imperial equivalents, time conversions and contextual problems."
+    },
+    {
+      "id": "volume",
+      "path": "units/volume.html",
+      "title": "Volume",
+      "term": "Summer",
+      "goals": [
+        "Understand volume by counting unit cubes.",
+        "Connect equal layers and multiplication."
+      ],
+      "challengeCount": 5,
+      "representation": "volume",
+      "remaining": "Estimating volume and capacity and reasoning about practical measures."
+    }
+  ],
+  "assessment": "Browser-local unit records; no secure pupil accounts or mastery claims",
+  "verification": {
+    "modelChecks": "70 challenges passed",
+    "browserChecks": [
+      "All new unit pages loaded",
+      "Decimal shifts and checking",
+      "Statistics sliders and checking",
+      "Coordinate arrow controls and checking",
+      "Volume dimensions, layers and checking at phone width",
+      "Direct angle dragging",
+      "Exact angle input and answer check"
+    ],
+    "limitations": [
+      "Real-device touch testing pending",
+      "Not every drag gesture has been exercised in browser"
+    ]
+  }
 }
