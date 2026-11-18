@@ -1,36 +1,46 @@
-/* Shared activity chrome. Puzzle tiles, swatches, SVG and canvas retain their semantics. */
-:root[data-theme="graph"]{color-scheme:light;--bg:#fff;--paper:#fff;--panel:#fff;--card:#fff;--ink:#162e48;--text:#162e48;--fg:#162e48;--muted:#435e76;--line:#b8cee1;--border:#b8cee1;--edge:#b8cee1;--accent:#1c5a96;--brand:#1c5a96;--soft:#edf5fc}
-:root[data-theme="ghost"]{color-scheme:light;--bg:#fff;--paper:#fff;--panel:#fff;--card:#fff;--ink:#171717;--text:#171717;--fg:#171717;--muted:#50545a;--line:#d1d5d9;--border:#d1d5d9;--edge:#d1d5d9;--accent:#c71820;--brand:#c71820;--soft:#f4f5f6}
-html:is([data-theme="graph"],[data-theme="ghost"]) body{background-color:#fff!important;color:var(--ink)!important;font-family:Arial,Helvetica,sans-serif!important}
-[data-theme="graph"] body{background-image:linear-gradient(#81b5df38 1px,transparent 1px),linear-gradient(90deg,#81b5df38 1px,transparent 1px),linear-gradient(#81b5df24 1px,transparent 1px),linear-gradient(90deg,#81b5df24 1px,transparent 1px)!important;background-size:120px 120px,120px 120px,24px 24px,24px 24px!important}
-[data-theme="ghost"] body{background-image:url('geometry.svg')!important;background-position:calc(100% + 230px) 65px!important;background-size:600px 480px!important;background-repeat:no-repeat!important}
-html:is([data-theme="graph"],[data-theme="ghost"]) :where(header,footer,.panel,.card,.box,.controls,.sidebar,.intro-card,.content,.sheet){background:#fffffff5!important;color:var(--ink)!important;border-color:var(--edge)!important;box-shadow:none!important}
-[data-theme="ghost"] :where(.panel,.card,.box,button,input,select,textarea){border-radius:2px!important}
-html:is([data-theme="graph"],[data-theme="ghost"]) :where(h1,h2,h3,h4,p,label,summary,small,.muted,.hint,.help,.note,.small,.intro,.subtitle,.sub,.brand){color:var(--ink)}
-html:is([data-theme="graph"],[data-theme="ghost"]) :where(a){color:var(--accent);text-underline-offset:3px}
-html:is([data-theme="graph"],[data-theme="ghost"]) :where(input:not([type=range]):not([type=checkbox]):not([type=radio]),select,textarea){background:#fff;color:var(--ink);border-color:var(--edge)}
-html:is([data-theme="graph"],[data-theme="ghost"]) :where(button.primary,.button.primary){background:var(--accent)!important;color:white!important}
-.mw-theme-bar{box-sizing:border-box;position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;grid-column:1/-1;flex-basis:100%;width:100%;padding:12px 24px;background:#fff;color:#172e40;border-bottom:1px solid #bacbd9;font:17px/1.4 Arial,Helvetica,sans-serif}
-.mw-theme-bar a{color:#172e40!important;font-weight:700;text-decoration:underline}.mw-theme-bar label{display:flex;align-items:center;gap:10px;color:#172e40!important;font-size:17px!important}.mw-theme-bar select{font:17px Arial,Helvetica,sans-serif!important;background:white!important;color:#172e40!important;border:1px solid #a8b8c6!important;min-height:44px;padding:8px;max-width:210px}
+/* Shared interface components. Palettes live ONLY in tokens.css.
+   Scope colour rules to interface surfaces, not SVG/canvas or gameplay pieces. */
+html[data-theme] body{background:var(--page-image) var(--page-position)/var(--page-size) var(--page-repeat) var(--bg)!important;color:var(--ink)!important;font-family:var(--font-ui)!important}
+html[data-theme] body:before{background-image:none!important}
+html[data-theme] :is(header,footer,.panel,.card,.sidebar,.intro-card,.content,.sheet,.ip,.ip-shell,.ip-card,.ip-roadmap,.unit,.guide,.guide-card,.challenge-panel,.model-panel,.answer-panel){background-color:var(--panel)!important;color:var(--ink)!important;border-color:var(--edge)!important;box-shadow:none!important;border-radius:var(--radius)!important}
+html[data-theme] :is(h1,h2,h3,h4){color:var(--ink);font-family:var(--font-ui)}
+html[data-theme] :is(.muted,.small,.intro,.subtitle,.sub,.ip-connection,.eyebrow,.ip-kicker,.ip-tag){color:var(--muted)!important}
+html[data-theme] :is(.ip,.ip-shell,.ip-card,.unit){font-family:var(--font-ui)!important}
+html[data-theme] :is(.ip-card,.unit,.split>.panel){border-top-color:var(--accent)!important}
+html[data-theme] :is(.ip-card,.unit):nth-child(3n+2){border-top-color:var(--accent-alt)!important}
+html[data-theme] :is(.ip-card,.unit):nth-child(3n){border-top-color:var(--accent-third)!important}
+html[data-theme] a{color:var(--accent);text-underline-offset:3px}
+html[data-theme] :is(input:not([type=range]):not([type=checkbox]):not([type=radio]),select,textarea){background:var(--panel)!important;color:var(--ink)!important;border-color:var(--edge)!important;border-radius:var(--radius)!important}
+/* Preserve explicit puzzle colours and selected tiles. */
+html[data-theme] :where(button:not(.swatch):not(.tile):not(.cell):not(.peg):not(.colour):not(.color):not(.unit-cell):not([style*="background"]),.ip-nav a){background-color:var(--soft);color:var(--ink);border-color:var(--edge);border-radius:var(--radius)!important}
+html[data-theme] :is(button.primary,.button.primary,.ip-open,.ip-jump,.ip-nav a[aria-current],.challenge-list button[aria-current]){background:var(--accent)!important;color:var(--on-accent)!important;border-color:var(--accent)!important;border-radius:var(--radius)!important}
+html[data-theme] :is(.ip-open,.ip-jump,button.primary,.button.primary):hover{background:var(--action-hover)!important;color:var(--on-accent)!important}
+html[data-theme] :is(.status,#status,#msg,.prompt,.notice,.hint-box,.stamp,.tag,.badge,.pill){background:var(--soft)!important;color:var(--ink)!important;border-color:var(--edge)!important;border-radius:var(--radius)!important;box-shadow:none!important}
+html[data-theme] :is(.stage,.drag-handle,.cube-chip){background:var(--stage-bg)!important;color:var(--stage-ink)!important;border-radius:var(--radius)!important;box-shadow:none!important}
+html[data-theme] :is(.auto-bucket){background:var(--panel)!important;color:var(--ink)!important;border-color:var(--edge)!important;border-radius:var(--radius)!important}
+html[data-theme] .auto-bucket.active{background:var(--soft)!important;border-color:var(--accent)!important}
+html[data-theme] .divider{background:var(--edge)!important}
+html[data-theme] input{accent-color:var(--accent)}
+html[data-theme] :focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+html[data-theme] .ip-filter select{border-radius:var(--radius)!important}
+html[data-theme] .ip-note{border-color:var(--edge)}
+html[data-theme] .ip-nav{background:transparent!important}
+.mw-theme-bar{box-sizing:border-box;position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;grid-column:1/-1;flex-basis:100%;width:100%;padding:12px 24px;background:var(--panel);color:var(--ink);border-bottom:1px solid var(--edge);font:18px/1.4 var(--font-ui)}
+.mw-theme-bar a{color:var(--accent)!important;font-weight:700;text-decoration:underline}.mw-theme-bar label{display:flex;align-items:center;gap:10px;color:var(--ink)!important;font-size:18px!important}.mw-theme-bar select{font:18px var(--font-ui)!important;min-height:44px;padding:8px;max-width:210px;width:auto}
 @media(max-width:600px){.mw-theme-bar{padding:10px 14px}.mw-theme-bar label{margin-left:auto}.mw-theme-bar select{max-width:190px}}
-html:is([data-theme="graph"],[data-theme="ghost"]) :where(nav a,button:not(.swatch):not(.tile):not(.cell):not(.peg):not(.colour):not(.color)){background-color:var(--soft);color:var(--ink);border-color:var(--edge)}
-html:is([data-theme="graph"],[data-theme="ghost"]) :where(nav a[aria-current],button[aria-pressed=true]:not(.swatch)){background-color:var(--accent);color:#fff}
-html:is([data-theme="graph"],[data-theme="ghost"]) output{color:var(--accent);font-size:18px;font-weight:700}
-/* Ghosted: angular interface surfaces, neutral stages and restrained rose accents. */
-html[data-theme="ghost"] :is(.panel,.card,.box,.stage,.status,#status,#msg,.tag,.badge,.pill,.prompt,.notice,.hint-box,.drag-handle,.auto-bucket,.cube-chip,details,summary,nav a,button:not(.swatch),input,select,textarea){border-radius:0!important;box-shadow:none!important}
-html[data-theme="ghost"] :is(.stage,.drag-handle,.cube-chip){background:#f4f5f6!important;color:#202226!important}
-html[data-theme="ghost"] :is(.status,#status,#msg,.prompt,.notice,.hint-box){background:#faf0f1!important;color:#44282b!important;border-color:#ead5d8!important;border-left:3px solid #c71820}
-html[data-theme="ghost"] :is(.tag,.badge,.pill){background:#f8e9ec!important;color:#94202b!important;border:1px solid #e8cbd0}
-html[data-theme="ghost"] .auto-bucket{background:#f4f5f6!important;color:#202226!important;border-color:#cbd0d5!important}
-html[data-theme="ghost"] .auto-bucket.active{background:#fae5e9!important;border-color:#bd2433!important}
-html[data-theme="ghost"] .divider{background:#d6d9dd!important}
-html[data-theme="ghost"] input{accent-color:#c71820!important}
-/* Graph paper: squared blue interface surfaces matching the grid. */
-html[data-theme="graph"] :is(.panel,.card,.box,.stage,.status,#status,#msg,.tag,.badge,.pill,.prompt,.notice,.hint-box,.drag-handle,.auto-bucket,.cube-chip,details,summary,nav a,button:not(.swatch),input,select,textarea){border-radius:0!important;box-shadow:none!important}
-html[data-theme="graph"] :is(.stage,.drag-handle,.cube-chip){background:#f0f7fd!important;color:#162e48!important}
-html[data-theme="graph"] :is(.status,#status,#msg,.prompt,.notice,.hint-box){background:#e8f2fb!important;color:#244d72!important;border-color:#bdd7ec!important;border-left:3px solid #74a9d4}
-html[data-theme="graph"] :is(.tag,.badge,.pill){background:#e3effa!important;color:#24577f!important;border:1px solid #bdd7ec}
-html[data-theme="graph"] .auto-bucket{background:#edf5fc!important;color:#162e48!important;border-color:#b8cee1!important}
-html[data-theme="graph"] .auto-bucket.active{background:#d7eafa!important;border-color:#3979ad!important}
-html[data-theme="graph"] .divider{background:#c5dced!important}
-html[data-theme="graph"] input{accent-color:#1c5a96!important}
+@media print{.mw-theme-bar,.theme-picker{display:none!important}}
+/* Curriculum models: keep labels legible on their intentionally light boards. */
+html[data-theme] :is(.brand,.open){color:var(--accent)!important}
+html[data-theme] #challenge-list button{background:var(--soft)!important;color:var(--ink)!important;border-color:var(--edge)!important}
+html[data-theme] #challenge-list button b{background:var(--panel)!important;color:var(--ink)!important}
+html[data-theme] #challenge-list button[aria-current=step]{background:var(--accent)!important;color:var(--on-accent)!important;border-color:var(--accent)!important}
+html[data-theme] #challenge-list button[aria-current=step] b{background:var(--panel)!important;color:var(--ink)!important}
+html[data-theme] :is(#modelinfo,#feedback:not(:empty)){background:var(--soft)!important;color:var(--ink)!important;border-color:var(--accent)!important;border-radius:var(--radius)!important}
+html[data-theme] :is(.matrix>div,.placecol){background:var(--stage-bg)!important;color:var(--stage-ink)!important;border-color:var(--edge)!important;border-radius:var(--radius)!important}
+html[data-theme] :is(.matrix>div,.placecol) :is(small,.equation,b){color:var(--stage-ink)!important}
+/* Homepage components share the same surfaces, including dark Orbit Lab. */
+html[data-theme] .try{background:var(--panel)!important;color:var(--ink)!important;border:1px solid var(--edge)!important;border-radius:var(--radius)!important}
+html[data-theme] .try :is(h1,h2,h3,h4){color:var(--ink)!important}
+html[data-theme] .button:not(.outline){background:var(--accent)!important;color:var(--on-accent)!important;border-color:var(--accent)!important;border-radius:var(--radius)!important}
+html[data-theme] .button.outline{background:var(--panel)!important;color:var(--ink)!important;border-color:var(--edge)!important;border-radius:var(--radius)!important}
+html[data-theme] :is(.serif,.intro,.card p){font-family:var(--font-ui)!important}

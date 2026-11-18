@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-18",
+  "repository": "martinq321/tuition",
+  "scope": [
+    "Year 6",
+    "Year 7",
+    "Year 8",
+    "Year 9",
+    "GCSE",
+    "A-level Mathematics"
+  ],
+  "currentCourseStatus": "Investigation collections available; comprehensive taught courses not yet built",
+  "workingRule": "One bounded task or teaching block per command. Validate and update state before continuing.",
+  "plan": "COURSE-BUILD-PLAN.md",
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Shared themes",
+      "status": "implemented-awaiting-deployment",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 2,
+      "title": "Audit and curriculum maps",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 3,
+      "title": "Reusable lesson template",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 4,
+      "title": "Question and feedback engine",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 5,
+      "title": "Learning records",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 6,
+      "title": "Year 6 fractions pilot",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 7,
+      "title": "Year 6 blocks",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 8,
+      "title": "Year 7 blocks",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 9,
+      "title": "Year 8 blocks",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 10,
+      "title": "Year 9 blocks",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 11,
+      "title": "GCSE blocks",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 12,
+      "title": "A-level pure blocks",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 13,
+      "title": "A-level statistics blocks",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 14,
+      "title": "A-level mechanics blocks",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    },
+    {
+      "id": 15,
+      "title": "Coverage and release audit",
+      "status": "planned",
+      "evidence": [],
+      "commit": null
+    }
+  ],
+  "nextTask": 2
+}

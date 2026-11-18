@@ -1,5 +1,5 @@
 /* Shared layout for Quiet outline and Ghosted backdrop. Original artwork is SVG. */
-:root[data-theme="ghost"]{color-scheme:light;--bg:#fff;--panel:#fff;--ink:#111;--muted:#515151;--edge:#d6d6d6;--green:#d71920;--yellow:#845b00;--blue:#254f84;--purple:#684588;--radius:0px;--header-bg:#fffffff7;--soft:#f1f1f1;--action-hover:#ae1016;font-family:Arial,Helvetica,sans-serif}
+
 .geo-home{display:none}
 [data-theme="ghost"] .geo-home{display:block}
 [data-theme="ghost"] .hero{display:none}
@@ -47,3 +47,4 @@
 [data-theme="ghost"] :is(.status,.notice,.tag,.badge,.pill,.prompt,details,summary){border-radius:0!important;box-shadow:none!important}
 [data-theme="ghost"] :is(.status,.notice,.prompt){background:#faf0f1;color:#44282b;border-left:3px solid #c71820}
 [data-theme="ghost"] :is(.tag,.badge,.pill){background:#f8e9ec;color:#94202b;border-color:#e8cbd0}
+
