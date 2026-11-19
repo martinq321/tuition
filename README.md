@@ -1,3 +1,9 @@
+# Maths Wednesdays
+
+[Public site maintenance](docs/public-site.md) · [Site map](site-map/index.html) · [Curriculum](curriculum/index.html)
+
+## Earlier offline package notes
+
 MATHS WEDNESDAYS — V3 COMPLETE OFFLINE REVIEW
 
 1. Right-click this ZIP and choose Extract All. Do not browse inside the ZIP.

@@ -1,0 +1,35 @@
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --text:#1d2430; --muted:#667085;
+  --border:#d7dce3; --accent:#315fb8; --accent-bg:#e9effb;
+  --bar:var(--mw-shape-primary); --joint:var(--mw-shape-yellow); --pin:var(--mw-shape-dark); --select:var(--mw-shape-dark);
+  --x:var(--mw-shape-primary); --y:var(--mw-shape-yellow-dark); --z:var(--mw-shape-dark);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:1240px;margin:auto;padding:18px}
+h1{font-size:clamp(1.5rem,3vw,2.3rem);margin:0 0 6px}
+.sub{color:var(--muted);margin:0 0 14px}
+.toolbar,.modebar{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+button,select,input{font:inherit}
+button{border:1px solid var(--border);background:var(--panel);color:var(--text);border-radius:10px;padding:10px 13px;min-height:44px;font-weight:650;cursor:pointer}
+button:hover{background:#f0f2f5}
+button.active{background:var(--accent-bg);border-color:var(--accent);color:#173b89}
+button:disabled{opacity:.45;cursor:not-allowed}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 305px;gap:16px;align-items:start}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:14px}
+.canvas{padding:0;overflow:hidden;position:relative}
+canvas{display:block;width:100%;height:auto;touch-action:none;background:#fff}
+.help{font-size:.92rem;color:var(--muted)}
+.small{font-size:.86rem}
+.stats{display:grid;grid-template-columns:1fr auto;gap:8px 12px}
+.stats strong{text-align:right}
+.big{font-size:1.4rem;font-weight:760;margin:2px 0 4px}
+.key{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+hr{border:0;border-top:1px solid var(--border);margin:12px 0}
+.coords{display:grid;grid-template-columns:auto 1fr;gap:7px 8px;align-items:center}
+.coords input{width:100%;min-width:0;padding:8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:.83rem;color:var(--muted)}
+.swatch{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}
+.note{padding:10px 12px;border-radius:10px;background:#f4f6f8;color:var(--muted);font-size:.9rem}
+@media(max-width:900px){.layout{grid-template-columns:1fr}}

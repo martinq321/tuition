@@ -1,0 +1,133 @@
+{
+  "assets/characters/portraits.webp": [
+    "development/year5/units/helpers.webp"
+  ],
+  "assets/css/features/games/style.css": [
+    "games/style.css",
+    "students/games/style.css"
+  ],
+  "assets/css/features/home.css": [
+    "puzzles/home.css",
+    "students/home.css"
+  ],
+  "assets/css/features/josephus/style.css": [
+    "josephus/style.css",
+    "students/josephus/style.css"
+  ],
+  "assets/css/features/sessions/style.css": [
+    "puzzles/sessions/style.css",
+    "students/sessions/style.css"
+  ],
+  "assets/css/features/site-ux.css": [
+    "puzzles/site-ux.css",
+    "students/site-ux.css"
+  ],
+  "assets/css/features/string-lab/lab.css": [
+    "puzzles/string-lab/lab.css",
+    "students/string-lab/lab.css"
+  ],
+  "assets/css/features/theme.css": [
+    "puzzles/theme.css",
+    "students/theme.css"
+  ],
+  "assets/js/features/games/common.js": [
+    "games/common.js",
+    "students/games/common.js"
+  ],
+  "assets/js/features/games/core.js": [
+    "games/core.js",
+    "students/games/core.js"
+  ],
+  "assets/js/features/games/cube-poker.js": [
+    "games/cube-poker.js",
+    "students/games/cube-poker.js"
+  ],
+  "assets/js/features/games/strategy.js": [
+    "games/strategy.js",
+    "students/games/strategy.js"
+  ],
+  "assets/js/features/games/visual.js": [
+    "games/visual.js",
+    "students/games/visual.js"
+  ],
+  "assets/js/features/games/word-data.js": [
+    "games/word-data.js",
+    "students/games/word-data.js"
+  ],
+  "assets/js/features/games/words.js": [
+    "games/words.js",
+    "students/games/words.js"
+  ],
+  "assets/js/features/josephus/binary.js": [
+    "josephus/binary.js",
+    "students/josephus/binary.js"
+  ],
+  "assets/js/features/josephus/play.js": [
+    "josephus/play.js",
+    "students/josephus/play.js"
+  ],
+  "assets/js/features/sessions/codebot.js": [
+    "puzzles/sessions/codebot.js",
+    "students/sessions/codebot.js"
+  ],
+  "assets/js/features/sessions/common.js": [
+    "puzzles/sessions/common.js",
+    "students/sessions/common.js"
+  ],
+  "assets/js/features/sessions/core.js": [
+    "puzzles/sessions/core.js",
+    "students/sessions/core.js"
+  ],
+  "assets/js/features/sessions/enigma.js": [
+    "puzzles/sessions/enigma.js",
+    "students/sessions/enigma.js"
+  ],
+  "assets/js/features/sessions/fifteen.js": [
+    "puzzles/sessions/fifteen.js",
+    "students/sessions/fifteen.js"
+  ],
+  "assets/js/features/sessions/lab-core.js": [
+    "puzzles/sessions/lab-core.js",
+    "students/sessions/lab-core.js"
+  ],
+  "assets/js/features/sessions/memory-art.js": [
+    "puzzles/sessions/memory-art.js",
+    "students/sessions/memory-art.js"
+  ],
+  "assets/js/features/sessions/memory.js": [
+    "puzzles/sessions/memory.js",
+    "students/sessions/memory.js"
+  ],
+  "assets/js/features/sessions/nim.js": [
+    "puzzles/sessions/nim.js",
+    "students/sessions/nim.js"
+  ],
+  "assets/js/features/sessions/set.js": [
+    "puzzles/sessions/set.js",
+    "students/sessions/set.js"
+  ],
+  "assets/js/features/sessions/sorting.js": [
+    "puzzles/sessions/sorting.js",
+    "students/sessions/sorting.js"
+  ],
+  "assets/js/features/sessions/tables.js": [
+    "puzzles/sessions/tables.js",
+    "students/sessions/tables.js"
+  ],
+  "assets/js/features/sessions/turing-core.js": [
+    "puzzles/sessions/turing-core.js",
+    "students/sessions/turing-core.js"
+  ],
+  "assets/js/features/sessions/turing.js": [
+    "puzzles/sessions/turing.js",
+    "students/sessions/turing.js"
+  ],
+  "assets/js/features/site-ux.js": [
+    "puzzles/site-ux.js",
+    "students/site-ux.js"
+  ],
+  "assets/js/features/string-lab/lab.js": [
+    "puzzles/string-lab/lab.js",
+    "students/string-lab/lab.js"
+  ]
+}

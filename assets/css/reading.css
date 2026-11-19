@@ -1,0 +1,32 @@
+/* Shared reading scale for learner pages, curriculum maps and tutor views.
+   Relative units respect browser text size and zoom. Geometry drawn in SVG/canvas
+   and controls inside mathematical grids retain their own scale. */
+html:root {
+  font-size:max(112.5%,18px);
+  --mw-reading-text:clamp(1rem,calc(.96rem + .18vw),1.11rem);
+  --mw-reading-label:max(.9rem,16px);
+}
+html:root body { font-size:var(--mw-reading-text); }
+html:root body :where(p,li,dt,dd,label,summary,textarea,select,input[type=text],input[type=search],input[type=number],input[type=password],input[type=email]):not(:where(svg *, .board *, .mw-board *, .grid-board *, [data-mw-compact] *)) {
+  font-size:max(1em,var(--mw-reading-text)) !important;
+  line-height:1.5;
+}
+html:root body :where(button,.button):not(:where(.board *, .grid *, .grid-board *, .keypad *, .tables *, .swatch, .peg, .tile, .cell, [role=grid] *, [data-mw-compact] *)) {
+  font-size:max(1em,var(--mw-reading-text)) !important;
+  line-height:1.25;
+}
+html:root body :where(small,figcaption,footer,.small,.muted,.help,.hint,.caption,.kicker,.badge,.eyebrow,.label,.tag,.footnote,.unit-meta,.codes,.play-note,.unit-entry summary,.mast nav a,.crumbs,.map-kicker,.map-search label,.fb-kicker):not(:where(svg *, .board *, .grid-board *, [data-mw-compact] *)) {
+  font-size:max(var(--mw-reading-label),.9em) !important;
+  line-height:1.45;
+}
+html:root body :where(nav a, footer a) { font-size:max(var(--mw-reading-label),.94em); }
+:where(label,select,input,textarea) { max-inline-size:100%; }
+@media(max-width:850px) {
+  :where(.tools,.buttons,.mw-header-links,.actions,.filters) { flex-wrap:wrap; }
+}
+@media(prefers-reduced-motion:reduce) {
+  html:root { scroll-behavior:auto !important; }
+  :where(.celebrate,.celebration,.confetti,.sparkle,.mw-piece-enter,.pulse,.toast,.mw-theme-bar,.mw-header-links) {
+    animation:none !important; transition:none !important;
+  }
+}

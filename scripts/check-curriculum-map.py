@@ -54,6 +54,14 @@ def check_spec(actual, sections, title):
 
 def main():
     pages = {path: Page(path) for path in CURRICULUM.rglob("index.html")}
+    map_path = ROOT / "site-map/index.html"
+    link_targets = {**pages, map_path: Page(map_path)}
+    investigations = load("investigation-links.json")
+    activity_data = json.loads((ROOT / "development/curriculum/activity-audit.json").read_text())
+    activities = {a["id"]: ROOT / a["path"] for a in activity_data["activities"]}
+    themes = json.loads((ROOT / "data/theme-paths.json").read_text())["themes"]
+    theme_for = {activity:t["id"] for t in themes for activity in t["steps"]}
+    activity_count = 0
     expected = {CURRICULUM / "index.html"}
     connections = load("connections.json")
     unit_keys = set()
@@ -70,6 +78,14 @@ def main():
                 path = CURRICULUM / key / "index.html"
                 expected.add(path)
                 require(path in pages, f"Missing unit page {key}")
+                rendered = pages[path].links
+                for edge in investigations.get(key, []):
+                    activity = edge["activity"]
+                    require(any((path.parent / unquote(urlsplit(link).path)).resolve() == activities[activity]
+                                for link in rendered), f"Missing activity link {key} to {activity}")
+                    require(any(urlsplit(link).fragment == theme_for[activity] for link in rendered),
+                            f"Missing theme link {key} to {theme_for[activity]}")
+                    activity_count += 1
                 objective_count += len(unit["objectives"]) + len(unit.get("higher", []))
                 reference = "#page=" + str(unit["sourcePage"])
                 require(any(link.endswith(reference) for link in pages[path].links),
@@ -97,10 +113,10 @@ def main():
             dest = (path.parent / unquote(url.path)).resolve() if url.path else path
             require(dest.is_relative_to(ROOT) and dest.is_file(), f"Missing {link} on {path}")
             if url.fragment:
-                require(dest in pages and unquote(url.fragment) in pages[dest].ids,
+                require(dest in link_targets and unquote(url.fragment) in link_targets[dest].ids,
                         f"Missing anchor {link} on {path}")
     print(f"Checked {len(pages)} pages, {len(unit_keys)} units, {objective_count} objectives "
-          f"and {len(pairs)} connected pairs across 13 years.")
+          f"and {len(pairs)} connected pairs across 13 years, with {activity_count} investigation links.")
 
 
 if __name__ == "__main__":

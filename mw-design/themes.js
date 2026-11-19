@@ -3,6 +3,10 @@
 'use strict';
 if(window.MWTheme)return;
 var base=new URL('./',document.currentScript.src);
+// Share answer-entry behaviour across the full and student sites, including offline copies.
+var keypad=document.createElement('script');
+keypad.src=new URL('../assets/js/numeric-keypad.js',base).href;
+document.head.append(keypad);
 // Category identity is shared by the full and student copies of each activity.
 var path=location.pathname.toLowerCase(), topic='';
 if(/\/(string-lab|engineering)\//.test(path)||/\/(painted-cube|curve-lab|circle-investigations|squares-to-euclid|fewest-squares(?:-extension)?|36-fences|polyominoes|packing-lab|cut-and-rearrange|rupert-cube|paper|spiral-gallery)\.html$/.test(path))topic='shape';

@@ -1,0 +1,1345 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "title": "Full investigation catalogue",
+      "path": "puzzles/index.html"
+    },
+    {
+      "title": "Student collection",
+      "path": "students/index.html"
+    },
+    {
+      "title": "Learning site",
+      "path": "development/index.html"
+    },
+    {
+      "title": "Learning pathways",
+      "path": "development/curriculum/index.html"
+    },
+    {
+      "title": "My journey",
+      "path": "development/explore/journey.html"
+    },
+    {
+      "title": "My notebook",
+      "path": "development/learning.html#progress"
+    },
+    {
+      "title": "Session planner",
+      "path": "puzzles/planner.html"
+    },
+    {
+      "title": "Educator guide",
+      "path": "puzzles/educators.html"
+    },
+    {
+      "title": "Curriculum coverage and activity audit",
+      "path": "development/curriculum/map.html"
+    }
+  ],
+  "categories": [
+    {
+      "id": "logic",
+      "title": "Logic and strategy"
+    },
+    {
+      "id": "shape",
+      "title": "Shape and space"
+    },
+    {
+      "id": "number",
+      "title": "Number patterns"
+    },
+    {
+      "id": "create",
+      "title": "Making and coding"
+    },
+    {
+      "id": "words",
+      "title": "Words and letters"
+    }
+  ],
+  "themes": [
+    {
+      "id": "deduction",
+      "title": "Deduction and comparison",
+      "description": "Use a match, a weighing or a clue to narrow down possible answers.",
+      "steps": [
+        "memory",
+        "sorting",
+        "mastermind"
+      ]
+    },
+    {
+      "id": "attributes",
+      "title": "Sets, combinations and chance",
+      "description": "Classify cards by their attributes, then reason about combinations.",
+      "steps": [
+        "set",
+        "dobble",
+        "poker"
+      ]
+    },
+    {
+      "id": "winning",
+      "title": "Winning positions",
+      "description": "Choose a move, predict a reply and look for a strategy that repeats.",
+      "steps": [
+        "fifteen",
+        "nim",
+        "josephus"
+      ]
+    },
+    {
+      "id": "moves",
+      "title": "Sequences of moves",
+      "description": "Plan a route through constrained states and compare the moves needed.",
+      "steps": [
+        "river",
+        "hanoi",
+        "rubik"
+      ]
+    },
+    {
+      "id": "networks",
+      "title": "Routes and networks",
+      "description": "Compare routes through a village, then draw paths subject to network rules.",
+      "steps": [
+        "village",
+        "sprouts"
+      ]
+    },
+    {
+      "id": "tiling",
+      "title": "Tiling and packing",
+      "description": "Cover rectangles with squares, compare packings and investigate repeated square removal.",
+      "steps": [
+        "fewest",
+        "packing",
+        "euclid"
+      ]
+    },
+    {
+      "id": "area",
+      "title": "Area and dissection",
+      "description": "Fix a boundary, join squares and rearrange shapes to compare their areas.",
+      "steps": [
+        "fence",
+        "polyomino",
+        "cut",
+        "paper"
+      ]
+    },
+    {
+      "id": "curves",
+      "title": "Curves and geometric models",
+      "description": "Construct circles, trace moving points and investigate curved paths and surfaces.",
+      "steps": [
+        "circles",
+        "pursuit",
+        "ramps",
+        "tower",
+        "spiral"
+      ]
+    },
+    {
+      "id": "spatial",
+      "title": "Spatial structures",
+      "description": "Inspect cube layers, construct frameworks and investigate a passage through a solid.",
+      "steps": [
+        "cube",
+        "bridge",
+        "rupert"
+      ]
+    },
+    {
+      "id": "products",
+      "title": "Products and factors",
+      "description": "Start with multiplication facts, build arrays and cuboids, then reason about factors and divisors.",
+      "steps": [
+        "tables",
+        "factors",
+        "cuboids",
+        "tree",
+        "multiply",
+        "divisors"
+      ]
+    },
+    {
+      "id": "patterns",
+      "title": "Patterns and change",
+      "description": "Look for patterns in a table, combine values and predict the next result.",
+      "steps": [
+        "patterns",
+        "totals",
+        "neighbours",
+        "plant"
+      ]
+    },
+    {
+      "id": "drawing",
+      "title": "Pictures and rules",
+      "description": "Use cells, parts and repeated rules to build a picture or character.",
+      "steps": [
+        "pixel",
+        "robot",
+        "creature"
+      ]
+    },
+    {
+      "id": "worlds",
+      "title": "Story worlds",
+      "description": "Arrange characters and objects, compare sizes and build a scene to describe.",
+      "steps": [
+        "shark",
+        "dinosaur",
+        "dragon"
+      ]
+    },
+    {
+      "id": "instructions",
+      "title": "Programs and instructions",
+      "description": "Sequence commands for a route, debug a grid program and follow a tape machine.",
+      "steps": [
+        "trails",
+        "coding",
+        "turing"
+      ]
+    },
+    {
+      "id": "ciphers",
+      "title": "Codes and ciphers",
+      "description": "Rearrange a message, explore substitution and compare a changing cipher.",
+      "steps": [
+        "scytale",
+        "secret",
+        "enigma"
+      ]
+    },
+    {
+      "id": "words",
+      "title": "Word patterns",
+      "description": "Build words from a letter set and use positional clues to rule out guesses.",
+      "steps": [
+        "bee",
+        "wordle"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "mastermind",
+      "title": "Mastermind",
+      "path": "mastermind/Mastermind_Maths_Wednesdays.html",
+      "category": "logic",
+      "theme": "deduction",
+      "position": 3,
+      "description": "Match colours and use a single clue to rule out a guess; begin with fewer holes and colours.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "score/filter/partitions implement clue-based elimination.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "river",
+      "title": "Goat & boat",
+      "path": "river-crossing/index.html",
+      "category": "logic",
+      "theme": "moves",
+      "position": 1,
+      "description": "Carry one item, predict what can safely stay together, and explain why an empty return might help.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "crossingMoves and unsafe generate legal states.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "hanoi",
+      "title": "Tower of Hanoi",
+      "path": "hanoi/index.html",
+      "category": "logic",
+      "theme": "moves",
+      "position": 2,
+      "description": "Move two or three discs legally and notice which smaller discs must move first.",
+      "development": "Interactive activity",
+      "readiness": "browser-checked",
+      "readinessNote": "2026-11-18 · Select peg A then C, undo, 3 and 8 discs; golden discs/pegs; 390 px iframe control wrap and peg selection.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "dobble",
+      "title": "Dobble",
+      "path": "dobble/index.html",
+      "category": "logic",
+      "theme": "attributes",
+      "position": 2,
+      "description": "Make three cards using stickers, then check every pair shares exactly one symbol.",
+      "development": "Interactive activity",
+      "readiness": "logic-checked",
+      "readinessNote": "Recorded checks cover finite-plane decks and pair matches in a simulated document. Physical-device play has not been verified here.",
+      "evidencePath": "Handoff/VALIDATION.txt"
+    },
+    {
+      "id": "set",
+      "title": "Find a SET",
+      "path": "puzzles/sessions/set.html",
+      "category": "logic",
+      "theme": "attributes",
+      "position": 1,
+      "description": "Choose three cards whose features are all the same or all different, one feature at a time.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Session.setDeck builds 3^d distinct vectors.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "fifteen",
+      "title": "15 game",
+      "path": "puzzles/sessions/fifteen.html",
+      "category": "logic",
+      "theme": "winning",
+      "position": 1,
+      "description": "Take numbers 1–9 and find three that total 15 using physical number cards if useful.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Session.winningTriple enumerates triples.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "nim",
+      "title": "Take-away strategy",
+      "path": "puzzles/sessions/nim.html",
+      "category": "logic",
+      "theme": "winning",
+      "position": 2,
+      "description": "Take one or two counters and predict who takes the last; change one rule.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Session.nimWins computes win/loss positions by dynamic programming.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "memory",
+      "title": "Memory pairs",
+      "path": "puzzles/sessions/memory.html",
+      "category": "logic",
+      "theme": "deduction",
+      "position": 1,
+      "description": "Match visible representations in a small four-pair deck and describe the relationship.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "choose checks paired identities and preserves matched positions.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "sorting",
+      "title": "Mystery weights",
+      "path": "puzzles/sessions/sorting.html",
+      "category": "logic",
+      "theme": "deduction",
+      "position": 2,
+      "description": "Compare two unknown weights, record which is lighter and arrange four objects.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Session.sortTrace generates selection/insertion comparisons.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "josephus",
+      "title": "Which card stays?",
+      "path": "josephus/index.html",
+      "category": "logic",
+      "theme": "winning",
+      "position": 3,
+      "description": "Lay out a few cards in a circle and alternate keeping/removing; predict the survivor.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Circle player/card state is separate from survivor display.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "rubik",
+      "title": "Twisty cube",
+      "path": "games/cube.html",
+      "category": "logic",
+      "theme": "moves",
+      "position": 3,
+      "description": "Turn a face, reverse it and compare the coloured net with a physical cube.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Core.turn rotates face-layer positions and normals.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "poker",
+      "title": "Which hand wins?",
+      "path": "games/poker.html",
+      "category": "logic",
+      "theme": "attributes",
+      "position": 3,
+      "description": "Compare repeated numbers and ordered ranks using example hands.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Core.rank5 handles straights including low ace and tie breakers.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "pursuit",
+      "title": "Chase & escape",
+      "path": "games/pursuit.html",
+      "category": "logic",
+      "theme": "curves",
+      "position": 2,
+      "description": "Make points chase one another, change a speed and describe the traces.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "visual.js towards/tick advance positions.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "sprouts",
+      "title": "Sprouts",
+      "path": "puzzles/sprouts/index.html",
+      "category": "logic",
+      "theme": "networks",
+      "position": 2,
+      "description": "Join two dots without crossing and add a new dot; begin with one or two dots.",
+      "development": "Prototype",
+      "readiness": "prototype",
+      "readinessNote": "The game checks drawn routes; players agree when no legal move remains. No complete legal-move solver is implemented.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "cube",
+      "title": "Painted cubes",
+      "path": "puzzles/sessions/painted-cube.html",
+      "category": "shape",
+      "theme": "spatial",
+      "position": 1,
+      "description": "Paint a large cube, rotate it and sort small cubes by how many painted faces they have.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Small-cube face flags determine classification.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "ramps",
+      "title": "Curve lab",
+      "path": "puzzles/sessions/curve-lab.html",
+      "category": "shape",
+      "theme": "curves",
+      "position": 3,
+      "description": "Build a ramp from points, race a ball against a straight slope and predict which wins.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "race and numerical path-time functions drive comparisons.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "tower",
+      "title": "String lab",
+      "path": "puzzles/string-lab/index.html",
+      "category": "shape",
+      "theme": "curves",
+      "position": 4,
+      "description": "Join straight strings, twist a rod tower and notice the curved surface.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "lab.js has separate nail/hyperbola/saddle/tower models.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "euclid",
+      "title": "Square it up",
+      "path": "puzzles/sessions/squares-to-euclid.html",
+      "category": "shape",
+      "theme": "tiling",
+      "position": 3,
+      "description": "Remove the largest square that fits a rectangle and keep going.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Largest-square subtraction updates remainder and records divisions.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "spiral",
+      "title": "Inside the gallery",
+      "path": "puzzles/sessions/spiral-gallery.html",
+      "category": "shape",
+      "theme": "curves",
+      "position": 5,
+      "description": "Rotate and shrink repeated picture frames and notice similar copies.",
+      "development": "Interactive activity",
+      "readiness": "logic-checked",
+      "readinessNote": "Recorded checks cover the complex identity, the excluded origin and gallery modes in a simulated document. The checks do not cover rendering on a physical device.",
+      "evidencePath": "Handoff/VALIDATION.txt"
+    },
+    {
+      "id": "packing",
+      "title": "Packing lab",
+      "path": "puzzles/sessions/packing-lab.html",
+      "category": "shape",
+      "theme": "tiling",
+      "position": 2,
+      "description": "Place rectangles or whole squares in a box and compare arrangements.",
+      "development": "Interactive activity",
+      "readiness": "browser-checked",
+      "readinessNote": "19 November 2026 · In desktop Chromium, Rotate and Enter placed one of four pieces. See a packing showed a four-piece result with the first diagram and step controls. A separate controller test completes the board and replays the solution. Physical-tablet play has not been checked.",
+      "evidencePath": "docs/activity-checks.md"
+    },
+    {
+      "id": "circles",
+      "title": "Circle lab",
+      "path": "puzzles/sessions/circle-investigations.html",
+      "category": "shape",
+      "theme": "curves",
+      "position": 1,
+      "description": "Drag a point on a semicircle and measure the angle; compare many examples.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Drag models and optional measurement/guides update together.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "polyomino",
+      "title": "Polyomino studio",
+      "path": "puzzles/sessions/polyominoes.html",
+      "category": "shape",
+      "theme": "area",
+      "position": 2,
+      "description": "Join squares edge to edge, rotate a piece and decide whether it is new.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Canonical key removes rotational/reflected duplicates.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "cut",
+      "title": "Cut & rearrange",
+      "path": "puzzles/sessions/cut-and-rearrange.html",
+      "category": "shape",
+      "theme": "area",
+      "position": 3,
+      "description": "Cut a shape into pieces, slide/turn them and cover a target.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Cuts split polygons.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "fewest",
+      "title": "Fewest squares",
+      "path": "puzzles/sessions/fewest-squares.html",
+      "category": "shape",
+      "theme": "tiling",
+      "position": 1,
+      "description": "Cover a small rectangle with whole squares, count them and try to improve.",
+      "development": "Interactive activity",
+      "readiness": "browser-checked",
+      "readinessNote": "19 November 2026 · In desktop Chromium, Enter placed a 2 × 2 square on a 3 × 5 board, Undo reversed it and the next activity link opened Packing Lab. A separate controller test completes and saves a tiling. Physical-tablet play has not been checked.",
+      "evidencePath": "docs/activity-checks.md"
+    },
+    {
+      "id": "fence",
+      "title": "36 fences",
+      "path": "puzzles/sessions/36-fences.html",
+      "category": "shape",
+      "theme": "area",
+      "position": 1,
+      "description": "Use a fixed number of fence pieces to enclose a garden and count its squares.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Boundary checks reject branches/open paths.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "rupert",
+      "title": "Cube through a cube",
+      "path": "puzzles/sessions/rupert-cube.html",
+      "category": "shape",
+      "theme": "spatial",
+      "position": 3,
+      "description": "Slide a cut-out from a yellow cube, then pass a blue cube through and inspect the hole.",
+      "development": "Interactive activity",
+      "readiness": "browser-checked",
+      "readinessNote": "2026-11-18 · Cube renderer visible, cut-out slider to End, blue cube Halfway, keyboard rotation; blue/yellow and light scene. WebGL versus CPU fallback not separately forced.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "paper",
+      "title": "Paper surprises",
+      "path": "puzzles/sessions/paper.html",
+      "category": "shape",
+      "theme": "area",
+      "position": 4,
+      "description": "Predict what a paper loop will do, cut a real strip and compare the result.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Prediction notebook and comparison explanations exist.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "bridge",
+      "title": "Bridge lab",
+      "path": "engineering/bridge-lab.html",
+      "category": "shape",
+      "theme": "spatial",
+      "position": 2,
+      "description": "Build triangles between supports and observe what changes when a load moves.",
+      "development": "Template-based workshop",
+      "readiness": "source-reviewed",
+      "readinessNote": "The audited editor starts from truss templates. Test the design and simulation together on the intended device.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "patterns",
+      "title": "Number patterns",
+      "path": "development/number-patterns/index.html",
+      "category": "number",
+      "theme": "patterns",
+      "position": 1,
+      "description": "Click squares to mark a pattern, then compare multiples, squares or primes.",
+      "development": "Interactive activity",
+      "readiness": "browser-checked",
+      "readinessNote": "2026-11-18 · Switch to remainder colours and numbers + remainders; purple/yellow visible; 390 px iframe responsive controls.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "factors",
+      "title": "Factor shapes",
+      "path": "puzzles/sessions/factor-shapes.html",
+      "category": "number",
+      "theme": "products",
+      "position": 2,
+      "description": "Adjust two or three whole-number sides until the area/volume reaches a chosen target.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Save requires exact product.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "tree",
+      "title": "Factor trees",
+      "path": "puzzles/sessions/factor-tree.html",
+      "category": "number",
+      "theme": "products",
+      "position": 4,
+      "description": "Split a composite number into two factors and continue until every leaf is prime.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Split requires both factors greater than one and correct product.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "cuboids",
+      "title": "Explore 30 cubes",
+      "path": "puzzles/sessions/30-cubes.html",
+      "category": "number",
+      "theme": "products",
+      "position": 3,
+      "description": "Use 30 small cubes to make boxes and record their side lengths.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Only exact volume 30 saves.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "plant",
+      "title": "Money plants",
+      "path": "puzzles/sessions/magic-money-plant.html",
+      "category": "number",
+      "theme": "patterns",
+      "position": 4,
+      "description": "Grow a seed, harvest coins and keep a day-by-day table with small starting numbers.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "advance separates daily phases.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "tables",
+      "title": "Times tables",
+      "path": "puzzles/sessions/tables.html",
+      "category": "number",
+      "theme": "products",
+      "position": 1,
+      "description": "Choose a small group of facts, use an array when stuck and explain a division fact.",
+      "development": "Interactive activity",
+      "readiness": "browser-checked",
+      "readinessNote": "19 November 2026 · Desktop Chromium confirmed correct keypad feedback and score for 5 × 3. After Start at 820 × 1180, 1180 × 820 and 390 × 844 CSS pixels, the question and full keypad stayed visible, the answer field stayed read-only and the page fitted the width. Physical-tablet input remains untested.",
+      "evidencePath": "docs/activity-checks.md"
+    },
+    {
+      "id": "multiply",
+      "title": "Multiply to the target",
+      "path": "games/multiply.html",
+      "category": "number",
+      "theme": "products",
+      "position": 5,
+      "description": "Multiply a shared running number by a choice from 2–9 and try to reach a target.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Core.winningMultiplier recursively finds winning moves with memoisation.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "totals",
+      "title": "Different totals",
+      "path": "games/grid.html",
+      "category": "number",
+      "theme": "patterns",
+      "position": 2,
+      "description": "Fill cells with −1, 0 or 1 and compare row and column sums.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "strategy.js recomputes row/column totals and checks uniqueness after cell edits.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "divisors",
+      "title": "Divisor game",
+      "path": "games/divisors.html",
+      "category": "number",
+      "theme": "products",
+      "position": 6,
+      "description": "Choose a number and identify which remaining proper divisors go to the other player.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Core.divisors excludes the chosen number itself.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "neighbours",
+      "title": "Add to your neighbours",
+      "path": "games/neighbours.html",
+      "category": "number",
+      "theme": "patterns",
+      "position": 3,
+      "description": "Remove a middle number and add it to both neighbours; compare final totals.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Core.remove disallows endpoints.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "coding",
+      "title": "Code grid",
+      "path": "puzzles/sessions/code-grid.html",
+      "category": "create",
+      "theme": "instructions",
+      "position": 2,
+      "description": "Tap commands to move an emoji to a goal; use a short visible loop.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Command blocks form nested instruction structures.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "robot",
+      "title": "Build a robot",
+      "path": "games/robot.html",
+      "category": "create",
+      "theme": "drawing",
+      "position": 2,
+      "description": "Choose body parts, vary sizes and describe what changed.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Body/limb proportions and palette controls update drawing.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "pixel",
+      "title": "Pixel art",
+      "path": "games/pixel.html",
+      "category": "create",
+      "theme": "drawing",
+      "position": 1,
+      "description": "Paint squares and make a mirror image or repeating pattern.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "visual.js paint modifies cells and mirror counterparts.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "secret",
+      "title": "Secret messages",
+      "path": "games/cipher.html",
+      "category": "create",
+      "theme": "ciphers",
+      "position": 2,
+      "description": "Shift letters around a wheel and decode a short message.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "words.js shift normalises letter offsets modulo 26.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "creature",
+      "title": "Creature studio",
+      "path": "puzzles/sessions/creature-lab.html",
+      "category": "create",
+      "theme": "drawing",
+      "position": 3,
+      "description": "Add body segments and pairs of legs, then draw a route for the creature.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Route sampling drives body orientation.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "scytale",
+      "title": "Scytale",
+      "path": "puzzles/sessions/scytale.html",
+      "category": "create",
+      "theme": "ciphers",
+      "position": 1,
+      "description": "Wrap a message strip around a cylinder, then unwrap and compare the letter order.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Wrap parameter maps positions to cylinder/flat strip.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "shark",
+      "title": "Shark family",
+      "path": "games/shark-family.html",
+      "category": "create",
+      "theme": "worlds",
+      "position": 1,
+      "description": "Build a family, compare sizes and add underwater objects.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Character and scenery controls alter scene objects.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "dragon",
+      "title": "Dragon world",
+      "path": "games/dragon-world.html",
+      "category": "create",
+      "theme": "worlds",
+      "position": 3,
+      "description": "Create a dragon scene, compare wings and bodies and describe positions.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Object editing, scene creation and save/export controls are wired.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "dinosaur",
+      "title": "Dinosaur world",
+      "path": "games/dinosaur-world.html",
+      "category": "create",
+      "theme": "worlds",
+      "position": 2,
+      "description": "Arrange dinosaurs from small to large or create a repeating landscape.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Character drawing options and scene-object controls update saved scene state.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "turing",
+      "title": "Turing tape",
+      "path": "puzzles/sessions/turing.html",
+      "category": "create",
+      "theme": "instructions",
+      "position": 3,
+      "description": "Act out a simple tape rule, step once and say what changed.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "TapeMachine.step applies write/move/next transitions.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "trails",
+      "title": "Robot trails",
+      "path": "puzzles/sessions/codebot.html",
+      "category": "create",
+      "theme": "instructions",
+      "position": 1,
+      "description": "Put forward and turn pieces together to collect stars, then wrap a repeated section in a loop.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Program interpreter handles repeat blocks and height changes.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "enigma",
+      "title": "Enigma explorer",
+      "path": "puzzles/sessions/enigma.html",
+      "category": "create",
+      "theme": "ciphers",
+      "position": 3,
+      "description": "Type one letter, trace its path and compare what happens after a rotor steps.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Update reprocesses from starting settings.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "village",
+      "title": "Magic village",
+      "path": "puzzles/workshop/index.html",
+      "category": "create",
+      "theme": "networks",
+      "position": 1,
+      "description": "Choose a project, move cargo or plan a short route and earn in-world gold.",
+      "development": "Interactive activity",
+      "readiness": "source-reviewed",
+      "readinessNote": "Route permutations and cargo shortest-path search are implemented.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "bee",
+      "title": "Spelling Bee",
+      "path": "games/bee.html",
+      "category": "words",
+      "theme": "words",
+      "position": 1,
+      "description": "Build words using a fixed set of letters including a required centre letter.",
+      "development": "Word game",
+      "readiness": "available-unmapped",
+      "readinessNote": "Published as a word game; curriculum alignment has not been reviewed.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "wordle",
+      "title": "Five-letter words",
+      "path": "games/wordle.html",
+      "category": "words",
+      "theme": "words",
+      "position": 2,
+      "description": "Use a letter clue to rule out a proposed five-letter word.",
+      "development": "Word game",
+      "readiness": "available-unmapped",
+      "readinessNote": "Published as a word game; curriculum alignment has not been reviewed.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    }
+  ],
+  "courses": [
+    {
+      "id": "year4-place-value",
+      "title": "Year 4 place-value workshop",
+      "path": "development/year4/index.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Number-line estimation, counting in 25s, extended reasoning and delayed review are not implemented as a full block.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year4-multiplication",
+      "title": "Year 4 multiplication representations",
+      "path": "development/year4/multiplication.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Division, exchanging in written algorithms and delayed consolidation remain to be added.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year4-blocks",
+      "title": "Year 4 blocks and sweets workshop",
+      "path": "development/year4/block-workshop.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "The workshop is not a full multiplication/division block.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-place-value",
+      "title": "Year 5 place-value workshop",
+      "path": "development/year5/place-value.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "A generated question bank is not a comprehensive small-step block.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-addition-subtraction",
+      "title": "Year 5 · Addition & subtraction",
+      "path": "development/year5/units/addition-subtraction.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Multi-step word problems, estimation and choosing mental or written methods.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-multiplication-division-a",
+      "title": "Year 5 · Multiplication & division A",
+      "path": "development/year5/units/multiplication-division-a.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Common factors, common multiples, prime factors and multiplying/dividing by powers of ten.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-fractions-a",
+      "title": "Year 5 · Fractions A",
+      "path": "development/year5/units/fractions-a.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Ordering mixed numbers, more varied equivalent fractions and contextual problems.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-multiplication-division-b",
+      "title": "Year 5 · Multiplication & division B",
+      "path": "development/year5/units/multiplication-division-b.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Compact long multiplication, short division and interpreting remainders in context.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-fractions-b",
+      "title": "Year 5 · Fractions B",
+      "path": "development/year5/units/fractions-b.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Fractions of quantities, finding the whole and multi-step fraction problems.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-decimals-percentages",
+      "title": "Year 5 · Decimals & percentages",
+      "path": "development/year5/units/decimals-percentages.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Thousandths, comparing decimals and percentages of quantities.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-perimeter-area",
+      "title": "Year 5 · Perimeter & area",
+      "path": "development/year5/units/perimeter-area.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Missing side lengths, real units and estimating irregular areas.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-statistics",
+      "title": "Year 5 · Statistics",
+      "path": "development/year5/units/statistics.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Line graphs, timetables and two-way tables.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-shape",
+      "title": "Year 5 · Shape",
+      "path": "development/year5/units/shape.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Polygon properties, regular and irregular polygons and identifying 3D shapes from 2D representations.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-position-direction",
+      "title": "Year 5 · Position & direction",
+      "path": "development/year5/units/position-direction.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Reasoning about several transformations and finding unknown vertices.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-decimals",
+      "title": "Year 5 · Decimals",
+      "path": "development/year5/units/decimals.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Decimal addition/subtraction, rounding, ordering and sequences.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-negative-numbers",
+      "title": "Year 5 · Negative numbers",
+      "path": "development/year5/units/negative-numbers.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Comparing negative numbers in other contexts and finding temperature differences.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-converting-units",
+      "title": "Year 5 · Converting units",
+      "path": "development/year5/units/converting-units.html",
+      "group": "workshops",
+      "readiness": "source-reviewed",
+      "readinessNote": "Approximate imperial equivalents, time conversions and contextual problems.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-volume",
+      "title": "Year 5 · Volume",
+      "path": "development/year5/units/volume.html",
+      "group": "workshops",
+      "readiness": "needs-repair",
+      "readinessNote": "The final task asks for every possible cuboid; the checker currently accepts a single valid product.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "learning-lesson-1",
+      "title": "Equal parts",
+      "path": "development/learning.html#lesson/lesson-1",
+      "group": "short-lessons",
+      "readiness": "source-reviewed",
+      "readinessNote": "Choice questions are not by themselves an interactive manipulatives course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "learning-lesson-2",
+      "title": "Combining fractions",
+      "path": "development/learning.html#lesson/lesson-2",
+      "group": "short-lessons",
+      "readiness": "source-reviewed",
+      "readinessNote": "Choice questions are not by themselves an interactive manipulatives course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "learning-lesson-3",
+      "title": "Sharing in a ratio",
+      "path": "development/learning.html#lesson/lesson-3",
+      "group": "short-lessons",
+      "readiness": "source-reviewed",
+      "readinessNote": "Choice questions are not by themselves an interactive manipulatives course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "learning-lesson-4",
+      "title": "Place value",
+      "path": "development/learning.html#lesson/lesson-4",
+      "group": "short-lessons",
+      "readiness": "source-reviewed",
+      "readinessNote": "Choice questions are not by themselves an interactive manipulatives course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "learning-lesson-5",
+      "title": "Partition & multiply",
+      "path": "development/learning.html#lesson/lesson-5",
+      "group": "short-lessons",
+      "readiness": "source-reviewed",
+      "readinessNote": "Choice questions are not by themselves an interactive manipulatives course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "learning-lesson-6",
+      "title": "Factors & arrays",
+      "path": "development/learning.html#lesson/lesson-6",
+      "group": "short-lessons",
+      "readiness": "source-reviewed",
+      "readinessNote": "Choice questions are not by themselves an interactive manipulatives course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "learning-lesson-7",
+      "title": "Angles & turns",
+      "path": "development/learning.html#lesson/lesson-7",
+      "group": "short-lessons",
+      "readiness": "source-reviewed",
+      "readinessNote": "Choice questions are not by themselves an interactive manipulatives course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "learning-lesson-8",
+      "title": "Area & perimeter",
+      "path": "development/learning.html#lesson/lesson-8",
+      "group": "short-lessons",
+      "readiness": "source-reviewed",
+      "readinessNote": "Choice questions are not by themselves an interactive manipulatives course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "learning-lesson-9",
+      "title": "Painted cubes",
+      "path": "development/learning.html#lesson/lesson-9",
+      "group": "short-lessons",
+      "readiness": "source-reviewed",
+      "readinessNote": "Choice questions are not by themselves an interactive manipulatives course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "learning-lesson-10",
+      "title": "Keeping balance",
+      "path": "development/learning.html#lesson/lesson-10",
+      "group": "short-lessons",
+      "readiness": "source-reviewed",
+      "readinessNote": "Choice questions are not by themselves an interactive manipulatives course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "learning-lesson-11",
+      "title": "Patterns & rules",
+      "path": "development/learning.html#lesson/lesson-11",
+      "group": "short-lessons",
+      "readiness": "source-reviewed",
+      "readinessNote": "Choice questions are not by themselves an interactive manipulatives course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "learning-lesson-12",
+      "title": "Substitute & solve",
+      "path": "development/learning.html#lesson/lesson-12",
+      "group": "short-lessons",
+      "readiness": "source-reviewed",
+      "readinessNote": "Choice questions are not by themselves an interactive manipulatives course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year5-hub",
+      "title": "Year 5 pathway",
+      "path": "development/year5/index.html",
+      "group": "hubs",
+      "readiness": "source-reviewed",
+      "readinessNote": "A linked collection is not a complete course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year6-hub",
+      "title": "Year 6 pathway",
+      "path": "development/year6/index.html",
+      "group": "hubs",
+      "readiness": "source-reviewed",
+      "readinessNote": "A linked collection is not a complete course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year7-hub",
+      "title": "Year 7 pathway",
+      "path": "development/year7/index.html",
+      "group": "hubs",
+      "readiness": "source-reviewed",
+      "readinessNote": "A linked collection is not a complete course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year8-hub",
+      "title": "Year 8 pathway",
+      "path": "development/year8/index.html",
+      "group": "hubs",
+      "readiness": "source-reviewed",
+      "readinessNote": "A linked collection is not a complete course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year9-hub",
+      "title": "Year 9 pathway",
+      "path": "development/year9/index.html",
+      "group": "hubs",
+      "readiness": "source-reviewed",
+      "readinessNote": "A linked collection is not a complete course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "gcse-hub",
+      "title": "GCSE pathway",
+      "path": "development/gcse/index.html",
+      "group": "hubs",
+      "readiness": "source-reviewed",
+      "readinessNote": "A linked collection is not a complete course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "a-level-hub",
+      "title": "A-level pathway",
+      "path": "development/a-level/index.html",
+      "group": "hubs",
+      "readiness": "source-reviewed",
+      "readinessNote": "A linked collection is not a complete course.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    {
+      "id": "year6-fractions",
+      "title": "Year 6 fractions block",
+      "path": "development/year6/fractions/index.html",
+      "group": "workshops",
+      "readiness": "awaiting-learner-pilot",
+      "readinessNote": "The mathematical checks and representative browser tasks passed. A learner pilot and physical-device checks are pending.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    }
+  ],
+  "years": [
+    {
+      "year": 1,
+      "title": "Year 1",
+      "path": "curriculum/year-1/index.html",
+      "unitCount": 14
+    },
+    {
+      "year": 2,
+      "title": "Year 2",
+      "path": "curriculum/year-2/index.html",
+      "unitCount": 12
+    },
+    {
+      "year": 3,
+      "title": "Year 3",
+      "path": "curriculum/year-3/index.html",
+      "unitCount": 13
+    },
+    {
+      "year": 4,
+      "title": "Year 4",
+      "path": "curriculum/year-4/index.html",
+      "unitCount": 14
+    },
+    {
+      "year": 5,
+      "title": "Year 5",
+      "path": "curriculum/year-5/index.html",
+      "unitCount": 15
+    },
+    {
+      "year": 6,
+      "title": "Year 6",
+      "path": "curriculum/year-6/index.html",
+      "unitCount": 12
+    },
+    {
+      "year": 7,
+      "title": "Year 7",
+      "path": "curriculum/year-7/index.html",
+      "unitCount": 12
+    },
+    {
+      "year": 8,
+      "title": "Year 8",
+      "path": "curriculum/year-8/index.html",
+      "unitCount": 12
+    },
+    {
+      "year": 9,
+      "title": "Year 9",
+      "path": "curriculum/year-9/index.html",
+      "unitCount": 11
+    },
+    {
+      "year": 10,
+      "title": "Year 10",
+      "path": "curriculum/year-10/index.html",
+      "unitCount": 12
+    },
+    {
+      "year": 11,
+      "title": "Year 11",
+      "path": "curriculum/year-11/index.html",
+      "unitCount": 10
+    },
+    {
+      "year": 12,
+      "title": "Year 12",
+      "path": "curriculum/year-12/index.html",
+      "unitCount": 15
+    },
+    {
+      "year": 13,
+      "title": "Year 13",
+      "path": "curriculum/year-13/index.html",
+      "unitCount": 15
+    }
+  ]
+}

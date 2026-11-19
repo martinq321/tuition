@@ -1,0 +1,46 @@
+/* Shared layout and diagram keys used by the teaching and investigation pages. */
+.mw-layout-axis-dark { --axis: var(--mw-number-dark,#542891); }
+.mw-layout-axis-gold { --axis: var(--mw-number-yellow,#e7a523); }
+.mw-layout-axis-primary { --axis: var(--mw-number-primary,#9253dd); }
+.mw-layout-block-label { display: block; margin: 16px 0; }
+.mw-layout-board-ink { color: var(--mw-text,#202722); fill: currentColor; }
+.mw-layout-centred-controls { justify-content: center; }
+.mw-layout-centred-text { text-align: center; }
+.mw-layout-codebot-brief { line-height: 1.6; background: #f0f7f5; padding: 10px; border-radius: 8px; }
+.mw-layout-controls-gap { margin: 0 0 14px; }
+.mw-layout-cube-blue { color: #2468aa; }
+.mw-layout-cube-gold { color: #826900; }
+.mw-layout-cube-red { color: #c7352c; }
+.mw-layout-cube-swatch-blue { background: #3378d9; }
+.mw-layout-cube-swatch-gold { background: #faca33; }
+.mw-layout-horizontal-scroll { overflow-x: auto; }
+.mw-layout-inherit-ink { color: inherit; }
+.mw-layout-logic-ink { color: var(--mw-logic-primary,#e7a523); }
+.mw-layout-margin-none { margin: 0; }
+.mw-layout-planning-links { display: flex; gap: 12px; flex-wrap: wrap; margin: 24px 0; }
+.mw-layout-rule-label { margin: 12px 0 6px; }
+.mw-layout-swatch-compression { background: var(--compression); }
+.mw-layout-swatch-dead { background: var(--dead); }
+.mw-layout-swatch-joint { background: var(--joint); }
+.mw-layout-swatch-pin { background: var(--pin); }
+.mw-layout-swatch-tension { background: var(--tension); }
+.mw-layout-tables-answer { font-size: 30px; width: 160px; text-align: center; }
+.mw-layout-top-10 { margin-top: 10px; }
+.mw-layout-top-12 { margin-top: 12px; }
+.mw-layout-top-14 { margin-top: 14px; }
+.mw-layout-top-15 { margin-top: 15px; }
+.mw-layout-top-16 { margin-top: 16px; }
+.mw-layout-top-18 { margin-top: 18px; }
+.mw-layout-top-20 { margin-top: 20px; }
+.mw-layout-top-22 { margin-top: 22px; }
+.mw-layout-top-24 { margin-top: 24px; }
+.mw-layout-top-4 { margin-top: 4px; }
+.mw-layout-top-6 { margin-top: 6px; }
+.mw-layout-top-7 { margin-top: 7px; }
+.mw-layout-top-8 { margin-top: 8px; }
+.mw-layout-wide { width: 100%; }
+.mw-layout-wide-gap { width: 100%; margin-top: 6px; }
+.mw-layout-width-155 { width: 155px; }
+.mw-layout-width-70 { width: 70px; }
+.mw-layout-width-95 { width: 95px; }
+.mw-layout-workshop-nav { padding: 16px; font: 14px system-ui; }

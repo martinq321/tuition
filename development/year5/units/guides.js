@@ -1,4 +1,3 @@
-const choice=document.getElementById('guide-choice'),portrait=document.getElementById('portrait'),guide=document.querySelector('.guide');
 const scenes={
 'addition-subtraction':['Exchange ten little counters for one bigger counter.','● ● ● ● ●','10 → 1'],
 'multiplication-division-a':['Can you help me arrange the tiles with none left over?','▦','Rows × columns'],
@@ -15,12 +14,10 @@ const scenes={
 'converting-units':['Same amount, different units. Let’s measure it!','┃ ┃ ┃ ┃ ┃','Check the unit'],
 'volume':['I’m stacking cubes. Turn yours and count its layers!','▱ ▱ ▱','Build one layer at a time']
 };
+const guide=document.querySelector('[data-mw-guide]');
+const portrait=guide.querySelector('[data-guide-portrait]');
 const scene=scenes[document.body.dataset.unit]||['Try an idea. You can always change it!','✦','Explore'];
 document.querySelector('.guide-message').textContent=scene[0];
-const prop=document.createElement('div');prop.className='guide-prop';prop.setAttribute('aria-hidden','true');prop.textContent=scene[1];portrait.after(prop);
-const caption=document.createElement('p');caption.className='guide-caption';caption.textContent=scene[2];prop.after(caption);
-const pause=document.createElement('button');pause.className='smallbtn';pause.textContent='Pause helper';pause.setAttribute('aria-pressed','false');guide.append(pause);
-pause.onclick=()=>{const stopped=guide.classList.toggle('paused');pause.textContent=stopped?'Animate helper':'Pause helper';pause.setAttribute('aria-pressed',String(stopped))};
-function chooseGuide(){const hidden=choice.value==='none';for(const el of [portrait,prop,caption,pause,document.querySelector('.guide-message')])el.hidden=hidden;if(!hidden){portrait.style.backgroundPosition=(Number(choice.value)*100/3)+'% center';portrait.setAttribute('aria-label',choice.options[choice.selectedIndex].text);guide.dataset.character=choice.value}try{localStorage.setItem('mw-helper',choice.value)}catch{}}
-try{choice.value=localStorage.getItem('mw-helper')||'0'}catch{}choice.addEventListener('change',chooseGuide);chooseGuide();
+const prop=document.createElement('div');prop.className='guide-prop';prop.setAttribute('data-guide-content','');prop.setAttribute('aria-hidden','true');prop.textContent=scene[1];portrait.after(prop);
+const caption=document.createElement('p');caption.className='guide-caption';caption.setAttribute('data-guide-content','');caption.textContent=scene[2];prop.after(caption);
 const feedback=document.getElementById('feedback');new MutationObserver(()=>{guide.classList.toggle('celebrate',feedback.textContent.startsWith('That works!'))}).observe(feedback,{childList:true,characterData:true,subtree:true});

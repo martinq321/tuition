@@ -244,7 +244,42 @@ def connected_units(path, keys, lookup):
     return '<section class="related"><h2>Connected units</h2><ul>' + ''.join(links) + '</ul></section>'
 
 
-def unit_page(year, term, unit, prev, nxt, sources, related):
+def investigation_index(units):
+    links = json.loads((DATA / "investigation-links.json").read_text())
+    audit = json.loads((ROOT / "development/curriculum/activity-audit.json").read_text())
+    activities = {a["id"]: a for a in audit["activities"]}
+    themes = json.loads((ROOT / "data/theme-paths.json").read_text())["themes"]
+    theme_for = {activity: theme for theme in themes for activity in theme["steps"]}
+    covered = set()
+    for unit, entries in links.items():
+        if unit not in units or not entries:
+            raise ValueError(f"Unknown or empty investigation unit: {unit}")
+        seen = set()
+        for entry in entries:
+            activity = entry["activity"]
+            if activity not in activities or activity not in theme_for or activity in seen or not entry["prompt"].strip():
+                raise ValueError(f"Invalid investigation link in {unit}: {entry}")
+            seen.add(activity)
+            covered.add(theme_for[activity]["id"])
+    if covered != {t["id"] for t in themes}:
+        raise ValueError("Every investigation theme needs a curricular application")
+    return links, activities, theme_for
+
+
+def investigation_section(path, entries, activities, theme_for):
+    if not entries:
+        return ""
+    rows = []
+    for entry in entries:
+        activity = activities[entry["activity"]]
+        theme = theme_for[entry["activity"]]
+        rows.append(f'<li><a href="{esc(rel(path, activity["path"]))}">{esc(activity["title"])}</a>'
+                    f'<p>{esc(entry["prompt"])}</p><a href="{rel(path, "site-map/index.html")}#{esc(theme["id"])}">'
+                    f'Theme: {esc(theme["title"])}</a></li>')
+    return '<section class="related investigations"><h2>Try an investigation</h2><ul>' + ''.join(rows) + '</ul></section>'
+
+
+def unit_page(year, term, unit, prev, nxt, sources, related, investigations):
     number = year["year"]
     path = unit_path(number, unit)
     title = unit["title"]
@@ -258,7 +293,7 @@ def unit_page(year, term, unit, prev, nxt, sources, related):
 {crumbs(path, [(HOME, "Curriculum"), (year_path(number), f"Year {number}")])}
 <div class="unit-layout"><article class="unit-content">
 <header class="unit-head"><p class="eyebrow">Year {number} · {esc(term)}{strand}</p><h1>{esc(title)}</h1></header>
-{goals(unit, number)}{codes}</article><aside class="unit-side">
+{goals(unit, number)}{codes}{investigations}</article><aside class="unit-side">
 <a class="back-year" href="{rel(path, year_path(number))}#{term.lower()}">All {esc(term.lower())} units in Year {number}</a>
 {related}{render_sources(sources, unit)}</aside></div>
 {pager(path, prev_target, next_target)}'''
@@ -292,6 +327,7 @@ def main():
     unknown = connections.keys() - lookup.keys()
     if unknown:
         raise ValueError(f"Unknown source units in connections: {sorted(unknown)}")
+    investigations, activities, themes = investigation_index(lookup)
     pages = {}
     for n, year in enumerate(years, 1):
         validate(year, n)
@@ -306,7 +342,8 @@ def main():
             path = unit_path(n, unit)
             key = f"year-{n}/units/{unit['slug']}"
             related = connected_units(path, connections.get(key, []), lookup)
-            pages[path] = unit_page(year, term, unit, prev, nxt, refs, related)
+            applications = investigation_section(path, investigations.get(key, []), activities, themes)
+            pages[path] = unit_page(year, term, unit, prev, nxt, refs, related, applications)
     pages[HOME] = home_page(years)
     for page, content in pages.items():
         path = ROOT / page

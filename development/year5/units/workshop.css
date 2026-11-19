@@ -80,7 +80,7 @@ body[data-unit] .eyebrow{margin:8px 0}
 .step-heading{margin-bottom:12px}
 .guide{margin-top:16px;border:2px solid #c9dae8;background:#fff;padding:16px;border-radius:16px}
 .guide select{width:100%;font-size:20px}
-.portrait{width:140px;height:140px;background-image:url('helpers.png');background-size:400% 100%;background-repeat:no-repeat;margin:12px auto 0;border-radius:18px}
+.portrait{width:140px;height:140px;margin:12px auto 0;border-radius:18px}
 .guide-message{font-size:21px;margin:8px 0 0}
 body[data-unit=decimals] .matrix small{font-size:24px;font-weight:650}
 body[data-unit=decimals] .matrix .equation{font-size:48px;margin:18px 0}
@@ -106,24 +106,17 @@ body[data-unit=volume] #controls>label,body[data-unit=volume] #controls>input{gr
  .model-panel #modelinfo{font-size:20px}
  .split>.panel{padding:14px 10px}
 }
-.portrait{background-image:url('helpers.webp');width:135px;height:180px;transform-origin:bottom center;animation:helper-breathe 5s ease-in-out infinite}
+.portrait{width:135px;height:180px;transform-origin:bottom center}
 .guide-prop{font-size:27px;font-weight:750;text-align:center;padding:8px;background:#eaf4fc;border-radius:10px;animation:helper-task 4s ease-in-out infinite}
 .guide-caption{font-size:17px;text-align:center;margin:6px 0;color:#415b72}
 .guide-message{font-size:20px}
-.guide[data-character="3"] .portrait{animation:helper-swim 5s ease-in-out infinite}
-.guide[data-character="2"] .portrait{animation:helper-float 4s ease-in-out infinite}
 body[data-unit=shape] .guide-prop{animation:helper-turn 7s ease-in-out infinite}
 body[data-unit=volume] .guide-prop{animation:helper-stack 4s ease-in-out infinite}
-.guide.celebrate .portrait{animation:helper-cheer .6s ease-in-out 2}
 .guide.paused *, .guide [hidden]{animation:none!important}
 .guide [hidden]{display:none}
-@keyframes helper-breathe{50%{transform:rotate(2deg)}}
-@keyframes helper-swim{50%{transform:translateX(8px) rotate(-4deg)}}
-@keyframes helper-float{50%{transform:translateY(-7px)}}
 @keyframes helper-task{50%{transform:translateX(5px)}}
 @keyframes helper-turn{50%{transform:rotate(30deg)}}
 @keyframes helper-stack{50%{transform:translateY(-8px)}}
-@keyframes helper-cheer{50%{transform:translateY(-12px) rotate(-4deg)}}
 @media(prefers-reduced-motion:reduce){.guide *{animation:none!important}}
 @media(min-width:1001px) and (max-height:950px){
  .portrait{width:90px;height:120px;float:left;margin:8px 10px 0 0}

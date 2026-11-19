@@ -1,0 +1,5 @@
+/* Reserve scrollbars; the SVG must not create an inline-text baseline. */
+html{scrollbar-gutter:stable}
+#viewport{overflow:hidden;contain:size layout;overflow-anchor:none}
+#board{display:block;max-width:none;flex:none}
+#status{min-height:96px}

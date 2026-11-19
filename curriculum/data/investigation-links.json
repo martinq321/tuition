@@ -1,0 +1,270 @@
+{
+  "year-1/units/position-and-turns": [
+    {
+      "activity": "shark",
+      "prompt": "Place a shark between two objects. Describe its position so a partner can rebuild the scene."
+    },
+    {
+      "activity": "coding",
+      "prompt": "Predict which way the robot will face after a quarter turn. Give it one command and check."
+    }
+  ],
+  "year-1/units/parts-and-totals": [
+    {
+      "activity": "totals",
+      "prompt": "Fill two cells in a row with small numbers. Find a different pair with the same total."
+    }
+  ],
+  "year-1/units/length-and-height": [
+    {
+      "activity": "dinosaur",
+      "prompt": "Stand three dinosaurs on the same baseline. Order their heights and explain how you compared them."
+    }
+  ],
+  "year-2/units/position-and-patterns": [
+    {
+      "activity": "trails",
+      "prompt": "Tell a partner a route using forward steps and quarter turns. Try it and repair one instruction if needed."
+    }
+  ],
+  "year-2/units/statistics": [
+    {
+      "activity": "wordle",
+      "prompt": "In one five-letter guess, tally the letters marked exact, misplaced and absent. Draw a block diagram and compare the groups."
+    }
+  ],
+  "year-3/units/tables": [
+    {
+      "activity": "tables",
+      "prompt": "Build an array for a three-times-table fact. Read both a multiplication and a division from it."
+    },
+    {
+      "activity": "patterns",
+      "prompt": "Mark multiples of four in the number square. Predict the next two and explain the pattern."
+    }
+  ],
+  "year-3/units/mass-and-capacity": [
+    {
+      "activity": "sorting",
+      "prompt": "Compare the boxes on the balance. Can you order three boxes from lightest to heaviest without weighing every pair?"
+    }
+  ],
+  "year-3/units/length-and-perimeter": [
+    {
+      "activity": "fence",
+      "prompt": "Build two different rectangles with the same fence. Count around each boundary to check its perimeter."
+    }
+  ],
+  "year-4/units/area": [
+    {
+      "activity": "fewest",
+      "prompt": "Tile a rectangle with different-sized squares. Count unit squares to explain why the area stays the same."
+    },
+    {
+      "activity": "packing",
+      "prompt": "Cover a board with rectangles. Compare the area of the board with the sum of the areas of the pieces."
+    },
+    {
+      "activity": "polyomino",
+      "prompt": "Build two shapes from five unit squares. Explain how you know their areas are equal."
+    }
+  ],
+  "year-4/units/shape": [
+    {
+      "activity": "pixel",
+      "prompt": "Draw half a pattern beside a mirror line. Predict three reflected pixels before switching on the mirror."
+    }
+  ],
+  "year-4/units/multiplication-division-b": [
+    {
+      "activity": "tables",
+      "prompt": "Use an array or a known fact to work out a fact from the 12 times table. Show how the parts combine."
+    }
+  ],
+  "year-5/units/volume": [
+    {
+      "activity": "cuboids",
+      "prompt": "Build two different cuboids from 30 cubes. Count the cubes in one layer and then the number of layers."
+    },
+    {
+      "activity": "cube",
+      "prompt": "Build a cube with side length four. Explain how layers can be used to count the small cubes inside."
+    }
+  ],
+  "year-5/units/perimeter-area": [
+    {
+      "activity": "fence",
+      "prompt": "Hold the perimeter fixed and record the area of each possible whole-number rectangle. Which encloses the greatest area?"
+    },
+    {
+      "activity": "cut",
+      "prompt": "Cut and rearrange a shape. Compare the area and the perimeter before and after."
+    }
+  ],
+  "year-5/units/decimals-percentages": [
+    {
+      "activity": "memory",
+      "prompt": "Use the fraction–decimal cards. Explain one match using tenths or hundredths and name the equivalent percentage."
+    }
+  ],
+  "year-5/units/multiplication-division-a": [
+    {
+      "activity": "factors",
+      "prompt": "Build all the rectangles for 24. Write the factor pairs and explain how you know the list is complete."
+    },
+    {
+      "activity": "tree",
+      "prompt": "Split a composite number in two different ways. Compare the prime factors at the ends of both trees."
+    }
+  ],
+  "year-6/units/position-direction": [
+    {
+      "activity": "pixel",
+      "prompt": "Plot a pixel shape, reflect it across a grid line and describe what happened to its coordinates."
+    }
+  ],
+  "year-6/units/algebra": [
+    {
+      "activity": "nim",
+      "prompt": "Play with a maximum take of three. List the losing starting numbers for the player to move under the last-counter-wins rule and describe a pattern."
+    },
+    {
+      "activity": "fifteen",
+      "prompt": "Find all triples of different numbers from 1 to 9 that total 15. Organise them so a partner can check for repeats."
+    }
+  ],
+  "year-6/units/area-perimeter-volume": [
+    {
+      "activity": "packing",
+      "prompt": "Find two ways to fill the same box on the grid. Use areas to check whether a proposed set of rectangles could fill it."
+    },
+    {
+      "activity": "cut",
+      "prompt": "Rearrange pieces into a rectangle to work out the area of the starting shape."
+    }
+  ],
+  "year-6/units/four-operations": [
+    {
+      "activity": "scytale",
+      "prompt": "Before wrapping, divide the number of letters by the number per turn. Predict the complete turns and the letters left on the last turn."
+    }
+  ],
+  "year-7/units/factors-multiples-and-primes": [
+    {
+      "activity": "euclid",
+      "prompt": "Remove equal squares from a rectangle in stages. Explain why a common factor of the side lengths also divides the leftover length."
+    },
+    {
+      "activity": "divisors",
+      "prompt": "List the available proper divisors before choosing a number. Check which of them the other player would receive."
+    }
+  ],
+  "year-7/units/translations-reflections-and-rotations": [
+    {
+      "activity": "polyomino",
+      "prompt": "Decide whether two five-square arrangements coincide after a rotation or reflection. Describe a transformation that checks your prediction."
+    }
+  ],
+  "year-7/units/coordinates-and-sequences": [
+    {
+      "activity": "hanoi",
+      "prompt": "Solve the two-disc and three-disc puzzles. Record your shortest move counts and predict what adding one disc will change."
+    }
+  ],
+  "year-8/units/sets-and-sample-spaces": [
+    {
+      "activity": "dobble",
+      "prompt": "Treat each card as a set. Record the intersection of each pair and check whether any pair shares more than one symbol."
+    },
+    {
+      "activity": "mastermind",
+      "prompt": "Use a small code with two colours. List the ordered possibilities and cross out those inconsistent with your first clue."
+    }
+  ],
+  "year-8/units/scales-and-similarity": [
+    {
+      "activity": "spiral",
+      "prompt": "Compare corresponding lengths in consecutive nested frames. Test whether the scale factor remains the same."
+    }
+  ],
+  "year-8/units/linear-sequences-and-graphs": [
+    {
+      "activity": "patterns",
+      "prompt": "Choose a fixed step on a number grid. Tabulate the terms, predict the nth term and check it against a later entry."
+    }
+  ],
+  "year-9/units/products-formulae-and-proof": [
+    {
+      "activity": "cube",
+      "prompt": "Paint the outside of a cube of side n. Write an expression for the small cubes with exactly two painted faces and justify it edge by edge."
+    }
+  ],
+  "year-9/units/multi-step-modelling": [
+    {
+      "activity": "village",
+      "prompt": "For a delivery project, sketch the routes between stops. Compare two feasible journeys and test your choice in the village."
+    }
+  ],
+  "year-9/units/interpreting-graphs-and-models": [
+    {
+      "activity": "ramps",
+      "prompt": "Sketch how height changes along a chosen ramp. Compare the sketch with the ramp profile and identify what the axes represent."
+    }
+  ],
+  "year-10/units/probability-and-counting": [
+    {
+      "activity": "set",
+      "prompt": "In a reduced deck, count the choices of each feature. Use a product to predict the number of different cards and check it."
+    },
+    {
+      "activity": "secret",
+      "prompt": "Treat each alphabet shift as a possible key. Count distinct shifts, including the one that leaves every letter unchanged."
+    }
+  ],
+  "year-10/units/perimeter-area-and-solids": [
+    {
+      "activity": "fewest",
+      "prompt": "For a rectangle tiled with squares, write an area equation using their side lengths. Use it to test a proposed tiling."
+    },
+    {
+      "activity": "cuboids",
+      "prompt": "Find whole-number cuboids of volume 30. Compare their surface areas and explain why equal volumes can need different amounts of wrapping."
+    }
+  ],
+  "year-11/units/geometrical-reasoning-and-circles": [
+    {
+      "activity": "circles",
+      "prompt": "Drag a point around a semicircle and predict the angle it subtends at the circumference. Explain the result using the centre."
+    }
+  ],
+  "year-11/units/proportional-models-and-growth": [
+    {
+      "activity": "spiral",
+      "prompt": "Model repeated scaling by a factor between zero and one. Predict the width after several frames and compare it with the picture."
+    }
+  ],
+  "year-12/units/graphs-and-lines": [
+    {
+      "activity": "ramps",
+      "prompt": "Plot two lines on the Cartesian grid. Predict their intersection algebraically, then compare it with the graph."
+    }
+  ],
+  "year-12/units/algebra-and-proof": [
+    {
+      "activity": "sprouts",
+      "prompt": "Starting with n dots, count unused line ends when each dot can support at most three. Track the change per move and prove an upper bound for the number of moves."
+    }
+  ],
+  "year-13/units/sequences-series-and-binomial-approximation": [
+    {
+      "activity": "hanoi",
+      "prompt": "Move a tower of n discs by moving the smaller tower twice. Derive the recurrence for the move count and test your formula with the simulator."
+    }
+  ],
+  "year-13/units/moments-and-equilibrium": [
+    {
+      "activity": "bridge",
+      "prompt": "Put a vertical load between two supports. Choose a support as a pivot, predict the support reactions, then move the load and compare."
+    }
+  ]
+}

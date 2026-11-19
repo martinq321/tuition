@@ -1,0 +1,35 @@
+/* Character artwork and colours used by workshops, private activities and the tutor desk. */
+[data-palette="blue"] { --guide-accent: #609ac5; }
+[data-palette="gold"] { --guide-accent: #b77a36; }
+[data-palette="purple"] { --guide-accent: #835caa; }
+[data-palette="teal"] { --guide-accent: #31827c; }
+
+[data-guide-portrait] {
+  width: 6rem;
+  height: 8rem;
+  background: url("portraits.webp") no-repeat 0 center / 400% 100%;
+  border-bottom: .2rem solid var(--guide-accent, transparent);
+}
+[data-guide-portrait][data-character="bob"] { background-position: 33.333333% center; }
+[data-guide-portrait][data-character="nova"] { background-position: 66.666667% center; }
+[data-guide-portrait][data-character="finn"] { background-position: 100% center; }
+[data-guide-card] { border-left: 4px solid var(--guide-accent, transparent); }
+[data-guide-art] { display: inline-flex; }
+[data-mw-guide][hidden], [data-guide-card][hidden], [data-guide-group][hidden],
+[data-mw-guide] [data-guide-content][hidden] { display: none !important; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .guide [data-guide-portrait] { animation: mw-guide-breathe 5s ease-in-out infinite; }
+  .guide[data-character="nova"] [data-guide-portrait] { animation-name: mw-guide-float; }
+  .guide[data-character="finn"] [data-guide-portrait] { animation-name: mw-guide-swim; }
+  .guide.celebrate [data-guide-portrait] { animation: mw-guide-cheer .6s ease-in-out 2; }
+  .guide.paused [data-guide-portrait] { animation: none; }
+  [data-guide-art] .eyes { transform-origin: 36px 31px; animation: mw-guide-blink 6s infinite; }
+  [data-guide-art] .wave { transform-origin: 51px 62px; animation: mw-guide-wave 5s infinite; }
+}
+@keyframes mw-guide-breathe { 50% { transform: rotate(2deg); } }
+@keyframes mw-guide-swim { 50% { transform: translateX(8px) rotate(-4deg); } }
+@keyframes mw-guide-float { 50% { transform: translateY(-7px); } }
+@keyframes mw-guide-cheer { 50% { transform: translateY(-12px) rotate(-4deg); } }
+@keyframes mw-guide-blink { 0%, 45%, 49%, 100% { transform: scaleY(1); } 47% { transform: scaleY(.1); } }
+@keyframes mw-guide-wave { 0%, 80%, 100% { transform: rotate(0); } 85%, 95% { transform: rotate(-17deg); } 90% { transform: rotate(7deg); } }

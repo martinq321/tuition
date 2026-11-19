@@ -14,6 +14,12 @@ window.MW_LIBRARY = {
           "blocks"
         ],
         [
+          "site-map",
+          "Site map",
+          "site-map/index.html",
+          "grid"
+        ],
+        [
           "all-puzzles",
           "Full collection",
           "puzzles/index.html",

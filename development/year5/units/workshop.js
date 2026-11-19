@@ -1,6 +1,10 @@
 'use strict';
 const $=id=>document.getElementById(id),U=window.Y5_UNITS[document.body.dataset.unit];
 let camera={yaw:.7,pitch:.45};
+if (!['factors','tiles','coordinates','volume'].includes(U.kind)) {
+ $('answer').dataset.mwKeypad='fraction';
+ $('answer').dataset.mwSubmit='check';
+}
 let idx=0,t,state={},revealed=false,tries=0,helped=false,finished=false,records=[],note='',history=[];
 const key='mw-y5-'+document.body.dataset.unit+'-v2';try{const old=JSON.parse(localStorage.getItem(key)||'{}');records=old.records||[];note=old.note||''}catch{}
 const fmt=n=>Number(n.toFixed(6)).toLocaleString('en-GB'),fnum=n=>Number(n.toFixed(6)),gcd=(a,b)=>b?gcd(b,a%b):a;

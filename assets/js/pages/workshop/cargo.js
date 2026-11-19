@@ -1,0 +1,12 @@
+const crossingSets={
+ classic:{name:'Wolf, goat & lettuce',capacity:1,items:[['Wolf','🐺'],['Goat','🐐'],['Lettuce','🥬']],pairs:[[0,1],[1,2]]},
+ expedition:{name:'The mixed cargo crossing',capacity:2,items:[['Wolf','🐺'],['Goat','🐐'],['Lettuce','🥬'],['Fox','🦊'],['Goose','🪿']],pairs:[[0,1],[1,2],[3,4],[4,2]]}
+};
+function crossingMoves(set,state){const [mask,side]=state,here=set.items.map((_,i)=>i).filter(i=>((mask>>i)&1)===side),loads=[[]];for(const i of here)loads.push([i]);if(set.capacity>=2)for(let i=0;i<here.length;i++)for(let j=i+1;j<here.length;j++)loads.push([here[i],here[j]]);return loads.map(load=>{let next=mask;for(const i of load)next^=1<<i;return{load,state:[next,1-side]}}).filter(m=>!unsafe(set,m.state))}
+function unsafe(set,[mask,side]){return set.pairs.find(([a,b])=>((mask>>a)&1)===((mask>>b)&1)&&((mask>>a)&1)!==side)}
+function solveCrossing(set,state){const goal=(1<<set.items.length)-1,q=[{state,steps:[]}],seen=new Set([state.join(',')]);for(let h=0;h<q.length;h++){const cur=q[h];if(cur.state[0]===goal&&cur.state[1]===1)return cur.steps;for(const m of crossingMoves(set,cur.state)){const key=m.state.join(',');if(!seen.has(key)){seen.add(key);q.push({state:m.state,steps:[...cur.steps,m]})}}}return null}
+const destinations=[{name:'Depot',cargo:'Home base',icon:'⌂',x:85,y:195},{name:'Farm',cargo:'Animal feed',icon:'🌾',x:215,y:65},{name:'Market',cargo:'Fresh produce',icon:'🥬',x:410,y:80},{name:'Workshop',cargo:'Tools & parts',icon:'⚙',x:555,y:230},{name:'Café',cargo:'Bread & milk',icon:'🥖',x:350,y:335},{name:'Campsite',cargo:'Tents & supplies',icon:'⛺',x:145,y:340},{name:'Rescue centre',cargo:'Animal supplies',icon:'🐾',x:565,y:65}];
+function distance(a,b){return Math.round(Math.hypot(a.x-b.x,a.y-b.y)/25)}
+function routeLength(route,places,power=1){return route.slice(1).reduce((sum,v,i)=>sum+distance(places[route[i]],places[v])**power,0)}
+function solveRoute(places,power=1){let best=Infinity,route=null;function visit(path,left,cost){if(!left.length){const total=cost+distance(places[path.at(-1)],places[0])**power;if(total<best){best=total;route=[...path,0]}return}for(const i of left)visit([...path,i],left.filter(j=>i!==j),cost+distance(places[path.at(-1)],places[i])**power)}visit([0],places.slice(1).map((_,i)=>i+1),0);return{best,route}}
+if(typeof module!=='undefined')module.exports={crossingSets,crossingMoves,unsafe,solveCrossing,destinations,distance,routeLength,solveRoute};

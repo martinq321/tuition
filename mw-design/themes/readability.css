@@ -1,9 +1,4 @@
-/* Shared readable interface type; diagrams retain their own geometry. */
-html{font-size:18px}
-body{font-size:18px;line-height:1.6}
-p,li,dt,dd{line-height:1.6}
-:where(p,label,summary,small,figcaption,.small,.muted,.hint,.help,.note,.caption,.subtitle,.sub,.box-count,.label,.badge,.eyebrow,.tag,.footnote){font-size:max(1rem,16px)!important;line-height:1.5!important}
-:where(button,select,input:not([type=range]):not([type=checkbox]):not([type=radio]),textarea){font-size:max(1rem,16px)!important}
+/* Common type scale: assets/css/reading.css, included by mw-design/main.css. */
 :where(a.button,button:not(.swatch),select){min-height:44px}
 :where(nav a,footer a,.geo-secondary,.geo-open,.theme-picker select){font-size:17px!important}
 .geo-featured p{font-size:18px!important}.geo-featured .geo-open{font-size:18px!important}

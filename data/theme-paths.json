@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "logic",
+      "title": "Logic and strategy"
+    },
+    {
+      "id": "shape",
+      "title": "Shape and space"
+    },
+    {
+      "id": "number",
+      "title": "Number patterns"
+    },
+    {
+      "id": "create",
+      "title": "Making and coding"
+    },
+    {
+      "id": "words",
+      "title": "Words and letters"
+    }
+  ],
+  "themes": [
+    {
+      "id": "deduction",
+      "title": "Deduction and comparison",
+      "description": "Use a match, a weighing or a clue to narrow down possible answers.",
+      "steps": [
+        "memory",
+        "sorting",
+        "mastermind"
+      ]
+    },
+    {
+      "id": "attributes",
+      "title": "Sets, combinations and chance",
+      "description": "Classify cards by their attributes, then reason about combinations.",
+      "steps": [
+        "set",
+        "dobble",
+        "poker"
+      ]
+    },
+    {
+      "id": "winning",
+      "title": "Winning positions",
+      "description": "Choose a move, predict a reply and look for a strategy that repeats.",
+      "steps": [
+        "fifteen",
+        "nim",
+        "josephus"
+      ]
+    },
+    {
+      "id": "moves",
+      "title": "Sequences of moves",
+      "description": "Plan a route through constrained states and compare the moves needed.",
+      "steps": [
+        "river",
+        "hanoi",
+        "rubik"
+      ]
+    },
+    {
+      "id": "networks",
+      "title": "Routes and networks",
+      "description": "Compare routes through a village, then draw paths subject to network rules.",
+      "steps": [
+        "village",
+        "sprouts"
+      ]
+    },
+    {
+      "id": "tiling",
+      "title": "Tiling and packing",
+      "description": "Cover rectangles with squares, compare packings and investigate repeated square removal.",
+      "steps": [
+        "fewest",
+        "packing",
+        "euclid"
+      ]
+    },
+    {
+      "id": "area",
+      "title": "Area and dissection",
+      "description": "Fix a boundary, join squares and rearrange shapes to compare their areas.",
+      "steps": [
+        "fence",
+        "polyomino",
+        "cut",
+        "paper"
+      ]
+    },
+    {
+      "id": "curves",
+      "title": "Curves and geometric models",
+      "description": "Construct circles, trace moving points and investigate curved paths and surfaces.",
+      "steps": [
+        "circles",
+        "pursuit",
+        "ramps",
+        "tower",
+        "spiral"
+      ]
+    },
+    {
+      "id": "spatial",
+      "title": "Spatial structures",
+      "description": "Inspect cube layers, construct frameworks and investigate a passage through a solid.",
+      "steps": [
+        "cube",
+        "bridge",
+        "rupert"
+      ]
+    },
+    {
+      "id": "products",
+      "title": "Products and factors",
+      "description": "Start with multiplication facts, build arrays and cuboids, then reason about factors and divisors.",
+      "steps": [
+        "tables",
+        "factors",
+        "cuboids",
+        "tree",
+        "multiply",
+        "divisors"
+      ]
+    },
+    {
+      "id": "patterns",
+      "title": "Patterns and change",
+      "description": "Look for patterns in a table, combine values and predict the next result.",
+      "steps": [
+        "patterns",
+        "totals",
+        "neighbours",
+        "plant"
+      ]
+    },
+    {
+      "id": "drawing",
+      "title": "Pictures and rules",
+      "description": "Use cells, parts and repeated rules to build a picture or character.",
+      "steps": [
+        "pixel",
+        "robot",
+        "creature"
+      ]
+    },
+    {
+      "id": "worlds",
+      "title": "Story worlds",
+      "description": "Arrange characters and objects, compare sizes and build a scene to describe.",
+      "steps": [
+        "shark",
+        "dinosaur",
+        "dragon"
+      ]
+    },
+    {
+      "id": "instructions",
+      "title": "Programs and instructions",
+      "description": "Sequence commands for a route, debug a grid program and follow a tape machine.",
+      "steps": [
+        "trails",
+        "coding",
+        "turing"
+      ]
+    },
+    {
+      "id": "ciphers",
+      "title": "Codes and ciphers",
+      "description": "Rearrange a message, explore substitution and compare a changing cipher.",
+      "steps": [
+        "scytale",
+        "secret",
+        "enigma"
+      ]
+    },
+    {
+      "id": "words",
+      "title": "Word patterns",
+      "description": "Build words from a letter set and use positional clues to rule out guesses.",
+      "steps": [
+        "bee",
+        "wordle"
+      ]
+    }
+  ],
+  "evidence": {
+    "sprouts": {
+      "development": "Prototype",
+      "readiness": "prototype",
+      "note": "The game checks drawn routes; players agree when no legal move remains. No complete legal-move solver is implemented.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    "dobble": {
+      "readiness": "logic-checked",
+      "note": "Recorded checks cover finite-plane decks and pair matches in a simulated document. Physical-device play has not been verified here.",
+      "evidencePath": "Handoff/VALIDATION.txt"
+    },
+    "spiral": {
+      "readiness": "logic-checked",
+      "note": "Recorded checks cover the complex identity, the excluded origin and gallery modes in a simulated document. The checks do not cover rendering on a physical device.",
+      "evidencePath": "Handoff/VALIDATION.txt"
+    },
+    "bridge": {
+      "development": "Template-based workshop",
+      "note": "The audited editor starts from truss templates. Test the design and simulation together on the intended device.",
+      "evidencePath": "development/curriculum/activity-audit.json"
+    },
+    "tables": {
+      "readiness": "browser-checked",
+      "note": "19 November 2026 · Desktop Chromium confirmed correct keypad feedback and score for 5 × 3. After Start at 820 × 1180, 1180 × 820 and 390 × 844 CSS pixels, the question and full keypad stayed visible, the answer field stayed read-only and the page fitted the width. Physical-tablet input remains untested.",
+      "evidencePath": "docs/activity-checks.md"
+    },
+    "fewest": {
+      "readiness": "browser-checked",
+      "note": "19 November 2026 · In desktop Chromium, Enter placed a 2 × 2 square on a 3 × 5 board, Undo reversed it and the next activity link opened Packing Lab. A separate controller test completes and saves a tiling. Physical-tablet play has not been checked.",
+      "evidencePath": "docs/activity-checks.md"
+    },
+    "packing": {
+      "readiness": "browser-checked",
+      "note": "19 November 2026 · In desktop Chromium, Rotate and Enter placed one of four pieces. See a packing showed a four-piece result with the first diagram and step controls. A separate controller test completes the board and replays the solution. Physical-tablet play has not been checked.",
+      "evidencePath": "docs/activity-checks.md"
+    }
+  }
+}
