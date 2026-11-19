@@ -1,0 +1,260 @@
+{
+  "year": 11,
+  "intro": "The second GCSE year connects earlier methods through modelling, geometric reasoning, data and probability. Foundation and Higher pupils share the core units. Each unit identifies its additional Higher content.",
+  "terms": [
+    {
+      "name": "Autumn",
+      "units": [
+        {
+          "slug": "proportional-models-and-growth",
+          "title": "Direct and inverse proportion, growth and decay",
+          "objectives": [
+            "Compare a direct proportion with an inverse proportion using tables, graphs and equations, and identify a relationship that fits neither.",
+            "Explain why inverse proportionality to a quantity is direct proportionality to its reciprocal. Use a given proportional equation to calculate a missing quantity.",
+            "Distinguish simple interest from compound interest. Set up repeated multipliers for savings, depreciation and population change and interpret a result.",
+            "Read a conversion, tariff or reciprocal graph to estimate an unknown and interpret both the units and the realistic domain."
+          ],
+          "higher": [
+            "Construct proportionality equations from a stated relationship, including a power or root, and calibrate the constant using known values.",
+            "Model a repeated process with a recurrence, interpret exponential graphs in context and explain when the model ceases to be plausible."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "R8",
+            "R9",
+            "R10",
+            "R11",
+            "R13",
+            "R14",
+            "R16",
+            "A14"
+          ],
+          "sourcePage": 9
+        },
+        {
+          "slug": "equations-and-functions",
+          "title": "Simultaneous equations and functions",
+          "objectives": [
+            "Form two equations for two unknowns from prices, mixtures or geometric information. State what each variable measures.",
+            "Solve a linear pair by elimination or substitution. Interpret and check both coordinates, or identify when the lines are parallel or coincide.",
+            "Estimate a solution by intersecting two graphs and compare the precision of a plotted result with an algebraic answer.",
+            "Use a simple input–output rule forwards and work backwards for individual numerical inputs."
+          ],
+          "higher": [
+            "Express an inverse function algebraically where it is defined. Compose two functions in the specified order and check their outputs.",
+            "Solve a linear and a quadratic equation simultaneously using substitution, and identify graphically when there are zero, one or two intersections."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "A2",
+            "A5",
+            "A7",
+            "A12",
+            "A19",
+            "A21"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "combined-probability",
+          "title": "Combined events and conditional probability",
+          "objectives": [
+            "Represent two-stage experiments with tree diagrams, Venn diagrams, sample-space grids or two-way tables. Explain why the branch probabilities from a node sum to one.",
+            "Multiply along a path and add mutually exclusive paths to calculate a combined probability. Check the answer against a complementary event.",
+            "Distinguish independence from mutual exclusivity. Update probabilities when sampling without replacement and state the assumptions when using the same probabilities again."
+          ],
+          "higher": [
+            "Calculate and interpret the probability of one event given another using tables, trees or Venn diagrams. Use expected frequencies to compare the original and restricted sample spaces."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "P4",
+            "P6",
+            "P7",
+            "P8",
+            "P9"
+          ],
+          "sourcePage": 11
+        },
+        {
+          "slug": "quadratic-and-other-graphs",
+          "title": "Quadratic equations, curves and inequalities",
+          "objectives": [
+            "Relate the factors of a monic quadratic to its roots, locate intercepts and identify the turning point on its graph. Use a graph for an approximate root when factorising is unsuitable.",
+            "Sketch or recognise straight, quadratic, simple cubic and reciprocal graphs. State why the graph of y = 1/x has no point with x = 0."
+          ],
+          "higher": [
+            "Expand products of three or more binomials and factorise non-monic quadratic expressions. Rearrange a quadratic equation into a useful form.",
+            "Complete the square to locate a turning point. Select factorisation, completing the square or the quadratic formula to find exact or approximate roots.",
+            "Solve a quadratic inequality using critical values and a sign diagram or graph. Give the solution in set notation.",
+            "Plot the feasible region for linear inequalities in two variables and distinguish included from excluded boundaries.",
+            "Sketch translations and reflections of a given graph, including changes made inside and outside the function."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "A4",
+            "A11",
+            "A12",
+            "A13",
+            "A18",
+            "A22"
+          ],
+          "sourcePage": 7
+        }
+      ]
+    },
+    {
+      "name": "Spring",
+      "units": [
+        {
+          "slug": "geometrical-reasoning-and-circles",
+          "title": "Geometric proof, circle theorems and coordinates",
+          "objectives": [
+            "Write a chain of reasons establishing an angle or side relationship using congruence, similarity, parallel lines or special quadrilaterals.",
+            "Use coordinates, gradients and Pythagoras to test geometric claims and check whether a drawing satisfies its stated conditions."
+          ],
+          "higher": [
+            "Prove and apply circle results for central and inscribed angles standing on the same arc, angles in a semicircle or the same segment, and opposite angles of cyclic quadrilaterals.",
+            "Prove and use radius–tangent perpendicularity, equal tangents from an external point, the perpendicular from a centre to a chord, and the alternate segment theorem.",
+            "Use x² + y² = r² for a circle centred at the origin. Find the tangent at a point using its radius, including horizontal and vertical special cases."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "G5",
+            "G6",
+            "G9",
+            "G10",
+            "G11",
+            "A9",
+            "A16"
+          ],
+          "sourcePage": 10
+        },
+        {
+          "slug": "triangles-and-space",
+          "title": "Triangle calculations and three-dimensional geometry",
+          "objectives": [
+            "Select Pythagoras or a trigonometric ratio in a two-dimensional multi-step problem. Mark an auxiliary line and keep exact intermediate lengths where appropriate.",
+            "Combine a plan or elevation with lengths, surface areas or volumes to recover a missing dimension and give the result in sensible units."
+          ],
+          "higher": [
+            "Identify right triangles in three-dimensional figures to find a space diagonal or angle between a line and a plane.",
+            "Select the sine or cosine rule for a non-right triangle. Check whether the information permits two triangles when using the sine rule.",
+            "Use half the product of two sides and the sine of their included angle to find an area or to recover a missing length or angle."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "G13",
+            "G16",
+            "G17",
+            "G19",
+            "G20",
+            "G21",
+            "G22",
+            "G23"
+          ],
+          "sourcePage": 10
+        },
+        {
+          "slug": "data-distributions",
+          "title": "Comparing distributions and judging evidence",
+          "objectives": [
+            "Compare two samples or time series using appropriate charts, summary statistics, units and the context. Explain the limitations of the sampling method.",
+            "Assess a claim based on a chart or scatter plot by considering the scale, sample size, outliers and possible extrapolation."
+          ],
+          "higher": [
+            "Construct and read histograms for grouped discrete or continuous data, with equal or unequal class widths. Use area and frequency density to recover missing frequencies.",
+            "Plot cumulative frequency against class boundaries and estimate medians, quartiles, proportions and interquartile ranges.",
+            "Construct and compare box plots, explaining what differences in the median and interquartile range suggest about the groups."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "sourcePage": 12
+        },
+        {
+          "slug": "exact-algebra-and-proof",
+          "title": "Exact forms, algebraic manipulation and proof",
+          "objectives": [
+            "Maintain exact fractions or multiples of π through a multistep calculation. Compare the exact answer with an appropriately rounded estimate.",
+            "Use a valid algebraic argument to show that two expressions are equivalent, or give a counterexample to challenge a general claim."
+          ],
+          "higher": [
+            "Simplify surds by extracting square factors, combine like surds, and rationalise a surd denominator.",
+            "Manipulate algebraic fractions by factorising and using common denominators, recording excluded values.",
+            "Construct algebraic proofs about integers or identities. Use scalar multiples and vector routes to prove geometric results such as collinearity or parallelism."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "N6",
+            "N7",
+            "N8",
+            "A3",
+            "A4",
+            "A6",
+            "G25"
+          ],
+          "sourcePage": 6
+        }
+      ]
+    },
+    {
+      "name": "Summer",
+      "units": [
+        {
+          "slug": "interpreting-graphs-and-rates",
+          "title": "Graphs, motion and rates of change",
+          "objectives": [
+            "Plot distance–time, speed–time and unfamiliar financial graphs from tables or descriptions. Read values from piecewise graphs and estimate when two models cross.",
+            "Use a straight-line gradient to calculate a rate, with units. Explain how a horizontal segment has different meanings on distance–time and speed–time graphs.",
+            "Compare constant accelerations using slopes on straight sections of speed–time graphs. Plot a reciprocal relationship, such as journey time against speed for a fixed distance, and interpret its shape."
+          ],
+          "higher": [
+            "Estimate an average rate using a chord and an instantaneous rate using a tangent. Interpret gradients in motion and financial models.",
+            "Estimate area under a non-linear graph using strips and interpret the units, including displacement from a velocity–time graph.",
+            "Plot an exponential model from a table or equation, such as the spread of a culture growing by a fixed factor, and interpret what the graph predicts. Recognise exponential curves with positive base.",
+            "Sketch sine, cosine and tangent for angles beyond one turn in degrees, including the asymptotes of the tangent graph."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "A12",
+            "A14",
+            "A15",
+            "R14",
+            "R15"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "numerical-and-mixed-modelling",
+          "title": "Numerical solutions and connected modelling",
+          "objectives": [
+            "Choose an equation, diagram or graph for an unfamiliar problem. State assumptions, select a method, then check that the scale, units and precision of the answer make sense.",
+            "Compare approximate and exact answers in a problem linking measurement, finance or geometry. Explain how a changed assumption would affect the answer."
+          ],
+          "higher": [
+            "Apply a supplied iteration formula with suffix notation to approximate a solution. Check whether successive values settle and verify the result in the original equation.",
+            "Combine an exact model with measurement bounds to determine whether a conclusion is guaranteed or depends on the accuracy of the inputs."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "N14",
+            "N15",
+            "N16",
+            "A17",
+            "A20",
+            "A21",
+            "R16"
+          ],
+          "sourcePage": 7
+        }
+      ]
+    }
+  ]
+}

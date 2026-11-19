@@ -1,0 +1,315 @@
+{
+  "year": 12,
+  "intro": "The first year of a proposed two-year A-level Mathematics course. Algebra and graphs lead into calculus. Alongside them, use real data to investigate statistical questions and use force diagrams to explain motion.",
+  "terms": [
+    {
+      "name": "Autumn",
+      "units": [
+        {
+          "slug": "algebra-and-proof",
+          "title": "Algebra and mathematical proof",
+          "strand": "Pure",
+          "objectives": [
+            "Rewrite powers with fractional or negative indices and simplify expressions containing surds, including denominators with two terms.",
+            "Expand, collect, factorise and divide polynomials by linear factors. Use the factor theorem to identify a factor or an unknown coefficient.",
+            "Turn a conjecture about integers into a chain of deductions. Use exhaustion when there are finitely many cases and find a counterexample to disprove a universal claim.",
+            "Distinguish an identity from an equation, and an implication from an equivalence. Identify any missing assumptions in a proposed proof."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "A1",
+            "B1",
+            "B2",
+            "B6"
+          ],
+          "sourcePage": 6
+        },
+        {
+          "slug": "quadratics-and-inequalities",
+          "title": "Quadratics, intersections and inequalities",
+          "strand": "Pure",
+          "objectives": [
+            "Relate the factorised, expanded and completed-square forms of a quadratic to its roots and turning point. Use the discriminant to decide how many real intersections to expect.",
+            "Recognise an equation that becomes quadratic after a substitution, solve it and check the solutions in the original equation.",
+            "Use elimination or substitution to solve simultaneous equations, including a line meeting a parabola.",
+            "Solve inequalities involving linear or quadratic expressions, brackets and numerical fractions. Record the solution with intervals or sets and match it to a graph.",
+            "Shade regions defined by linear or quadratic inequalities and show whether the boundary belongs to the solution."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "B3",
+            "B4",
+            "B5",
+            "B7"
+          ],
+          "sourcePage": 6
+        },
+        {
+          "slug": "graphs-and-lines",
+          "title": "Graphs, transformations and straight lines",
+          "strand": "Pure",
+          "objectives": [
+            "Sketch polynomial and reciprocal graphs from roots, signs, symmetry and asymptotes, including y = a/x and y = a/x². Read solutions from intersections.",
+            "Track points under vertical and horizontal translations, stretches and reflections, paying attention to changes inside a function’s argument.",
+            "Find equations of lines from points and gradients. Switch between point-gradient and general form, and construct parallel or perpendicular lines.",
+            "Choose a linear or proportional model from a context. Give meaning and units to its gradient and intercept and identify a sensible range for its use."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "B7",
+            "B9",
+            "B11",
+            "C1"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "samples-and-real-data",
+          "title": "Sampling and the large data set",
+          "strand": "Statistics",
+          "objectives": [
+            "Frame a question about a population. Design a sample and compare simple random and opportunity sampling with systematic, stratified or quota approaches.",
+            "Explain how coverage, bias and sampling variability affect an inference. Compare conclusions from different samples of the same population.",
+            "Explore the exam board’s large data set in a spreadsheet. Identify what each row represents, variable types, units, missing-value codes and plausible ranges.",
+            "Clean a subset and record how errors and unusual values were handled. Compare groups with box plots, cumulative frequencies or histograms. For unequal class widths, use frequency density as the bar height so that bar area represents frequency.",
+            "Calculate mean and standard deviation from data and summary totals, checking the result with a calculator. Choose a suitable measure of centre and spread for the comparison."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "K1",
+            "L1",
+            "L3",
+            "L4"
+          ],
+          "sourcePage": 12
+        },
+        {
+          "slug": "quantities-and-motion-graphs",
+          "title": "Physical quantities and motion graphs",
+          "strand": "Mechanics",
+          "objectives": [
+            "Use metres, kilograms and seconds and derive units for velocity, acceleration and force. Distinguish mass from weight and keep units consistent.",
+            "Choose an origin and positive direction. Distinguish position, displacement, distance, velocity, speed and acceleration when a particle reverses.",
+            "Read velocity from a displacement–time gradient and acceleration from a velocity–time gradient. Compare the signed and unsigned areas when finding displacement and distance.",
+            "Sketch compatible graphs for a described journey and explain which features depend on the modelling assumptions."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "P1",
+            "Q1",
+            "Q2"
+          ],
+          "sourcePage": 14
+        }
+      ]
+    },
+    {
+      "name": "Spring",
+      "units": [
+        {
+          "slug": "circles-and-trigonometry",
+          "title": "Circles, angles and trigonometric equations",
+          "strand": "Pure",
+          "objectives": [
+            "Complete the square to find a circle’s centre and radius. Use the fact that a perpendicular from the centre bisects a chord, that a radius is perpendicular to its tangent, and that the angle subtended by a diameter at the circumference is a right angle.",
+            "Use a unit circle to explain signs, symmetries and periods of sine, cosine and tangent for angles in any quadrant. Sketch and transform their graphs.",
+            "Find exact sine and cosine at 0°, 30°, 45°, 60°, 90° and 180° and related angles. Give exact tangent values wherever defined.",
+            "Solve triangles with the sine and cosine rules and the sine area formula, checking the possible second triangle in an ambiguous case.",
+            "Find all solutions in a stated interval, including multiple-angle and quadratic equations, using tan θ = sin θ / cos θ and sin² θ + cos² θ = 1."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "C2",
+            "E1",
+            "E3",
+            "E5",
+            "E7"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "differentiation",
+          "title": "Gradients, derivatives and optimisation",
+          "strand": "Pure",
+          "objectives": [
+            "Approach a tangent gradient using a sequence of secants. Use a difference quotient to derive derivatives of small positive integer powers.",
+            "Differentiate a sum of rational powers and sketch its derivative from the original graph. Interpret the derivative as an instantaneous rate with units.",
+            "Find tangents and normals, including at a horizontal tangent, and determine where a function increases or decreases.",
+            "Find and classify stationary points using signs or second derivatives. Compare end points and stationary points when solving an optimisation problem on a restricted interval."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "G1",
+            "G2",
+            "G3"
+          ],
+          "sourcePage": 10
+        },
+        {
+          "slug": "binomial-expansion",
+          "title": "Binomial coefficients and expansions",
+          "strand": "Pure",
+          "objectives": [
+            "Build a binomial expansion for a positive integer power and use factorial and combination notation to identify its coefficients.",
+            "Find a chosen term without writing every term, and determine the coefficient of a specified power in a product.",
+            "Explain why the same combination counts occur when arranging successes and failures in independent trials."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "D1"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "scatter-and-probability",
+          "title": "Bivariate data and probability",
+          "strand": "Statistics",
+          "objectives": [
+            "Explore paired measurements in the large data set. Read the direction and strength of an association, look for distinct subgroups and identify influential observations.",
+            "Use a supplied regression line for prediction and explain the risk of extrapolation. Explain why correlation alone does not establish causation, for example when a third variable could influence both measurements.",
+            "Represent possible outcomes with diagrams or tables. Decide when events are mutually exclusive and when probabilities can be multiplied using independence.",
+            "Compare the assumptions behind a probability calculation with a realistic alternative, such as sampling with or without replacement."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "L2",
+            "L4",
+            "M1",
+            "M3"
+          ],
+          "sourcePage": 12
+        },
+        {
+          "slug": "straight-line-acceleration",
+          "title": "Constant acceleration and motion under gravity",
+          "strand": "Mechanics",
+          "objectives": [
+            "Derive the constant-acceleration relationships from a velocity–time graph. Select an equation from the available information and check dimensions and signs.",
+            "Model several stages of a journey, using the final position and velocity of one stage to start the next.",
+            "Model vertical motion with a constant downward acceleration. Interpret turning points and distinguish two times at the same height.",
+            "Decide how far assumptions about air resistance and a local value of g are reasonable, and match the precision of the answer to the inputs."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "P1",
+            "Q1",
+            "Q2",
+            "Q3",
+            "R3"
+          ],
+          "sourcePage": 14
+        }
+      ]
+    },
+    {
+      "name": "Summer",
+      "units": [
+        {
+          "slug": "exponentials-and-logarithms",
+          "title": "Exponentials, logarithms and models",
+          "strand": "Pure",
+          "objectives": [
+            "Sketch exponential graphs for growth and decay and their inverse logarithms. For a base a > 0 with a ≠ 1, state that logₐ x has domain x > 0 and range ℝ. Relate ln x to eˣ.",
+            "Use the product, quotient and power laws of logarithms to solve exponential equations and express exact solutions.",
+            "Explain how the gradient of eᵏˣ is linked to its value. Fit and interpret growth or decay models, with examples such as compound interest or radioactive decay.",
+            "Choose log–log or semi-log axes to turn a power law or exponential relationship into a straight line, and recover both model parameters from the line.",
+            "Test the fitted model against the original data. Describe a range of plausible inputs and how a changing growth rate would affect a prediction."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F6",
+            "F7",
+            "B11"
+          ],
+          "sourcePage": 9
+        },
+        {
+          "slug": "integration",
+          "title": "Antiderivatives and signed area",
+          "strand": "Pure",
+          "objectives": [
+            "Reverse differentiation for sums of rational powers other than x⁻¹. Use the integration constant and a known point to recover a particular function.",
+            "Use the Fundamental Theorem of Calculus to connect accumulated area with an antiderivative and to evaluate a definite integral.",
+            "Split an interval at crossings of the axis to find total geometric area. Check the result against a sketch.",
+            "Reconstruct a quantity from its rate of change, retaining its initial value and interpreting the units of the accumulated quantity."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "H1",
+            "H2",
+            "H3"
+          ],
+          "sourcePage": 10
+        },
+        {
+          "slug": "vectors-in-the-plane",
+          "title": "Vectors in the plane",
+          "strand": "Pure",
+          "objectives": [
+            "Move between components, a diagram, and magnitude with direction. Form unit vectors and scale or add vectors geometrically and algebraically.",
+            "Use position vectors to find the displacement and distance between two points, and divide a line segment in a given ratio.",
+            "Build a vector argument for collinearity or parallelism and apply the same operations to a displacement or a set of forces."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "J1",
+            "J2",
+            "J3",
+            "J4",
+            "J5"
+          ],
+          "sourcePage": 11
+        },
+        {
+          "slug": "binomial-models-and-tests",
+          "title": "Discrete distributions and binomial tests",
+          "strand": "Statistics",
+          "objectives": [
+            "Construct a probability table for a finite discrete random variable and use it to calculate event probabilities. Explain what changes for a continuous variable.",
+            "Recognise the fixed trial count, two outcomes, independence and constant success probability needed for a binomial model. Challenge them in context.",
+            "Use combinations and calculator distribution functions for exact, cumulative and complementary binomial probabilities, checking integer boundaries.",
+            "State null and alternative hypotheses about a population proportion, choose a one- or two-tailed test and identify the test statistic. Find critical values, the rejection region and its complementary non-rejection (acceptance) region. Interpret a p-value.",
+            "Use the sample to decide whether to reject the null hypothesis. Explain why failing to reject it does not establish that it is true. Relate the significance level to false rejection and explain why a discrete test’s actual significance can be smaller."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "M1",
+            "M3",
+            "N1",
+            "N3",
+            "O1",
+            "O2"
+          ],
+          "sourcePage": 13
+        },
+        {
+          "slug": "forces-and-connected-particles",
+          "title": "Forces, equilibrium and connected particles",
+          "strand": "Mechanics",
+          "objectives": [
+            "Draw a separate force diagram for each body. Identify weight, normal reaction, tension and applied forces, and distinguish a Newton’s third-law pair acting on different bodies.",
+            "Use the first and second laws to distinguish equilibrium from acceleration. Combine forces as vectors and write equations for straight-line motion.",
+            "Connect the equations for particles joined by a light inextensible string, including a smooth pulley, and explain how the assumptions relate accelerations and tensions.",
+            "Differentiate displacement or integrate acceleration and velocity in straight-line motion. Use initial conditions and split the calculation at reversals when finding distance."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "P1",
+            "Q4",
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5"
+          ],
+          "sourcePage": 15
+        }
+      ]
+    }
+  ]
+}

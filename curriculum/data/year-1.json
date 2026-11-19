@@ -1,0 +1,220 @@
+{
+  "year": 1,
+  "intro": "Start with things you can touch and count. Build towards numbers across 100, sharing equally, measuring everyday objects and telling the time.",
+  "terms": [
+    {
+      "name": "Autumn",
+      "units": [
+        {
+          "slug": "counting-to-ten",
+          "title": "Counting and comparing to 10",
+          "objectives": [
+            "Match one number word to each object. Rearrange the objects and explain why the total stays the same.",
+            "Read and write numerals from 0 to 10, match them to collections and find them on a number line.",
+            "Find one more or one fewer. Match objects in pairs to decide which collection has more, fewer or the same number.",
+            "Order three collections from least to most and explain how you know."
+          ],
+          "objectiveIds": [
+            "Y1-NPV-01",
+            "Y1-NPV-02",
+            "Y1-NPV-03"
+          ],
+          "sourcePage": 6
+        },
+        {
+          "slug": "parts-and-totals",
+          "title": "Addition and subtraction within 10",
+          "objectives": [
+            "Split a group of counters into two parts, record different pairs with the same total and find a hidden part.",
+            "Tell a joining or taking-away story from a picture. Write it with +, − and =, and explain what each side of the equals sign represents.",
+            "Use a known addition to work out a related subtraction. Explore what happens when one part is zero."
+          ],
+          "objectiveIds": [
+            "Y1-AS-01",
+            "Y1-AS-02",
+            "Y1-AS-03"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "shape",
+          "title": "Flat and solid shapes",
+          "objectives": [
+            "Recognise and name circles, triangles and rectangles, including squares, in a picture or amongst real objects.",
+            "Handle cubes, cuboids, pyramids and spheres. Match each solid to an everyday example.",
+            "Find the same shape after it is turned, describe how you recognised it and sort unfamiliar examples."
+          ],
+          "objectiveIds": [
+            "Y1-GS-01"
+          ],
+          "sourcePage": 10
+        }
+      ]
+    },
+    {
+      "name": "Spring",
+      "units": [
+        {
+          "slug": "numbers-to-twenty",
+          "title": "Numbers to 20",
+          "objectives": [
+            "Make each teen number with one group of ten and some loose ones. Connect the collection to its numeral and position on a line.",
+            "Read and write the number words one to twenty and match each word to its numeral.",
+            "Start at a given number, count in either direction, and explain which of two teen numbers is greater."
+          ],
+          "objectiveIds": [
+            "Y1-NPV-01",
+            "Y1-NPV-02",
+            "Y1-NPV-03"
+          ],
+          "sourcePage": 6
+        },
+        {
+          "slug": "calculating-to-twenty",
+          "title": "Addition and subtraction within 20",
+          "objectives": [
+            "Use bonds to 10 to make and remember pairs with totals up to 20. Give a subtraction fact for a pair you know.",
+            "Add or subtract one- and two-digit numbers within 20, including zero. Draw how making ten helps with 8 + 5.",
+            "Choose an operation for a one-step story. Find a missing number in different positions, for example 14 = □ + 6 or 8 = □ − 4."
+          ],
+          "objectiveIds": [
+            "Y1-AS-01",
+            "Y1-AS-02",
+            "Y1-AS-03"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "numbers-to-fifty",
+          "title": "Tens and ones to 50",
+          "objectives": [
+            "Bundle objects in tens and ones and record the total as a numeral. Compare collections such as 24 and 42.",
+            "Count on or back across a tens boundary and say which numeral comes just before or after a given number.",
+            "Place numbers in order on a partly labelled track and explain a missing label."
+          ],
+          "objectiveIds": [
+            "Y1-NPV-01",
+            "Y1-NPV-02",
+            "Y1-NPV-03"
+          ],
+          "sourcePage": 6
+        },
+        {
+          "slug": "length-and-height",
+          "title": "Length and height",
+          "objectives": [
+            "Align two objects at one end to decide which is longer or taller. Order a small collection and describe the differences.",
+            "Measure a length using equal-sized units touching end to end. Record the count with the name of the unit.",
+            "Use a measurement to choose a suitable object, such as a strip long enough to span a gap."
+          ],
+          "objectiveIds": [
+            "Y1-ME-01"
+          ],
+          "sourcePage": 9
+        },
+        {
+          "slug": "mass-and-capacity",
+          "title": "Mass, capacity and volume",
+          "objectives": [
+            "Predict which object is heavier, then compare the two on a balance and record what happened.",
+            "Balance an object against equal units to measure its mass. Explain why the same units are needed for a comparison.",
+            "Compare containers by pouring, describing them as empty, full or partly full. Count equal cupfuls to measure how much each holds."
+          ],
+          "objectiveIds": [
+            "Y1-ME-01"
+          ],
+          "sourcePage": 9
+        }
+      ]
+    },
+    {
+      "name": "Summer",
+      "units": [
+        {
+          "slug": "groups-and-sharing",
+          "title": "Equal groups, multiplication and division",
+          "objectives": [
+            "Make pairs and groups of five or ten. Count in 2s, 5s and 10s and match the spoken count to the total number of objects.",
+            "With a teacher, arrange equal groups into rows in an array and draw a picture to solve a one-step multiplication story.",
+            "Solve a one-step division story by sharing objects fairly or making groups of a given size. Explain what the final count tells you."
+          ],
+          "objectiveIds": [
+            "Y1-NPV-04",
+            "Y1-MD-01"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "halves-and-quarters",
+          "title": "Halves and quarters",
+          "objectives": [
+            "Fold a shape or divide an object into two equal parts. Name one part as a half and explain why an uneven split fails.",
+            "Make four equal parts of a shape and name one as a quarter. Find another way to divide the same whole into quarters.",
+            "Share a collection into two or four equal groups to find half or a quarter of a quantity."
+          ],
+          "objectiveIds": [
+            "Y1-FR-01",
+            "Y1-FR-02"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "position-and-turns",
+          "title": "Position, movement and turns",
+          "objectives": [
+            "Describe where an object is using words such as above, below, left, right and between.",
+            "Follow a short route using directions. From a fixed starting position, make a quarter, half, three-quarter or whole turn.",
+            "Predict which way a toy will face after a turn and give a partner instructions to reproduce it."
+          ],
+          "objectiveIds": [
+            "Y1-PD-01"
+          ],
+          "sourcePage": 10
+        },
+        {
+          "slug": "numbers-to-one-hundred",
+          "title": "Numbers to and across 100",
+          "objectives": [
+            "Count from 0, from 1 and from a different starting number. Cross 100 in both directions, for example from 97 and from 103.",
+            "Read and write numerals to 100 and show their order with bundles, a picture or a number line.",
+            "Identify one more and one less, then use equal, fewer, more, most or least to compare quantities."
+          ],
+          "objectiveIds": [
+            "Y1-NPV-01",
+            "Y1-NPV-02",
+            "Y1-NPV-03"
+          ],
+          "sourcePage": 6
+        },
+        {
+          "slug": "money",
+          "title": "Coins and notes",
+          "objectives": [
+            "Recognise UK coins and notes by denomination and say their values in pence or pounds.",
+            "Compare two denominations and explain why the largest coin need not have the greatest value.",
+            "Choose a single coin or note to match a stated amount, such as 20p or £5."
+          ],
+          "objectiveIds": [
+            "Y1-ME-02"
+          ],
+          "sourcePage": 9
+        },
+        {
+          "slug": "time",
+          "title": "Clock time, dates and duration",
+          "objectives": [
+            "Put events in order using before, after, yesterday and tomorrow. Use the days, weeks, months and years on a calendar to describe dates.",
+            "Compare how long two actions take. Time a short activity, begin to record it and choose between seconds, minutes and hours for familiar durations.",
+            "Read an analogue clock at o’clock and half past. Draw both hands, showing where the hour hand sits at half past."
+          ],
+          "objectiveIds": [
+            "Y1-ME-01",
+            "Y1-ME-03",
+            "Y1-ME-04"
+          ],
+          "sourcePage": 9
+        }
+      ]
+    }
+  ]
+}

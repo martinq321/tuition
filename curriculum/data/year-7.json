@@ -1,0 +1,198 @@
+{
+  "year": 7,
+  "intro": "Use number lines, diagrams and symbols to connect arithmetic with early algebra. Explain a result, choose a suitable representation and check whether an answer makes sense.",
+  "terms": [
+    {
+      "name": "Autumn",
+      "units": [
+        {
+          "slug": "place-value-and-measures",
+          "title": "Place value, decimals and measures",
+          "objectives": [
+            "Read, partition and compare integers of any size and decimals, including numbers with leading or internal zeros.",
+            "Place positive and negative values on scaled number lines and use =, ≠, <, >, ≤ and ≥ to state comparisons.",
+            "Choose and convert units for lengths, masses, capacities, times and sums of money, including decimal measurements.",
+            "Round to a chosen place or number of decimal places. Estimate before calculating and judge whether a rounded answer is useful."
+          ],
+          "objectiveIds": [
+            "Y7-N-01",
+            "Y7-N-05"
+          ],
+          "sourcePage": 5
+        },
+        {
+          "slug": "signed-number-and-calculation",
+          "title": "Signed numbers and calculation",
+          "objectives": [
+            "Calculate changes above and below zero and distinguish a negative value from a subtraction sign.",
+            "Add, subtract, multiply and divide signed integers and decimals, choosing an efficient mental or written method.",
+            "Evaluate expressions containing several operations, brackets and square powers. Explain why changing a bracket can change the result.",
+            "Check calculations using an inverse operation, an estimate or a second method. Interpret a calculator result in its original units."
+          ],
+          "objectiveIds": [
+            "Y7-N-01",
+            "Y7-N-04",
+            "Y7-N-05"
+          ],
+          "sourcePage": 5
+        },
+        {
+          "slug": "factors-multiples-and-primes",
+          "title": "Factors, multiples and primes",
+          "objectives": [
+            "List factors in pairs, identify primes and composites, and explain why 1 belongs to neither group.",
+            "Find common factors and multiples, including the highest common factor and the lowest common multiple.",
+            "Write a positive integer greater than 1 as a product of primes, using powers to record repetitions. Compare two factor trees to explain uniqueness up to order.",
+            "Choose between a common-factor and a common-multiple method for problems about equal groups or recurring events."
+          ],
+          "objectiveIds": [
+            "Y7-N-02"
+          ],
+          "sourcePage": 5
+        },
+        {
+          "slug": "expressions-and-substitution",
+          "title": "Algebraic expressions and substitution",
+          "objectives": [
+            "Translate words and diagrams into expressions. Read 3y, ab, a²b and a/b, and write fractional coefficients and brackets clearly.",
+            "Identify terms, factors, coefficients and variables. Distinguish an expression from an equation or an inequality.",
+            "Collect like terms and use substitution to check examples of equivalent expressions.",
+            "Substitute signed values into simple formulae for familiar quantities and include the correct units in the answer."
+          ],
+          "objectiveIds": [
+            "Y7-A-01",
+            "Y7-A-02"
+          ],
+          "sourcePage": 6
+        }
+      ]
+    },
+    {
+      "name": "Spring",
+      "units": [
+        {
+          "slug": "fractions-decimals-and-percentages",
+          "title": "Fractions, decimals and percentages",
+          "objectives": [
+            "Locate, compare and order proper fractions, improper fractions and mixed numbers, including values below zero.",
+            "Convert terminating decimals to fractions and back. Explain equivalence using place value or division.",
+            "Add and subtract fractions using common denominators, and multiply and divide positive fractions and mixed numbers using cancellation and reciprocals.",
+            "Interpret a fraction or a percentage as an operator on a quantity. Connect one hundredth to 1% and interpret percentages above 100%.",
+            "Express one quantity as a fraction or percentage of another, including results greater than one whole or 100%."
+          ],
+          "objectiveIds": [
+            "Y7-N-03",
+            "Y7-R-02"
+          ],
+          "sourcePage": 5
+        },
+        {
+          "slug": "ratio-and-sharing",
+          "title": "Ratio, sharing and scaling",
+          "objectives": [
+            "Compare quantities in the same units and simplify a ratio by dividing each part by a common factor.",
+            "Distinguish part-to-part from part-to-whole comparisons and convert between the two descriptions.",
+            "Split a quantity into two parts from either kind of ratio and write the ratio for a completed split.",
+            "Use a bar model or ratio table to scale a recipe. Explain when a comparison calls for addition and when it calls for multiplication."
+          ],
+          "objectiveIds": [
+            "Y7-R-01"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "coordinates-and-sequences",
+          "title": "Coordinates and sequences",
+          "objectives": [
+            "Plot, label and read ordered pairs in all four quadrants on axes with suitable intervals.",
+            "Generate sequences from a rule linking neighbouring terms or from a rule giving the term at a stated position.",
+            "Describe and extend arithmetic and geometric patterns, and identify examples with neither a fixed difference nor a fixed ratio.",
+            "Relate a growing diagram to its table of positions and values. Test a conjecture against more than the first few terms."
+          ],
+          "objectiveIds": [
+            "Y7-A-03",
+            "Y7-A-04",
+            "Y7-W-01"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "angles-and-plane-shapes",
+          "title": "Angles, symmetry and plane shapes",
+          "objectives": [
+            "Measure and draw segments and angles accurately. Mark parallel and perpendicular lines, equal lengths, equal angles and right angles using conventional notation.",
+            "Find unknown angles around a point, on a straight line and at the intersection of two lines. State the reason for each step.",
+            "Classify triangles, quadrilaterals and other polygons from their side, angle and symmetry properties. Describe regular polygons and identify lines and orders of symmetry.",
+            "Label triangle ABC and its angles unambiguously. Explore equal sides and angles by folding, constructing or using dynamic geometry."
+          ],
+          "objectiveIds": [
+            "Y7-G-01"
+          ],
+          "sourcePage": 8
+        }
+      ]
+    },
+    {
+      "name": "Summer",
+      "units": [
+        {
+          "slug": "perimeter-and-area",
+          "title": "Perimeter and area",
+          "objectives": [
+            "Calculate perimeters of triangles, quadrilaterals and compound shapes, deducing missing side lengths where possible.",
+            "Derive the areas of a parallelogram and triangle by rearranging or doubling shapes and identify the perpendicular height.",
+            "Derive the trapezium area formula by pairing two identical trapezia and apply it with consistent units.",
+            "Decompose a composite region in two ways and check that both methods give the same area. Distinguish linear from square units."
+          ],
+          "objectiveIds": [
+            "Y7-G-02"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "translations-reflections-and-rotations",
+          "title": "Translations, reflections and rotations",
+          "objectives": [
+            "Draw translations, reflections and rotations of shapes on grids and plain paper.",
+            "Describe a translation by its displacement, a reflection by its mirror line and a rotation by its centre, angle and direction.",
+            "Check corresponding lengths and angles, identify which properties stay fixed and relate these transformations to congruence.",
+            "Find a transformation from an object and its image, and explain when the information supplied allows more than one description."
+          ],
+          "objectiveIds": [
+            "Y7-G-04"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "chance-and-experiments",
+          "title": "Chance and experiments",
+          "objectives": [
+            "Use the scale from zero to one to describe impossible, uncertain and certain events, and compare chances in words and numbers.",
+            "Distinguish equal and unequal chances. State the assumption that makes a simple theoretical probability calculation valid.",
+            "List all outcomes of a single trial and use their probabilities, including missing probabilities or complements, to account for a total of one.",
+            "Record outcomes of repeated trials, calculate relative frequencies and compare the observations with a prediction about fairness."
+          ],
+          "objectiveIds": [
+            "Y7-D-03"
+          ],
+          "sourcePage": 9
+        },
+        {
+          "slug": "data-displays-and-averages",
+          "title": "Data displays and averages",
+          "objectives": [
+            "Pose a question about one variable, decide what to collect and distinguish categorical, discrete and continuous observations.",
+            "Construct and interpret tallies, frequency tables, pictograms, bar charts and pie charts. Explain choices of scale, key and sector size.",
+            "Display discrete numerical frequencies on a vertical line or bar chart and recover frequencies from a completed diagram.",
+            "Calculate the mean, median, mode and range. Describe what happens to these measures when an unusual value is added."
+          ],
+          "objectiveIds": [
+            "Y7-D-01",
+            "Y7-D-02"
+          ],
+          "sourcePage": 9
+        }
+      ]
+    }
+  ]
+}

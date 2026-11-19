@@ -1,0 +1,194 @@
+{
+  "year": 2,
+  "intro": "Use tens and ones to calculate with two-digit numbers. Connect sharing with fractions, describe shapes and turns, and use scales, clocks and charts to answer questions.",
+  "terms": [
+    {
+      "name": "Autumn",
+      "units": [
+        {
+          "slug": "place-value",
+          "title": "Place value and comparing numbers",
+          "objectives": [
+            "Read and write numbers to at least 100 in figures and words. Build two-digit numbers and explain the value of each digit, including a zero in the ones place.",
+            "Split tens and ones in two ways, such as 42 = 40 + 2 = 30 + 12. Use the second split to solve a practical problem.",
+            "Represent a number with objects, a diagram and a number line. Estimate where it lies between labelled endpoints.",
+            "Order numbers from 0 to 100 and record comparisons with <, > or =. Count in 10s forwards and backwards from any number."
+          ],
+          "objectiveIds": [
+            "Y2-NPV-01",
+            "Y2-NPV-02",
+            "Y2-NPV-03"
+          ],
+          "sourcePage": 11
+        },
+        {
+          "slug": "addition-and-subtraction",
+          "title": "Addition and subtraction within 100",
+          "objectives": [
+            "Recall additions and subtractions with totals up to 20. Use a known fact, such as 7 + 2 = 9, to derive related facts up to 100.",
+            "Add or subtract ones, tens and another two-digit number from a two-digit starting number. Use objects, drawings and mental or written steps.",
+            "Add three single-digit numbers by choosing a helpful pair first. Explain why exchanging the addends preserves a sum and why subtraction depends on their order.",
+            "Choose a calculation for a quantity or measure problem. Check your answer with the inverse operation and find missing values."
+          ],
+          "objectiveIds": [
+            "Y2-AS-01",
+            "Y2-AS-02",
+            "Y2-AS-03"
+          ],
+          "sourcePage": 12
+        },
+        {
+          "slug": "plane-and-solid-shapes",
+          "title": "Properties of flat and solid shapes",
+          "objectives": [
+            "Sort everyday objects and drawings by a stated property. Count sides on flat shapes and test for symmetry in a vertical mirror line.",
+            "Describe solid shapes by their faces, edges and vertices. Identify a flat shape on a solid, such as a circular end on a cylinder.",
+            "Compare two shapes by their properties and explain how a turned shape still belongs to the same group."
+          ],
+          "objectiveIds": [
+            "Y2-GS-01",
+            "Y2-GS-02"
+          ],
+          "sourcePage": 15
+        }
+      ]
+    },
+    {
+      "name": "Spring",
+      "units": [
+        {
+          "slug": "money",
+          "title": "Pounds, pence and change",
+          "objectives": [
+            "Label amounts using £ or p and select coins or notes to make a target value.",
+            "Find more than one set of coins for the same amount. Explain why counting the coins alone does not give their value.",
+            "Add prices or find change in a practical situation, working in pence throughout or pounds throughout."
+          ],
+          "objectiveIds": [
+            "Y2-ME-02",
+            "Y2-ME-03"
+          ],
+          "sourcePage": 14
+        },
+        {
+          "slug": "groups-and-tables",
+          "title": "Equal groups and multiplication tables",
+          "objectives": [
+            "Count forwards and backwards along sequences starting at zero in steps of 2, 3 or 5. Use pairs to identify odd and even numbers.",
+            "Build arrays and connect repeated addition to a multiplication statement with × and =. Turn an array to explain why the factors can change places.",
+            "Recall products in the 2, 5 and 10 tables and use them to solve an equal-groups story mentally."
+          ],
+          "objectiveIds": [
+            "Y2-NPV-01",
+            "Y2-MD-01",
+            "Y2-MD-02",
+            "Y2-MD-03"
+          ],
+          "sourcePage": 13
+        },
+        {
+          "slug": "division",
+          "title": "Division by sharing and grouping",
+          "objectives": [
+            "Model both eight objects shared between two people and eight objects packed in pairs. Explain what the answer counts in each case.",
+            "Use an array to connect a multiplication fact to its division facts. Recall and record divisions for the 2, 5 and 10 tables using ÷ and =.",
+            "Explain why swapping the numbers in a division changes the question. Choose a model or a known fact to solve a new problem."
+          ],
+          "objectiveIds": [
+            "Y2-MD-01",
+            "Y2-MD-02",
+            "Y2-MD-03"
+          ],
+          "sourcePage": 13
+        },
+        {
+          "slug": "length-and-height",
+          "title": "Measuring length and height",
+          "objectives": [
+            "Choose centimetres or metres and a suitable ruler or tape. Estimate the length or height before measuring.",
+            "Measure from zero to the nearest chosen unit, including along a sloping edge. Record the value with its unit.",
+            "Order measurements taken in the same unit and write comparisons using <, > and =."
+          ],
+          "objectiveIds": [
+            "Y2-ME-01"
+          ],
+          "sourcePage": 14
+        },
+        {
+          "slug": "mass-capacity-temperature",
+          "title": "Mass, capacity and temperature",
+          "objectives": [
+            "Choose grams or kilograms and estimate a mass. Read a balance or scale to the nearest appropriate unit.",
+            "Choose millilitres or litres, estimate a container’s capacity and read a measuring vessel. Compare masses and capacities in matching units using <, > and =.",
+            "Estimate which of two temperatures is higher, then read a thermometer and record the temperature to the nearest degree Celsius."
+          ],
+          "objectiveIds": [
+            "Y2-ME-01"
+          ],
+          "sourcePage": 14
+        }
+      ]
+    },
+    {
+      "name": "Summer",
+      "units": [
+        {
+          "slug": "fractions",
+          "title": "Fractions of shapes, lengths and sets",
+          "objectives": [
+            "Split lengths, shapes and collections into equal parts. Find and name a half, a third or a quarter and record it with a fraction.",
+            "Find two quarters and three quarters by counting quarter-sized parts. Keep the whole fixed when comparing the fractions.",
+            "Show with the same strip or set why two quarters equals one half. Write a fraction calculation for a quantity, such as ¼ of 12 = 3."
+          ],
+          "objectiveIds": [
+            "Y2-FR-01",
+            "Y2-FR-02"
+          ],
+          "sourcePage": 13
+        },
+        {
+          "slug": "clocks-and-intervals",
+          "title": "Clock time and intervals",
+          "objectives": [
+            "Read and write times to the nearest five minutes, including quarter past and quarter to. Draw both hands accurately for a given time.",
+            "Use 60 minutes in an hour and 24 hours in a day to describe familiar intervals.",
+            "Compare and sequence durations, for example by placing a five-minute walk and a quarter-hour break in order of length."
+          ],
+          "objectiveIds": [
+            "Y2-ME-04",
+            "Y2-ME-05"
+          ],
+          "sourcePage": 14
+        },
+        {
+          "slug": "position-and-patterns",
+          "title": "Position, directions and repeating patterns",
+          "objectives": [
+            "Describe a straight-line movement from a stated starting point, using left, right, forwards or backwards.",
+            "Use clockwise and anticlockwise to give quarter-, half- and three-quarter-turn instructions. Link each quarter-turn to one right angle.",
+            "Arrange shapes or objects in a repeating sequence, including shapes that turn. Explain the rule and predict a missing term."
+          ],
+          "objectiveIds": [
+            "Y2-PD-01",
+            "Y2-PD-02"
+          ],
+          "sourcePage": 16
+        },
+        {
+          "slug": "statistics",
+          "title": "Collecting and comparing data",
+          "objectives": [
+            "Choose a question with distinct categories, collect responses in a tally chart and record the totals in a table.",
+            "Create and read a block diagram and a simple pictogram. Explain what one block or symbol represents.",
+            "Order the categories by frequency. Ask a question about the total and one about a difference, then use the data to answer both."
+          ],
+          "objectiveIds": [
+            "Y2-ST-01",
+            "Y2-ST-02"
+          ],
+          "sourcePage": 16
+        }
+      ]
+    }
+  ]
+}

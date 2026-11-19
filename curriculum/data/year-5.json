@@ -1,0 +1,250 @@
+{
+  "year": 5,
+  "intro": "Work with numbers to at least one million, connect fractions with decimals and percentages, and use formal multiplication and division. Extend measurement to area and volume, and use angles, transformations, tables and graphs to solve problems.",
+  "terms": [
+    {
+      "name": "Autumn",
+      "units": [
+        {
+          "slug": "place-value",
+          "title": "Place value",
+          "objectives": [
+            "Read, write, compare and order whole numbers to at least 1,000,000. Use partitioning to explain the value of any digit.",
+            "Count on and back in steps of a power of ten from any starting number up to one million, including across a zero digit.",
+            "For numbers up to one million, round to 10, 100, 1,000, 10,000 or 100,000. Choose a useful rounding place for an estimate.",
+            "Use place value to solve practical comparisons and missing-number problems with large numbers.",
+            "Read Roman numerals through M (1,000) and interpret years written in Roman numerals."
+          ],
+          "objectiveIds": [
+            "Y5-NPV-01",
+            "Y5-NPV-02",
+            "Y5-NPV-04",
+            "Y5-NPV-05"
+          ],
+          "sourcePage": 31
+        },
+        {
+          "slug": "addition-subtraction",
+          "title": "Addition and subtraction",
+          "objectives": [
+            "Add and subtract whole numbers with more than four digits, choosing and checking a formal column method.",
+            "Use mental strategies for large numbers, including compensation and counting the difference between nearby numbers.",
+            "Use rounding to check a result and decide the precision a particular context needs.",
+            "Plan and explain the steps in a problem that requires several additions or subtractions."
+          ],
+          "objectiveIds": [
+            "Y5-AS-01",
+            "Y5-AS-02",
+            "Y5-AS-03"
+          ],
+          "sourcePage": 32
+        },
+        {
+          "slug": "multiplication-division-a",
+          "title": "Multiplication and division A",
+          "objectives": [
+            "Generate multiples and systematically find all factor pairs of a number. Identify factors shared by two numbers.",
+            "Distinguish primes, prime factors and composite numbers. Explain why 1 belongs to neither number class.",
+            "Recall the primes up to 19 and use divisibility or factor pairs to decide whether a number up to 100 is prime.",
+            "Recognise squares and cubes and use the superscripts ² and ³. Use factors, multiples, squares and cubes to solve problems.",
+            "Scale whole numbers by 10, 100 and 1,000 in either direction. Use a known product or quotient to calculate mentally."
+          ],
+          "objectiveIds": [
+            "Y5-MD-01",
+            "Y5-MD-03",
+            "Y5-MD-04",
+            "Y5-MD-05"
+          ],
+          "sourcePage": 32
+        },
+        {
+          "slug": "fractions-a",
+          "title": "Fractions A",
+          "objectives": [
+            "Name and generate equivalent fractions from diagrams, including tenths and hundredths, keeping the whole fixed.",
+            "Order fractions whose denominators are multiples of the same number by finding a shared denominator.",
+            "Convert between mixed numbers and improper fractions and position them on the same number line.",
+            "Add and subtract fractions with equal or related denominators. Regroup when the result passes a whole and express answers greater than one as mixed numbers."
+          ],
+          "objectiveIds": [
+            "Y5-FR-01",
+            "Y5-FR-02",
+            "Y5-FR-03"
+          ],
+          "sourcePage": 34
+        }
+      ]
+    },
+    {
+      "name": "Spring",
+      "units": [
+        {
+          "slug": "multiplication-division-b",
+          "title": "Multiplication and division B",
+          "objectives": [
+            "Use written multiplication for up to four digits by a one- or two-digit number. Explain the place value of each row in long multiplication.",
+            "Use short division for up to four digits divided by one digit. Interpret a remainder as an amount left over, a fractional part or a reason to round in context.",
+            "Choose mental or written methods in problems combining the four operations. Use the equals sign to show that two expressions have the same value.",
+            "Solve simple rate and scaling problems, including a price per item and scaling an amount by a simple fraction."
+          ],
+          "objectiveIds": [
+            "Y5-MD-02",
+            "Y5-MD-03",
+            "Y5-MD-06"
+          ],
+          "sourcePage": 32
+        },
+        {
+          "slug": "fractions-b",
+          "title": "Fractions B",
+          "objectives": [
+            "Represent a proper fraction multiplied by a whole number as equal groups or repeated addition.",
+            "Multiply a mixed number by a whole number. Show the whole-number part and fractional part in a diagram before recombining.",
+            "Find fractions of quantities and use a fractional scale factor in a practical problem. Check whether the result should be larger or smaller than the starting amount."
+          ],
+          "objectiveIds": [
+            "Y5-FR-04",
+            "Y5-MD-06"
+          ],
+          "sourcePage": 34
+        },
+        {
+          "slug": "decimals-percentages",
+          "title": "Decimals and percentages",
+          "objectives": [
+            "Read, write, compare and order decimals with up to three places. Relate one thousandth to a tenth and a hundredth.",
+            "Write decimals as fractions with denominators 10, 100 or 1,000, including values with zeros such as 0.407.",
+            "Round a decimal with two places to the nearest whole or nearest tenth. Solve problems involving numbers with up to three decimal places.",
+            "Explain a percentage as a count per hundred. Write the same amount as a percentage, a fraction over 100 and a decimal.",
+            "Use decimal and percentage equivalents of ½, ¼, ⅕, ⅖ and ⅘ in problems. Find equivalents for other fractions whose denominator is a multiple of 10 or 25."
+          ],
+          "objectiveIds": [
+            "Y5-FR-05",
+            "Y5-FR-06",
+            "Y5-FR-07"
+          ],
+          "sourcePage": 34
+        },
+        {
+          "slug": "perimeter-area",
+          "title": "Perimeter and area",
+          "objectives": [
+            "Measure or calculate the perimeter of a composite rectilinear shape in centimetres or metres. Reconstruct missing side lengths.",
+            "Choose square centimetres or square metres and calculate the area of rectangles, including squares.",
+            "Compare rectangular areas and estimate an irregular area using a grid. Explain the treatment of partial squares."
+          ],
+          "objectiveIds": [
+            "Y5-ME-02"
+          ],
+          "sourcePage": 36
+        },
+        {
+          "slug": "statistics",
+          "title": "Statistics",
+          "objectives": [
+            "Read the axes and scale on a line graph to compare values, find a combined quantity or calculate a difference.",
+            "Explain what a plotted point or change between points means in the original context.",
+            "Complete and interpret tables, including two-way tables and timetables. Calculate journey times and choose a service that meets a stated condition."
+          ],
+          "objectiveIds": [
+            "Y5-ST-01",
+            "Y5-ST-02"
+          ],
+          "sourcePage": 38
+        }
+      ]
+    },
+    {
+      "name": "Summer",
+      "units": [
+        {
+          "slug": "shape",
+          "title": "Shape",
+          "objectives": [
+            "Estimate and compare acute, obtuse and reflex angles in degrees.",
+            "Align a protractor with a ray to measure or draw a given angle. Use the smaller turn to check a reflex angle.",
+            "Use 90°, 180°, 270° and 360° to reason about turns. Find missing angles on a straight line or around a point.",
+            "Deduce missing lengths and angles from rectangle properties. Classify regular and irregular polygons by checking both side lengths and angles.",
+            "Identify three-dimensional shapes, including cubes and other cuboids, from drawings or two-dimensional views."
+          ],
+          "objectiveIds": [
+            "Y5-GS-01",
+            "Y5-GS-02",
+            "Y5-GS-03",
+            "Y5-GS-04"
+          ],
+          "sourcePage": 37
+        },
+        {
+          "slug": "position-direction",
+          "title": "Position and direction",
+          "objectives": [
+            "Describe where vertices move under a translation, recording both the direction and distance.",
+            "Reflect a shape in a horizontal or vertical mirror line and explain why each reflected point lies the same distance from the line.",
+            "Draw and describe transformed shapes. Use corresponding sides and angles to show that reflection and translation preserve shape and size."
+          ],
+          "objectiveIds": [
+            "Y5-PD-01"
+          ],
+          "sourcePage": 37
+        },
+        {
+          "slug": "decimals",
+          "title": "Decimals",
+          "objectives": [
+            "Add and subtract decimal amounts, aligning equal place values. Explain why a trailing zero can help organise the calculation.",
+            "Multiply and divide decimal numbers by 10, 100 and 1,000 and describe how the value of each digit changes.",
+            "Use the four operations in measurement contexts, including decimal money, length or mass and scaling a quantity. Check units and decide whether an answer is sensible."
+          ],
+          "objectiveIds": [
+            "Y5-MD-04",
+            "Y5-ME-04",
+            "Y5-FR-06"
+          ],
+          "sourcePage": 32
+        },
+        {
+          "slug": "negative-numbers",
+          "title": "Negative numbers",
+          "objectives": [
+            "Read positive and negative whole numbers in a context such as floors or temperature.",
+            "Count on and back through zero and compare negative values on a number line.",
+            "Solve a practical problem involving movement across zero and explain the direction of change."
+          ],
+          "objectiveIds": [
+            "Y5-NPV-03"
+          ],
+          "sourcePage": 31
+        },
+        {
+          "slug": "converting-units",
+          "title": "Converting units",
+          "objectives": [
+            "Convert both ways between metric units of length, mass and capacity, including km/m, m/cm, cm/mm, kg/g and l/ml.",
+            "Use approximate relationships between metric and imperial units, including inches, pounds and pints. Indicate when the result is an estimate.",
+            "Convert between units of time and combine conversions to solve elapsed-time problems.",
+            "Choose compatible units before adding, subtracting, multiplying or dividing measures. Use decimal notation where appropriate."
+          ],
+          "objectiveIds": [
+            "Y5-ME-01",
+            "Y5-ME-04"
+          ],
+          "sourcePage": 36
+        },
+        {
+          "slug": "volume",
+          "title": "Volume and capacity",
+          "objectives": [
+            "Distinguish the space occupied by an object from the amount a container can hold.",
+            "Estimate and compare volumes by building cube arrangements, reasoning about cubes hidden in lower layers.",
+            "Estimate capacity using familiar containers, then check the estimate against a measured amount."
+          ],
+          "objectiveIds": [
+            "Y5-ME-03"
+          ],
+          "sourcePage": 36
+        }
+      ]
+    }
+  ]
+}

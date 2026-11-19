@@ -1,0 +1,215 @@
+{
+  "year": 6,
+  "intro": "Use the four operations with large whole numbers, fractions and decimals. Introduce ratio and algebra, reason with angle and coordinate relationships, and interpret averages and statistical diagrams.",
+  "terms": [
+    {
+      "name": "Autumn",
+      "units": [
+        {
+          "slug": "place-value",
+          "title": "Place value and integers",
+          "objectives": [
+            "Read, write and order whole numbers up to 10,000,000. Partition a number and explain what each digit is worth.",
+            "Round whole numbers to a requested place and choose a suitable level of precision for a practical estimate.",
+            "Interpret signed quantities and calculate an interval across zero, such as a temperature rise from −8°C to 5°C.",
+            "Use a number line or place-value representation to justify comparisons and solve practical number problems."
+          ],
+          "objectiveIds": [
+            "Y6-NPV-01",
+            "Y6-NPV-02",
+            "Y6-NPV-03"
+          ],
+          "sourcePage": 39
+        },
+        {
+          "slug": "four-operations",
+          "title": "Four operations",
+          "objectives": [
+            "Select mental, column or mixed methods to add and subtract large numbers. Explain the steps in a multi-step problem.",
+            "Multiply a number of up to four digits by a two-digit whole number using long multiplication.",
+            "Use long division for a number of up to four digits divided by a two-digit whole number. Use short division when the divisor makes it efficient.",
+            "Interpret a remainder as a whole number, a fraction or an instruction to round according to the situation.",
+            "Use common factors, common multiples and primes to reason about calculations. Use operation priority, including brackets, for expressions with mixed operations.",
+            "Solve contextual problems with all four operations. Estimate the scale of the result, then report it to an appropriate accuracy."
+          ],
+          "objectiveIds": [
+            "Y6-OP-01",
+            "Y6-OP-02",
+            "Y6-OP-03",
+            "Y6-OP-04",
+            "Y6-OP-05"
+          ],
+          "sourcePage": 39
+        },
+        {
+          "slug": "fractions",
+          "title": "Fractions",
+          "objectives": [
+            "Simplify a fraction using a common factor. Use a common multiple to put fractions over the same denominator.",
+            "Compare and order fractions, including mixed numbers and improper fractions greater than one.",
+            "Add and subtract fractions with different denominators, including mixed numbers that require regrouping.",
+            "Multiply two proper fractions, represent what the product means and reduce the result to its simplest form.",
+            "Divide a proper fraction by a whole number by sharing its value into equal parts.",
+            "Interpret the fraction bar as division and find a decimal equivalent for a simple fraction, such as seven eighths."
+          ],
+          "objectiveIds": [
+            "Y6-FR-01",
+            "Y6-FR-02",
+            "Y6-FR-03",
+            "Y6-FR-04",
+            "Y6-FR-05"
+          ],
+          "sourcePage": 40
+        },
+        {
+          "slug": "converting-units",
+          "title": "Converting measures",
+          "objectives": [
+            "Read and record length, mass, volume and time using suitable standard units.",
+            "Convert from larger units to smaller units and back. Use decimal notation to three places where appropriate, keeping the base-60 relationships for time.",
+            "Convert between miles and kilometres using an appropriate equivalence. State the precision of an estimate.",
+            "Solve problems requiring a calculation before or after a unit conversion and check the size of the answer."
+          ],
+          "objectiveIds": [
+            "Y6-ME-01"
+          ],
+          "sourcePage": 43
+        }
+      ]
+    },
+    {
+      "name": "Spring",
+      "units": [
+        {
+          "slug": "ratio",
+          "title": "Ratio and proportion",
+          "objectives": [
+            "Describe a multiplicative relationship between two quantities and use integer scaling or division to find a missing value.",
+            "Share a quantity in unequal parts by counting equal ratio units. Use fractions and multiples to check the shares.",
+            "Scale a mixture, group or recipe while preserving the relationship between its quantities.",
+            "Compare corresponding lengths in similar shapes, find a scale factor and use it to find a missing length."
+          ],
+          "objectiveIds": [
+            "Y6-RA-01",
+            "Y6-RA-03"
+          ],
+          "sourcePage": 42
+        },
+        {
+          "slug": "algebra",
+          "title": "Algebra",
+          "objectives": [
+            "Use letters for unknown numbers and write a missing-number problem as an equation.",
+            "Substitute values into a simple formula, keeping track of the units in the result.",
+            "Generate a linear number sequence from a rule and describe the constant change between terms.",
+            "Find pairs satisfying an equation with two unknowns. State the allowed values and list all possible combinations systematically when the choices are finite."
+          ],
+          "objectiveIds": [
+            "Y6-AL-01",
+            "Y6-AL-02",
+            "Y6-AL-03"
+          ],
+          "sourcePage": 42
+        },
+        {
+          "slug": "decimals",
+          "title": "Decimal calculation",
+          "objectives": [
+            "Explain the value of each digit down to thousandths. Scale by 10, 100 and 1,000 in both directions with results to at most three decimal places.",
+            "Multiply a one-digit number carrying up to two decimal places by a whole number, for example 3.24 × 6.",
+            "Use written division when the quotient has up to two decimal places. Connect the written digits to tenths and hundredths.",
+            "Round a result to a specified accuracy and justify the rounding in the context of a problem."
+          ],
+          "objectiveIds": [
+            "Y6-FR-06",
+            "Y6-FR-07"
+          ],
+          "sourcePage": 41
+        },
+        {
+          "slug": "percentages",
+          "title": "Fractions, decimals and percentages",
+          "objectives": [
+            "Recall common equivalent fractions, decimals and percentages and choose the most useful representation in a problem.",
+            "Calculate a percentage of a quantity or measure by combining known parts, including percentages such as 15%.",
+            "Compare two groups using percentages, allowing for the fact that their totals may differ. Explain which quantity represents 100%."
+          ],
+          "objectiveIds": [
+            "Y6-FR-05",
+            "Y6-RA-02"
+          ],
+          "sourcePage": 42
+        },
+        {
+          "slug": "area-perimeter-volume",
+          "title": "Perimeter, area and volume",
+          "objectives": [
+            "Draw examples showing how equal perimeters can enclose different areas and equal areas can have different perimeters.",
+            "Use dissection to connect a parallelogram or triangle to a rectangle. Identify the perpendicular height and calculate its area.",
+            "Decide when an area or volume formula applies and divide a composite shape into manageable pieces when needed.",
+            "Estimate, calculate and compare the volumes of cubes and cuboids. Select suitable cubic units, including cm³ and m³, and extend to other scales."
+          ],
+          "objectiveIds": [
+            "Y6-ME-02",
+            "Y6-ME-03",
+            "Y6-ME-04"
+          ],
+          "sourcePage": 43
+        }
+      ]
+    },
+    {
+      "name": "Summer",
+      "units": [
+        {
+          "slug": "shape",
+          "title": "Angles, shape and circles",
+          "objectives": [
+            "Use a ruler and protractor to draw a flat shape from specified lengths and angles.",
+            "Classify shapes by properties and size. Find missing angles in triangles, quadrilaterals and regular polygons, explaining the relationship used.",
+            "Calculate missing angles at a point, along a straight line and in vertically opposite pairs.",
+            "Label the radius, diameter and circumference of a circle. Use the relationship between diameter and radius to calculate either length.",
+            "Describe and build simple solids. Make, test and compare nets, predicting which faces or edges will meet."
+          ],
+          "objectiveIds": [
+            "Y6-GS-01",
+            "Y6-GS-02",
+            "Y6-GS-03",
+            "Y6-GS-04"
+          ],
+          "sourcePage": 44
+        },
+        {
+          "slug": "position-direction",
+          "title": "Coordinates and transformations",
+          "objectives": [
+            "Read and plot ordered pairs in all four quadrants, including points on either axis.",
+            "Draw a polygon from coordinates and infer a missing vertex using its defining properties.",
+            "Translate a shape by specified horizontal and vertical steps, including moves across an axis.",
+            "Reflect a shape in either coordinate axis and explain how the signs of its coordinates change."
+          ],
+          "objectiveIds": [
+            "Y6-PD-01",
+            "Y6-PD-02"
+          ],
+          "sourcePage": 45
+        },
+        {
+          "slug": "statistics",
+          "title": "Statistical diagrams and the mean",
+          "objectives": [
+            "Construct and interpret line graphs with suitable scales. Use them to answer questions about change and comparisons.",
+            "Construct and read pie charts by connecting each frequency to a fraction of the total and an angle at the centre.",
+            "Solve problems from pie charts or line graphs, including finding an original number from a proportion when the total is known.",
+            "Find and interpret the arithmetic mean as an equal share. Explain when the mean gives a useful summary in the context of the data."
+          ],
+          "objectiveIds": [
+            "Y6-ST-01",
+            "Y6-ST-02"
+          ],
+          "sourcePage": 45
+        }
+      ]
+    }
+  ]
+}

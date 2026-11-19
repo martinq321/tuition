@@ -1,0 +1,198 @@
+{
+  "year": 8,
+  "intro": "Develop proportional, algebraic and geometric reasoning. Use equations, graphs and constructions to show why a pattern or relationship holds.",
+  "terms": [
+    {
+      "name": "Autumn",
+      "units": [
+        {
+          "slug": "powers-roots-and-standard-form",
+          "title": "Powers, roots and standard form",
+          "objectives": [
+            "Recognise common powers of 2, 3, 4 and 5. Interpret positive, zero and negative integer powers of a non-zero base.",
+            "Use square, cube and higher real roots as inverses of powers where defined. Distinguish the principal square root from the two solutions of x² = 9.",
+            "Distinguish an exact root from a rounded decimal. Use a calculator to approximate roots and check their size against nearby powers.",
+            "Rewrite large and small numbers in standard form a × 10ⁿ with 1 ≤ a < 10, including n = 0, and order numbers given in different forms."
+          ],
+          "objectiveIds": [
+            "Y8-N-02",
+            "Y7-N-04"
+          ],
+          "sourcePage": 5
+        },
+        {
+          "slug": "signed-fractions-and-order-of-operations",
+          "title": "Signed fractions and mixed calculations",
+          "objectives": [
+            "Choose a common denominator or a decimal equivalent to compare signed fractional quantities.",
+            "Use the four operations with signed proper fractions, improper fractions and mixed numbers, showing written steps when needed.",
+            "Evaluate mixed calculations involving brackets, powers, roots and reciprocals. Distinguish (−3)² from −3².",
+            "Choose a fraction, a decimal or a percentage to simplify a calculation and justify the accuracy of the result."
+          ],
+          "objectiveIds": [
+            "Y8-N-01"
+          ],
+          "sourcePage": 5
+        },
+        {
+          "slug": "linear-equations-and-equivalence",
+          "title": "Equivalence and linear equations",
+          "objectives": [
+            "Use the distributive law to expand a single term over a bracket, and reverse the process by taking out a common factor.",
+            "Transform linear equations using the same operation on both sides. Solve equations with brackets, fractional coefficients and unknowns on both sides.",
+            "Represent an unfamiliar problem by choosing an unknown and forming an equation; check the solution in the original context.",
+            "Distinguish an identity from an equation true for particular values. Use a counterexample to reject an incorrect simplification."
+          ],
+          "objectiveIds": [
+            "Y8-A-01",
+            "Y7-A-02",
+            "Y7-A-04"
+          ],
+          "sourcePage": 6
+        },
+        {
+          "slug": "linear-sequences-and-graphs",
+          "title": "Linear sequences and straight-line graphs",
+          "objectives": [
+            "Connect the common difference of an arithmetic sequence to its position-to-term rule and derive its nth term.",
+            "Translate a linear rule into a table of values and a graph on scaled axes, including horizontal and vertical lines.",
+            "Calculate a non-vertical line’s gradient from coordinate changes and identify its vertical intercept from its graph, equation or table.",
+            "Rearrange a non-vertical linear equation in two variables into y = mx + c. Interpret m and c for a fixed fee plus a charge per unit."
+          ],
+          "objectiveIds": [
+            "Y8-A-03",
+            "Y7-A-03"
+          ],
+          "sourcePage": 7
+        }
+      ]
+    },
+    {
+      "name": "Spring",
+      "units": [
+        {
+          "slug": "percentage-change-and-finance",
+          "title": "Percentage change and finance",
+          "objectives": [
+            "Represent an increase or decrease by a single multiplier and calculate percentage change relative to the original quantity.",
+            "Find an original amount after a stated percentage increase or reduction and check it by working forwards.",
+            "Compare discounts and price changes using a common baseline. Explain why equal percentage increases and decreases do not cancel.",
+            "Model simple interest on an unchanged principal, distinguish the interest from the final balance and interpret the time units."
+          ],
+          "objectiveIds": [
+            "Y8-R-01"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "parallel-lines-and-polygons",
+          "title": "Parallel lines and polygon angles",
+          "objectives": [
+            "Use alternate and corresponding angles at parallel lines and explain why parallelism is needed.",
+            "Use parallel lines to establish the triangle angle sum. Deduce the angle sum for an n-sided simple convex polygon by triangulation.",
+            "Calculate interior and exterior angles of regular polygons, justify the full turn of exterior angles and work backwards to find the number of sides.",
+            "Combine angle facts and properties of quadrilaterals in short deductions, distinguishing given information from the appearance of a diagram."
+          ],
+          "objectiveIds": [
+            "Y8-G-01"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "constructions-and-congruence",
+          "title": "Constructions and congruence",
+          "objectives": [
+            "Construct a perpendicular bisector and an angle bisector with ruler and compass, explaining how equal radii justify the construction.",
+            "Construct a perpendicular at a point on a line and from a point outside it. Use it to measure the shortest distance from a point to the line.",
+            "Draw triangles accurately from specified lengths and angles, identify corresponding sides and angles and test whether the data determine a unique triangle.",
+            "Use SSS, SAS, ASA and RHS to justify congruence. Explain why three equal pairs of angles can still give triangles of different sizes."
+          ],
+          "objectiveIds": [
+            "Y8-G-02"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "scales-and-similarity",
+          "title": "Scale drawings, maps and enlargement",
+          "objectives": [
+            "Read and produce scale drawings and maps, converting between lengths in the drawing and in the world.",
+            "Draw enlargements from a centre using positive scale factors, including reductions, with and without a coordinate grid.",
+            "Identify similar shapes from corresponding angles and proportional sides. Find a missing length using a scale factor.",
+            "Compare similarity and congruence, using corresponding sides to write ratios in consistent order."
+          ],
+          "objectiveIds": [
+            "Y8-G-03",
+            "Y8-R-02"
+          ],
+          "sourcePage": 7
+        }
+      ]
+    },
+    {
+      "name": "Summer",
+      "units": [
+        {
+          "slug": "rates-and-direct-proportion",
+          "title": "Rates and direct proportion",
+          "objectives": [
+            "Find unit prices and compare best buys after converting quantities to a common unit, including quantities below one unit.",
+            "Relate speed, distance and time and convert compound units when comparing journeys.",
+            "Build direct-proportion models from ratio tables. Explain why the ratio stays fixed and identify it as the gradient in y = kx.",
+            "Recognise a straight-line graph through the origin as a direct-proportion relationship, and explain a counterexample with a fixed starting charge."
+          ],
+          "objectiveIds": [
+            "Y8-R-02",
+            "Y8-R-03",
+            "Y8-W-01"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "solids-prisms-and-volume",
+          "title": "Solids, prisms and volume",
+          "objectives": [
+            "Describe and compare cubes, cuboids, prisms, cylinders, pyramids, cones and spheres through their faces, curved surfaces, edges and vertices where applicable.",
+            "Derive the volume of a cuboid from layers of cubes and generalise this to a prism with a constant cross-section.",
+            "Calculate volumes of cuboids and triangular or other polygonal prisms, and recover a missing length or cross-sectional area.",
+            "Convert area, volume and capacity units by reasoning from the length scale, including the connection between cm³ and millilitres."
+          ],
+          "objectiveIds": [
+            "Y7-G-03",
+            "Y9-G-04"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "sets-and-sample-spaces",
+          "title": "Sets and combined outcomes",
+          "objectives": [
+            "Enumerate sets systematically in lists, tables, grids and Venn diagrams, distinguishing a union from an intersection.",
+            "Build sample spaces for combined events and record each ordered outcome exactly once.",
+            "Use equally likely elementary outcomes to calculate event probabilities. Explain why two possible totals need not be equally likely.",
+            "Identify mutually exclusive events, add their probabilities and avoid double-counting outcomes shared by overlapping sets."
+          ],
+          "objectiveIds": [
+            "Y8-D-01"
+          ],
+          "sourcePage": 9
+        },
+        {
+          "slug": "comparing-distributions",
+          "title": "Comparing distributions",
+          "objectives": [
+            "Construct grouped frequency tables with clear class boundaries for discrete or continuous measurements.",
+            "Choose appropriate charts for grouped and ungrouped numerical data and use comparable axes when displaying two distributions.",
+            "Choose measures of centre and spread to compare groups, interpreting a difference in typical value or variability in the context.",
+            "Distinguish exact conclusions supported by raw data from estimates based on grouped data; explain the effect of an outlier or a misleading display."
+          ],
+          "objectiveIds": [
+            "Y8-D-02",
+            "Y7-D-02"
+          ],
+          "sourcePage": 9
+        }
+      ]
+    }
+  ]
+}

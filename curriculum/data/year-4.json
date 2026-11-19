@@ -1,0 +1,232 @@
+{
+  "year": 4,
+  "intro": "Work confidently beyond 1,000, link fractions to decimals and use the multiplication tables through 12 × 12. Measure, draw and compare shapes, and interpret what graphs say about change.",
+  "terms": [
+    {
+      "name": "Autumn",
+      "units": [
+        {
+          "slug": "place-value",
+          "title": "Place value",
+          "objectives": [
+            "Build and partition four-digit numbers in more than one way. Read the value of a digit even when another place contains zero.",
+            "Place numbers beyond 1,000 on a partly labelled number line, estimate a missing position and justify an ordering.",
+            "Count in 25s and 1,000s. Find the number 1,000 before or after a given number, including across a thousands boundary.",
+            "Count backwards through zero and interpret the negative values reached.",
+            "Round to the nearest 10, 100 or 1,000. Explain what to do at the midpoint and when an estimate is useful in a practical problem.",
+            "Read Roman numerals from I to C. Compare how Roman numerals and the later place-value system record numbers, including the role of zero."
+          ],
+          "objectiveIds": [
+            "Y4-NPV-01",
+            "Y4-NPV-02",
+            "Y4-NPV-03",
+            "Y4-NPV-04",
+            "Y4-NPV-05"
+          ],
+          "sourcePage": 24
+        },
+        {
+          "slug": "addition-subtraction",
+          "title": "Addition and subtraction",
+          "objectives": [
+            "Add and subtract numbers of up to four digits, choosing mental calculation or a column layout.",
+            "Explain each exchange, including subtraction across a zero. Keep digits of equal value aligned.",
+            "Estimate an answer and then check the exact result by reversing the calculation.",
+            "Choose and justify both steps in a problem involving addition or subtraction, such as comparing two combined distances."
+          ],
+          "objectiveIds": [
+            "Y4-AS-01",
+            "Y4-AS-02"
+          ],
+          "sourcePage": 25
+        },
+        {
+          "slug": "area",
+          "title": "Area",
+          "objectives": [
+            "Describe area as the amount of surface a shape covers. Use equal square units without gaps or overlaps.",
+            "Find the area of a rectilinear shape by counting squares, including shapes that can be split into rows or rectangles.",
+            "Draw two different rectilinear shapes with the same area and explain how the grid proves they match."
+          ],
+          "objectiveIds": [
+            "Y4-ME-03"
+          ],
+          "sourcePage": 27
+        },
+        {
+          "slug": "multiplication-division-a",
+          "title": "Multiplication and division A",
+          "objectives": [
+            "Count in 6s, 7s and 9s. Link these sequences to multiplication facts and their related divisions.",
+            "Recall products and division facts for all tables through 12 × 12, including when a factor is missing.",
+            "Explain the effects of multiplying by zero or one and of dividing by one. Use a known fact to work out a related fact mentally.",
+            "Find factor pairs. Reorder factors or regroup three factors to make a calculation easier."
+          ],
+          "objectiveIds": [
+            "Y4-NPV-02",
+            "Y4-MD-01",
+            "Y4-MD-02"
+          ],
+          "sourcePage": 25
+        }
+      ]
+    },
+    {
+      "name": "Spring",
+      "units": [
+        {
+          "slug": "multiplication-division-b",
+          "title": "Multiplication and division B",
+          "objectives": [
+            "Multiply a two- or three-digit number by one digit in a written layout. Explain the value carried from each column.",
+            "Split a factor into tens and ones, then add the partial products. Show why this gives the same result as a written multiplication.",
+            "Use known facts and place value to multiply or divide mentally, including cases such as 720 ÷ 9.",
+            "Choose calculations for integer scaling, multiplication followed by addition, and correspondence problems such as matching any of four tops with any of three skirts."
+          ],
+          "objectiveIds": [
+            "Y4-MD-03",
+            "Y4-MD-04",
+            "Y4-MD-02"
+          ],
+          "sourcePage": 25
+        },
+        {
+          "slug": "length-perimeter",
+          "title": "Length and perimeter",
+          "objectives": [
+            "Choose metres or centimetres to measure the boundary of a rectilinear shape, including a square.",
+            "Work out missing sides using alignments and equal lengths, then add all outer edges to find the perimeter.",
+            "Convert between metric units, including metres and kilometres. Estimate, compare and calculate lengths, masses and capacities using compatible units."
+          ],
+          "objectiveIds": [
+            "Y4-ME-01",
+            "Y4-ME-02"
+          ],
+          "sourcePage": 27
+        },
+        {
+          "slug": "fractions",
+          "title": "Fractions",
+          "objectives": [
+            "Use strips or number lines with the same whole to show families of equivalent fractions.",
+            "Add and subtract fractions with a common denominator. Explain why the size of each part stays fixed.",
+            "Find unit and non-unit fractions of quantities with whole-number answers, using division to find one part and multiplication for several parts.",
+            "Solve division and sharing problems using a fraction, explaining which quantity represents the whole."
+          ],
+          "objectiveIds": [
+            "Y4-FR-01",
+            "Y4-FR-02",
+            "Y4-FR-03"
+          ],
+          "sourcePage": 26
+        },
+        {
+          "slug": "decimals-a",
+          "title": "Decimals A",
+          "objectives": [
+            "Divide a whole into 100 equal parts and a tenth into 10 equal parts. Show why each small part is one hundredth.",
+            "Count forwards and backwards in hundredths, crossing a tenth or a whole. Match tenths and hundredths to fraction and decimal notation.",
+            "Divide one- and two-digit whole numbers by 10 and 100. Identify what each resulting digit is worth in ones, tenths or hundredths."
+          ],
+          "objectiveIds": [
+            "Y4-FR-04",
+            "Y4-FR-05"
+          ],
+          "sourcePage": 26
+        }
+      ]
+    },
+    {
+      "name": "Summer",
+      "units": [
+        {
+          "slug": "decimals-b",
+          "title": "Decimals B",
+          "objectives": [
+            "Match one quarter, one half and three quarters to 0.25, 0.5 and 0.75 using a diagram or a number line.",
+            "Order decimals with the same number of decimal places, using examples up to two places.",
+            "Round a number with one decimal place to the nearest whole number, including a value halfway between two whole numbers.",
+            "Solve simple measurement problems with fractions and decimals to two places, explaining the unit used."
+          ],
+          "objectiveIds": [
+            "Y4-FR-04",
+            "Y4-FR-06"
+          ],
+          "sourcePage": 26
+        },
+        {
+          "slug": "money",
+          "title": "Money",
+          "objectives": [
+            "Represent the same price in pounds and pence and record amounts such as eight pence as £0.08.",
+            "Estimate a total, work out the exact bill or change and compare two amounts using both pounds and pence.",
+            "Solve a two-step money problem that includes a fraction or decimal amount."
+          ],
+          "objectiveIds": [
+            "Y4-ME-01",
+            "Y4-FR-06"
+          ],
+          "sourcePage": 27
+        },
+        {
+          "slug": "time",
+          "title": "Time",
+          "objectives": [
+            "Read analogue and digital clocks. Record the same time in 12-hour and 24-hour notation.",
+            "Convert hours to minutes and minutes to seconds, and use these relationships to calculate durations.",
+            "Solve calendar problems by relating weeks to days and years to months."
+          ],
+          "objectiveIds": [
+            "Y4-ME-04",
+            "Y4-ME-05"
+          ],
+          "sourcePage": 27
+        },
+        {
+          "slug": "shape",
+          "title": "Shape and symmetry",
+          "objectives": [
+            "Sort and compare triangles and quadrilaterals by their sides, angles and sizes, including examples turned into unfamiliar positions.",
+            "Identify acute and obtuse angles. Order angles up to a straight angle, using a right angle as a reference.",
+            "Find each line of symmetry in a 2-D shape, including diagonal lines when the shape is rotated.",
+            "Complete a figure on the other side of a given mirror line and check corresponding distances."
+          ],
+          "objectiveIds": [
+            "Y4-GS-01",
+            "Y4-GS-02",
+            "Y4-GS-03"
+          ],
+          "sourcePage": 28
+        },
+        {
+          "slug": "statistics",
+          "title": "Statistics",
+          "objectives": [
+            "Distinguish a count from a measurement that varies continuously. Choose a bar chart or a time graph to display the data.",
+            "Give a graph an appropriate scale, label its axes and read intermediate values.",
+            "Compare values, calculate totals and find differences using bar charts, pictograms, tables and graphs."
+          ],
+          "objectiveIds": [
+            "Y4-ST-01",
+            "Y4-ST-02"
+          ],
+          "sourcePage": 29
+        },
+        {
+          "slug": "position-direction",
+          "title": "Position and direction",
+          "objectives": [
+            "Read and plot ordered coordinates in the first quadrant, moving across before moving up.",
+            "Plot given vertices and join them in the correct order to complete a polygon.",
+            "Describe a translation in horizontal and vertical grid units. Predict the new position before drawing it."
+          ],
+          "objectiveIds": [
+            "Y4-PD-01",
+            "Y4-PD-02"
+          ],
+          "sourcePage": 29
+        }
+      ]
+    }
+  ]
+}

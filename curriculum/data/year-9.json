@@ -1,0 +1,191 @@
+{
+  "year": 9,
+  "intro": "Bring together algebra, proportion, geometry and data to model unfamiliar problems. Distinguish exact answers from estimates, justify deductions and test what a model can predict.",
+  "terms": [
+    {
+      "name": "Autumn",
+      "units": [
+        {
+          "slug": "real-numbers-and-accuracy",
+          "title": "Real numbers, accuracy and error intervals",
+          "objectives": [
+            "Distinguish integers, rational numbers and irrational numbers on the real number line. Show why the sets of integers, rationals and reals are each infinite.",
+            "Compare exact powers, fractions and roots with decimal approximations, including measurements expressed in standard form.",
+            "Round to decimal places or significant figures according to a stated purpose and use rounding to estimate a multi-step result.",
+            "Write the interval of possible original values for a rounded measurement, marking each endpoint correctly under the stated rounding convention.",
+            "Use simple error intervals to estimate a possible error in a calculated quantity. Keep intermediate calculator values until the final rounding."
+          ],
+          "objectiveIds": [
+            "Y9-N-01",
+            "Y9-N-02",
+            "Y8-N-03"
+          ],
+          "sourcePage": 5
+        },
+        {
+          "slug": "products-formulae-and-proof",
+          "title": "Algebraic products, formulae and proof",
+          "objectives": [
+            "Expand a product of two binomials, collect like terms, and extend the distributive method to a product of three binomials.",
+            "Factorise by taking out a common factor and verify equivalence by re-expanding. Connect multiplication of brackets to an area diagram.",
+            "Rearrange a formula to isolate a chosen variable, including cases that require collecting terms, and test the rearrangement by substitution.",
+            "Use scientific formulae with consistent units. Represent an arithmetic generalisation algebraically and give a proof or a counterexample."
+          ],
+          "objectiveIds": [
+            "Y9-A-01",
+            "Y9-A-04",
+            "Y8-A-02",
+            "Y9-W-01"
+          ],
+          "sourcePage": 6
+        },
+        {
+          "slug": "graphs-and-simultaneous-equations",
+          "title": "Linear and quadratic graphs",
+          "objectives": [
+            "Construct and sketch linear and simple quadratic graphs from equations using suitable scales. Identify intercepts, symmetry and turning points where relevant.",
+            "Estimate outputs from a graph and find possible inputs for a given output, including when a quadratic gives two, one or no real inputs.",
+            "Read the intersection of two straight lines as an approximate solution of simultaneous linear equations. Check the coordinate in both equations.",
+            "Explain how the gradient and intercept affect a linear model and interpret a graph crossing as a change in which of two options costs less."
+          ],
+          "objectiveIds": [
+            "Y9-A-02",
+            "Y9-A-01"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "direct-and-inverse-proportion",
+          "title": "Direct and inverse proportion",
+          "objectives": [
+            "Distinguish direct proportion, inverse proportion and an additive relationship from tables, graphs and context.",
+            "Find the constant in y = kx or y = k/x, then use the model to calculate unknown values and interpret the graph over a meaningful domain.",
+            "Solve speed, unit-price and density problems by identifying the relevant quotient or product. Rearrange relationships to find a missing quantity.",
+            "Model a fixed-distance or fixed-work problem. State the assumption that allows an inverse relationship and test a prediction against the context."
+          ],
+          "objectiveIds": [
+            "Y9-R-01",
+            "Y8-R-03",
+            "Y9-R-02"
+          ],
+          "sourcePage": 7
+        }
+      ]
+    },
+    {
+      "name": "Spring",
+      "units": [
+        {
+          "slug": "circles-cylinders-and-composite-shapes",
+          "title": "Circles, cylinders and composite shapes",
+          "objectives": [
+            "Relate radius, diameter and circumference. Use symmetry and equal radii to justify properties of simple circle diagrams.",
+            "Calculate circle circumference and area, leave answers in terms of π when appropriate, and distinguish boundary length from enclosed area.",
+            "Find perimeters and areas of composite figures, including shapes incorporating semicircles, by identifying the actual boundary and any shared edges.",
+            "Use cross-sectional area and length to derive cylinder volume, and use dimensions or nets to calculate missing measures in composite solids."
+          ],
+          "objectiveIds": [
+            "Y8-G-04",
+            "Y9-G-04"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "pythagoras-and-deduction",
+          "title": "Pythagoras and geometric deduction",
+          "objectives": [
+            "Use an area rearrangement or similar triangles to justify a² + b² = c² for a right-angled triangle with hypotenuse c.",
+            "Calculate a missing hypotenuse or shorter side, keeping an exact root or rounding appropriately. Check that the longest side is plausible.",
+            "Use Pythagoras’ theorem to find distances on a coordinate grid and solve problems using more than one right-angled triangle.",
+            "Combine angle facts, congruence, similarity and quadrilateral properties in short proofs about sides and angles. State the reason for each deduction."
+          ],
+          "objectiveIds": [
+            "Y9-G-01",
+            "Y9-G-03"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "right-angled-trigonometry",
+          "title": "Trigonometry in right-angled triangles",
+          "objectives": [
+            "Use similar right-angled triangles to explain why ratios of corresponding side lengths depend on the chosen acute angle.",
+            "Identify opposite and adjacent sides relative to that angle, and select sine, cosine or tangent to calculate a missing side.",
+            "Find missing acute angles using inverse trigonometric functions in degree mode.",
+            "Choose between trigonometry and Pythagoras’ theorem for right-triangle problems, draw a labelled model and check the units and size of an answer."
+          ],
+          "objectiveIds": [
+            "Y9-G-02"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "interpreting-graphs-and-models",
+          "title": "Interpreting graphs and models",
+          "objectives": [
+            "Read and sketch piecewise-linear graphs for journeys or tariffs and interpret a change in slope in context.",
+            "Use supplied exponential and reciprocal graphs to estimate unknown inputs or outputs, selecting an appropriate scale and range.",
+            "Connect repeated multiplication in a geometric sequence to a growth or decay graph, and distinguish it from constant-difference growth.",
+            "Translate a situation between a description, table, equation and graph. Explain where interpolation is reasonable and where extrapolation depends on an assumption."
+          ],
+          "objectiveIds": [
+            "Y9-A-03",
+            "Y8-A-04",
+            "Y9-A-04"
+          ],
+          "sourcePage": 7
+        }
+      ]
+    },
+    {
+      "name": "Summer",
+      "units": [
+        {
+          "slug": "probability-models-and-evidence",
+          "title": "Probability models and evidence",
+          "objectives": [
+            "Select a diagram, grid or organised list for a multi-stage experiment and identify which outcomes are mutually exclusive or equally likely.",
+            "Compare probabilities for sampling with and without replacement by counting equally likely labelled outcomes.",
+            "Compare theoretical probabilities with observed relative frequencies from repeated trials or a simulation, allowing for variation between samples.",
+            "Evaluate a claim of fairness, explaining what the evidence supports and how a larger or better-designed trial could help."
+          ],
+          "objectiveIds": [
+            "Y9-D-01"
+          ],
+          "sourcePage": 9
+        },
+        {
+          "slug": "bivariate-data-and-statistical-enquiry",
+          "title": "Bivariate data and statistical enquiry",
+          "objectives": [
+            "Plan an observational or experimental comparison and distinguish measurements on two variables from two unrelated lists of values.",
+            "Plot paired measurements on a scatter graph and describe direction, strength, unusual observations and any visible non-linear relationship.",
+            "Use a trend to estimate a value within the observed range. Explain why association alone cannot establish causation.",
+            "Compare distributions with suitable summaries or diagrams, identify limits of a sample or a grouped display, and state a conclusion in context."
+          ],
+          "objectiveIds": [
+            "Y9-D-02",
+            "Y8-D-03"
+          ],
+          "sourcePage": 9
+        },
+        {
+          "slug": "multi-step-modelling",
+          "title": "Multi-step modelling and decision-making",
+          "objectives": [
+            "Break an unfamiliar problem into smaller steps and name the quantities, assumptions and units before choosing a method.",
+            "Compare financial options combining ratio, percentage change, simple interest and a fixed or variable charge.",
+            "Represent the same decision in a calculation, table and graph, and check that these representations agree.",
+            "Test how the conclusion changes when a price, measurement or assumption changes. Present a reasoned recommendation with appropriate precision."
+          ],
+          "objectiveIds": [
+            "Y9-W-01",
+            "Y9-R-02",
+            "Y8-W-01"
+          ],
+          "sourcePage": 5
+        }
+      ]
+    }
+  ]
+}

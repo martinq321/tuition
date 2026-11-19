@@ -1,0 +1,332 @@
+{
+  "year": 13,
+  "intro": "The second year develops calculus, numerical solution and mathematical modelling. Compare analytic and approximate answers, evaluate statistical evidence and use vector equations and moments to test a mechanical model.",
+  "terms": [
+    {
+      "name": "Autumn",
+      "units": [
+        {
+          "slug": "functions-rational-expressions-and-proof",
+          "title": "Functions, rational expressions and proof",
+          "strand": "Pure",
+          "objectives": [
+            "Define a function with its domain and range. Find a composite and its domain, and restrict a domain when necessary to construct an inverse. Relate inverse graphs by reflection in y = x.",
+            "Sketch the modulus of a linear expression and intersections with other graphs. Apply a sequence of graph transformations, keeping track of their order.",
+            "Simplify and divide rational expressions while retaining excluded values. Decompose proper fractions with constant or linear numerators into at most three partial-fraction terms with linear factors in the denominator, including factors repeated twice.",
+            "Prove that √2 is irrational and that there are infinitely many primes by contradiction. Adapt the method to an unfamiliar claim and identify the step that creates the contradiction.",
+            "Compare candidate functions for a context by inspecting domain, range and end behaviour. Explain which observations would justify changing a model."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "A1",
+            "B6",
+            "B7",
+            "B8",
+            "B9",
+            "B10",
+            "B11"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "sequences-series-and-binomial-approximation",
+          "title": "Sequences, series and binomial approximations",
+          "strand": "Pure",
+          "objectives": [
+            "Generate a sequence from an explicit term or a recurrence and investigate whether it is increasing, decreasing or periodic. Translate sums into and out of sigma notation.",
+            "Find an unknown term, common difference or finite sum for an arithmetic sequence. Explain the sum formula by pairing terms.",
+            "Find terms and finite sums for a geometric sequence. Determine whether an infinite geometric sum exists and use its value only when the common ratio has magnitude below one.",
+            "Build a sequence model for regular deposits, repayments or a repeated process. Interpret the indexing and test what happens when a parameter changes.",
+            "Expand a binomial with a rational exponent about zero, stating the interval of validity. Use the first few terms for an approximation and check it numerically."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "D1",
+            "D2",
+            "D3",
+            "D4",
+            "D5",
+            "D6"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "radians-and-trigonometric-identities",
+          "title": "Radians, trigonometric functions and identities",
+          "strand": "Pure",
+          "objectives": [
+            "Convert degrees to radians and find arc lengths and sector areas. Use sin θ ≈ θ, tan θ ≈ θ and cos θ ≈ 1 − θ²/2 for small angles measured in radians.",
+            "Sketch secant, cosecant and cotangent. For integer k, exclude π/2 + kπ from the domain of secant and kπ from the domains of cosecant and cotangent. Read off |y| ≥ 1 for secant and cosecant and all real y for cotangent. Sketch arcsin, arccos and arctan on their principal branches and state their domains and ranges.",
+            "Use the reciprocal Pythagorean identities and the sum, difference and double-angle formulae for sine, cosine and tangent. Explain a geometric proof of the addition formulae.",
+            "Combine a sine and cosine of the same argument into one phase-shifted sinusoid. Find its extreme values and solve equations over a specified interval.",
+            "Prove trigonometric identities on their valid domains, and use trigonometry to interpret a periodic model or resolve a vector."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "E1",
+            "E2",
+            "E3",
+            "E4",
+            "E5",
+            "E6",
+            "E7",
+            "E8",
+            "E9"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "three-dimensional-vectors",
+          "title": "Vectors in three dimensions",
+          "strand": "Pure",
+          "objectives": [
+            "Write spatial position and displacement vectors in component form. Find 3D distances, magnitudes, directions and unit vectors.",
+            "Calculate a resultant, a point dividing a segment or an unknown point from vector information, checking the result geometrically.",
+            "Test whether three points are collinear or two directions are parallel. Interpret a vector result in a spatial or motion context."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "J1",
+            "J2",
+            "J3",
+            "J4",
+            "J5"
+          ],
+          "sourcePage": 11
+        },
+        {
+          "slug": "conditional-probability-and-normal-models",
+          "title": "Conditional probability and the Normal distribution",
+          "strand": "Statistics",
+          "objectives": [
+            "Use a two-way table, tree or Venn diagram to change the reference group in a conditional probability. Calculate P(A given B) from the intersection and check the condition for independence.",
+            "Compare risk before and after new information. Explain how changing independence or an assumed base rate changes a conditional probability.",
+            "Relate a Normal density curve to a histogram, its centre and spread, and its two inflection points. Interpret areas as probabilities.",
+            "Use a calculator for Normal probabilities and inverse Normal problems. Standardise a value, or recover an unknown mean or standard deviation from given probabilities.",
+            "Choose between binomial and Normal models. Check when a Normal approximation to a binomial is reasonable, apply a continuity correction and compare with an exact calculation."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "M1",
+            "M2",
+            "M3",
+            "N2",
+            "N3",
+            "L1"
+          ],
+          "sourcePage": 13
+        },
+        {
+          "slug": "resolving-forces-and-friction",
+          "title": "Resolved forces and friction",
+          "strand": "Mechanics",
+          "objectives": [
+            "Choose axes along and perpendicular to a slope or another direction of motion. Resolve weight, reaction, tension and applied forces consistently.",
+            "Find equilibrium under coplanar forces or apply Newton’s second law to the components of a resultant. Use separate diagrams for connected bodies.",
+            "Use F ≤ μR for static friction, identify the limiting case, and determine the direction of friction from the possible motion. Use the sliding-friction model where appropriate.",
+            "Test a proposed state of rest, impending motion or acceleration against the equations and friction bound. Interpret a threshold angle or applied force."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "R1",
+            "R2",
+            "R4",
+            "R5",
+            "R6"
+          ],
+          "sourcePage": 15
+        }
+      ]
+    },
+    {
+      "name": "Spring",
+      "units": [
+        {
+          "slug": "parametric-curves",
+          "title": "Parametric curves and motion",
+          "strand": "Pure",
+          "objectives": [
+            "Trace a parametric curve over a specified interval, marking the direction of travel and points reached more than once.",
+            "Eliminate a parameter to obtain a Cartesian relation, retaining range restrictions. Give a parametrisation for a familiar line or curve.",
+            "Model two coordinates using a common time parameter. Interpret intersections, allowable times and any discrepancies between the model and the observed path."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "C3",
+            "C4",
+            "B11"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "advanced-differentiation",
+          "title": "Differentiation rules and the shape of a curve",
+          "strand": "Pure",
+          "objectives": [
+            "Derive the derivatives of sin x and cos x from first principles in radians. Differentiate trigonometric, exponential and logarithmic expressions, including aᵏˣ and tan kx.",
+            "Choose and combine the chain, product and quotient rules. Apply them to related rates and find the derivative of an inverse function at a suitable point.",
+            "Find first derivatives of implicit relations and parametric curves. Use them to locate a tangent or normal and consider where a formula for its gradient breaks down.",
+            "Use first and second derivatives to describe monotonicity, stationary points and curvature. Justify a point of inflection by a change of concavity.",
+            "Build an objective function from a practical constraint, test boundary cases and interpret the optimum with its units."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "G1",
+            "G2",
+            "G3",
+            "G4",
+            "G5"
+          ],
+          "sourcePage": 10
+        },
+        {
+          "slug": "advanced-integration",
+          "title": "Integration techniques and areas between curves",
+          "strand": "Pure",
+          "objectives": [
+            "Describe a definite integral as the limit of rectangle sums, then use the Fundamental Theorem of Calculus to evaluate it.",
+            "Integrate exponentials, sine and cosine of linear arguments and reciprocals, including the logarithmic antiderivative of 1/x on an appropriate interval.",
+            "Recognise a reverse chain rule or choose a one-step substitution. Transform the differential and either change the limits or return to the original variable.",
+            "Derive integration by parts from the product rule and apply it repeatedly where necessary. Use a partial-fraction decomposition to integrate rational expressions with linear factors.",
+            "Find intersections and split the interval where necessary to calculate the area enclosed between curves."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "H1",
+            "H2",
+            "H3",
+            "H4",
+            "H5",
+            "H6"
+          ],
+          "sourcePage": 10
+        },
+        {
+          "slug": "numerical-methods",
+          "title": "Numerical roots and quadrature",
+          "strand": "Pure",
+          "objectives": [
+            "Bracket a root using continuity and a sign change. Show how a discontinuity can mislead and how an even-multiplicity root can be missed.",
+            "Rearrange an equation as a fixed-point iteration, calculate its successive estimates and draw staircase or cobweb diagrams between y = x and y = g(x). Use the diagrams to explain convergence, oscillation or divergence.",
+            "Derive a Newton–Raphson step from a tangent, iterate from a starting value and recognise failure near a zero gradient or convergence to a different root.",
+            "Approximate a definite integral using the composite trapezium rule. Use the curve’s shape, rectangle bounds or a refined partition to assess the estimate.",
+            "Report a numerical solution to a contextual problem with justified precision. Bracket the answer or check the approximation independently."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "I1",
+            "I2",
+            "I3",
+            "I4"
+          ],
+          "sourcePage": 11
+        },
+        {
+          "slug": "testing-means-and-correlation",
+          "title": "Testing a mean and testing for correlation",
+          "strand": "Statistics",
+          "objectives": [
+            "Form hypotheses about a population mean under a Normal model with known or assumed variance. Use the sampling distribution of the mean and distinguish its standard error from the spread of individual observations.",
+            "Choose a one- or two-tailed test, calculate a probability or use a critical region, and express the evidence about the mean in context.",
+            "Interpret a supplied correlation coefficient as a measure of linear association. Use a supplied p-value or critical value to test for population correlation.",
+            "Compare a statistical conclusion with plots of the original data. Discuss the effect of an outlier or a mixture of subgroups before interpreting the result."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "L2",
+            "N2",
+            "O1",
+            "O3"
+          ],
+          "sourcePage": 14
+        },
+        {
+          "slug": "planar-motion-and-projectiles",
+          "title": "Motion in a plane and projectiles",
+          "strand": "Mechanics",
+          "objectives": [
+            "Extend constant-acceleration equations to vector motion in two dimensions. Use components to recover an initial velocity or the position at a common time.",
+            "Differentiate a vector position to obtain velocity and acceleration, or integrate components with initial conditions. Distinguish speed from a velocity component.",
+            "Model a projectile’s horizontal and vertical motion under uniform gravity. Find time of flight, range, greatest height or a trajectory equation, including launches from a height.",
+            "Select physically admissible solutions and test the effects of assumptions about air resistance, point size and constant gravity."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "Q3",
+            "Q4",
+            "Q5",
+            "J5",
+            "E9"
+          ],
+          "sourcePage": 14
+        }
+      ]
+    },
+    {
+      "name": "Summer",
+      "units": [
+        {
+          "slug": "differential-equations",
+          "title": "Differential equations and model checking",
+          "strand": "Pure",
+          "objectives": [
+            "Translate a rate statement into a first-order differential equation for a population, motion or another changing quantity. Explain the sign, units and meaning of each parameter.",
+            "Separate variables, integrate and use an initial condition to determine a particular solution. Check for constant solutions that division by a factor could remove.",
+            "Check a proposed solution by differentiating it and testing the initial conditions. Interpret its long-term behaviour, domain and limitations against the original situation."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "G6",
+            "H7",
+            "H8",
+            "B11"
+          ],
+          "sourcePage": 11
+        },
+        {
+          "slug": "large-data-set-enquiry",
+          "title": "An enquiry using the large data set",
+          "strand": "Statistics",
+          "objectives": [
+            "Pose a fresh question using the board’s large data set and identify an appropriate subset, comparison or explanatory variable. Explain how the data were collected.",
+            "Use a spreadsheet or statistical software to filter records, chart the data and investigate unusual values. Use a statistical calculator to reproduce relevant summaries or probabilities.",
+            "Select a distribution or inference method only when its assumptions fit. Report the finding in the units and language of the original question.",
+            "Repeat the analysis with a different subset or handling of missing data and explain which conclusions are robust to that choice."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "K1",
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "M3",
+            "N3",
+            "O1",
+            "O2",
+            "O3"
+          ],
+          "sourcePage": 12
+        },
+        {
+          "slug": "moments-and-equilibrium",
+          "title": "Moments and equilibrium of rigid bodies",
+          "strand": "Mechanics",
+          "objectives": [
+            "Find the moment of a force about a point from its perpendicular distance to the line of action, using newton metres and a consistent sign convention.",
+            "Choose a pivot to remove an unknown force from a moments equation. Combine rotational and translational equilibrium to find loads or support reactions.",
+            "Model a uniform rod, beam or ladder and locate the line of action of its weight. Test assumptions about contact and friction when judging whether equilibrium is possible."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "P1",
+            "R4",
+            "R6",
+            "S1"
+          ],
+          "sourcePage": 15
+        }
+      ]
+    }
+  ]
+}

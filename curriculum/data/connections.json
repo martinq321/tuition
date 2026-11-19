@@ -1,0 +1,814 @@
+{
+  "year-1/units/counting-to-ten": [
+    "year-2/units/place-value"
+  ],
+  "year-1/units/parts-and-totals": [
+    "year-2/units/addition-and-subtraction"
+  ],
+  "year-1/units/shape": [
+    "year-2/units/plane-and-solid-shapes"
+  ],
+  "year-1/units/numbers-to-twenty": [
+    "year-2/units/addition-and-subtraction"
+  ],
+  "year-1/units/calculating-to-twenty": [
+    "year-2/units/addition-and-subtraction"
+  ],
+  "year-1/units/numbers-to-fifty": [
+    "year-2/units/place-value"
+  ],
+  "year-1/units/length-and-height": [
+    "year-2/units/length-and-height"
+  ],
+  "year-1/units/mass-and-capacity": [
+    "year-2/units/mass-capacity-temperature"
+  ],
+  "year-1/units/groups-and-sharing": [
+    "year-2/units/groups-and-tables",
+    "year-2/units/division"
+  ],
+  "year-1/units/halves-and-quarters": [
+    "year-2/units/fractions"
+  ],
+  "year-1/units/position-and-turns": [
+    "year-2/units/position-and-patterns"
+  ],
+  "year-1/units/numbers-to-one-hundred": [
+    "year-2/units/place-value"
+  ],
+  "year-1/units/money": [
+    "year-2/units/money"
+  ],
+  "year-1/units/time": [
+    "year-2/units/clocks-and-intervals"
+  ],
+  "year-2/units/place-value": [
+    "year-1/units/counting-to-ten",
+    "year-1/units/numbers-to-fifty",
+    "year-1/units/numbers-to-one-hundred",
+    "year-3/units/place-value"
+  ],
+  "year-2/units/addition-and-subtraction": [
+    "year-1/units/parts-and-totals",
+    "year-1/units/numbers-to-twenty",
+    "year-1/units/calculating-to-twenty",
+    "year-3/units/mental-addition-subtraction",
+    "year-3/units/written-addition-subtraction"
+  ],
+  "year-2/units/plane-and-solid-shapes": [
+    "year-1/units/shape",
+    "year-3/units/angles-and-shape"
+  ],
+  "year-2/units/money": [
+    "year-1/units/money",
+    "year-3/units/money"
+  ],
+  "year-2/units/groups-and-tables": [
+    "year-1/units/groups-and-sharing",
+    "year-3/units/tables"
+  ],
+  "year-2/units/division": [
+    "year-1/units/groups-and-sharing",
+    "year-3/units/multiplication-division"
+  ],
+  "year-2/units/length-and-height": [
+    "year-1/units/length-and-height",
+    "year-3/units/length-and-perimeter"
+  ],
+  "year-2/units/mass-capacity-temperature": [
+    "year-1/units/mass-and-capacity",
+    "year-3/units/mass-and-capacity"
+  ],
+  "year-2/units/fractions": [
+    "year-1/units/halves-and-quarters",
+    "year-3/units/fractions-and-tenths",
+    "year-3/units/fractions-of-quantities"
+  ],
+  "year-2/units/clocks-and-intervals": [
+    "year-1/units/time",
+    "year-3/units/time"
+  ],
+  "year-2/units/position-and-patterns": [
+    "year-1/units/position-and-turns",
+    "year-3/units/angles-and-shape",
+    "year-4/units/position-direction"
+  ],
+  "year-2/units/statistics": [
+    "year-3/units/statistics"
+  ],
+  "year-3/units/place-value": [
+    "year-2/units/place-value",
+    "year-4/units/place-value"
+  ],
+  "year-3/units/mental-addition-subtraction": [
+    "year-2/units/addition-and-subtraction",
+    "year-4/units/addition-subtraction",
+    "year-6/units/algebra"
+  ],
+  "year-3/units/written-addition-subtraction": [
+    "year-2/units/addition-and-subtraction",
+    "year-4/units/addition-subtraction"
+  ],
+  "year-3/units/tables": [
+    "year-2/units/groups-and-tables",
+    "year-4/units/area",
+    "year-4/units/multiplication-division-a"
+  ],
+  "year-3/units/multiplication-division": [
+    "year-2/units/division",
+    "year-4/units/multiplication-division-b"
+  ],
+  "year-3/units/length-and-perimeter": [
+    "year-2/units/length-and-height",
+    "year-4/units/length-perimeter"
+  ],
+  "year-3/units/fractions-and-tenths": [
+    "year-2/units/fractions",
+    "year-4/units/fractions",
+    "year-4/units/decimals-a",
+    "year-4/units/decimals-b"
+  ],
+  "year-3/units/mass-and-capacity": [
+    "year-2/units/mass-capacity-temperature",
+    "year-4/units/length-perimeter",
+    "year-5/units/volume"
+  ],
+  "year-3/units/fractions-of-quantities": [
+    "year-2/units/fractions",
+    "year-4/units/fractions"
+  ],
+  "year-3/units/money": [
+    "year-2/units/money",
+    "year-4/units/money"
+  ],
+  "year-3/units/time": [
+    "year-2/units/clocks-and-intervals",
+    "year-4/units/time"
+  ],
+  "year-3/units/angles-and-shape": [
+    "year-2/units/plane-and-solid-shapes",
+    "year-2/units/position-and-patterns",
+    "year-4/units/shape"
+  ],
+  "year-3/units/statistics": [
+    "year-2/units/statistics",
+    "year-4/units/statistics"
+  ],
+  "year-4/units/place-value": [
+    "year-3/units/place-value",
+    "year-5/units/place-value",
+    "year-5/units/negative-numbers"
+  ],
+  "year-4/units/addition-subtraction": [
+    "year-3/units/mental-addition-subtraction",
+    "year-3/units/written-addition-subtraction",
+    "year-5/units/addition-subtraction"
+  ],
+  "year-4/units/area": [
+    "year-3/units/tables",
+    "year-5/units/perimeter-area"
+  ],
+  "year-4/units/multiplication-division-a": [
+    "year-3/units/tables",
+    "year-5/units/multiplication-division-a"
+  ],
+  "year-4/units/multiplication-division-b": [
+    "year-3/units/multiplication-division",
+    "year-5/units/multiplication-division-b"
+  ],
+  "year-4/units/length-perimeter": [
+    "year-3/units/length-and-perimeter",
+    "year-3/units/mass-and-capacity",
+    "year-5/units/perimeter-area",
+    "year-5/units/converting-units"
+  ],
+  "year-4/units/fractions": [
+    "year-3/units/fractions-and-tenths",
+    "year-3/units/fractions-of-quantities",
+    "year-5/units/fractions-a",
+    "year-5/units/fractions-b"
+  ],
+  "year-4/units/decimals-a": [
+    "year-3/units/fractions-and-tenths",
+    "year-5/units/decimals-percentages",
+    "year-5/units/decimals"
+  ],
+  "year-4/units/decimals-b": [
+    "year-3/units/fractions-and-tenths",
+    "year-5/units/decimals-percentages"
+  ],
+  "year-4/units/money": [
+    "year-3/units/money",
+    "year-5/units/decimals"
+  ],
+  "year-4/units/time": [
+    "year-3/units/time",
+    "year-5/units/converting-units"
+  ],
+  "year-4/units/shape": [
+    "year-3/units/angles-and-shape",
+    "year-5/units/shape"
+  ],
+  "year-4/units/statistics": [
+    "year-3/units/statistics",
+    "year-5/units/statistics"
+  ],
+  "year-4/units/position-direction": [
+    "year-2/units/position-and-patterns",
+    "year-5/units/position-direction"
+  ],
+  "year-5/units/place-value": [
+    "year-4/units/place-value",
+    "year-6/units/place-value"
+  ],
+  "year-5/units/addition-subtraction": [
+    "year-4/units/addition-subtraction",
+    "year-6/units/four-operations"
+  ],
+  "year-5/units/multiplication-division-a": [
+    "year-4/units/multiplication-division-a",
+    "year-6/units/four-operations"
+  ],
+  "year-5/units/fractions-a": [
+    "year-4/units/fractions",
+    "year-6/units/fractions"
+  ],
+  "year-5/units/multiplication-division-b": [
+    "year-4/units/multiplication-division-b",
+    "year-6/units/four-operations",
+    "year-6/units/ratio",
+    "year-6/units/algebra"
+  ],
+  "year-5/units/fractions-b": [
+    "year-4/units/fractions",
+    "year-6/units/fractions",
+    "year-6/units/ratio"
+  ],
+  "year-5/units/decimals-percentages": [
+    "year-4/units/decimals-a",
+    "year-4/units/decimals-b",
+    "year-6/units/percentages"
+  ],
+  "year-5/units/perimeter-area": [
+    "year-4/units/area",
+    "year-4/units/length-perimeter",
+    "year-6/units/area-perimeter-volume"
+  ],
+  "year-5/units/statistics": [
+    "year-4/units/statistics",
+    "year-6/units/statistics"
+  ],
+  "year-5/units/shape": [
+    "year-4/units/shape",
+    "year-6/units/shape"
+  ],
+  "year-5/units/position-direction": [
+    "year-4/units/position-direction",
+    "year-6/units/position-direction"
+  ],
+  "year-5/units/decimals": [
+    "year-4/units/decimals-a",
+    "year-4/units/money",
+    "year-6/units/decimals"
+  ],
+  "year-5/units/negative-numbers": [
+    "year-4/units/place-value",
+    "year-6/units/place-value"
+  ],
+  "year-5/units/converting-units": [
+    "year-4/units/length-perimeter",
+    "year-4/units/time",
+    "year-6/units/converting-units"
+  ],
+  "year-5/units/volume": [
+    "year-3/units/mass-and-capacity",
+    "year-6/units/area-perimeter-volume"
+  ],
+  "year-6/units/place-value": [
+    "year-5/units/place-value",
+    "year-5/units/negative-numbers",
+    "year-7/units/place-value-and-measures",
+    "year-7/units/signed-number-and-calculation"
+  ],
+  "year-6/units/four-operations": [
+    "year-5/units/addition-subtraction",
+    "year-5/units/multiplication-division-a",
+    "year-5/units/multiplication-division-b",
+    "year-7/units/factors-multiples-and-primes"
+  ],
+  "year-6/units/fractions": [
+    "year-5/units/fractions-a",
+    "year-5/units/fractions-b",
+    "year-7/units/fractions-decimals-and-percentages"
+  ],
+  "year-6/units/converting-units": [
+    "year-5/units/converting-units",
+    "year-7/units/place-value-and-measures"
+  ],
+  "year-6/units/ratio": [
+    "year-5/units/multiplication-division-b",
+    "year-5/units/fractions-b",
+    "year-7/units/ratio-and-sharing"
+  ],
+  "year-6/units/algebra": [
+    "year-3/units/mental-addition-subtraction",
+    "year-5/units/multiplication-division-b",
+    "year-7/units/expressions-and-substitution",
+    "year-7/units/coordinates-and-sequences"
+  ],
+  "year-6/units/decimals": [
+    "year-5/units/decimals",
+    "year-7/units/signed-number-and-calculation"
+  ],
+  "year-6/units/percentages": [
+    "year-5/units/decimals-percentages",
+    "year-7/units/fractions-decimals-and-percentages"
+  ],
+  "year-6/units/area-perimeter-volume": [
+    "year-5/units/perimeter-area",
+    "year-5/units/volume",
+    "year-7/units/perimeter-and-area",
+    "year-8/units/solids-prisms-and-volume"
+  ],
+  "year-6/units/shape": [
+    "year-5/units/shape",
+    "year-7/units/angles-and-plane-shapes"
+  ],
+  "year-6/units/position-direction": [
+    "year-5/units/position-direction",
+    "year-7/units/coordinates-and-sequences",
+    "year-7/units/translations-reflections-and-rotations"
+  ],
+  "year-6/units/statistics": [
+    "year-5/units/statistics",
+    "year-7/units/data-displays-and-averages"
+  ],
+  "year-7/units/place-value-and-measures": [
+    "year-6/units/place-value",
+    "year-6/units/converting-units",
+    "year-8/units/powers-roots-and-standard-form"
+  ],
+  "year-7/units/signed-number-and-calculation": [
+    "year-6/units/place-value",
+    "year-6/units/decimals",
+    "year-8/units/signed-fractions-and-order-of-operations"
+  ],
+  "year-7/units/factors-multiples-and-primes": [
+    "year-6/units/four-operations",
+    "year-7/units/fractions-decimals-and-percentages",
+    "year-8/units/powers-roots-and-standard-form"
+  ],
+  "year-7/units/expressions-and-substitution": [
+    "year-6/units/algebra",
+    "year-8/units/linear-equations-and-equivalence"
+  ],
+  "year-7/units/fractions-decimals-and-percentages": [
+    "year-6/units/fractions",
+    "year-6/units/percentages",
+    "year-7/units/factors-multiples-and-primes",
+    "year-7/units/chance-and-experiments",
+    "year-8/units/signed-fractions-and-order-of-operations",
+    "year-8/units/percentage-change-and-finance"
+  ],
+  "year-7/units/ratio-and-sharing": [
+    "year-6/units/ratio",
+    "year-8/units/scales-and-similarity",
+    "year-8/units/rates-and-direct-proportion"
+  ],
+  "year-7/units/coordinates-and-sequences": [
+    "year-6/units/algebra",
+    "year-6/units/position-direction",
+    "year-8/units/linear-sequences-and-graphs"
+  ],
+  "year-7/units/angles-and-plane-shapes": [
+    "year-6/units/shape",
+    "year-8/units/parallel-lines-and-polygons",
+    "year-8/units/constructions-and-congruence"
+  ],
+  "year-7/units/perimeter-and-area": [
+    "year-6/units/area-perimeter-volume",
+    "year-8/units/solids-prisms-and-volume",
+    "year-9/units/circles-cylinders-and-composite-shapes"
+  ],
+  "year-7/units/translations-reflections-and-rotations": [
+    "year-6/units/position-direction",
+    "year-8/units/constructions-and-congruence",
+    "year-8/units/scales-and-similarity"
+  ],
+  "year-7/units/chance-and-experiments": [
+    "year-7/units/fractions-decimals-and-percentages",
+    "year-8/units/sets-and-sample-spaces",
+    "year-9/units/probability-models-and-evidence"
+  ],
+  "year-7/units/data-displays-and-averages": [
+    "year-6/units/statistics",
+    "year-8/units/comparing-distributions"
+  ],
+  "year-8/units/powers-roots-and-standard-form": [
+    "year-7/units/place-value-and-measures",
+    "year-7/units/factors-multiples-and-primes",
+    "year-9/units/real-numbers-and-accuracy",
+    "year-9/units/pythagoras-and-deduction"
+  ],
+  "year-8/units/signed-fractions-and-order-of-operations": [
+    "year-7/units/signed-number-and-calculation",
+    "year-7/units/fractions-decimals-and-percentages",
+    "year-9/units/real-numbers-and-accuracy"
+  ],
+  "year-8/units/linear-equations-and-equivalence": [
+    "year-7/units/expressions-and-substitution",
+    "year-9/units/products-formulae-and-proof",
+    "year-9/units/graphs-and-simultaneous-equations"
+  ],
+  "year-8/units/linear-sequences-and-graphs": [
+    "year-7/units/coordinates-and-sequences",
+    "year-9/units/graphs-and-simultaneous-equations",
+    "year-9/units/interpreting-graphs-and-models"
+  ],
+  "year-8/units/percentage-change-and-finance": [
+    "year-7/units/fractions-decimals-and-percentages",
+    "year-9/units/multi-step-modelling"
+  ],
+  "year-8/units/parallel-lines-and-polygons": [
+    "year-7/units/angles-and-plane-shapes",
+    "year-9/units/pythagoras-and-deduction",
+    "year-10/units/angles-and-geometric-reasoning"
+  ],
+  "year-8/units/constructions-and-congruence": [
+    "year-7/units/angles-and-plane-shapes",
+    "year-7/units/translations-reflections-and-rotations",
+    "year-9/units/pythagoras-and-deduction",
+    "year-10/units/angles-and-geometric-reasoning"
+  ],
+  "year-8/units/scales-and-similarity": [
+    "year-7/units/ratio-and-sharing",
+    "year-7/units/translations-reflections-and-rotations",
+    "year-9/units/right-angled-trigonometry",
+    "year-10/units/transformations-and-vectors"
+  ],
+  "year-8/units/rates-and-direct-proportion": [
+    "year-7/units/ratio-and-sharing",
+    "year-9/units/direct-and-inverse-proportion"
+  ],
+  "year-8/units/solids-prisms-and-volume": [
+    "year-6/units/area-perimeter-volume",
+    "year-7/units/perimeter-and-area",
+    "year-9/units/circles-cylinders-and-composite-shapes"
+  ],
+  "year-8/units/sets-and-sample-spaces": [
+    "year-7/units/chance-and-experiments",
+    "year-9/units/probability-models-and-evidence"
+  ],
+  "year-8/units/comparing-distributions": [
+    "year-7/units/data-displays-and-averages",
+    "year-9/units/bivariate-data-and-statistical-enquiry"
+  ],
+  "year-9/units/real-numbers-and-accuracy": [
+    "year-8/units/powers-roots-and-standard-form",
+    "year-8/units/signed-fractions-and-order-of-operations",
+    "year-9/units/multi-step-modelling",
+    "year-10/units/number-and-calculation",
+    "year-10/units/measures-rounding-and-scales"
+  ],
+  "year-9/units/products-formulae-and-proof": [
+    "year-8/units/linear-equations-and-equivalence",
+    "year-9/units/graphs-and-simultaneous-equations",
+    "year-10/units/algebra-and-formulae",
+    "year-10/units/sequences-and-quadratics"
+  ],
+  "year-9/units/graphs-and-simultaneous-equations": [
+    "year-8/units/linear-equations-and-equivalence",
+    "year-8/units/linear-sequences-and-graphs",
+    "year-9/units/products-formulae-and-proof",
+    "year-9/units/interpreting-graphs-and-models",
+    "year-10/units/linear-equations-and-graphs",
+    "year-11/units/equations-and-functions"
+  ],
+  "year-9/units/direct-and-inverse-proportion": [
+    "year-8/units/rates-and-direct-proportion",
+    "year-9/units/interpreting-graphs-and-models",
+    "year-9/units/multi-step-modelling",
+    "year-10/units/ratio-fractions-and-percentages",
+    "year-11/units/proportional-models-and-growth"
+  ],
+  "year-9/units/circles-cylinders-and-composite-shapes": [
+    "year-7/units/perimeter-and-area",
+    "year-8/units/solids-prisms-and-volume",
+    "year-10/units/perimeter-area-and-solids"
+  ],
+  "year-9/units/pythagoras-and-deduction": [
+    "year-8/units/powers-roots-and-standard-form",
+    "year-8/units/parallel-lines-and-polygons",
+    "year-8/units/constructions-and-congruence",
+    "year-9/units/right-angled-trigonometry",
+    "year-10/units/right-triangle-methods"
+  ],
+  "year-9/units/right-angled-trigonometry": [
+    "year-8/units/scales-and-similarity",
+    "year-9/units/pythagoras-and-deduction",
+    "year-10/units/right-triangle-methods"
+  ],
+  "year-9/units/interpreting-graphs-and-models": [
+    "year-8/units/linear-sequences-and-graphs",
+    "year-9/units/graphs-and-simultaneous-equations",
+    "year-9/units/direct-and-inverse-proportion",
+    "year-9/units/bivariate-data-and-statistical-enquiry",
+    "year-11/units/interpreting-graphs-and-rates"
+  ],
+  "year-9/units/probability-models-and-evidence": [
+    "year-7/units/chance-and-experiments",
+    "year-8/units/sets-and-sample-spaces",
+    "year-10/units/probability-and-counting"
+  ],
+  "year-9/units/bivariate-data-and-statistical-enquiry": [
+    "year-8/units/comparing-distributions",
+    "year-9/units/interpreting-graphs-and-models",
+    "year-10/units/statistics-and-sampling"
+  ],
+  "year-9/units/multi-step-modelling": [
+    "year-8/units/percentage-change-and-finance",
+    "year-9/units/real-numbers-and-accuracy",
+    "year-9/units/direct-and-inverse-proportion",
+    "year-11/units/numerical-and-mixed-modelling"
+  ],
+  "year-10/units/number-and-calculation": [
+    "year-9/units/real-numbers-and-accuracy",
+    "year-11/units/exact-algebra-and-proof"
+  ],
+  "year-10/units/algebra-and-formulae": [
+    "year-9/units/products-formulae-and-proof",
+    "year-11/units/equations-and-functions",
+    "year-11/units/exact-algebra-and-proof"
+  ],
+  "year-10/units/ratio-fractions-and-percentages": [
+    "year-9/units/direct-and-inverse-proportion",
+    "year-11/units/proportional-models-and-growth"
+  ],
+  "year-10/units/angles-and-geometric-reasoning": [
+    "year-8/units/parallel-lines-and-polygons",
+    "year-8/units/constructions-and-congruence",
+    "year-11/units/geometrical-reasoning-and-circles"
+  ],
+  "year-10/units/linear-equations-and-graphs": [
+    "year-9/units/graphs-and-simultaneous-equations",
+    "year-11/units/equations-and-functions",
+    "year-11/units/interpreting-graphs-and-rates",
+    "year-12/units/graphs-and-lines"
+  ],
+  "year-10/units/measures-rounding-and-scales": [
+    "year-9/units/real-numbers-and-accuracy",
+    "year-11/units/numerical-and-mixed-modelling"
+  ],
+  "year-10/units/statistics-and-sampling": [
+    "year-9/units/bivariate-data-and-statistical-enquiry",
+    "year-11/units/data-distributions",
+    "year-12/units/samples-and-real-data"
+  ],
+  "year-10/units/perimeter-area-and-solids": [
+    "year-9/units/circles-cylinders-and-composite-shapes",
+    "year-11/units/triangles-and-space"
+  ],
+  "year-10/units/transformations-and-vectors": [
+    "year-8/units/scales-and-similarity",
+    "year-11/units/exact-algebra-and-proof",
+    "year-12/units/vectors-in-the-plane"
+  ],
+  "year-10/units/right-triangle-methods": [
+    "year-9/units/pythagoras-and-deduction",
+    "year-9/units/right-angled-trigonometry",
+    "year-11/units/triangles-and-space"
+  ],
+  "year-10/units/probability-and-counting": [
+    "year-9/units/probability-models-and-evidence",
+    "year-11/units/combined-probability",
+    "year-12/units/binomial-expansion"
+  ],
+  "year-10/units/sequences-and-quadratics": [
+    "year-9/units/products-formulae-and-proof",
+    "year-11/units/quadratic-and-other-graphs",
+    "year-13/units/sequences-series-and-binomial-approximation"
+  ],
+  "year-11/units/proportional-models-and-growth": [
+    "year-9/units/direct-and-inverse-proportion",
+    "year-10/units/ratio-fractions-and-percentages",
+    "year-12/units/exponentials-and-logarithms",
+    "year-13/units/sequences-series-and-binomial-approximation"
+  ],
+  "year-11/units/equations-and-functions": [
+    "year-9/units/graphs-and-simultaneous-equations",
+    "year-10/units/algebra-and-formulae",
+    "year-10/units/linear-equations-and-graphs",
+    "year-12/units/quadratics-and-inequalities",
+    "year-13/units/functions-rational-expressions-and-proof"
+  ],
+  "year-11/units/combined-probability": [
+    "year-10/units/probability-and-counting",
+    "year-12/units/scatter-and-probability",
+    "year-12/units/binomial-models-and-tests"
+  ],
+  "year-11/units/quadratic-and-other-graphs": [
+    "year-10/units/sequences-and-quadratics",
+    "year-12/units/quadratics-and-inequalities",
+    "year-12/units/graphs-and-lines"
+  ],
+  "year-11/units/geometrical-reasoning-and-circles": [
+    "year-10/units/angles-and-geometric-reasoning",
+    "year-12/units/circles-and-trigonometry"
+  ],
+  "year-11/units/triangles-and-space": [
+    "year-10/units/perimeter-area-and-solids",
+    "year-10/units/right-triangle-methods",
+    "year-12/units/circles-and-trigonometry",
+    "year-13/units/three-dimensional-vectors"
+  ],
+  "year-11/units/data-distributions": [
+    "year-10/units/statistics-and-sampling",
+    "year-12/units/samples-and-real-data",
+    "year-12/units/scatter-and-probability"
+  ],
+  "year-11/units/exact-algebra-and-proof": [
+    "year-10/units/number-and-calculation",
+    "year-10/units/algebra-and-formulae",
+    "year-10/units/transformations-and-vectors",
+    "year-12/units/algebra-and-proof",
+    "year-12/units/binomial-expansion"
+  ],
+  "year-11/units/interpreting-graphs-and-rates": [
+    "year-9/units/interpreting-graphs-and-models",
+    "year-10/units/linear-equations-and-graphs",
+    "year-12/units/quantities-and-motion-graphs",
+    "year-12/units/differentiation",
+    "year-12/units/straight-line-acceleration",
+    "year-12/units/integration",
+    "year-12/units/forces-and-connected-particles"
+  ],
+  "year-11/units/numerical-and-mixed-modelling": [
+    "year-9/units/multi-step-modelling",
+    "year-10/units/measures-rounding-and-scales",
+    "year-13/units/numerical-methods"
+  ],
+  "year-12/units/algebra-and-proof": [
+    "year-11/units/exact-algebra-and-proof",
+    "year-13/units/functions-rational-expressions-and-proof"
+  ],
+  "year-12/units/quadratics-and-inequalities": [
+    "year-11/units/equations-and-functions",
+    "year-11/units/quadratic-and-other-graphs",
+    "year-13/units/functions-rational-expressions-and-proof"
+  ],
+  "year-12/units/graphs-and-lines": [
+    "year-10/units/linear-equations-and-graphs",
+    "year-11/units/quadratic-and-other-graphs",
+    "year-13/units/functions-rational-expressions-and-proof",
+    "year-13/units/radians-and-trigonometric-identities",
+    "year-13/units/parametric-curves"
+  ],
+  "year-12/units/samples-and-real-data": [
+    "year-10/units/statistics-and-sampling",
+    "year-11/units/data-distributions",
+    "year-13/units/conditional-probability-and-normal-models",
+    "year-13/units/testing-means-and-correlation",
+    "year-13/units/large-data-set-enquiry"
+  ],
+  "year-12/units/quantities-and-motion-graphs": [
+    "year-11/units/interpreting-graphs-and-rates",
+    "year-13/units/parametric-curves",
+    "year-13/units/planar-motion-and-projectiles"
+  ],
+  "year-12/units/circles-and-trigonometry": [
+    "year-11/units/geometrical-reasoning-and-circles",
+    "year-11/units/triangles-and-space",
+    "year-13/units/radians-and-trigonometric-identities",
+    "year-13/units/resolving-forces-and-friction",
+    "year-13/units/parametric-curves",
+    "year-13/units/advanced-differentiation"
+  ],
+  "year-12/units/differentiation": [
+    "year-11/units/interpreting-graphs-and-rates",
+    "year-13/units/advanced-differentiation",
+    "year-13/units/advanced-integration",
+    "year-13/units/numerical-methods",
+    "year-13/units/differential-equations"
+  ],
+  "year-12/units/binomial-expansion": [
+    "year-10/units/probability-and-counting",
+    "year-11/units/exact-algebra-and-proof",
+    "year-13/units/sequences-series-and-binomial-approximation"
+  ],
+  "year-12/units/scatter-and-probability": [
+    "year-11/units/combined-probability",
+    "year-11/units/data-distributions",
+    "year-13/units/conditional-probability-and-normal-models",
+    "year-13/units/testing-means-and-correlation",
+    "year-13/units/large-data-set-enquiry"
+  ],
+  "year-12/units/straight-line-acceleration": [
+    "year-11/units/interpreting-graphs-and-rates",
+    "year-13/units/planar-motion-and-projectiles"
+  ],
+  "year-12/units/exponentials-and-logarithms": [
+    "year-11/units/proportional-models-and-growth",
+    "year-13/units/advanced-differentiation",
+    "year-13/units/advanced-integration",
+    "year-13/units/differential-equations"
+  ],
+  "year-12/units/integration": [
+    "year-11/units/interpreting-graphs-and-rates",
+    "year-13/units/advanced-integration",
+    "year-13/units/numerical-methods",
+    "year-13/units/differential-equations"
+  ],
+  "year-12/units/vectors-in-the-plane": [
+    "year-10/units/transformations-and-vectors",
+    "year-13/units/three-dimensional-vectors",
+    "year-13/units/resolving-forces-and-friction",
+    "year-13/units/planar-motion-and-projectiles",
+    "year-13/units/moments-and-equilibrium"
+  ],
+  "year-12/units/binomial-models-and-tests": [
+    "year-11/units/combined-probability",
+    "year-13/units/conditional-probability-and-normal-models",
+    "year-13/units/testing-means-and-correlation",
+    "year-13/units/large-data-set-enquiry"
+  ],
+  "year-12/units/forces-and-connected-particles": [
+    "year-11/units/interpreting-graphs-and-rates",
+    "year-13/units/resolving-forces-and-friction",
+    "year-13/units/planar-motion-and-projectiles",
+    "year-13/units/moments-and-equilibrium"
+  ],
+  "year-13/units/functions-rational-expressions-and-proof": [
+    "year-11/units/equations-and-functions",
+    "year-12/units/algebra-and-proof",
+    "year-12/units/quadratics-and-inequalities",
+    "year-12/units/graphs-and-lines"
+  ],
+  "year-13/units/sequences-series-and-binomial-approximation": [
+    "year-10/units/sequences-and-quadratics",
+    "year-11/units/proportional-models-and-growth",
+    "year-12/units/binomial-expansion"
+  ],
+  "year-13/units/radians-and-trigonometric-identities": [
+    "year-12/units/graphs-and-lines",
+    "year-12/units/circles-and-trigonometry"
+  ],
+  "year-13/units/three-dimensional-vectors": [
+    "year-11/units/triangles-and-space",
+    "year-12/units/vectors-in-the-plane"
+  ],
+  "year-13/units/conditional-probability-and-normal-models": [
+    "year-12/units/samples-and-real-data",
+    "year-12/units/scatter-and-probability",
+    "year-12/units/binomial-models-and-tests"
+  ],
+  "year-13/units/resolving-forces-and-friction": [
+    "year-12/units/circles-and-trigonometry",
+    "year-12/units/vectors-in-the-plane",
+    "year-12/units/forces-and-connected-particles"
+  ],
+  "year-13/units/parametric-curves": [
+    "year-12/units/graphs-and-lines",
+    "year-12/units/quantities-and-motion-graphs",
+    "year-12/units/circles-and-trigonometry"
+  ],
+  "year-13/units/advanced-differentiation": [
+    "year-12/units/circles-and-trigonometry",
+    "year-12/units/differentiation",
+    "year-12/units/exponentials-and-logarithms"
+  ],
+  "year-13/units/advanced-integration": [
+    "year-12/units/differentiation",
+    "year-12/units/exponentials-and-logarithms",
+    "year-12/units/integration"
+  ],
+  "year-13/units/numerical-methods": [
+    "year-11/units/numerical-and-mixed-modelling",
+    "year-12/units/differentiation",
+    "year-12/units/integration"
+  ],
+  "year-13/units/testing-means-and-correlation": [
+    "year-12/units/samples-and-real-data",
+    "year-12/units/scatter-and-probability",
+    "year-12/units/binomial-models-and-tests"
+  ],
+  "year-13/units/planar-motion-and-projectiles": [
+    "year-12/units/quantities-and-motion-graphs",
+    "year-12/units/straight-line-acceleration",
+    "year-12/units/vectors-in-the-plane",
+    "year-12/units/forces-and-connected-particles"
+  ],
+  "year-13/units/differential-equations": [
+    "year-12/units/differentiation",
+    "year-12/units/exponentials-and-logarithms",
+    "year-12/units/integration"
+  ],
+  "year-13/units/large-data-set-enquiry": [
+    "year-12/units/samples-and-real-data",
+    "year-12/units/scatter-and-probability",
+    "year-12/units/binomial-models-and-tests"
+  ],
+  "year-13/units/moments-and-equilibrium": [
+    "year-12/units/vectors-in-the-plane",
+    "year-12/units/forces-and-connected-particles"
+  ]
+}

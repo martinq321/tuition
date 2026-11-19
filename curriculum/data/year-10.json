@@ -1,0 +1,326 @@
+{
+  "year": 10,
+  "intro": "The first year of this two-year GCSE route develops calculation, algebra, geometry, proportional reasoning and the interpretation of data. Higher-tier pupils also study the outcomes marked Higher.",
+  "terms": [
+    {
+      "name": "Autumn",
+      "units": [
+        {
+          "slug": "number-and-calculation",
+          "title": "Number, factors and exact calculation",
+          "objectives": [
+            "Order signed integers, fractions and decimals on a number line and use inequality symbols to compare them.",
+            "Choose a mental or written method for all four operations with signed numbers, decimals, proper and improper fractions and mixed numbers.",
+            "Use brackets, reciprocals, powers, roots and inverse operations to evaluate an expression and check an answer.",
+            "Write an integer greater than one as a product of primes. Explain why its prime factorisation is unique apart from the order of the factors, and use factorisations to find an HCF or LCM.",
+            "Recognise powers of 2, 3, 4 and 5. Find square, cube and higher roots, and calculate with positive, zero and negative integer indices where defined.",
+            "Write large and small numbers in standard form, perform calculations with them and interpret a calculator display.",
+            "Convert between fractions and terminating decimals exactly and explain how a fraction compares with its decimal form."
+          ],
+          "higher": [
+            "Estimate a positive power or root by bracketing it between known values. Interpret fractional indices as powers and roots.",
+            "Use place value or algebra to convert a recurring decimal to a fraction, and use division to determine the repeating digits of a fraction."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "N1",
+            "N2",
+            "N3",
+            "N4",
+            "N6",
+            "N7",
+            "N8",
+            "N9",
+            "N10"
+          ],
+          "sourcePage": 5
+        },
+        {
+          "slug": "algebra-and-formulae",
+          "title": "Algebraic notation, expressions and formulae",
+          "objectives": [
+            "Read and write products, powers, fractional coefficients, quotients and bracketed expressions. Identify terms and factors.",
+            "Distinguish an expression, an equation, an inequality, an identity and a formula. Use numerical substitution to test a claim or evaluate a scientific formula.",
+            "Collect like terms, multiply a term across a bracket and take out a common factor. Use index laws to simplify products, quotients and powers.",
+            "Collect like terms with surd coefficients, for example 3x√2 + 2x√2 = 5x√2.",
+            "Justify equivalent expressions by rearranging them. Use a counterexample to disprove a claimed identity.",
+            "Rearrange a formula to make a specified variable the subject and interpret a simple formula as an input–output rule."
+          ],
+          "higher": [],
+          "objectiveIds": [],
+          "specCodes": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7"
+          ],
+          "sourcePage": 6
+        },
+        {
+          "slug": "ratio-fractions-and-percentages",
+          "title": "Ratio, fractions and percentage change",
+          "objectives": [
+            "Describe one amount as a fraction or percentage of another, including values above one or 100%. Apply fractions and percentages as operators.",
+            "Simplify a ratio in common units and move between a part-to-part ratio, each part’s fraction of the whole, and a multiplicative comparison.",
+            "Divide an amount in a given ratio or reconstruct the whole from one part. Check the answer against both the total and the ratio.",
+            "Test whether ratios are equivalent. Scale a mixture or recipe and compare concentrations and unit prices.",
+            "Use multipliers to calculate increases and decreases, recover an original amount and solve simple-interest, profit, loss and VAT problems."
+          ],
+          "higher": [],
+          "objectiveIds": [],
+          "specCodes": [
+            "N11",
+            "N12",
+            "R3",
+            "R4",
+            "R5",
+            "R6",
+            "R7",
+            "R8",
+            "R9"
+          ],
+          "sourcePage": 8
+        },
+        {
+          "slug": "angles-and-geometric-reasoning",
+          "title": "Angle reasoning, polygons and congruence",
+          "objectives": [
+            "Draw and label points, lines, planes and angles from written information, and mark equal lengths, parallel lines and perpendicular lines accurately.",
+            "Use angles at a point, on a straight line and at crossing lines. Justify a deduction using alternate or corresponding angles on parallel lines.",
+            "Derive the triangle angle sum, extend it to polygons and determine interior and exterior angles of regular polygons.",
+            "Classify triangles and quadrilaterals by defining properties. Identify line and rotational symmetry and state what must be true of a square, kite, rhombus, parallelogram or trapezium.",
+            "Decide whether SSS, SAS, ASA or RHS proves two triangles congruent. Use congruence or angle facts to justify results such as equality of the base angles in an isosceles triangle."
+          ],
+          "higher": [],
+          "objectiveIds": [],
+          "specCodes": [
+            "G1",
+            "G3",
+            "G4",
+            "G5",
+            "G6",
+            "G11"
+          ],
+          "sourcePage": 9
+        }
+      ]
+    },
+    {
+      "name": "Spring",
+      "units": [
+        {
+          "slug": "linear-equations-and-graphs",
+          "title": "Linear equations, inequalities and straight lines",
+          "objectives": [
+            "Plot points in all four quadrants and draw a straight line from an equation. Find and interpret its gradient and intercept, including in a conversion or cost model.",
+            "Find a line from two points or from a point and gradient. Use slopes to recognise parallel lines, including the separate case of vertical lines.",
+            "Solve a linear equation with brackets or an unknown on both sides. Check its solution algebraically and estimate a solution graphically.",
+            "Write an expression or formula from a verbal rule, such as a fixed hire fee plus a charge per hour. Form and solve an equation for a stated total or a geometric constraint, then interpret the answer.",
+            "Solve a linear inequality in one variable. Show its solution interval with open or closed end points and identify permitted integers.",
+            "Recognise a line through the origin as a direct proportion and interpret its constant of proportionality as a ratio."
+          ],
+          "higher": [
+            "Use perpendicular slopes to find the equation of a perpendicular line, including horizontal and vertical cases."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "A8",
+            "A9",
+            "A10",
+            "A14",
+            "A17",
+            "A21",
+            "A22",
+            "R8",
+            "R14",
+            "G11"
+          ],
+          "sourcePage": 7
+        },
+        {
+          "slug": "measures-rounding-and-scales",
+          "title": "Measures, accuracy, constructions and scale",
+          "objectives": [
+            "Convert between metric units of length, mass, area, volume and capacity. Use appropriate units for money, durations and measurements.",
+            "Compare speed, pay and unit price. Convert compound units and calculate with density and pressure, including rearranging the relationship.",
+            "Round to a stated number of decimal places or significant figures. Estimate to check calculator results and keep sufficient precision until the end.",
+            "Write a simple error interval for a rounded or truncated measurement. Interpret how precisely a measurement supports a conclusion.",
+            "Draw and interpret maps and scale drawings. Measure distances, angles and three-figure bearings clockwise from north, and distinguish forward and reverse bearings.",
+            "Use ruler and compasses to bisect a segment or an angle, and construct a perpendicular at or from a point. Combine loci to describe a feasible region and explain the shortest distance to a line."
+          ],
+          "higher": [
+            "Choose upper and lower bounds for input measurements to bound a calculated length, area or rate, then decide the accuracy justified by the result."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "N13",
+            "N14",
+            "N15",
+            "N16",
+            "R1",
+            "R2",
+            "R11",
+            "G2",
+            "G14",
+            "G15"
+          ],
+          "sourcePage": 5
+        },
+        {
+          "slug": "statistics-and-sampling",
+          "title": "Sampling, charts and summary statistics",
+          "objectives": [
+            "Distinguish population from sample and primary from secondary data. Identify selection bias and state which population a sample can reasonably describe.",
+            "Use a sample proportion to estimate a count in the population. Explain how the sampling method or the size of the sample affects confidence in the estimate.",
+            "Choose, draw and interpret frequency tables, bar charts, pictograms, pie charts and vertical line charts according to data type.",
+            "Read and construct a time-series graph and describe changes over time. Distinguish categorical, discrete and continuous variables.",
+            "Calculate mean, median, mode and range, including from frequency tables. For grouped data identify a modal class and estimate the mean using class midpoints.",
+            "Compare two distributions using both a typical value and a measure of spread. Explain how an outlier affects the conclusion.",
+            "Plot paired observations, describe the direction and strength of correlation and draw a line of best fit by eye. Distinguish interpolation from riskier extrapolation and correlation from causation."
+          ],
+          "higher": [],
+          "objectiveIds": [],
+          "specCodes": [
+            "S1",
+            "S2",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "sourcePage": 12
+        },
+        {
+          "slug": "perimeter-area-and-solids",
+          "title": "Perimeter, area, surface area and volume",
+          "objectives": [
+            "Find the perimeter and area of compound shapes by decomposing them, using triangle, parallelogram and trapezium area formulae as appropriate.",
+            "Identify a radius, diameter, chord, arc, tangent, sector and segment. Use circumference and area formulae and give exact answers in terms of π.",
+            "Calculate an arc length, sector area or missing central angle using the sector’s fraction of a full turn.",
+            "Describe faces, curved surfaces, edges and vertices of familiar solids. Draw and interpret plans and elevations and decide what dimensions a view determines.",
+            "Use cross-sectional area to find the volume of a right prism, including cuboids and cylinders. Use faces, curved surfaces and nets to find surface area.",
+            "Use suitable formulae for cones, spheres and pyramids. Split, combine or subtract solids, including a frustum, to find volume or exposed surface area."
+          ],
+          "higher": [],
+          "objectiveIds": [],
+          "specCodes": [
+            "G9",
+            "G12",
+            "G13",
+            "G14",
+            "G16",
+            "G17",
+            "G18",
+            "N8"
+          ],
+          "sourcePage": 10
+        }
+      ]
+    },
+    {
+      "name": "Summer",
+      "units": [
+        {
+          "slug": "transformations-and-vectors",
+          "title": "Transformations, similarity and vectors",
+          "objectives": [
+            "Construct and describe a reflection, rotation or translation on a grid, specifying its mirror line, centre and angle, or column vector.",
+            "Construct an enlargement from a given centre using a positive integer or fractional scale factor. Recover a scale factor or centre from two images.",
+            "Distinguish congruence from similarity. Match corresponding sides and angles and use length ratios to find a missing length.",
+            "Represent a displacement with a column vector or diagram. Add, subtract and multiply vectors by scalars and relate the results to a route.",
+            "Compare lengths, areas or volumes as ratios in common units and identify which measurements a rigid motion preserves."
+          ],
+          "higher": [
+            "Construct an enlargement with a negative scale factor and explain where the image lies relative to the centre.",
+            "Analyse combinations of rotations, reflections and translations and describe their overall effect and invariants.",
+            "Derive area and volume scale factors from a length factor, and use the relationships in reverse."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "G7",
+            "G8",
+            "G11",
+            "G19",
+            "G24",
+            "G25",
+            "R2",
+            "R12"
+          ],
+          "sourcePage": 9
+        },
+        {
+          "slug": "right-triangle-methods",
+          "title": "Pythagoras and right-angled trigonometry",
+          "objectives": [
+            "Identify the hypotenuse and use Pythagoras’ theorem or its converse to find a length, a diagonal, or whether a triangle is right-angled.",
+            "Explain why right triangles with the same acute angle have the same side ratios. Select sine, cosine or tangent for a required length or angle.",
+            "Find angles using the inverse trigonometric keys in degree mode. Interpret results in diagrams involving bearings, elevation and depression.",
+            "Give exact sine and cosine values for 0°, 30°, 45°, 60° and 90°, and tangent values for 0°, 30°, 45° and 60°. Check exact values against special triangles.",
+            "Use an area or similarity argument to explain Pythagoras’ theorem."
+          ],
+          "higher": [],
+          "objectiveIds": [],
+          "specCodes": [
+            "G6",
+            "G20",
+            "G21",
+            "R12"
+          ],
+          "sourcePage": 10
+        },
+        {
+          "slug": "probability-and-counting",
+          "title": "Systematic counting and probability models",
+          "objectives": [
+            "List outcomes without omissions or repeats using tables, grids, Venn diagrams or trees. Construct a sample space for one or more simple trials.",
+            "Distinguish equally likely from unequally likely outcomes. Assign probabilities on the zero-to-one scale and use a complement or an exhaustive set of mutually exclusive outcomes.",
+            "Record observed outcomes in a table or frequency tree, estimate probabilities from relative frequencies, and calculate an expected count over repeated trials.",
+            "Explain why, over many independent, unbiased trials under the same conditions, relative frequency tends towards the model probability. Compare small and large samples and allow for chance variation in either."
+          ],
+          "higher": [
+            "Apply the counting product rule to successive choices and adapt the number of options when repeats are disallowed or restrictions apply."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "N5",
+            "P1",
+            "P2",
+            "P3",
+            "P4",
+            "P5",
+            "P6",
+            "P7"
+          ],
+          "sourcePage": 11
+        },
+        {
+          "slug": "sequences-and-quadratics",
+          "title": "Sequences and quadratic expressions",
+          "objectives": [
+            "Extend a pattern from a diagram, a term-to-term rule or a position rule. Recognise triangular, square, cube and Fibonacci-type sequences.",
+            "Find and verify the nth term of an arithmetic sequence, including decreasing sequences. Recognise quadratic sequences and geometric sequences with a positive rational common ratio.",
+            "Expand two linear brackets. Factorise monic quadratic expressions, including a difference of two squares.",
+            "Sketch a parabola from a table or its factors, use symmetry to locate a turning point, and connect graph intercepts and roots to solutions of an equation.",
+            "Solve a factorisable monic quadratic using the zero-product property and compare the roots with a graphical estimate."
+          ],
+          "higher": [
+            "Use second differences to find and verify the nth term of a quadratic sequence. Generate other sequences, including geometric progressions with a surd ratio."
+          ],
+          "objectiveIds": [],
+          "specCodes": [
+            "A4",
+            "A11",
+            "A12",
+            "A18",
+            "A23",
+            "A24",
+            "A25"
+          ],
+          "sourcePage": 8
+        }
+      ]
+    }
+  ]
+}

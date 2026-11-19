@@ -2,6 +2,12 @@
 
 Updated 18 November 2026. Scope: a comprehensive interactive mathematics pathway from Year 1 through Year 9, GCSE Foundation/Higher and standard A-level Mathematics. Existing Year 4/5 workshops and investigations are starting resources, not evidence that a whole course is complete. The curriculum map is a build specification; most teaching blocks remain to be built.
 
+## Mathematics curriculum by year
+
+[Browse Years 1–13, units and learning objectives](../../curriculum/index.html). Each year has a suggested term order and unit pages linked to the England curriculum or qualification specification. The activity audit and build records track which units have teaching materials on this site.
+
+To update a unit, edit the [year data](../../curriculum/data/), then run `python3 scripts/build-curriculum-map.py` and `python3 scripts/check-curriculum-map.py` from the repository root. Keep existing unit slugs stable so saved links continue to work.
+
 ## Working agreement for every command
 
 Read this plan and the current repository before editing. Work on one bounded task, preserve functioning activities and pupil records, and use the common theme assets in `mw-design/`. Do not rebuild unrelated pages. Finish and validate the selected task before starting another. Publish authorised changes to `martinq321/tuition` and update `course-build-state.json` with evidence, limitations, commit and next task. Never label a block complete because its topic names or a handful of sample questions exist.
